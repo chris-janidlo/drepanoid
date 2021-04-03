@@ -1,0 +1,6920 @@
+fileFormatVersion: 2
+guid: eabf69f61a99b1f45aac6b677b11daf6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3010297225887252526
+    second: hitachi_MB-6880_8x8_0
+  - first:
+      213: 257373948437571853
+    second: hitachi_MB-6880_8x8_1
+  - first:
+      213: -7191813998024056266
+    second: hitachi_MB-6880_8x8_2
+  - first:
+      213: -2172021354207881371
+    second: hitachi_MB-6880_8x8_3
+  - first:
+      213: 1332282105633182484
+    second: hitachi_MB-6880_8x8_4
+  - first:
+      213: 3894706660767003528
+    second: hitachi_MB-6880_8x8_5
+  - first:
+      213: 3439671792504125931
+    second: hitachi_MB-6880_8x8_6
+  - first:
+      213: 3709471220800288184
+    second: hitachi_MB-6880_8x8_7
+  - first:
+      213: -4947422653140810162
+    second: hitachi_MB-6880_8x8_8
+  - first:
+      213: 1091283680498925614
+    second: hitachi_MB-6880_8x8_9
+  - first:
+      213: -247780183590898078
+    second: hitachi_MB-6880_8x8_10
+  - first:
+      213: 2381159688847923257
+    second: hitachi_MB-6880_8x8_11
+  - first:
+      213: -6588340642555452622
+    second: hitachi_MB-6880_8x8_12
+  - first:
+      213: 3835689249810246145
+    second: hitachi_MB-6880_8x8_13
+  - first:
+      213: 421572985424366050
+    second: hitachi_MB-6880_8x8_14
+  - first:
+      213: -3783785147127630110
+    second: hitachi_MB-6880_8x8_15
+  - first:
+      213: 5317344538942956395
+    second: hitachi_MB-6880_8x8_16
+  - first:
+      213: 4185773870835039775
+    second: hitachi_MB-6880_8x8_17
+  - first:
+      213: 6041775630204657437
+    second: hitachi_MB-6880_8x8_18
+  - first:
+      213: -6702217807890402052
+    second: hitachi_MB-6880_8x8_19
+  - first:
+      213: -2186500329283094170
+    second: hitachi_MB-6880_8x8_20
+  - first:
+      213: 5070873998469090048
+    second: hitachi_MB-6880_8x8_21
+  - first:
+      213: 4141001731489373885
+    second: hitachi_MB-6880_8x8_22
+  - first:
+      213: -4387390356933464922
+    second: hitachi_MB-6880_8x8_23
+  - first:
+      213: -845620475970603451
+    second: hitachi_MB-6880_8x8_24
+  - first:
+      213: 8423172117628327876
+    second: hitachi_MB-6880_8x8_25
+  - first:
+      213: 5641514036054666992
+    second: hitachi_MB-6880_8x8_26
+  - first:
+      213: -2481355274213090854
+    second: hitachi_MB-6880_8x8_27
+  - first:
+      213: 8458493092936727533
+    second: hitachi_MB-6880_8x8_28
+  - first:
+      213: -3624649777377291669
+    second: hitachi_MB-6880_8x8_29
+  - first:
+      213: 3465563228477655282
+    second: hitachi_MB-6880_8x8_30
+  - first:
+      213: -7261553371611222452
+    second: hitachi_MB-6880_8x8_31
+  - first:
+      213: 5280255596359080824
+    second: hitachi_MB-6880_8x8_32
+  - first:
+      213: 7624838681304494328
+    second: hitachi_MB-6880_8x8_33
+  - first:
+      213: -4153127952532211619
+    second: hitachi_MB-6880_8x8_34
+  - first:
+      213: -2722524315339094332
+    second: hitachi_MB-6880_8x8_35
+  - first:
+      213: -6254641267259648330
+    second: hitachi_MB-6880_8x8_36
+  - first:
+      213: 3792024629112602486
+    second: hitachi_MB-6880_8x8_37
+  - first:
+      213: 694512621153043483
+    second: hitachi_MB-6880_8x8_38
+  - first:
+      213: 259148963910102471
+    second: hitachi_MB-6880_8x8_39
+  - first:
+      213: -7757974636611851128
+    second: hitachi_MB-6880_8x8_40
+  - first:
+      213: -4999435414186439406
+    second: hitachi_MB-6880_8x8_41
+  - first:
+      213: -7287486178923393831
+    second: hitachi_MB-6880_8x8_42
+  - first:
+      213: 2934027731819431998
+    second: hitachi_MB-6880_8x8_43
+  - first:
+      213: 2439407932716154607
+    second: hitachi_MB-6880_8x8_44
+  - first:
+      213: -7182567988320737172
+    second: hitachi_MB-6880_8x8_45
+  - first:
+      213: -4101533457235038017
+    second: hitachi_MB-6880_8x8_46
+  - first:
+      213: -9156057347820317021
+    second: hitachi_MB-6880_8x8_47
+  - first:
+      213: 3458119910593209223
+    second: hitachi_MB-6880_8x8_48
+  - first:
+      213: 2921458815330603541
+    second: hitachi_MB-6880_8x8_49
+  - first:
+      213: 5474293918694129992
+    second: hitachi_MB-6880_8x8_50
+  - first:
+      213: 1014531214460153323
+    second: hitachi_MB-6880_8x8_51
+  - first:
+      213: 4241736144909555604
+    second: hitachi_MB-6880_8x8_52
+  - first:
+      213: -3997277458368818490
+    second: hitachi_MB-6880_8x8_53
+  - first:
+      213: 4956717954083202737
+    second: hitachi_MB-6880_8x8_54
+  - first:
+      213: 7333017317881616606
+    second: hitachi_MB-6880_8x8_55
+  - first:
+      213: -4581758525649733332
+    second: hitachi_MB-6880_8x8_56
+  - first:
+      213: -1010758175248943168
+    second: hitachi_MB-6880_8x8_57
+  - first:
+      213: -6958747619302736488
+    second: hitachi_MB-6880_8x8_58
+  - first:
+      213: 7328961441396688591
+    second: hitachi_MB-6880_8x8_59
+  - first:
+      213: -3457877097906472004
+    second: hitachi_MB-6880_8x8_60
+  - first:
+      213: 5577732351549096940
+    second: hitachi_MB-6880_8x8_61
+  - first:
+      213: -5093675780576399118
+    second: hitachi_MB-6880_8x8_62
+  - first:
+      213: -5549931207252806925
+    second: hitachi_MB-6880_8x8_63
+  - first:
+      213: -3150138750978692755
+    second: hitachi_MB-6880_8x8_64
+  - first:
+      213: 6065231334336738123
+    second: hitachi_MB-6880_8x8_65
+  - first:
+      213: 7318624445361875655
+    second: hitachi_MB-6880_8x8_66
+  - first:
+      213: -5695513518576741582
+    second: hitachi_MB-6880_8x8_67
+  - first:
+      213: 8604249568728899019
+    second: hitachi_MB-6880_8x8_68
+  - first:
+      213: -6342982091792722902
+    second: hitachi_MB-6880_8x8_69
+  - first:
+      213: 4305849379690211380
+    second: hitachi_MB-6880_8x8_70
+  - first:
+      213: -4050869574524442871
+    second: hitachi_MB-6880_8x8_71
+  - first:
+      213: -2811406633499481323
+    second: hitachi_MB-6880_8x8_72
+  - first:
+      213: -6970173709315064828
+    second: hitachi_MB-6880_8x8_73
+  - first:
+      213: 534920617261031613
+    second: hitachi_MB-6880_8x8_74
+  - first:
+      213: 3351258941590436008
+    second: hitachi_MB-6880_8x8_75
+  - first:
+      213: 5745284386642096541
+    second: hitachi_MB-6880_8x8_76
+  - first:
+      213: 857175509557972068
+    second: hitachi_MB-6880_8x8_77
+  - first:
+      213: 8581259147893474356
+    second: hitachi_MB-6880_8x8_78
+  - first:
+      213: 6235667811350755887
+    second: hitachi_MB-6880_8x8_79
+  - first:
+      213: -7943774807617946101
+    second: hitachi_MB-6880_8x8_80
+  - first:
+      213: 7521454154082979782
+    second: hitachi_MB-6880_8x8_81
+  - first:
+      213: -4912504741177848654
+    second: hitachi_MB-6880_8x8_82
+  - first:
+      213: -3659472988032881039
+    second: hitachi_MB-6880_8x8_83
+  - first:
+      213: -6029266980387262220
+    second: hitachi_MB-6880_8x8_84
+  - first:
+      213: 8018469869399555111
+    second: hitachi_MB-6880_8x8_85
+  - first:
+      213: -7011718263723021362
+    second: hitachi_MB-6880_8x8_86
+  - first:
+      213: 3954951773425389742
+    second: hitachi_MB-6880_8x8_87
+  - first:
+      213: 4190880595736118719
+    second: hitachi_MB-6880_8x8_88
+  - first:
+      213: -6918973006138390870
+    second: hitachi_MB-6880_8x8_89
+  - first:
+      213: 4351208684477507252
+    second: hitachi_MB-6880_8x8_90
+  - first:
+      213: 9213554646241320703
+    second: hitachi_MB-6880_8x8_91
+  - first:
+      213: -6981451062938768002
+    second: hitachi_MB-6880_8x8_92
+  - first:
+      213: 698180126254827751
+    second: hitachi_MB-6880_8x8_93
+  - first:
+      213: -7564098632554441577
+    second: hitachi_MB-6880_8x8_94
+  - first:
+      213: 4998462960756143945
+    second: hitachi_MB-6880_8x8_95
+  - first:
+      213: 4737699187375956618
+    second: hitachi_MB-6880_8x8_96
+  - first:
+      213: -778944924458747461
+    second: hitachi_MB-6880_8x8_97
+  - first:
+      213: -4650659697262819052
+    second: hitachi_MB-6880_8x8_98
+  - first:
+      213: 2276003885703364525
+    second: hitachi_MB-6880_8x8_99
+  - first:
+      213: -8192929729593907482
+    second: hitachi_MB-6880_8x8_100
+  - first:
+      213: 5588756090721186465
+    second: hitachi_MB-6880_8x8_101
+  - first:
+      213: -3195999577527567596
+    second: hitachi_MB-6880_8x8_102
+  - first:
+      213: 7894229287873383829
+    second: hitachi_MB-6880_8x8_103
+  - first:
+      213: 75920225771790959
+    second: hitachi_MB-6880_8x8_104
+  - first:
+      213: -3979243025359823859
+    second: hitachi_MB-6880_8x8_105
+  - first:
+      213: 7385514195451323049
+    second: hitachi_MB-6880_8x8_106
+  - first:
+      213: -820662819569872670
+    second: hitachi_MB-6880_8x8_107
+  - first:
+      213: -871704659304399075
+    second: hitachi_MB-6880_8x8_108
+  - first:
+      213: -1418686429076983599
+    second: hitachi_MB-6880_8x8_109
+  - first:
+      213: 1225824561400753226
+    second: hitachi_MB-6880_8x8_110
+  - first:
+      213: 8880869671483964466
+    second: hitachi_MB-6880_8x8_111
+  - first:
+      213: -6971824031216723199
+    second: hitachi_MB-6880_8x8_112
+  - first:
+      213: 4291995612819631172
+    second: hitachi_MB-6880_8x8_113
+  - first:
+      213: 435793824773013326
+    second: hitachi_MB-6880_8x8_114
+  - first:
+      213: 329725128416300316
+    second: hitachi_MB-6880_8x8_115
+  - first:
+      213: -5208512239117912745
+    second: hitachi_MB-6880_8x8_116
+  - first:
+      213: 5406643004255953410
+    second: hitachi_MB-6880_8x8_117
+  - first:
+      213: -8255455197644831967
+    second: hitachi_MB-6880_8x8_118
+  - first:
+      213: 8898345292690505634
+    second: hitachi_MB-6880_8x8_119
+  - first:
+      213: -5442700406372358757
+    second: hitachi_MB-6880_8x8_120
+  - first:
+      213: 7625157622299462491
+    second: hitachi_MB-6880_8x8_121
+  - first:
+      213: 1141128922764519025
+    second: hitachi_MB-6880_8x8_122
+  - first:
+      213: -6930121762806143365
+    second: hitachi_MB-6880_8x8_123
+  - first:
+      213: 8352347997074329727
+    second: hitachi_MB-6880_8x8_124
+  - first:
+      213: -5458391374849723548
+    second: hitachi_MB-6880_8x8_125
+  - first:
+      213: -1693513110759143954
+    second: hitachi_MB-6880_8x8_126
+  - first:
+      213: -8709811975357345381
+    second: hitachi_MB-6880_8x8_127
+  - first:
+      213: 8608715398535351593
+    second: hitachi_MB-6880_8x8_128
+  - first:
+      213: 1921429029775182944
+    second: hitachi_MB-6880_8x8_129
+  - first:
+      213: 2877287867234428564
+    second: hitachi_MB-6880_8x8_130
+  - first:
+      213: 1752731201223155283
+    second: hitachi_MB-6880_8x8_131
+  - first:
+      213: 8440485531145508063
+    second: hitachi_MB-6880_8x8_132
+  - first:
+      213: 8595965012285925518
+    second: hitachi_MB-6880_8x8_133
+  - first:
+      213: -3974017322718313636
+    second: hitachi_MB-6880_8x8_134
+  - first:
+      213: 3494146839382824138
+    second: hitachi_MB-6880_8x8_135
+  - first:
+      213: 577915816360613239
+    second: hitachi_MB-6880_8x8_136
+  - first:
+      213: -5423635494441431637
+    second: hitachi_MB-6880_8x8_137
+  - first:
+      213: -6413950028746008138
+    second: hitachi_MB-6880_8x8_138
+  - first:
+      213: -3018293536416876820
+    second: hitachi_MB-6880_8x8_139
+  - first:
+      213: -5129814466066837783
+    second: hitachi_MB-6880_8x8_140
+  - first:
+      213: -63359632453847503
+    second: hitachi_MB-6880_8x8_141
+  - first:
+      213: 2698570156844818179
+    second: hitachi_MB-6880_8x8_142
+  - first:
+      213: 6675112287768326595
+    second: hitachi_MB-6880_8x8_143
+  - first:
+      213: -1019479849976780996
+    second: hitachi_MB-6880_8x8_144
+  - first:
+      213: 2072467711790667528
+    second: hitachi_MB-6880_8x8_145
+  - first:
+      213: 1481536289718367230
+    second: hitachi_MB-6880_8x8_146
+  - first:
+      213: -784777797505117768
+    second: hitachi_MB-6880_8x8_147
+  - first:
+      213: 7069774949813684671
+    second: hitachi_MB-6880_8x8_148
+  - first:
+      213: -3133027191593778681
+    second: hitachi_MB-6880_8x8_149
+  - first:
+      213: 1261645399659211875
+    second: hitachi_MB-6880_8x8_150
+  - first:
+      213: -7845006885645259703
+    second: hitachi_MB-6880_8x8_151
+  - first:
+      213: 4202372695444802643
+    second: hitachi_MB-6880_8x8_152
+  - first:
+      213: 9168155391282639127
+    second: hitachi_MB-6880_8x8_153
+  - first:
+      213: 5869116410272625660
+    second: hitachi_MB-6880_8x8_154
+  - first:
+      213: -6381513425999354027
+    second: hitachi_MB-6880_8x8_155
+  - first:
+      213: -8479032850011062156
+    second: hitachi_MB-6880_8x8_156
+  - first:
+      213: -1401684051083190973
+    second: hitachi_MB-6880_8x8_157
+  - first:
+      213: 853239518204517268
+    second: hitachi_MB-6880_8x8_158
+  - first:
+      213: 9001731254339970333
+    second: hitachi_MB-6880_8x8_159
+  - first:
+      213: 6190051960024719348
+    second: hitachi_MB-6880_8x8_160
+  - first:
+      213: -1128490540568512247
+    second: hitachi_MB-6880_8x8_161
+  - first:
+      213: 8725684340611019200
+    second: hitachi_MB-6880_8x8_162
+  - first:
+      213: 7483928727025311076
+    second: hitachi_MB-6880_8x8_163
+  - first:
+      213: -5707693520058313435
+    second: hitachi_MB-6880_8x8_164
+  - first:
+      213: 6252225975350613190
+    second: hitachi_MB-6880_8x8_165
+  - first:
+      213: 5359316114294651792
+    second: hitachi_MB-6880_8x8_166
+  - first:
+      213: -2486908009674551105
+    second: hitachi_MB-6880_8x8_167
+  - first:
+      213: -7812472838116232145
+    second: hitachi_MB-6880_8x8_168
+  - first:
+      213: 7695850873017128286
+    second: hitachi_MB-6880_8x8_169
+  - first:
+      213: -5643088651575447884
+    second: hitachi_MB-6880_8x8_170
+  - first:
+      213: -8494867225453075064
+    second: hitachi_MB-6880_8x8_171
+  - first:
+      213: 7800602770445090574
+    second: hitachi_MB-6880_8x8_172
+  - first:
+      213: -2514209038338087665
+    second: hitachi_MB-6880_8x8_173
+  - first:
+      213: 4719516641144688943
+    second: hitachi_MB-6880_8x8_174
+  - first:
+      213: -8815167874080896449
+    second: hitachi_MB-6880_8x8_175
+  - first:
+      213: 4058335939589996837
+    second: hitachi_MB-6880_8x8_176
+  - first:
+      213: 4078326450571126312
+    second: hitachi_MB-6880_8x8_177
+  - first:
+      213: 5403497278217082678
+    second: hitachi_MB-6880_8x8_178
+  - first:
+      213: -1249084350376688175
+    second: hitachi_MB-6880_8x8_179
+  - first:
+      213: 2347412363926432858
+    second: hitachi_MB-6880_8x8_180
+  - first:
+      213: 463967531249877177
+    second: hitachi_MB-6880_8x8_181
+  - first:
+      213: 6321534802989442186
+    second: hitachi_MB-6880_8x8_182
+  - first:
+      213: -1274511468807425537
+    second: hitachi_MB-6880_8x8_183
+  - first:
+      213: 1963431886976936562
+    second: hitachi_MB-6880_8x8_184
+  - first:
+      213: 2301587877984300909
+    second: hitachi_MB-6880_8x8_185
+  - first:
+      213: -1033731065080130552
+    second: hitachi_MB-6880_8x8_186
+  - first:
+      213: 8170886893505859681
+    second: hitachi_MB-6880_8x8_187
+  - first:
+      213: -2454098019173941743
+    second: hitachi_MB-6880_8x8_188
+  - first:
+      213: -1301372002362858385
+    second: hitachi_MB-6880_8x8_189
+  - first:
+      213: 1324245914265511564
+    second: hitachi_MB-6880_8x8_190
+  - first:
+      213: -715424997846364579
+    second: hitachi_MB-6880_8x8_191
+  - first:
+      213: 669046349799636961
+    second: hitachi_MB-6880_8x8_192
+  - first:
+      213: -3497672980629829319
+    second: hitachi_MB-6880_8x8_193
+  - first:
+      213: -2713012790144862460
+    second: hitachi_MB-6880_8x8_194
+  - first:
+      213: -9138453199581980354
+    second: hitachi_MB-6880_8x8_195
+  - first:
+      213: -7949107429351412848
+    second: hitachi_MB-6880_8x8_196
+  - first:
+      213: -6246537625222587886
+    second: hitachi_MB-6880_8x8_197
+  - first:
+      213: 497545278799933872
+    second: hitachi_MB-6880_8x8_198
+  - first:
+      213: 646331272158422270
+    second: hitachi_MB-6880_8x8_199
+  - first:
+      213: -5766254748970358105
+    second: hitachi_MB-6880_8x8_200
+  - first:
+      213: -4061510338911752708
+    second: hitachi_MB-6880_8x8_201
+  - first:
+      213: 6914115943161261046
+    second: hitachi_MB-6880_8x8_202
+  - first:
+      213: 5621589465008088296
+    second: hitachi_MB-6880_8x8_203
+  - first:
+      213: 6721902321008867895
+    second: hitachi_MB-6880_8x8_204
+  - first:
+      213: 1010149519067718734
+    second: hitachi_MB-6880_8x8_205
+  - first:
+      213: -1271137944636203122
+    second: hitachi_MB-6880_8x8_206
+  - first:
+      213: -4834284967690599624
+    second: hitachi_MB-6880_8x8_207
+  - first:
+      213: 1093290099133329234
+    second: hitachi_MB-6880_8x8_208
+  - first:
+      213: 3627391682940561089
+    second: hitachi_MB-6880_8x8_209
+  - first:
+      213: -4008650994969140520
+    second: hitachi_MB-6880_8x8_210
+  - first:
+      213: 3108214570091748028
+    second: hitachi_MB-6880_8x8_211
+  - first:
+      213: 916818682055066408
+    second: hitachi_MB-6880_8x8_212
+  - first:
+      213: 3089264693749336030
+    second: hitachi_MB-6880_8x8_213
+  - first:
+      213: -3375518535544656345
+    second: hitachi_MB-6880_8x8_214
+  - first:
+      213: 3848289757004204710
+    second: hitachi_MB-6880_8x8_215
+  - first:
+      213: 7275554570393631193
+    second: hitachi_MB-6880_8x8_216
+  - first:
+      213: 2923611467471817600
+    second: hitachi_MB-6880_8x8_217
+  - first:
+      213: 3028989321284484748
+    second: hitachi_MB-6880_8x8_218
+  - first:
+      213: 1817596132906043207
+    second: hitachi_MB-6880_8x8_219
+  - first:
+      213: 902933937101044050
+    second: hitachi_MB-6880_8x8_220
+  - first:
+      213: -2905419417501486293
+    second: hitachi_MB-6880_8x8_221
+  - first:
+      213: 2925875702257242633
+    second: hitachi_MB-6880_8x8_222
+  - first:
+      213: 633929094725632367
+    second: hitachi_MB-6880_8x8_223
+  - first:
+      213: 5390361952109633007
+    second: hitachi_MB-6880_8x8_224
+  - first:
+      213: -5115797879055643535
+    second: hitachi_MB-6880_8x8_225
+  - first:
+      213: 3727583277993251300
+    second: hitachi_MB-6880_8x8_226
+  - first:
+      213: -2444274111180163397
+    second: hitachi_MB-6880_8x8_227
+  - first:
+      213: 7210787493406937418
+    second: hitachi_MB-6880_8x8_228
+  - first:
+      213: -8038404402846133796
+    second: hitachi_MB-6880_8x8_229
+  - first:
+      213: 7593780320321754818
+    second: hitachi_MB-6880_8x8_230
+  - first:
+      213: -9001949942256480610
+    second: hitachi_MB-6880_8x8_231
+  - first:
+      213: -3114803397486944537
+    second: hitachi_MB-6880_8x8_232
+  - first:
+      213: -68508393169526704
+    second: hitachi_MB-6880_8x8_233
+  - first:
+      213: -6056739583410800064
+    second: hitachi_MB-6880_8x8_234
+  - first:
+      213: -3281722350844011584
+    second: hitachi_MB-6880_8x8_235
+  - first:
+      213: -8886418589322486877
+    second: hitachi_MB-6880_8x8_236
+  - first:
+      213: -590427697175728639
+    second: hitachi_MB-6880_8x8_237
+  - first:
+      213: 6649733848885959460
+    second: hitachi_MB-6880_8x8_238
+  - first:
+      213: -3028192788390905173
+    second: hitachi_MB-6880_8x8_239
+  - first:
+      213: -4384609506486590910
+    second: hitachi_MB-6880_8x8_240
+  - first:
+      213: 3533657892402427241
+    second: hitachi_MB-6880_8x8_241
+  - first:
+      213: -9139841150588171161
+    second: hitachi_MB-6880_8x8_242
+  - first:
+      213: -2592442247761004107
+    second: hitachi_MB-6880_8x8_243
+  - first:
+      213: 1841438346814952946
+    second: hitachi_MB-6880_8x8_244
+  - first:
+      213: -848478843822821123
+    second: hitachi_MB-6880_8x8_245
+  - first:
+      213: 3607572794577532074
+    second: hitachi_MB-6880_8x8_246
+  - first:
+      213: -7572976055585387999
+    second: hitachi_MB-6880_8x8_247
+  - first:
+      213: 4922482041342558374
+    second: hitachi_MB-6880_8x8_248
+  - first:
+      213: -7480177858304646587
+    second: hitachi_MB-6880_8x8_249
+  - first:
+      213: -1972699798063934775
+    second: hitachi_MB-6880_8x8_250
+  - first:
+      213: 8902890204981619513
+    second: hitachi_MB-6880_8x8_251
+  - first:
+      213: -6029904641194819882
+    second: Hitachi MB-6880_0
+  - first:
+      213: 6547722634220192895
+    second: Hitachi MB-6880_1
+  - first:
+      213: -2742426835913406808
+    second: Hitachi MB-6880_2
+  - first:
+      213: 7285300089718800639
+    second: Hitachi MB-6880_3
+  - first:
+      213: 2561504514087356238
+    second: Hitachi MB-6880_4
+  - first:
+      213: 1664478045196895610
+    second: Hitachi MB-6880_5
+  - first:
+      213: 8615283352110649618
+    second: Hitachi MB-6880_6
+  - first:
+      213: 7865704624396652352
+    second: Hitachi MB-6880_7
+  - first:
+      213: -4654953288642745070
+    second: Hitachi MB-6880_8
+  - first:
+      213: -7681217562046928111
+    second: Hitachi MB-6880_9
+  - first:
+      213: -3467843031632019816
+    second: Hitachi MB-6880_10
+  - first:
+      213: -4558807210393321882
+    second: Hitachi MB-6880_11
+  - first:
+      213: 930309254569616430
+    second: Hitachi MB-6880_12
+  - first:
+      213: -7502394886967814889
+    second: Hitachi MB-6880_13
+  - first:
+      213: 2265278434026838508
+    second: Hitachi MB-6880_14
+  - first:
+      213: -4335244606305934433
+    second: Hitachi MB-6880_15
+  - first:
+      213: -7127323748659909141
+    second: Hitachi MB-6880_16
+  - first:
+      213: -1836497825982636369
+    second: Hitachi MB-6880_17
+  - first:
+      213: -4496094701236143039
+    second: Hitachi MB-6880_18
+  - first:
+      213: 2796232866587874299
+    second: Hitachi MB-6880_19
+  - first:
+      213: 2863080428614812251
+    second: Hitachi MB-6880_20
+  - first:
+      213: 8329171333991280572
+    second: Hitachi MB-6880_21
+  - first:
+      213: -5840460765994343156
+    second: Hitachi MB-6880_22
+  - first:
+      213: -1967357640572889289
+    second: Hitachi MB-6880_23
+  - first:
+      213: 9156814997179503672
+    second: Hitachi MB-6880_24
+  - first:
+      213: 1994765503247706958
+    second: Hitachi MB-6880_25
+  - first:
+      213: 523570123273117051
+    second: Hitachi MB-6880_26
+  - first:
+      213: -8143959859660763195
+    second: Hitachi MB-6880_27
+  - first:
+      213: 2421544768178872746
+    second: Hitachi MB-6880_28
+  - first:
+      213: -8532498979322466694
+    second: Hitachi MB-6880_29
+  - first:
+      213: -7127192555327158964
+    second: Hitachi MB-6880_30
+  - first:
+      213: -6445272172765713015
+    second: Hitachi MB-6880_31
+  - first:
+      213: 4851924839442233734
+    second: Hitachi MB-6880_32
+  - first:
+      213: 8415134191091881271
+    second: Hitachi MB-6880_33
+  - first:
+      213: -4710821889679965430
+    second: Hitachi MB-6880_34
+  - first:
+      213: 4571715823894880728
+    second: Hitachi MB-6880_35
+  - first:
+      213: -1192894660170920966
+    second: Hitachi MB-6880_36
+  - first:
+      213: 8476291289308953702
+    second: Hitachi MB-6880_37
+  - first:
+      213: 5849437855112565217
+    second: Hitachi MB-6880_38
+  - first:
+      213: 1561490065704080725
+    second: Hitachi MB-6880_39
+  - first:
+      213: -3602581571064405415
+    second: Hitachi MB-6880_40
+  - first:
+      213: -5728322181961436237
+    second: Hitachi MB-6880_41
+  - first:
+      213: 806018743905730728
+    second: Hitachi MB-6880_42
+  - first:
+      213: 7458126099740517115
+    second: Hitachi MB-6880_43
+  - first:
+      213: -5085755904767370132
+    second: Hitachi MB-6880_44
+  - first:
+      213: -8892083056468264099
+    second: Hitachi MB-6880_45
+  - first:
+      213: -5064593801222840443
+    second: Hitachi MB-6880_46
+  - first:
+      213: 1314245118407184650
+    second: Hitachi MB-6880_47
+  - first:
+      213: 1501101274044276703
+    second: Hitachi MB-6880_48
+  - first:
+      213: 8774654901938947534
+    second: Hitachi MB-6880_49
+  - first:
+      213: 1765541860964258564
+    second: Hitachi MB-6880_50
+  - first:
+      213: -840409379236015272
+    second: Hitachi MB-6880_51
+  - first:
+      213: -2084549143272594069
+    second: Hitachi MB-6880_52
+  - first:
+      213: 7961263463367699568
+    second: Hitachi MB-6880_53
+  - first:
+      213: 3717241715694895506
+    second: Hitachi MB-6880_54
+  - first:
+      213: 381991977579650017
+    second: Hitachi MB-6880_55
+  - first:
+      213: 1157953941692481441
+    second: Hitachi MB-6880_56
+  - first:
+      213: 6441150249117477372
+    second: Hitachi MB-6880_57
+  - first:
+      213: 2927115544798759698
+    second: Hitachi MB-6880_58
+  - first:
+      213: -6958211438156859050
+    second: Hitachi MB-6880_59
+  - first:
+      213: 1736130270057101566
+    second: Hitachi MB-6880_60
+  - first:
+      213: 6007291620149868593
+    second: Hitachi MB-6880_61
+  - first:
+      213: -4228958085025441205
+    second: Hitachi MB-6880_62
+  - first:
+      213: 4217515335960564946
+    second: Hitachi MB-6880_63
+  - first:
+      213: 8305837340080381672
+    second: Hitachi MB-6880_64
+  - first:
+      213: -434058288266636210
+    second: Hitachi MB-6880_65
+  - first:
+      213: -4996655774198210697
+    second: Hitachi MB-6880_66
+  - first:
+      213: -6099689001490224353
+    second: Hitachi MB-6880_67
+  - first:
+      213: -1552214219428816750
+    second: Hitachi MB-6880_68
+  - first:
+      213: -6702447959829240214
+    second: Hitachi MB-6880_69
+  - first:
+      213: 5469499100930114532
+    second: Hitachi MB-6880_70
+  - first:
+      213: 2034156483342039593
+    second: Hitachi MB-6880_71
+  - first:
+      213: 8829082037294068427
+    second: Hitachi MB-6880_72
+  - first:
+      213: -3180375934578294493
+    second: Hitachi MB-6880_73
+  - first:
+      213: -4009853101275959565
+    second: Hitachi MB-6880_74
+  - first:
+      213: -2617801012376467000
+    second: Hitachi MB-6880_75
+  - first:
+      213: 3146978459756668169
+    second: Hitachi MB-6880_76
+  - first:
+      213: 6294604017765066882
+    second: Hitachi MB-6880_77
+  - first:
+      213: 456563327865751075
+    second: Hitachi MB-6880_78
+  - first:
+      213: -7423291243148717541
+    second: Hitachi MB-6880_79
+  - first:
+      213: -737272519353270512
+    second: Hitachi MB-6880_80
+  - first:
+      213: -2875502348705843206
+    second: Hitachi MB-6880_81
+  - first:
+      213: -6760542495219795010
+    second: Hitachi MB-6880_82
+  - first:
+      213: 3793059915586193887
+    second: Hitachi MB-6880_83
+  - first:
+      213: -3513475759363171741
+    second: Hitachi MB-6880_84
+  - first:
+      213: 4029546210871827773
+    second: Hitachi MB-6880_85
+  - first:
+      213: 3454328938758860393
+    second: Hitachi MB-6880_86
+  - first:
+      213: -122954972359889567
+    second: Hitachi MB-6880_87
+  - first:
+      213: -5796692217803433269
+    second: Hitachi MB-6880_88
+  - first:
+      213: -6343644973954632532
+    second: Hitachi MB-6880_89
+  - first:
+      213: 2459478806093534782
+    second: Hitachi MB-6880_90
+  - first:
+      213: 2024221096705930909
+    second: Hitachi MB-6880_91
+  - first:
+      213: 2013903514079091986
+    second: Hitachi MB-6880_92
+  - first:
+      213: 955859912408965449
+    second: Hitachi MB-6880_93
+  - first:
+      213: -3979563203876977343
+    second: Hitachi MB-6880_94
+  - first:
+      213: 5469661377623957346
+    second: Hitachi MB-6880_95
+  - first:
+      213: 1361946781695964428
+    second: Hitachi MB-6880_96
+  - first:
+      213: 8978405239565644494
+    second: Hitachi MB-6880_97
+  - first:
+      213: -145610279585867546
+    second: Hitachi MB-6880_98
+  - first:
+      213: 9114474417740288013
+    second: Hitachi MB-6880_99
+  - first:
+      213: 7099238954734532486
+    second: Hitachi MB-6880_100
+  - first:
+      213: 6875237830846372964
+    second: Hitachi MB-6880_101
+  - first:
+      213: 756825789477926836
+    second: Hitachi MB-6880_102
+  - first:
+      213: 5602673475554529128
+    second: Hitachi MB-6880_103
+  - first:
+      213: -2935005546054274666
+    second: Hitachi MB-6880_104
+  - first:
+      213: -7148091361921325684
+    second: Hitachi MB-6880_105
+  - first:
+      213: -6861485357348032468
+    second: Hitachi MB-6880_106
+  - first:
+      213: -4621428938706665998
+    second: Hitachi MB-6880_107
+  - first:
+      213: -1550770007235367762
+    second: Hitachi MB-6880_108
+  - first:
+      213: -7663709337251681385
+    second: Hitachi MB-6880_109
+  - first:
+      213: -1836135013597253630
+    second: Hitachi MB-6880_110
+  - first:
+      213: -3150961019916218277
+    second: Hitachi MB-6880_111
+  - first:
+      213: -4389239654030926571
+    second: Hitachi MB-6880_112
+  - first:
+      213: 6342459605279238233
+    second: Hitachi MB-6880_113
+  - first:
+      213: -7193303055853523537
+    second: Hitachi MB-6880_114
+  - first:
+      213: 8773787771850914110
+    second: Hitachi MB-6880_115
+  - first:
+      213: -3635122289071895972
+    second: Hitachi MB-6880_116
+  - first:
+      213: 3404374939447780282
+    second: Hitachi MB-6880_117
+  - first:
+      213: -2399530926844872240
+    second: Hitachi MB-6880_118
+  - first:
+      213: 2840286234356893411
+    second: Hitachi MB-6880_119
+  - first:
+      213: 4157379799845034685
+    second: Hitachi MB-6880_120
+  - first:
+      213: 4667474713586765484
+    second: Hitachi MB-6880_121
+  - first:
+      213: -43149105555472415
+    second: Hitachi MB-6880_122
+  - first:
+      213: -3052773702276084288
+    second: Hitachi MB-6880_123
+  - first:
+      213: 7259645157478008718
+    second: Hitachi MB-6880_124
+  - first:
+      213: -6326394721383008169
+    second: Hitachi MB-6880_125
+  - first:
+      213: 4848047123910099136
+    second: Hitachi MB-6880_126
+  - first:
+      213: -1892577350232792432
+    second: Hitachi MB-6880_127
+  - first:
+      213: -6340754667505388906
+    second: Hitachi MB-6880_128
+  - first:
+      213: 2131918625986151163
+    second: Hitachi MB-6880_129
+  - first:
+      213: 3128651225771371439
+    second: Hitachi MB-6880_130
+  - first:
+      213: -3769965652799298201
+    second: Hitachi MB-6880_131
+  - first:
+      213: -7436979082132726258
+    second: Hitachi MB-6880_132
+  - first:
+      213: -354459312838946109
+    second: Hitachi MB-6880_133
+  - first:
+      213: 753699867700965977
+    second: Hitachi MB-6880_134
+  - first:
+      213: -4994962410302843713
+    second: Hitachi MB-6880_135
+  - first:
+      213: 4310444523175649680
+    second: Hitachi MB-6880_136
+  - first:
+      213: 2398893779805100267
+    second: Hitachi MB-6880_137
+  - first:
+      213: -5258231125748401754
+    second: Hitachi MB-6880_138
+  - first:
+      213: -1261628327120485961
+    second: Hitachi MB-6880_139
+  - first:
+      213: 3768695535270104996
+    second: Hitachi MB-6880_140
+  - first:
+      213: -2816978666649409415
+    second: Hitachi MB-6880_141
+  - first:
+      213: 6498227111214396748
+    second: Hitachi MB-6880_142
+  - first:
+      213: 7561170842474699103
+    second: Hitachi MB-6880_143
+  - first:
+      213: 1762445085439134795
+    second: Hitachi MB-6880_144
+  - first:
+      213: -7072269346200387430
+    second: Hitachi MB-6880_145
+  - first:
+      213: 8609095974653455328
+    second: Hitachi MB-6880_146
+  - first:
+      213: -2960626953825016306
+    second: Hitachi MB-6880_147
+  - first:
+      213: -5415813744126184530
+    second: Hitachi MB-6880_148
+  - first:
+      213: -3951951604019599249
+    second: Hitachi MB-6880_149
+  - first:
+      213: 5005303594965715386
+    second: Hitachi MB-6880_150
+  - first:
+      213: -6655370072820625510
+    second: Hitachi MB-6880_151
+  - first:
+      213: -4355722140930209739
+    second: Hitachi MB-6880_152
+  - first:
+      213: -7986248231724498524
+    second: Hitachi MB-6880_153
+  - first:
+      213: -4126307006229724345
+    second: Hitachi MB-6880_154
+  - first:
+      213: -2267409850299744000
+    second: Hitachi MB-6880_155
+  - first:
+      213: 8385026041882106394
+    second: Hitachi MB-6880_156
+  - first:
+      213: -2101489614850846338
+    second: Hitachi MB-6880_157
+  - first:
+      213: 8529903112185963508
+    second: Hitachi MB-6880_158
+  - first:
+      213: -2932805614198756395
+    second: Hitachi MB-6880_159
+  - first:
+      213: 5094195917686739772
+    second: Hitachi MB-6880_160
+  - first:
+      213: -848332125333919900
+    second: Hitachi MB-6880_161
+  - first:
+      213: -5948529740237378134
+    second: Hitachi MB-6880_162
+  - first:
+      213: -2236704836858951063
+    second: Hitachi MB-6880_163
+  - first:
+      213: -4037059652020287193
+    second: Hitachi MB-6880_164
+  - first:
+      213: 1426362639304722540
+    second: Hitachi MB-6880_165
+  - first:
+      213: -6558845592959681353
+    second: Hitachi MB-6880_166
+  - first:
+      213: 3594973845636939661
+    second: Hitachi MB-6880_167
+  - first:
+      213: -5491534999825988532
+    second: Hitachi MB-6880_168
+  - first:
+      213: -5316647546972936775
+    second: Hitachi MB-6880_169
+  - first:
+      213: 2805807746284903810
+    second: Hitachi MB-6880_170
+  - first:
+      213: 5400260787871487258
+    second: Hitachi MB-6880_171
+  - first:
+      213: -2763109645050794520
+    second: Hitachi MB-6880_172
+  - first:
+      213: -8089610895133935668
+    second: Hitachi MB-6880_173
+  - first:
+      213: 4664653852389400407
+    second: Hitachi MB-6880_174
+  - first:
+      213: -5122065541414620320
+    second: Hitachi MB-6880_175
+  - first:
+      213: -3581990583319169493
+    second: Hitachi MB-6880_176
+  - first:
+      213: -1140124452026385718
+    second: Hitachi MB-6880_177
+  - first:
+      213: 6823440805490947313
+    second: Hitachi MB-6880_178
+  - first:
+      213: -8950033031120490685
+    second: Hitachi MB-6880_179
+  - first:
+      213: 567173824145557573
+    second: Hitachi MB-6880_180
+  - first:
+      213: 7385743040818077957
+    second: Hitachi MB-6880_181
+  - first:
+      213: -247025237024666645
+    second: Hitachi MB-6880_182
+  - first:
+      213: 8113018652247199805
+    second: Hitachi MB-6880_183
+  - first:
+      213: 8820153001946114131
+    second: Hitachi MB-6880_184
+  - first:
+      213: 8740992063305444091
+    second: Hitachi MB-6880_185
+  - first:
+      213: -123626737773043260
+    second: Hitachi MB-6880_186
+  - first:
+      213: 2479024223444865009
+    second: Hitachi MB-6880_187
+  - first:
+      213: 4409860431244983647
+    second: Hitachi MB-6880_188
+  - first:
+      213: 8530672652409660908
+    second: Hitachi MB-6880_189
+  - first:
+      213: 1942778284788387436
+    second: Hitachi MB-6880_190
+  - first:
+      213: 2816974218534244723
+    second: Hitachi MB-6880_191
+  - first:
+      213: -4375209719942161614
+    second: Hitachi MB-6880_192
+  - first:
+      213: -149024039612920565
+    second: Hitachi MB-6880_193
+  - first:
+      213: 1391471944513095283
+    second: Hitachi MB-6880_194
+  - first:
+      213: -5589082302271138521
+    second: Hitachi MB-6880_195
+  - first:
+      213: -1921477722672826443
+    second: Hitachi MB-6880_196
+  - first:
+      213: 8930875306730889254
+    second: Hitachi MB-6880_197
+  - first:
+      213: -5117471292960258167
+    second: Hitachi MB-6880_198
+  - first:
+      213: -282893120054079743
+    second: Hitachi MB-6880_199
+  - first:
+      213: 6586937822281980385
+    second: Hitachi MB-6880_200
+  - first:
+      213: -738231649112031165
+    second: Hitachi MB-6880_201
+  - first:
+      213: 546839020846012740
+    second: Hitachi MB-6880_202
+  - first:
+      213: 8833747085333471314
+    second: Hitachi MB-6880_203
+  - first:
+      213: -734189662814321527
+    second: Hitachi MB-6880_204
+  - first:
+      213: -3781141326419932412
+    second: Hitachi MB-6880_205
+  - first:
+      213: 2451644890388713768
+    second: Hitachi MB-6880_206
+  - first:
+      213: 2112168647208867182
+    second: Hitachi MB-6880_207
+  - first:
+      213: 1206267110463917460
+    second: Hitachi MB-6880_208
+  - first:
+      213: 5051823129340588088
+    second: Hitachi MB-6880_209
+  - first:
+      213: -2037568249432141227
+    second: Hitachi MB-6880_210
+  - first:
+      213: 561102217873903508
+    second: Hitachi MB-6880_211
+  - first:
+      213: 3124380547301174512
+    second: Hitachi MB-6880_212
+  - first:
+      213: -1173196570522779786
+    second: Hitachi MB-6880_213
+  - first:
+      213: 4232316986852080664
+    second: Hitachi MB-6880_214
+  - first:
+      213: -6092593959839710775
+    second: Hitachi MB-6880_215
+  - first:
+      213: 5317917098678651279
+    second: Hitachi MB-6880_216
+  - first:
+      213: -8995817163112090811
+    second: Hitachi MB-6880_217
+  - first:
+      213: 4166205753994909701
+    second: Hitachi MB-6880_218
+  - first:
+      213: 7126403421250172346
+    second: Hitachi MB-6880_219
+  - first:
+      213: 977825440711323426
+    second: Hitachi MB-6880_220
+  - first:
+      213: -6232388966603655684
+    second: Hitachi MB-6880_221
+  - first:
+      213: -9139662187047117747
+    second: Hitachi MB-6880_222
+  - first:
+      213: -4521231716249378367
+    second: Hitachi MB-6880_223
+  - first:
+      213: 5954071269064074550
+    second: Hitachi MB-6880_224
+  - first:
+      213: 6585933396418344762
+    second: Hitachi MB-6880_225
+  - first:
+      213: -7335972080854218900
+    second: Hitachi MB-6880_226
+  - first:
+      213: -6074112975528758015
+    second: Hitachi MB-6880_227
+  - first:
+      213: 5125495468706298618
+    second: Hitachi MB-6880_228
+  - first:
+      213: -3806397257609395668
+    second: Hitachi MB-6880_229
+  - first:
+      213: -749398865265272360
+    second: Hitachi MB-6880_230
+  - first:
+      213: 154428991407691275
+    second: Hitachi MB-6880_231
+  - first:
+      213: 2264558345972215301
+    second: Hitachi MB-6880_232
+  - first:
+      213: 3011509447354189153
+    second: Hitachi MB-6880_233
+  - first:
+      213: 3316278846776082427
+    second: Hitachi MB-6880_234
+  - first:
+      213: 5663651226860374263
+    second: Hitachi MB-6880_235
+  - first:
+      213: 1848520415564550684
+    second: Hitachi MB-6880_236
+  - first:
+      213: -1077039862390495694
+    second: Hitachi MB-6880_237
+  - first:
+      213: 4451214977376254333
+    second: Hitachi MB-6880_238
+  - first:
+      213: -8752860041308405906
+    second: Hitachi MB-6880_239
+  - first:
+      213: 8857795496696651869
+    second: Hitachi MB-6880_240
+  - first:
+      213: -6219038079056305069
+    second: Hitachi MB-6880_241
+  - first:
+      213: 8404595829940309057
+    second: Hitachi MB-6880_242
+  - first:
+      213: -47740141692052898
+    second: Hitachi MB-6880_243
+  - first:
+      213: 4793394870276215614
+    second: Hitachi MB-6880_244
+  - first:
+      213: -858572118043824119
+    second: Hitachi MB-6880_245
+  - first:
+      213: 313480137047687038
+    second: Hitachi MB-6880_246
+  - first:
+      213: 8485712855363958534
+    second: Hitachi MB-6880_247
+  - first:
+      213: -557563491474752838
+    second: Hitachi MB-6880_248
+  - first:
+      213: -4431491287535808218
+    second: Hitachi MB-6880_249
+  - first:
+      213: -1657340301296404529
+    second: Hitachi MB-6880_250
+  - first:
+      213: 8966767649273941377
+    second: Hitachi MB-6880_251
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hitachi MB-6880_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de7a183da9715ca0800000000000000
+      internalID: -6029904641194819882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74ca746b0f2eda50800000000000000
+      internalID: 6547722634220192895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a602ee9251f0f9d0800000000000000
+      internalID: -2742426835913406808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff08fc915d59a1560800000000000000
+      internalID: 7285300089718800639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e478cbcb8ca4c8320800000000000000
+      internalID: 2561504514087356238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75c56c96f9691710800000000000000
+      internalID: 1664478045196895610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21154e12092af8770800000000000000
+      internalID: 8615283352110649618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f4f4d7ea8982d60800000000000000
+      internalID: 7865704624396652352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21da960a5a8466fb0800000000000000
+      internalID: -4654953288642745070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b63bbf255d66590800000000000000
+      internalID: -7681217562046928111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e72cad22fbfdfc0800000000000000
+      internalID: -3467843031632019816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e3409eefcdbb0c0800000000000000
+      internalID: -4558807210393321882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2461e9865f19ec00800000000000000
+      internalID: 930309254569616430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7159395899322e790800000000000000
+      internalID: -7502394886967814889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9d589dbb2ef6f10800000000000000
+      internalID: 2265278434026838508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93e4baeffd16d3c0800000000000000
+      internalID: -4335244606305934433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedabe110d8a61d90800000000000000
+      internalID: -7127323748659909141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae178b15f27386e0800000000000000
+      internalID: -1836497825982636369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_18
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cbd48c0b9aa91c0800000000000000
+      internalID: -4496094701236143039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf31e322af63ec620800000000000000
+      internalID: 2796232866587874299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5285f60b74bbb720800000000000000
+      internalID: 2863080428614812251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfaaebc239279370800000000000000
+      internalID: 8329171333991280572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_22
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c052d4e90e382fea0800000000000000
+      internalID: -5840460765994343156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737908f36aa82b4e0800000000000000
+      internalID: -1967357640572889289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8349adc99ba831f70800000000000000
+      internalID: 9156814997179503672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b684f08a4deab10800000000000000
+      internalID: 1994765503247706958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d93bcc048144700800000000000000
+      internalID: 523570123273117051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf41ebf7a7dafe80800000000000000
+      internalID: -8143959859660763195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1e103032e0b9120800000000000000
+      internalID: 2421544768178872746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ee91ba269769980800000000000000
+      internalID: -8532498979322466694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c458ae5e120271d90800000000000000
+      internalID: -7127192555327158964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_31
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98de69d7b1bcd86a0800000000000000
+      internalID: -6445272172765713015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68939d35fef755340800000000000000
+      internalID: 4851924839442233734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735964526ff88c470800000000000000
+      internalID: 8415134191091881271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03cd79437ccf9eb0800000000000000
+      internalID: -4710821889679965430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_35
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d16941e15ff17f30800000000000000
+      internalID: 4571715823894880728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb4d0670acf17fe0800000000000000
+      internalID: -1192894660170920966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_37
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c7fffa406d1a570800000000000000
+      internalID: 8476291289308953702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e115b1dcb06d2150800000000000000
+      internalID: 5849437855112565217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555d79e01f68ba510800000000000000
+      internalID: 1561490065704080725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952665ef52f010ec0800000000000000
+      internalID: -3602581571064405415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_41
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3b2315359e080b0800000000000000
+      internalID: -5728322181961436237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0cec0f6cd8f2b00800000000000000
+      internalID: 806018743905730728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_43
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf26a114c26908760800000000000000
+      internalID: 7458126099740517115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_44
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cdef933f3cb69b0800000000000000
+      internalID: -5085755904767370132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_45
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b70f98299f89480800000000000000
+      internalID: -8892083056468264099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f977a65c2f6b9b0800000000000000
+      internalID: -5064593801222840443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a019376d8f22d3210800000000000000
+      internalID: 1314245118407184650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf9b43d7abf4d410800000000000000
+      internalID: 1501101274044276703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec506b8a426d5c970800000000000000
+      internalID: 8774654901938947534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4035bd2e7f6708810800000000000000
+      internalID: 1765541860964258564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_51
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8531bbc4f144654f0800000000000000
+      internalID: -840409379236015272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65646e39913213e0800000000000000
+      internalID: -2084549143272594069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ce35970f61c7e60800000000000000
+      internalID: 7961263463367699568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291024845ab469330800000000000000
+      internalID: 3717241715694895506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_55
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb1fa20eab1d4500800000000000000
+      internalID: 381991977579650017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_56
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aff7d099f0e11010800000000000000
+      internalID: 1157953941692481441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9e09f5600936950800000000000000
+      internalID: 6441150249117477372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b014854143f9820800000000000000
+      internalID: 2927115544798759698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_59
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659b99c20977f6f90800000000000000
+      internalID: -6958211438156859050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_60
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef87e8e3849f71810800000000000000
+      internalID: 1736130270057101566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_61
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138b63986ef2e5350800000000000000
+      internalID: 6007291620149868593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ada041709bf45c0800000000000000
+      internalID: -4228958085025441205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d411ba4adf978a30800000000000000
+      internalID: 4217515335960564946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee9aa9fd03444370800000000000000
+      internalID: 8305837340080381672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_65
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e449d0c594ae9f9f0800000000000000
+      internalID: -434058288266636210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fd20afb0058aab0800000000000000
+      internalID: -4996655774198210697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_67
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b61d1bb2d895ba0800000000000000
+      internalID: -6099689001490224353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_68
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29892a3346d657ae0800000000000000
+      internalID: -1552214219428816750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_69
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6626d4771f1cf2a0800000000000000
+      internalID: -6702447959829240214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e30242247097eb40800000000000000
+      internalID: 5469499100930114532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_71
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92af82f4b86ca3c10800000000000000
+      internalID: 2034156483342039593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_72
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2f1bd9553378a70800000000000000
+      internalID: 8829082037294068427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_73
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321824710f80dd3d0800000000000000
+      internalID: -3180375934578294493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fea2f879d32a58c0800000000000000
+      internalID: -4009853101275959565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_75
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c984a459d3bbabd0800000000000000
+      internalID: -2617801012376467000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_76
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9052a995c305cab20800000000000000
+      internalID: 3146978459756668169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_77
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28822a0010dea5750800000000000000
+      internalID: 6294604017765066882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32688ee7de9065600800000000000000
+      internalID: 456563327865751075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_79
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b125ad3d1fb2bf890800000000000000
+      internalID: -7423291243148717541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_80
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f7a45cc8ea4c5f0800000000000000
+      internalID: -737272519353270512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_81
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7369259d92818d0800000000000000
+      internalID: -2875502348705843206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbbd736b6abd22a0800000000000000
+      internalID: -6760542495219795010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_83
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9c94095e7a3a430800000000000000
+      internalID: 3793059915586193887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_84
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a563c7960ad3fc0800000000000000
+      internalID: -3513475759363171741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_85
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d5909ede2dbe730800000000000000
+      internalID: 4029546210871827773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ee2143edd30ff20800000000000000
+      internalID: 3454328938758860393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_87
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dee15aa1d2b4ef0800000000000000
+      internalID: -122954972359889567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_88
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca1e8dd3230e8fa0800000000000000
+      internalID: -5796692217803433269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_89
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4fd3a9188d6f7a0800000000000000
+      internalID: -6343644973954632532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e369ec971f2d12220800000000000000
+      internalID: 2459478806093534782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_91
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d963208dc5a771c10800000000000000
+      internalID: 2024221096705930909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_92
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d58907392d2fb10800000000000000
+      internalID: 2013903514079091986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_93
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9412c26a685e34d00800000000000000
+      internalID: 955859912408965449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14582b7c950c5c8c0800000000000000
+      internalID: -3979563203876977343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_95
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f13fe1b0428eb40800000000000000
+      internalID: 5469661377623957346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_96
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0579fdc16b96e210800000000000000
+      internalID: 1361946781695964428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_97
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2f0d9eef3b99c70800000000000000
+      internalID: 8978405239565644494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e893a1e830bafdf0800000000000000
+      internalID: -145610279585867546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_99
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d009bcf313e1d7e70800000000000000
+      internalID: 9114474417740288013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_100
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68731984730958260800000000000000
+      internalID: 7099238954734532486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_101
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cdced6160c96f50800000000000000
+      internalID: 6875237830846372964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_102
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7bfa2bb09c08a00800000000000000
+      internalID: 756825789477926836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_103
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f4eee77d1b0cd40800000000000000
+      internalID: 5602673475554529128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_104
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69132a59104c447d0800000000000000
+      internalID: -2935005546054274666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_105
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8524ae47c0eccc90800000000000000
+      internalID: -7148091361921325684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20f9b3db6b17c0a0800000000000000
+      internalID: -6861485357348032468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_107
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdbda99dd26ddfb0800000000000000
+      internalID: -4621428938706665998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_108
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eace76e05ee8a7ae0800000000000000
+      internalID: -1550770007235367762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_109
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79be44b36f805a590800000000000000
+      internalID: -7663709337251681385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200f0e2feecb486e0800000000000000
+      internalID: -1836135013597253630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_111
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b509aca95a98544d0800000000000000
+      internalID: -3150961019916218277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_112
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d9d633ac94613c0800000000000000
+      internalID: -4389239654030926571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_113
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958eeee3861f40850800000000000000
+      internalID: 6342459605279238233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad6e128bf04c2c90800000000000000
+      internalID: -7193303055853523537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_115
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39f6d33e71c2c970800000000000000
+      internalID: 8773787771850914110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_116
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ac3cca9837d8dc0800000000000000
+      internalID: -3635122289071895972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_117
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3e60468f4ce3f20800000000000000
+      internalID: 3404374939447780282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_118
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9f8d5d55723bed0800000000000000
+      internalID: -2399530926844872240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_119
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6464b1849ba6720800000000000000
+      internalID: 2840286234356893411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_120
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbad526b6eaf1b930800000000000000
+      internalID: 4157379799845034685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_121
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae057dc58336c040800000000000000
+      internalID: 4667474713586765484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_122
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef7dfafd14b66ff0800000000000000
+      internalID: -43149105555472415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_123
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd0e28fd7e52a5d0800000000000000
+      internalID: -3052773702276084288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_124
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e878cd6bec07fb460800000000000000
+      internalID: 7259645157478008718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7583f0305812438a0800000000000000
+      internalID: -6326394721383008169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_126
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c004035c29b74340800000000000000
+      internalID: 4848047123910099136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_127
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092ac616de63cb5e0800000000000000
+      internalID: -1892577350232792432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_128
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f073893d1108a0800000000000000
+      internalID: -6340754667505388906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_129
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf281f7e1b8169d10800000000000000
+      internalID: 2131918625986151163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_130
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab613aa6b33b6b20800000000000000
+      internalID: 3128651225771371439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_131
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765697186346eabc0800000000000000
+      internalID: -3769965652799298201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_132
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ed7777dea8ac890800000000000000
+      internalID: -7436979082132726258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_133
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2d7ea0225b41bf0800000000000000
+      internalID: -354459312838946109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_134
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9523391590ea57a00800000000000000
+      internalID: 753699867700965977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_135
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4587bf6245eaab0800000000000000
+      internalID: -4994962410302843713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_136
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091a9e3c476c1db30800000000000000
+      internalID: 4310444523175649680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_137
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be85d2fce259a4120800000000000000
+      internalID: 2398893779805100267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_138
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a93dd286a20707b0800000000000000
+      internalID: -5258231125748401754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_139
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1c96b88bbcd7ee0800000000000000
+      internalID: -1261628327120485961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_140
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af00663f981d4430800000000000000
+      internalID: 3768695535270104996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_141
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9782282e3d418e8d0800000000000000
+      internalID: -2816978666649409415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_142
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c453fb9e0275e2a50800000000000000
+      internalID: 6498227111214396748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_143
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59deb702dcaee860800000000000000
+      internalID: 7561170842474699103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_144
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c8bb5a776757810800000000000000
+      internalID: 1762445085439134795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9087d700804add90800000000000000
+      internalID: -7072269346200387430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_146
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebe67e0d27a97770800000000000000
+      internalID: 8609095974653455328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_147
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0620d8b87db9e6d0800000000000000
+      internalID: -2960626953825016306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_148
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea33eab081a27d4b0800000000000000
+      internalID: -5415813744126184530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_149
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6860e854f8d729c0800000000000000
+      internalID: -3951951604019599249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_150
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9cae2b919667540800000000000000
+      internalID: 5005303594965715386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_151
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fc2c03e2063a3a0800000000000000
+      internalID: -6655370072820625510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_152
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5380d895acd5d83c0800000000000000
+      internalID: -4355722140930209739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_153
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a148f3db852b2190800000000000000
+      internalID: -7986248231724498524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_154
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743c873d3a96cb6c0800000000000000
+      internalID: -4126307006229724345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_155
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00189a021ca8880e0800000000000000
+      internalID: -2267409850299744000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_156
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a58c262c89d5470800000000000000
+      internalID: 8385026041882106394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_157
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7194a7545206d2e0800000000000000
+      internalID: -2101489614850846338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_158
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3e75aefad406670800000000000000
+      internalID: 8529903112185963508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_159
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db696225d49c47d0800000000000000
+      internalID: -2932805614198756395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_160
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3396f9623832b640800000000000000
+      internalID: 5094195917686739772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_161
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4676be93d6e1a34f0800000000000000
+      internalID: -848332125333919900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_162
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaded49c7b3927da0800000000000000
+      internalID: -5948529740237378134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_163
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96acf9b2dc0a5f0e0800000000000000
+      internalID: -2236704836858951063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729c440c2ab79f7c0800000000000000
+      internalID: -4037059652020287193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_165
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6885a463457bc310800000000000000
+      internalID: 1426362639304722540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_166
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc7007feac4af4a0800000000000000
+      internalID: -6558845592959681353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_167
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f72066aa9e3e130800000000000000
+      internalID: 3594973845636939661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_168
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c444fb753062ac3b0800000000000000
+      internalID: -5491534999825988532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_169
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5e9be89397736b0800000000000000
+      internalID: -5316647546972936775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_170
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dd959874b30f620800000000000000
+      internalID: 2805807746284903810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_171
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a151d83239491fa40800000000000000
+      internalID: 5400260787871487258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edaa4bda6677a9d0800000000000000
+      internalID: -2763109645050794520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_173
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7796060cdebbf80800000000000000
+      internalID: -8089610895133935668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_174
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fd3dfd6fd2cb040800000000000000
+      internalID: 4664653852389400407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_175
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06376b72784cae8b0800000000000000
+      internalID: -5122065541414620320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_176
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26777cea863a4ec0800000000000000
+      internalID: -3581990583319169493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_177
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acafa3df9d67d20f0800000000000000
+      internalID: -1140124452026385718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_178
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4713da24bb1be50800000000000000
+      internalID: 6823440805490947313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_179
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fec04a0681bc380800000000000000
+      internalID: -8950033031120490685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_180
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548881a86910fd700800000000000000
+      internalID: 567173824145557573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_181
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501664e0a2e6f7660800000000000000
+      internalID: 7385743040818077957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_182
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb86901bd3629cf0800000000000000
+      internalID: -247025237024666645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_183
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d301057ca7b379070800000000000000
+      internalID: 8113018652247199805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_184
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358e7919c6a776a70800000000000000
+      internalID: 8820153001946114131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_185
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa64d548fd3e4970800000000000000
+      internalID: 8740992063305444091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_186
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c12c42132ac84ef0800000000000000
+      internalID: -123626737773043260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_187
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff05049563476220800000000000000
+      internalID: 2479024223444865009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_188
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d7861a2b8f23d30800000000000000
+      internalID: 4409860431244983647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_189
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce564067499036670800000000000000
+      internalID: 8530672652409660908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_190
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e87268e8226fa10800000000000000
+      internalID: 1942778284788387436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_191
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371da257027e71720800000000000000
+      internalID: 2816974218534244723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_192
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bd209c0f12843c0800000000000000
+      internalID: -4375209719942161614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_193
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dc0efec6f8eedf0800000000000000
+      internalID: -149024039612920565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_194
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37600a77c508f4310800000000000000
+      internalID: 1391471944513095283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_195
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d4b022479f62b0800000000000000
+      internalID: -5589082302271138521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_196
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b77240113a8555e0800000000000000
+      internalID: -1921477722672826443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_197
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620a00f06c7d0fb70800000000000000
+      internalID: 8930875306730889254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_198
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98748daf8f61bf8b0800000000000000
+      internalID: -5117471292960258167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_199
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f46c5c436f21cf0800000000000000
+      internalID: -282893120054079743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_200
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9d3bedc01896b50800000000000000
+      internalID: 6586937822281980385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_201
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3400ab8f93641c5f0800000000000000
+      internalID: -738231649112031165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_202
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44959d23133c69700800000000000000
+      internalID: 546839020846012740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_203
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250a1f0cb26c79a70800000000000000
+      internalID: 8833747085333471314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_204
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984403e3462afc5f0800000000000000
+      internalID: -734189662814321527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_205
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bc0393fffa68bc0800000000000000
+      internalID: -3781141326419932412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_206
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8215507d90ef50220800000000000000
+      internalID: 2451644890388713768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_207
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e651a92a13eef4d10800000000000000
+      internalID: 2112168647208867182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_208
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d407fbb858db010800000000000000
+      internalID: 1206267110463917460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_209
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830b274de5eab1640800000000000000
+      internalID: 5051823129340588088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_210
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5529bfef87a19b3e0800000000000000
+      internalID: -2037568249432141227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_211
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fce0b8e7f69c700800000000000000
+      internalID: 561102217873903508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_212
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fce609dd870c5b20800000000000000
+      internalID: 3124380547301174512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_213
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f784a5fe7f7bfe0800000000000000
+      internalID: -1173196570522779786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_214
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c7b2230e53cba30800000000000000
+      internalID: 4232316986852080664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_215
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1401fc212c27ba0800000000000000
+      internalID: -6092593959839710775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_216
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8987bbfc690dc940800000000000000
+      internalID: 5317917098678651279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_217
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5437758b3ff682380800000000000000
+      internalID: -8995817163112090811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_218
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5081e0c4f0651d930800000000000000
+      internalID: 4166205753994909701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_219
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5beb1872216e260800000000000000
+      internalID: 7126403421250172346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f20fdbe0fe19d00800000000000000
+      internalID: 977825440711323426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_221
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf57687614b1289a0800000000000000
+      internalID: -6232388966603655684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_222
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c9cf53aa5692180800000000000000
+      internalID: -9139662187047117747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_223
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1e9b565bb5141c0800000000000000
+      internalID: -4521231716249378367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_224
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6356cefe54c11a250800000000000000
+      internalID: 5954071269064074550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_225
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37b5efb78fe56b50800000000000000
+      internalID: 6585933396418344762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_226
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6740869244613a90800000000000000
+      internalID: -7335972080854218900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_227
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10574084e6a64bba0800000000000000
+      internalID: -6074112975528758015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_228
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afafc1609fa612740800000000000000
+      internalID: 5125495468706298618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_229
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22cb228cd5fc2bc0800000000000000
+      internalID: -3806397257609395668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_230
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d958c8d3b99995f0800000000000000
+      internalID: -749398865265272360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_231
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0690e77954a42200800000000000000
+      internalID: 154428991407691275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_232
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ee1d841d35d6f10800000000000000
+      internalID: 2264558345972215301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_233
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165874ff2e70bc920800000000000000
+      internalID: 3011509447354189153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_234
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfffa3e6a0ac50e20800000000000000
+      internalID: 3316278846776082427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_235
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8c7b498c4599e40800000000000000
+      internalID: 5663651226860374263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_236
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1258c9268347a910800000000000000
+      internalID: 1848520415564550684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_237
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236674993f59d01f0800000000000000
+      internalID: -1077039862390495694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_238
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79f8693074e5cd30800000000000000
+      internalID: 4451214977376254333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_239
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ff915ca28978680800000000000000
+      internalID: -8752860041308405906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_240
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50a8a9d2163dea70800000000000000
+      internalID: 8857795496696651869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_241
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a83521d981b9a0800000000000000
+      internalID: -6219038079056305069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_242
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c425cb06f13a470800000000000000
+      internalID: 8404595829940309057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_243
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a1be41894665ff0800000000000000
+      internalID: -47740141692052898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_244
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e335efeec3f858240800000000000000
+      internalID: 4793394870276215614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_245
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90071f1253db514f0800000000000000
+      internalID: -858572118043824119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_246
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f3ed41684b95400800000000000000
+      internalID: 313480137047687038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_247
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073fe9f1ee43c570800000000000000
+      internalID: 8485712855363958534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_248
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ababbe665f22348f0800000000000000
+      internalID: -557563491474752838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_249
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621903d272e2082c0800000000000000
+      internalID: -4431491287535808218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_250
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7f945e6c1fff8e0800000000000000
+      internalID: -1657340301296404529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitachi MB-6880_251
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d00764bab507c70800000000000000
+      internalID: 8966767649273941377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 70f87c2bf356c414099207b17b324de6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

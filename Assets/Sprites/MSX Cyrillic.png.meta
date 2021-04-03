@@ -1,0 +1,7028 @@
+fileFormatVersion: 2
+guid: a52acf2c0844fdf45a1fe72746ae1f17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4354925647934175138
+    second: msx_cyrillic_8x8_0
+  - first:
+      213: 1083184534964032922
+    second: msx_cyrillic_8x8_1
+  - first:
+      213: 3445945503036150596
+    second: msx_cyrillic_8x8_2
+  - first:
+      213: 8856562296025891253
+    second: msx_cyrillic_8x8_3
+  - first:
+      213: -9151490950881186907
+    second: msx_cyrillic_8x8_4
+  - first:
+      213: 6767387248904838704
+    second: msx_cyrillic_8x8_5
+  - first:
+      213: -939242919449725863
+    second: msx_cyrillic_8x8_6
+  - first:
+      213: -2088802100098749272
+    second: msx_cyrillic_8x8_7
+  - first:
+      213: 3794045604187870596
+    second: msx_cyrillic_8x8_8
+  - first:
+      213: -1295771831124681774
+    second: msx_cyrillic_8x8_9
+  - first:
+      213: -6144673661748735433
+    second: msx_cyrillic_8x8_10
+  - first:
+      213: -1108109513057493662
+    second: msx_cyrillic_8x8_11
+  - first:
+      213: 5651873589594346427
+    second: msx_cyrillic_8x8_12
+  - first:
+      213: 3156489490702910495
+    second: msx_cyrillic_8x8_13
+  - first:
+      213: 5356484530223959789
+    second: msx_cyrillic_8x8_14
+  - first:
+      213: 4530236313742401654
+    second: msx_cyrillic_8x8_15
+  - first:
+      213: 8858875179329964042
+    second: msx_cyrillic_8x8_16
+  - first:
+      213: 7528439508393154019
+    second: msx_cyrillic_8x8_17
+  - first:
+      213: -5858938067605818650
+    second: msx_cyrillic_8x8_18
+  - first:
+      213: 7854641741433881052
+    second: msx_cyrillic_8x8_19
+  - first:
+      213: 970633804432627299
+    second: msx_cyrillic_8x8_20
+  - first:
+      213: -8473410431009540756
+    second: msx_cyrillic_8x8_21
+  - first:
+      213: -2044611642180152588
+    second: msx_cyrillic_8x8_22
+  - first:
+      213: 5858801615098360403
+    second: msx_cyrillic_8x8_23
+  - first:
+      213: -4069130216145342800
+    second: msx_cyrillic_8x8_24
+  - first:
+      213: 8891821554814800357
+    second: msx_cyrillic_8x8_25
+  - first:
+      213: -7705535667908306512
+    second: msx_cyrillic_8x8_26
+  - first:
+      213: 4402991827733730832
+    second: msx_cyrillic_8x8_27
+  - first:
+      213: 7298597792494564273
+    second: msx_cyrillic_8x8_28
+  - first:
+      213: 3059340045664637365
+    second: msx_cyrillic_8x8_29
+  - first:
+      213: 1897800379332115444
+    second: msx_cyrillic_8x8_30
+  - first:
+      213: -733331473341934674
+    second: msx_cyrillic_8x8_31
+  - first:
+      213: -1684903827062042472
+    second: msx_cyrillic_8x8_32
+  - first:
+      213: 1034820840628502644
+    second: msx_cyrillic_8x8_33
+  - first:
+      213: -8660250401913315098
+    second: msx_cyrillic_8x8_34
+  - first:
+      213: -6678680839700448001
+    second: msx_cyrillic_8x8_35
+  - first:
+      213: -2954712855977350087
+    second: msx_cyrillic_8x8_36
+  - first:
+      213: -6070970424894873268
+    second: msx_cyrillic_8x8_37
+  - first:
+      213: -8938803054119652851
+    second: msx_cyrillic_8x8_38
+  - first:
+      213: 6104417878192795811
+    second: msx_cyrillic_8x8_39
+  - first:
+      213: 1117092094819765903
+    second: msx_cyrillic_8x8_40
+  - first:
+      213: 6972405435755830276
+    second: msx_cyrillic_8x8_41
+  - first:
+      213: 9146566941170127898
+    second: msx_cyrillic_8x8_42
+  - first:
+      213: -8651386992725321409
+    second: msx_cyrillic_8x8_43
+  - first:
+      213: -4860031013405439673
+    second: msx_cyrillic_8x8_44
+  - first:
+      213: 5816683293067012397
+    second: msx_cyrillic_8x8_45
+  - first:
+      213: -8428117436562287067
+    second: msx_cyrillic_8x8_46
+  - first:
+      213: 7216616556184432341
+    second: msx_cyrillic_8x8_47
+  - first:
+      213: -914597561368408245
+    second: msx_cyrillic_8x8_48
+  - first:
+      213: 4172385825847754951
+    second: msx_cyrillic_8x8_49
+  - first:
+      213: -8589060942569407313
+    second: msx_cyrillic_8x8_50
+  - first:
+      213: 533396106914190559
+    second: msx_cyrillic_8x8_51
+  - first:
+      213: -4055344196771288050
+    second: msx_cyrillic_8x8_52
+  - first:
+      213: -6950356586989685290
+    second: msx_cyrillic_8x8_53
+  - first:
+      213: -6566918601204176448
+    second: msx_cyrillic_8x8_54
+  - first:
+      213: 2538121945185170780
+    second: msx_cyrillic_8x8_55
+  - first:
+      213: -1009463682440941336
+    second: msx_cyrillic_8x8_56
+  - first:
+      213: -7568259997099360496
+    second: msx_cyrillic_8x8_57
+  - first:
+      213: -8546490929889177443
+    second: msx_cyrillic_8x8_58
+  - first:
+      213: 926229223106208781
+    second: msx_cyrillic_8x8_59
+  - first:
+      213: 3733691930158429264
+    second: msx_cyrillic_8x8_60
+  - first:
+      213: 6538427218944545485
+    second: msx_cyrillic_8x8_61
+  - first:
+      213: -8864814622398540743
+    second: msx_cyrillic_8x8_62
+  - first:
+      213: -7922876916440929733
+    second: msx_cyrillic_8x8_63
+  - first:
+      213: -8785572696950029676
+    second: msx_cyrillic_8x8_64
+  - first:
+      213: -7679317644628091174
+    second: msx_cyrillic_8x8_65
+  - first:
+      213: 212018740911531439
+    second: msx_cyrillic_8x8_66
+  - first:
+      213: -1534958610625951028
+    second: msx_cyrillic_8x8_67
+  - first:
+      213: 3790744588253779936
+    second: msx_cyrillic_8x8_68
+  - first:
+      213: -9196614605919308298
+    second: msx_cyrillic_8x8_69
+  - first:
+      213: -2944263539792266334
+    second: msx_cyrillic_8x8_70
+  - first:
+      213: 4617126468661964656
+    second: msx_cyrillic_8x8_71
+  - first:
+      213: 159730832615104611
+    second: msx_cyrillic_8x8_72
+  - first:
+      213: -6364138684121350909
+    second: msx_cyrillic_8x8_73
+  - first:
+      213: -7314802900149100290
+    second: msx_cyrillic_8x8_74
+  - first:
+      213: 8407555947405977352
+    second: msx_cyrillic_8x8_75
+  - first:
+      213: 8742799318632917480
+    second: msx_cyrillic_8x8_76
+  - first:
+      213: 1438424942111838930
+    second: msx_cyrillic_8x8_77
+  - first:
+      213: 3694789949459356411
+    second: msx_cyrillic_8x8_78
+  - first:
+      213: -9153640964419350101
+    second: msx_cyrillic_8x8_79
+  - first:
+      213: -4495997799059829255
+    second: msx_cyrillic_8x8_80
+  - first:
+      213: 5710656895139337187
+    second: msx_cyrillic_8x8_81
+  - first:
+      213: -2032057979456159096
+    second: msx_cyrillic_8x8_82
+  - first:
+      213: -9041902521374981562
+    second: msx_cyrillic_8x8_83
+  - first:
+      213: 4890746555137699934
+    second: msx_cyrillic_8x8_84
+  - first:
+      213: -5690426262418736029
+    second: msx_cyrillic_8x8_85
+  - first:
+      213: 1788662442464918091
+    second: msx_cyrillic_8x8_86
+  - first:
+      213: 7162504810185783958
+    second: msx_cyrillic_8x8_87
+  - first:
+      213: -4028169224695379381
+    second: msx_cyrillic_8x8_88
+  - first:
+      213: 521500297962299997
+    second: msx_cyrillic_8x8_89
+  - first:
+      213: -5423480158179636814
+    second: msx_cyrillic_8x8_90
+  - first:
+      213: 2045264480822851954
+    second: msx_cyrillic_8x8_91
+  - first:
+      213: -173302655877781722
+    second: msx_cyrillic_8x8_92
+  - first:
+      213: 7822341111933511458
+    second: msx_cyrillic_8x8_93
+  - first:
+      213: 6050116827473490318
+    second: msx_cyrillic_8x8_94
+  - first:
+      213: 7081931872830113236
+    second: msx_cyrillic_8x8_95
+  - first:
+      213: -9179885339922978503
+    second: msx_cyrillic_8x8_96
+  - first:
+      213: 2309665596357935357
+    second: msx_cyrillic_8x8_97
+  - first:
+      213: 7668891189751663504
+    second: msx_cyrillic_8x8_98
+  - first:
+      213: 8902278770731019161
+    second: msx_cyrillic_8x8_99
+  - first:
+      213: 7355619830014601508
+    second: msx_cyrillic_8x8_100
+  - first:
+      213: -6890818147342474215
+    second: msx_cyrillic_8x8_101
+  - first:
+      213: -8657521896709524928
+    second: msx_cyrillic_8x8_102
+  - first:
+      213: -2811348534301734465
+    second: msx_cyrillic_8x8_103
+  - first:
+      213: 458919210327184400
+    second: msx_cyrillic_8x8_104
+  - first:
+      213: -304388586119519378
+    second: msx_cyrillic_8x8_105
+  - first:
+      213: 701202367093169383
+    second: msx_cyrillic_8x8_106
+  - first:
+      213: -7390542486126502227
+    second: msx_cyrillic_8x8_107
+  - first:
+      213: 621664258474471358
+    second: msx_cyrillic_8x8_108
+  - first:
+      213: -373435040062541606
+    second: msx_cyrillic_8x8_109
+  - first:
+      213: 6048032019240183010
+    second: msx_cyrillic_8x8_110
+  - first:
+      213: 7214123425463334791
+    second: msx_cyrillic_8x8_111
+  - first:
+      213: 9221082036610709119
+    second: msx_cyrillic_8x8_112
+  - first:
+      213: 7493035083797639438
+    second: msx_cyrillic_8x8_113
+  - first:
+      213: -847306669859694303
+    second: msx_cyrillic_8x8_114
+  - first:
+      213: -5392381297306661587
+    second: msx_cyrillic_8x8_115
+  - first:
+      213: 8991767663381166302
+    second: msx_cyrillic_8x8_116
+  - first:
+      213: 5545216494389970081
+    second: msx_cyrillic_8x8_117
+  - first:
+      213: 1256365804770336432
+    second: msx_cyrillic_8x8_118
+  - first:
+      213: 3389924805026475033
+    second: msx_cyrillic_8x8_119
+  - first:
+      213: 1184502926352503506
+    second: msx_cyrillic_8x8_120
+  - first:
+      213: 4263022279979168879
+    second: msx_cyrillic_8x8_121
+  - first:
+      213: -4374439109695604111
+    second: msx_cyrillic_8x8_122
+  - first:
+      213: -3718136361499697026
+    second: msx_cyrillic_8x8_123
+  - first:
+      213: -5052965146567750984
+    second: msx_cyrillic_8x8_124
+  - first:
+      213: 8461509659800600709
+    second: msx_cyrillic_8x8_125
+  - first:
+      213: 1672087571401628773
+    second: msx_cyrillic_8x8_126
+  - first:
+      213: 6150113893356298596
+    second: msx_cyrillic_8x8_127
+  - first:
+      213: 1818522029263736016
+    second: msx_cyrillic_8x8_128
+  - first:
+      213: 7773505293221785740
+    second: msx_cyrillic_8x8_129
+  - first:
+      213: 8426537669017450552
+    second: msx_cyrillic_8x8_130
+  - first:
+      213: -2253503321157812324
+    second: msx_cyrillic_8x8_131
+  - first:
+      213: -7986990374213528412
+    second: msx_cyrillic_8x8_132
+  - first:
+      213: 857058839171566921
+    second: msx_cyrillic_8x8_133
+  - first:
+      213: -8405921340766670996
+    second: msx_cyrillic_8x8_134
+  - first:
+      213: -711988927683305012
+    second: msx_cyrillic_8x8_135
+  - first:
+      213: -3260012680682688361
+    second: msx_cyrillic_8x8_136
+  - first:
+      213: -6488605660716099138
+    second: msx_cyrillic_8x8_137
+  - first:
+      213: 3391612614074610717
+    second: msx_cyrillic_8x8_138
+  - first:
+      213: -1382850641705394091
+    second: msx_cyrillic_8x8_139
+  - first:
+      213: -4605668478619177439
+    second: msx_cyrillic_8x8_140
+  - first:
+      213: 7811341531692018480
+    second: msx_cyrillic_8x8_141
+  - first:
+      213: 7623351440475546326
+    second: msx_cyrillic_8x8_142
+  - first:
+      213: -876770684772143175
+    second: msx_cyrillic_8x8_143
+  - first:
+      213: -1934064144036769077
+    second: msx_cyrillic_8x8_144
+  - first:
+      213: 9066108209823913923
+    second: msx_cyrillic_8x8_145
+  - first:
+      213: 449427201164359200
+    second: msx_cyrillic_8x8_146
+  - first:
+      213: -4459938076706764334
+    second: msx_cyrillic_8x8_147
+  - first:
+      213: 324113897052171566
+    second: msx_cyrillic_8x8_148
+  - first:
+      213: -8700426214842626210
+    second: msx_cyrillic_8x8_149
+  - first:
+      213: 3629310026525864200
+    second: msx_cyrillic_8x8_150
+  - first:
+      213: 5224949921026208829
+    second: msx_cyrillic_8x8_151
+  - first:
+      213: -6648277252706808961
+    second: msx_cyrillic_8x8_152
+  - first:
+      213: -5291152396003778202
+    second: msx_cyrillic_8x8_153
+  - first:
+      213: 2557346657689625092
+    second: msx_cyrillic_8x8_154
+  - first:
+      213: 4048425941513521195
+    second: msx_cyrillic_8x8_155
+  - first:
+      213: 8943365021769174244
+    second: msx_cyrillic_8x8_156
+  - first:
+      213: 8079140451316355745
+    second: msx_cyrillic_8x8_157
+  - first:
+      213: -1949145678665420374
+    second: msx_cyrillic_8x8_158
+  - first:
+      213: 441427726827796860
+    second: msx_cyrillic_8x8_159
+  - first:
+      213: -1871227431887456766
+    second: msx_cyrillic_8x8_160
+  - first:
+      213: 7763903152385111220
+    second: msx_cyrillic_8x8_161
+  - first:
+      213: 7983074806497060813
+    second: msx_cyrillic_8x8_162
+  - first:
+      213: -4300814444620398737
+    second: msx_cyrillic_8x8_163
+  - first:
+      213: 275236741908045460
+    second: msx_cyrillic_8x8_164
+  - first:
+      213: -7005296004987144227
+    second: msx_cyrillic_8x8_165
+  - first:
+      213: 5978168914445065888
+    second: msx_cyrillic_8x8_166
+  - first:
+      213: -9139702815940412034
+    second: msx_cyrillic_8x8_167
+  - first:
+      213: -7110237509125196395
+    second: msx_cyrillic_8x8_168
+  - first:
+      213: 7331067994830490310
+    second: msx_cyrillic_8x8_169
+  - first:
+      213: -5672129793911231172
+    second: msx_cyrillic_8x8_170
+  - first:
+      213: -4658718587989650030
+    second: msx_cyrillic_8x8_171
+  - first:
+      213: -6671052284912806219
+    second: msx_cyrillic_8x8_172
+  - first:
+      213: 2808739214265800859
+    second: msx_cyrillic_8x8_173
+  - first:
+      213: -6289053511384237858
+    second: msx_cyrillic_8x8_174
+  - first:
+      213: 9206937553103467401
+    second: msx_cyrillic_8x8_175
+  - first:
+      213: 6162695312994928424
+    second: msx_cyrillic_8x8_176
+  - first:
+      213: -4800462603363968993
+    second: msx_cyrillic_8x8_177
+  - first:
+      213: 4582541254977868837
+    second: msx_cyrillic_8x8_178
+  - first:
+      213: 2781484500333473153
+    second: msx_cyrillic_8x8_179
+  - first:
+      213: 1246432000008925786
+    second: msx_cyrillic_8x8_180
+  - first:
+      213: 9218293120735260841
+    second: msx_cyrillic_8x8_181
+  - first:
+      213: 5553702128555585642
+    second: msx_cyrillic_8x8_182
+  - first:
+      213: -2600485176640269615
+    second: msx_cyrillic_8x8_183
+  - first:
+      213: 76029646445277219
+    second: msx_cyrillic_8x8_184
+  - first:
+      213: -6752202306971074429
+    second: msx_cyrillic_8x8_185
+  - first:
+      213: 3380837163421785978
+    second: msx_cyrillic_8x8_186
+  - first:
+      213: 6293600900380763428
+    second: msx_cyrillic_8x8_187
+  - first:
+      213: 1860618591485156316
+    second: msx_cyrillic_8x8_188
+  - first:
+      213: 2138323096055816207
+    second: msx_cyrillic_8x8_189
+  - first:
+      213: -8278170004881810054
+    second: msx_cyrillic_8x8_190
+  - first:
+      213: 5316917378474708782
+    second: msx_cyrillic_8x8_191
+  - first:
+      213: 4889263197249615779
+    second: msx_cyrillic_8x8_192
+  - first:
+      213: -1287640166563370806
+    second: msx_cyrillic_8x8_193
+  - first:
+      213: -8710119080962595953
+    second: msx_cyrillic_8x8_194
+  - first:
+      213: 4348682214755425519
+    second: msx_cyrillic_8x8_195
+  - first:
+      213: -4108945293802373255
+    second: msx_cyrillic_8x8_196
+  - first:
+      213: 5582747093547987119
+    second: msx_cyrillic_8x8_197
+  - first:
+      213: -6655230689044985979
+    second: msx_cyrillic_8x8_198
+  - first:
+      213: 8587433924348783412
+    second: msx_cyrillic_8x8_199
+  - first:
+      213: 3764057031591929769
+    second: msx_cyrillic_8x8_200
+  - first:
+      213: -8930943443043899210
+    second: msx_cyrillic_8x8_201
+  - first:
+      213: -682026779189565766
+    second: msx_cyrillic_8x8_202
+  - first:
+      213: -1301424520913678619
+    second: msx_cyrillic_8x8_203
+  - first:
+      213: 3920010442314888039
+    second: msx_cyrillic_8x8_204
+  - first:
+      213: 4691782363770131328
+    second: msx_cyrillic_8x8_205
+  - first:
+      213: -8098734361140216202
+    second: msx_cyrillic_8x8_206
+  - first:
+      213: -1321159721765699627
+    second: msx_cyrillic_8x8_207
+  - first:
+      213: -1200734604448087729
+    second: msx_cyrillic_8x8_208
+  - first:
+      213: 4161087474304804975
+    second: msx_cyrillic_8x8_209
+  - first:
+      213: -9058603152536153479
+    second: msx_cyrillic_8x8_210
+  - first:
+      213: -4542741001904197211
+    second: msx_cyrillic_8x8_211
+  - first:
+      213: -916925298756980252
+    second: msx_cyrillic_8x8_212
+  - first:
+      213: 2498086263390544305
+    second: msx_cyrillic_8x8_213
+  - first:
+      213: 7026178067484074824
+    second: msx_cyrillic_8x8_214
+  - first:
+      213: 6220479076397832512
+    second: msx_cyrillic_8x8_215
+  - first:
+      213: -6569308821991829795
+    second: msx_cyrillic_8x8_216
+  - first:
+      213: -4454125945330548188
+    second: msx_cyrillic_8x8_217
+  - first:
+      213: -7188347800456113061
+    second: msx_cyrillic_8x8_218
+  - first:
+      213: -4694419762892081461
+    second: msx_cyrillic_8x8_219
+  - first:
+      213: 3542959244211380028
+    second: msx_cyrillic_8x8_220
+  - first:
+      213: -5636081868827627330
+    second: msx_cyrillic_8x8_221
+  - first:
+      213: 7939401913285998238
+    second: msx_cyrillic_8x8_222
+  - first:
+      213: 8479500562443431735
+    second: msx_cyrillic_8x8_223
+  - first:
+      213: -8598179872660639248
+    second: msx_cyrillic_8x8_224
+  - first:
+      213: 5656573535530766665
+    second: msx_cyrillic_8x8_225
+  - first:
+      213: 2997078250729128076
+    second: msx_cyrillic_8x8_226
+  - first:
+      213: 648127920102843181
+    second: msx_cyrillic_8x8_227
+  - first:
+      213: 937924565753797479
+    second: msx_cyrillic_8x8_228
+  - first:
+      213: -624790923016497453
+    second: msx_cyrillic_8x8_229
+  - first:
+      213: -111376740506218751
+    second: msx_cyrillic_8x8_230
+  - first:
+      213: -3697612968265770950
+    second: msx_cyrillic_8x8_231
+  - first:
+      213: -833075838196270330
+    second: msx_cyrillic_8x8_232
+  - first:
+      213: 8710920400420738850
+    second: msx_cyrillic_8x8_233
+  - first:
+      213: -2653243267054389590
+    second: msx_cyrillic_8x8_234
+  - first:
+      213: 534916571428550981
+    second: msx_cyrillic_8x8_235
+  - first:
+      213: -6067581275913061566
+    second: msx_cyrillic_8x8_236
+  - first:
+      213: -7700371785590401189
+    second: msx_cyrillic_8x8_237
+  - first:
+      213: 4231132232544739698
+    second: msx_cyrillic_8x8_238
+  - first:
+      213: 5345726530083114294
+    second: msx_cyrillic_8x8_239
+  - first:
+      213: -7638806630343608842
+    second: msx_cyrillic_8x8_240
+  - first:
+      213: -3729524781062397392
+    second: msx_cyrillic_8x8_241
+  - first:
+      213: 9080316526929068888
+    second: msx_cyrillic_8x8_242
+  - first:
+      213: -6021763545611791855
+    second: msx_cyrillic_8x8_243
+  - first:
+      213: 4294674605266114737
+    second: msx_cyrillic_8x8_244
+  - first:
+      213: 8047622831183785247
+    second: msx_cyrillic_8x8_245
+  - first:
+      213: -4996105264830030088
+    second: msx_cyrillic_8x8_246
+  - first:
+      213: 5774710385120973296
+    second: msx_cyrillic_8x8_247
+  - first:
+      213: 4564247515280644709
+    second: msx_cyrillic_8x8_248
+  - first:
+      213: 4704084558830067060
+    second: msx_cyrillic_8x8_249
+  - first:
+      213: 680403444018202841
+    second: msx_cyrillic_8x8_250
+  - first:
+      213: -4666291321945307890
+    second: msx_cyrillic_8x8_251
+  - first:
+      213: -8933639205397672445
+    second: msx_cyrillic_8x8_252
+  - first:
+      213: -9019615007662965011
+    second: msx_cyrillic_8x8_253
+  - first:
+      213: -6920996863737041661
+    second: msx_cyrillic_8x8_254
+  - first:
+      213: -7274534754618626313
+    second: msx_cyrillic_8x8_255
+  - first:
+      213: 85919509388808485
+    second: MSX Cyrillic_0
+  - first:
+      213: -777208727424962061
+    second: MSX Cyrillic_1
+  - first:
+      213: 632030722337654484
+    second: MSX Cyrillic_2
+  - first:
+      213: 7331662409468757080
+    second: MSX Cyrillic_3
+  - first:
+      213: 2540351401033393440
+    second: MSX Cyrillic_4
+  - first:
+      213: 6366755489754336033
+    second: MSX Cyrillic_5
+  - first:
+      213: -9137348788684476166
+    second: MSX Cyrillic_6
+  - first:
+      213: 8244994986801501219
+    second: MSX Cyrillic_7
+  - first:
+      213: -3701266753047917320
+    second: MSX Cyrillic_8
+  - first:
+      213: -3133967796235448284
+    second: MSX Cyrillic_9
+  - first:
+      213: 400456002101760433
+    second: MSX Cyrillic_10
+  - first:
+      213: 8885750132276245324
+    second: MSX Cyrillic_11
+  - first:
+      213: 7052348132177780500
+    second: MSX Cyrillic_12
+  - first:
+      213: -4022275200771318005
+    second: MSX Cyrillic_13
+  - first:
+      213: 8320166482494818572
+    second: MSX Cyrillic_14
+  - first:
+      213: -4512675616309680188
+    second: MSX Cyrillic_15
+  - first:
+      213: 2456285863825366091
+    second: MSX Cyrillic_16
+  - first:
+      213: 1420852016343294388
+    second: MSX Cyrillic_17
+  - first:
+      213: 4101694542774839241
+    second: MSX Cyrillic_18
+  - first:
+      213: 4747238566475551699
+    second: MSX Cyrillic_19
+  - first:
+      213: 585213935811089332
+    second: MSX Cyrillic_20
+  - first:
+      213: 6425494632981912479
+    second: MSX Cyrillic_21
+  - first:
+      213: 4647053468550524430
+    second: MSX Cyrillic_22
+  - first:
+      213: -1409435563979577346
+    second: MSX Cyrillic_23
+  - first:
+      213: 2401317224715751310
+    second: MSX Cyrillic_24
+  - first:
+      213: 6158297470240181551
+    second: MSX Cyrillic_25
+  - first:
+      213: -6418382951965116197
+    second: MSX Cyrillic_26
+  - first:
+      213: -2641971384139845266
+    second: MSX Cyrillic_27
+  - first:
+      213: 7965884262142885394
+    second: MSX Cyrillic_28
+  - first:
+      213: 1742146116571737596
+    second: MSX Cyrillic_29
+  - first:
+      213: 8759032817868744750
+    second: MSX Cyrillic_30
+  - first:
+      213: 3056303797878446168
+    second: MSX Cyrillic_31
+  - first:
+      213: 6144307096727521626
+    second: MSX Cyrillic_32
+  - first:
+      213: -6551207007727839631
+    second: MSX Cyrillic_33
+  - first:
+      213: -8303204813740131077
+    second: MSX Cyrillic_34
+  - first:
+      213: 973599425303204163
+    second: MSX Cyrillic_35
+  - first:
+      213: 285578869921182923
+    second: MSX Cyrillic_36
+  - first:
+      213: -3076257803331834978
+    second: MSX Cyrillic_37
+  - first:
+      213: -392244532207435383
+    second: MSX Cyrillic_38
+  - first:
+      213: 8247304104220658117
+    second: MSX Cyrillic_39
+  - first:
+      213: 8429930384105342594
+    second: MSX Cyrillic_40
+  - first:
+      213: -1243501829779332365
+    second: MSX Cyrillic_41
+  - first:
+      213: 4365410936354143172
+    second: MSX Cyrillic_42
+  - first:
+      213: -4233207605490139927
+    second: MSX Cyrillic_43
+  - first:
+      213: 1510587399271076610
+    second: MSX Cyrillic_44
+  - first:
+      213: -8700290134771502892
+    second: MSX Cyrillic_45
+  - first:
+      213: -2017571224697945997
+    second: MSX Cyrillic_46
+  - first:
+      213: 3805679613293025051
+    second: MSX Cyrillic_47
+  - first:
+      213: -5716054263089090356
+    second: MSX Cyrillic_48
+  - first:
+      213: 900315456541055596
+    second: MSX Cyrillic_49
+  - first:
+      213: -305987625181275713
+    second: MSX Cyrillic_50
+  - first:
+      213: -43223891104734356
+    second: MSX Cyrillic_51
+  - first:
+      213: -4002319208004764597
+    second: MSX Cyrillic_52
+  - first:
+      213: 967716196463331566
+    second: MSX Cyrillic_53
+  - first:
+      213: 4652750088903406052
+    second: MSX Cyrillic_54
+  - first:
+      213: 5326067406444990985
+    second: MSX Cyrillic_55
+  - first:
+      213: 8839581794409643703
+    second: MSX Cyrillic_56
+  - first:
+      213: 6146966900827179579
+    second: MSX Cyrillic_57
+  - first:
+      213: 3426841434716912891
+    second: MSX Cyrillic_58
+  - first:
+      213: -3297916031601716434
+    second: MSX Cyrillic_59
+  - first:
+      213: 3403545802115872958
+    second: MSX Cyrillic_60
+  - first:
+      213: 2405005790280174560
+    second: MSX Cyrillic_61
+  - first:
+      213: -5126661363855591071
+    second: MSX Cyrillic_62
+  - first:
+      213: -8033367325734271023
+    second: MSX Cyrillic_63
+  - first:
+      213: -3067260980126494473
+    second: MSX Cyrillic_64
+  - first:
+      213: 1358457607298026463
+    second: MSX Cyrillic_65
+  - first:
+      213: -5453325573138639411
+    second: MSX Cyrillic_66
+  - first:
+      213: -7054278331672100713
+    second: MSX Cyrillic_67
+  - first:
+      213: 2947299732986779081
+    second: MSX Cyrillic_68
+  - first:
+      213: -3979100778525527340
+    second: MSX Cyrillic_69
+  - first:
+      213: 8454496713956440965
+    second: MSX Cyrillic_70
+  - first:
+      213: -3391173358145982918
+    second: MSX Cyrillic_71
+  - first:
+      213: 3841176087478127398
+    second: MSX Cyrillic_72
+  - first:
+      213: -2602051850277484003
+    second: MSX Cyrillic_73
+  - first:
+      213: 4932295131342107740
+    second: MSX Cyrillic_74
+  - first:
+      213: -6012694145252779331
+    second: MSX Cyrillic_75
+  - first:
+      213: 4784294249529012708
+    second: MSX Cyrillic_76
+  - first:
+      213: -371897503143045264
+    second: MSX Cyrillic_77
+  - first:
+      213: 1131919144833877810
+    second: MSX Cyrillic_78
+  - first:
+      213: -4841567907819719080
+    second: MSX Cyrillic_79
+  - first:
+      213: -2293931541653809125
+    second: MSX Cyrillic_80
+  - first:
+      213: -5582001118485435100
+    second: MSX Cyrillic_81
+  - first:
+      213: -7466043796252310165
+    second: MSX Cyrillic_82
+  - first:
+      213: 231633368426849054
+    second: MSX Cyrillic_83
+  - first:
+      213: 7759274669225833370
+    second: MSX Cyrillic_84
+  - first:
+      213: -3324084056831215057
+    second: MSX Cyrillic_85
+  - first:
+      213: -4685735198991482755
+    second: MSX Cyrillic_86
+  - first:
+      213: -7601859522018885168
+    second: MSX Cyrillic_87
+  - first:
+      213: 5328484273111003342
+    second: MSX Cyrillic_88
+  - first:
+      213: 4768229558347751810
+    second: MSX Cyrillic_89
+  - first:
+      213: 7232981957920958353
+    second: MSX Cyrillic_90
+  - first:
+      213: 65340145366400891
+    second: MSX Cyrillic_91
+  - first:
+      213: -318210582208267189
+    second: MSX Cyrillic_92
+  - first:
+      213: -8477794008382374888
+    second: MSX Cyrillic_93
+  - first:
+      213: -4555958451415738674
+    second: MSX Cyrillic_94
+  - first:
+      213: -6959684432415087568
+    second: MSX Cyrillic_95
+  - first:
+      213: -1069648466762311709
+    second: MSX Cyrillic_96
+  - first:
+      213: -7908487558975928526
+    second: MSX Cyrillic_97
+  - first:
+      213: 3577057210651137141
+    second: MSX Cyrillic_98
+  - first:
+      213: -5066483047913895522
+    second: MSX Cyrillic_99
+  - first:
+      213: 4624981383129319086
+    second: MSX Cyrillic_100
+  - first:
+      213: -7007341606881494659
+    second: MSX Cyrillic_101
+  - first:
+      213: 7633690102940937155
+    second: MSX Cyrillic_102
+  - first:
+      213: -1605229304146616517
+    second: MSX Cyrillic_103
+  - first:
+      213: 8635046009375161907
+    second: MSX Cyrillic_104
+  - first:
+      213: 8960840120188172454
+    second: MSX Cyrillic_105
+  - first:
+      213: -1072600913626955325
+    second: MSX Cyrillic_106
+  - first:
+      213: -5239378045403890933
+    second: MSX Cyrillic_107
+  - first:
+      213: 2996294197027928091
+    second: MSX Cyrillic_108
+  - first:
+      213: 1233892415116320252
+    second: MSX Cyrillic_109
+  - first:
+      213: 6125555819952857375
+    second: MSX Cyrillic_110
+  - first:
+      213: -8502858641292675133
+    second: MSX Cyrillic_111
+  - first:
+      213: -5696599229445721638
+    second: MSX Cyrillic_112
+  - first:
+      213: 6471983573608074341
+    second: MSX Cyrillic_113
+  - first:
+      213: -5496882761253111600
+    second: MSX Cyrillic_114
+  - first:
+      213: 3408671034661411131
+    second: MSX Cyrillic_115
+  - first:
+      213: 420854738100870012
+    second: MSX Cyrillic_116
+  - first:
+      213: 4458317093430410689
+    second: MSX Cyrillic_117
+  - first:
+      213: 5470845652303932750
+    second: MSX Cyrillic_118
+  - first:
+      213: -7886846397302071592
+    second: MSX Cyrillic_119
+  - first:
+      213: 5764319213473943934
+    second: MSX Cyrillic_120
+  - first:
+      213: 4800064214982209927
+    second: MSX Cyrillic_121
+  - first:
+      213: -8622777936479312761
+    second: MSX Cyrillic_122
+  - first:
+      213: 5160408201926911719
+    second: MSX Cyrillic_123
+  - first:
+      213: -796596284192094019
+    second: MSX Cyrillic_124
+  - first:
+      213: 166373764296840125
+    second: MSX Cyrillic_125
+  - first:
+      213: 7036068823451947699
+    second: MSX Cyrillic_126
+  - first:
+      213: 3616007810667469647
+    second: MSX Cyrillic_127
+  - first:
+      213: 3443624994775495181
+    second: MSX Cyrillic_128
+  - first:
+      213: -4698532410993626689
+    second: MSX Cyrillic_129
+  - first:
+      213: -3029774154970619177
+    second: MSX Cyrillic_130
+  - first:
+      213: -8490403948848972759
+    second: MSX Cyrillic_131
+  - first:
+      213: -2038229813295146403
+    second: MSX Cyrillic_132
+  - first:
+      213: 2225118732433098316
+    second: MSX Cyrillic_133
+  - first:
+      213: -2519015156473559830
+    second: MSX Cyrillic_134
+  - first:
+      213: 3066335181688744792
+    second: MSX Cyrillic_135
+  - first:
+      213: -3708352505292823109
+    second: MSX Cyrillic_136
+  - first:
+      213: 5517537469752847642
+    second: MSX Cyrillic_137
+  - first:
+      213: -6808010541163062114
+    second: MSX Cyrillic_138
+  - first:
+      213: -7096656535808228292
+    second: MSX Cyrillic_139
+  - first:
+      213: 7342588367102647576
+    second: MSX Cyrillic_140
+  - first:
+      213: -6672989189801786945
+    second: MSX Cyrillic_141
+  - first:
+      213: 425713787883028067
+    second: MSX Cyrillic_142
+  - first:
+      213: 3909230162847096733
+    second: MSX Cyrillic_143
+  - first:
+      213: -816747592642344403
+    second: MSX Cyrillic_144
+  - first:
+      213: 9121412791763205387
+    second: MSX Cyrillic_145
+  - first:
+      213: 1916184893935473290
+    second: MSX Cyrillic_146
+  - first:
+      213: 2811392818668998695
+    second: MSX Cyrillic_147
+  - first:
+      213: 4193359528841891713
+    second: MSX Cyrillic_148
+  - first:
+      213: 6509095980939918796
+    second: MSX Cyrillic_149
+  - first:
+      213: 3788652041593852046
+    second: MSX Cyrillic_150
+  - first:
+      213: 9124953625629325418
+    second: MSX Cyrillic_151
+  - first:
+      213: -1192836828182581083
+    second: MSX Cyrillic_152
+  - first:
+      213: -5410362196949636506
+    second: MSX Cyrillic_153
+  - first:
+      213: -115831317537399902
+    second: MSX Cyrillic_154
+  - first:
+      213: -5380320123772792844
+    second: MSX Cyrillic_155
+  - first:
+      213: 8390573723511314137
+    second: MSX Cyrillic_156
+  - first:
+      213: 488181752219571856
+    second: MSX Cyrillic_157
+  - first:
+      213: -3489044186053305913
+    second: MSX Cyrillic_158
+  - first:
+      213: -3391318478970317078
+    second: MSX Cyrillic_159
+  - first:
+      213: -2308283820423115171
+    second: MSX Cyrillic_160
+  - first:
+      213: 2670158236440461925
+    second: MSX Cyrillic_161
+  - first:
+      213: -8385859448843821567
+    second: MSX Cyrillic_162
+  - first:
+      213: -751242357055907799
+    second: MSX Cyrillic_163
+  - first:
+      213: -2001203901454185550
+    second: MSX Cyrillic_164
+  - first:
+      213: 415576937934565107
+    second: MSX Cyrillic_165
+  - first:
+      213: 2640549864921633087
+    second: MSX Cyrillic_166
+  - first:
+      213: -4155368243463650900
+    second: MSX Cyrillic_167
+  - first:
+      213: -3146979986009861355
+    second: MSX Cyrillic_168
+  - first:
+      213: 6483232955645509812
+    second: MSX Cyrillic_169
+  - first:
+      213: 7685596185900548690
+    second: MSX Cyrillic_170
+  - first:
+      213: 2086533306147873290
+    second: MSX Cyrillic_171
+  - first:
+      213: 2799774063394218207
+    second: MSX Cyrillic_172
+  - first:
+      213: 5281646895440507133
+    second: MSX Cyrillic_173
+  - first:
+      213: -3235795236880849592
+    second: MSX Cyrillic_174
+  - first:
+      213: -8264506597865733149
+    second: MSX Cyrillic_175
+  - first:
+      213: 961878232895288513
+    second: MSX Cyrillic_176
+  - first:
+      213: -6926766769473779159
+    second: MSX Cyrillic_177
+  - first:
+      213: -5790564327192984864
+    second: MSX Cyrillic_178
+  - first:
+      213: -7811087563722637247
+    second: MSX Cyrillic_179
+  - first:
+      213: -237656092495073154
+    second: MSX Cyrillic_180
+  - first:
+      213: 5706811019796654557
+    second: MSX Cyrillic_181
+  - first:
+      213: -3582805825845046880
+    second: MSX Cyrillic_182
+  - first:
+      213: 6167908977735857851
+    second: MSX Cyrillic_183
+  - first:
+      213: -3452395353682868984
+    second: MSX Cyrillic_184
+  - first:
+      213: 4419576637389176624
+    second: MSX Cyrillic_185
+  - first:
+      213: 984189662391621782
+    second: MSX Cyrillic_186
+  - first:
+      213: 8783882188495902626
+    second: MSX Cyrillic_187
+  - first:
+      213: -2531857416246472799
+    second: MSX Cyrillic_188
+  - first:
+      213: 6229884388388814386
+    second: MSX Cyrillic_189
+  - first:
+      213: 5647465823717023480
+    second: MSX Cyrillic_190
+  - first:
+      213: 2911467268801630490
+    second: MSX Cyrillic_191
+  - first:
+      213: 5441236764874558692
+    second: MSX Cyrillic_192
+  - first:
+      213: 6435515275056395609
+    second: MSX Cyrillic_193
+  - first:
+      213: 3706294081837810536
+    second: MSX Cyrillic_194
+  - first:
+      213: 7147594863915893451
+    second: MSX Cyrillic_195
+  - first:
+      213: 6984698438401556973
+    second: MSX Cyrillic_196
+  - first:
+      213: -4864459504573060503
+    second: MSX Cyrillic_197
+  - first:
+      213: 3364893547725996158
+    second: MSX Cyrillic_198
+  - first:
+      213: -1290705945105443419
+    second: MSX Cyrillic_199
+  - first:
+      213: -616559892222173942
+    second: MSX Cyrillic_200
+  - first:
+      213: -8346375514706500664
+    second: MSX Cyrillic_201
+  - first:
+      213: 4507912243807432465
+    second: MSX Cyrillic_202
+  - first:
+      213: -3550507319716011485
+    second: MSX Cyrillic_203
+  - first:
+      213: 4121757052200552685
+    second: MSX Cyrillic_204
+  - first:
+      213: -3920161966432006303
+    second: MSX Cyrillic_205
+  - first:
+      213: -80685947794561683
+    second: MSX Cyrillic_206
+  - first:
+      213: -5899252502791136403
+    second: MSX Cyrillic_207
+  - first:
+      213: -4733117234843974603
+    second: MSX Cyrillic_208
+  - first:
+      213: 1128871421838232488
+    second: MSX Cyrillic_209
+  - first:
+      213: -2488896415979839497
+    second: MSX Cyrillic_210
+  - first:
+      213: 3346798415459209315
+    second: MSX Cyrillic_211
+  - first:
+      213: 3878749007726523751
+    second: MSX Cyrillic_212
+  - first:
+      213: -2152203134360815443
+    second: MSX Cyrillic_213
+  - first:
+      213: -8893871536993679027
+    second: MSX Cyrillic_214
+  - first:
+      213: 4355613506352323645
+    second: MSX Cyrillic_215
+  - first:
+      213: 4102367461956180221
+    second: MSX Cyrillic_216
+  - first:
+      213: 33191788605613423
+    second: MSX Cyrillic_217
+  - first:
+      213: 4089931230962450418
+    second: MSX Cyrillic_218
+  - first:
+      213: -1651166199675949435
+    second: MSX Cyrillic_219
+  - first:
+      213: -525485632339788899
+    second: MSX Cyrillic_220
+  - first:
+      213: 8505697941033898226
+    second: MSX Cyrillic_221
+  - first:
+      213: -763515298782695313
+    second: MSX Cyrillic_222
+  - first:
+      213: 1590474543325759502
+    second: MSX Cyrillic_223
+  - first:
+      213: 4376820457167488074
+    second: MSX Cyrillic_224
+  - first:
+      213: 4010073730803816051
+    second: MSX Cyrillic_225
+  - first:
+      213: -7090307267397718925
+    second: MSX Cyrillic_226
+  - first:
+      213: 3221346325750991902
+    second: MSX Cyrillic_227
+  - first:
+      213: -8641882422976071564
+    second: MSX Cyrillic_228
+  - first:
+      213: 5619388150870883440
+    second: MSX Cyrillic_229
+  - first:
+      213: -7956803040849674859
+    second: MSX Cyrillic_230
+  - first:
+      213: 439539732967432120
+    second: MSX Cyrillic_231
+  - first:
+      213: 6941771754191162794
+    second: MSX Cyrillic_232
+  - first:
+      213: 1365594542698155186
+    second: MSX Cyrillic_233
+  - first:
+      213: 5223166800665881199
+    second: MSX Cyrillic_234
+  - first:
+      213: 8268822233171332389
+    second: MSX Cyrillic_235
+  - first:
+      213: 3984845313888310180
+    second: MSX Cyrillic_236
+  - first:
+      213: 5763260044750289925
+    second: MSX Cyrillic_237
+  - first:
+      213: -4084565813981663959
+    second: MSX Cyrillic_238
+  - first:
+      213: -3221183007379794668
+    second: MSX Cyrillic_239
+  - first:
+      213: -4208706999385342226
+    second: MSX Cyrillic_240
+  - first:
+      213: -4759565058633301822
+    second: MSX Cyrillic_241
+  - first:
+      213: -5296313202235939143
+    second: MSX Cyrillic_242
+  - first:
+      213: -8539413128123413615
+    second: MSX Cyrillic_243
+  - first:
+      213: -5440424742914721972
+    second: MSX Cyrillic_244
+  - first:
+      213: -7302264937348749981
+    second: MSX Cyrillic_245
+  - first:
+      213: 5122920265360695289
+    second: MSX Cyrillic_246
+  - first:
+      213: -4950183505189310199
+    second: MSX Cyrillic_247
+  - first:
+      213: -8943779046055894700
+    second: MSX Cyrillic_248
+  - first:
+      213: -7024215496652046799
+    second: MSX Cyrillic_249
+  - first:
+      213: -8757402345417974990
+    second: MSX Cyrillic_250
+  - first:
+      213: -7071559512319729538
+    second: MSX Cyrillic_251
+  - first:
+      213: 4061062776782588809
+    second: MSX Cyrillic_252
+  - first:
+      213: 3967183932181535629
+    second: MSX Cyrillic_253
+  - first:
+      213: -6313181974227431106
+    second: MSX Cyrillic_254
+  - first:
+      213: -8009856646538709660
+    second: MSX Cyrillic_255
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MSX Cyrillic_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521556ca65f313100800000000000000
+      internalID: 85919509388808485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1708db7ccc635f0800000000000000
+      internalID: -777208727424962061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6c114e79c65c800800000000000000
+      internalID: 632030722337654484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8544879dd1c4fb560800000000000000
+      internalID: 7331662409468757080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025e24fc324214320800000000000000
+      internalID: 2540351401033393440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b439aa2624b5850800000000000000
+      internalID: 6366755489754336033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0bd9d30bd913180800000000000000
+      internalID: -9137348788684476166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3241e23b14b1c6270800000000000000
+      internalID: 8244994986801501219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc8d9d8f7572acc0800000000000000
+      internalID: -3701266753047917320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4205fdfc4e8e184d0800000000000000
+      internalID: -3133967796235448284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1d279bc94be8500800000000000000
+      internalID: 400456002101760433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43b435aaa6805b70800000000000000
+      internalID: 8885750132276245324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f98d2e249fed160800000000000000
+      internalID: 7052348132177780500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f992d04020e28c0800000000000000
+      internalID: -4022275200771318005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09073d655b277370800000000000000
+      internalID: 8320166482494818572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76b47af61cf51c0800000000000000
+      internalID: -4512675616309680188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cdf1caafa761220800000000000000
+      internalID: 2456285863825366091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b12a808161e7b310800000000000000
+      internalID: 1420852016343294388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7a04774752ce830800000000000000
+      internalID: 4101694542774839241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d35fc2035491e140800000000000000
+      internalID: 4747238566475551699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3d0a959f81f1800800000000000000
+      internalID: 585213935811089332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd0113351fb2950800000000000000
+      internalID: 6425494632981912479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e633d2286ad7040800000000000000
+      internalID: 4647053468550524430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7e13372dda07ce0800000000000000
+      internalID: -1409435563979577346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f853c0b41335120800000000000000
+      internalID: 2401317224715751310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d4adecbeaa67550800000000000000
+      internalID: 6158297470240181551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd832b316b25de6a0800000000000000
+      internalID: -6418382951965116197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61f89d1605d55bd0800000000000000
+      internalID: -2641971384139845266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eb6e608818c8e60800000000000000
+      internalID: 7965884262142885394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfda519a9a85d2810800000000000000
+      internalID: 1742146116571737596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_30
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e282e05c0f55e8970800000000000000
+      internalID: 8759032817868744750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_31
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858d8367c1c2a6a20800000000000000
+      internalID: 3056303797878446168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a590b5320c6f44550800000000000000
+      internalID: 6144307096727521626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176155eafef6515a0800000000000000
+      internalID: -6551207007727839631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcb4b3d63715cc80800000000000000
+      internalID: -8303204813740131077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_35
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341d8bad48be28d00800000000000000
+      internalID: 973599425303204163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc47209187496f300800000000000000
+      internalID: 285578869921182923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9be1ea93dfee45d0800000000000000
+      internalID: -3076257803331834978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981cfa81da77e8af0800000000000000
+      internalID: -392244532207435383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_39
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c981bef26f447270800000000000000
+      internalID: 8247304104220658117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2860fd945012df470800000000000000
+      internalID: 8429930384105342594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_41
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f264769ca13ebee0800000000000000
+      internalID: -1243501829779332365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb7eff1e1e059c30800000000000000
+      internalID: 4365410936354143172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_43
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec374e7c10a045c0800000000000000
+      internalID: -4233207605490139927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203dbb77c3fa6f410800000000000000
+      internalID: 1510587399271076610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_45
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0fb12f73c524780800000000000000
+      internalID: -8700290134771502892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37044d229a52004e0800000000000000
+      internalID: -2017571224697945997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_47
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17d647e17d70d430800000000000000
+      internalID: 3805679613293025051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0b7b3ceee7ca0b0800000000000000
+      internalID: -5716054263089090356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a5cec33209e7c00800000000000000
+      internalID: 900315456541055596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9976740e9e0cbf0800000000000000
+      internalID: -305987625181275713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_51
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6364ec9910766ff0800000000000000
+      internalID: -43223891104734356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c3721b2e7e478c0800000000000000
+      internalID: -4002319208004764597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_53
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8c695e0c40e6d00800000000000000
+      internalID: 967716196463331566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e131c5fd83e19040800000000000000
+      internalID: 4652750088903406052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90290f2661ef9e940800000000000000
+      internalID: 5326067406444990985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7befbc2dec08caa70800000000000000
+      internalID: 8839581794409643703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_57
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a43e904d96e4550800000000000000
+      internalID: 6146966900827179579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_58
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc34e1f0269e8f20800000000000000
+      internalID: 3426841434716912891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_59
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e235055a7d27b32d0800000000000000
+      internalID: -3297916031601716434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb873efcfd2db3f20800000000000000
+      internalID: 3403545802115872958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_61
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb4864260c406120800000000000000
+      internalID: 2405005790280174560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169faabd6a07ad8b0800000000000000
+      internalID: -5126661363855591071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_63
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d70167dafeb38090800000000000000
+      internalID: -8033367325734271023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0d42eb366ee65d0800000000000000
+      internalID: -3067260980126494473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_65
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb0d651ff53ad210800000000000000
+      internalID: 1358457607298026463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_66
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc59480c845e154b0800000000000000
+      internalID: -5453325573138639411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_67
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79003f58b3b2a1e90800000000000000
+      internalID: -7054278331672100713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5d74fdd79e6e820800000000000000
+      internalID: 2947299732986779081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_69
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d271829ce467c8c0800000000000000
+      internalID: -3979100778525527340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_70
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bb41ea7f7645570800000000000000
+      internalID: 8454496713956440965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_71
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ea0f74cc120f0d0800000000000000
+      internalID: -3391173358145982918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bcbd5dc499e4530800000000000000
+      internalID: 3841176087478127398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_73
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a0011e0a7a3ebd0800000000000000
+      internalID: -2602051850277484003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54f80f1a48037440800000000000000
+      internalID: 4932295131342107740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_75
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba1321188e9e8ca0800000000000000
+      internalID: -6012694145252779331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1fe1c854a356240800000000000000
+      internalID: 4784294249529012708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_77
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077dd48f031c6daf0800000000000000
+      internalID: -371897503143045264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_78
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237894e077265bf00800000000000000
+      internalID: 1131919144833877810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_79
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856797ab3ab4fccb0800000000000000
+      internalID: -4841567907819719080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1819a8aa615a20e0800000000000000
+      internalID: -2293931541653809125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42da7d4be8fb882b0800000000000000
+      internalID: -5582001118485435100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b654fde59b8436890800000000000000
+      internalID: -7466043796252310165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_83
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13a533425de63300800000000000000
+      internalID: 231633368426849054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9374e5833b7eab60800000000000000
+      internalID: 7759274669225833370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_85
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a390d792b7ed1d0800000000000000
+      internalID: -3324084056831215057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d708190a9ace8feb0800000000000000
+      internalID: -4685735198991482755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_87
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1c4a58a05c08690800000000000000
+      internalID: -7601859522018885168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec07902073492f940800000000000000
+      internalID: 5328484273111003342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_89
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281e5d825872c2240800000000000000
+      internalID: 4768229558347751810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_90
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19720bcc4c6b06460800000000000000
+      internalID: 7232981957920958353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_91
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ff22a148228e000800000000000000
+      internalID: 65340145366400891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cb4b3592d759bf0800000000000000
+      internalID: -318210582208267189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_93
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cfe634443d85a80800000000000000
+      internalID: -8477794008382374888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_94
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec61deb4debf5c0c0800000000000000
+      internalID: -4555958451415738674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_95
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0342519f1eb3a6f90800000000000000
+      internalID: -6959684432415087568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e757100368d721f0800000000000000
+      internalID: -1069648466762311709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_97
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237c4a057786f3290800000000000000
+      internalID: -7908487558975928526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_98
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5745c1eb49244a130800000000000000
+      internalID: 3577057210651137141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_99
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99cd84e28c30b9b0800000000000000
+      internalID: -5066483047913895522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6c732501c3f2040800000000000000
+      internalID: 4624981383129319086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_101
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79730e5febe0ce90800000000000000
+      internalID: -7007341606881494659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_102
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cba53f14b050f960800000000000000
+      internalID: 7633690102940937155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_103
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f1b47e37419b9e0800000000000000
+      internalID: -1605229304146616517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ef5f75898d5d770800000000000000
+      internalID: 8635046009375161907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_105
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a872ecdc9c4b5c70800000000000000
+      internalID: 8960840120188172454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_106
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c18185e62b5d11f0800000000000000
+      internalID: -1072600913626955325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_107
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b78b75d6df947b0800000000000000
+      internalID: -5239378045403890933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_108
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18f96872b9f49920800000000000000
+      internalID: 2996294197027928091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_109
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd9e063d9aaf1110800000000000000
+      internalID: 1233892415116320252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_110
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11ed1c4098520550800000000000000
+      internalID: 6125555819952857375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_111
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7b366ad17cff980800000000000000
+      internalID: -8502858641292675133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1bf15ce2d91f0b0800000000000000
+      internalID: -5696599229445721638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_113
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c821925ca11d950800000000000000
+      internalID: 6471983573608074341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d83a8b904627b3b0800000000000000
+      internalID: -5496882761253111600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_115
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3918210f380e4f20800000000000000
+      internalID: 3408671034661411131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_116
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bda8e872d27d500800000000000000
+      internalID: 420854738100870012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_117
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdb8f976cf1fdd30800000000000000
+      internalID: 4458317093430410689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_118
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4de09e82295ceb40800000000000000
+      internalID: 5470845652303932750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_119
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de9dbaecfa4c8290800000000000000
+      internalID: -7886846397302071592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71d213b8c9feff40800000000000000
+      internalID: 5764319213473943934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_121
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7813411c8f04d9240800000000000000
+      internalID: 4800064214982209927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_122
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7842317f62db55880800000000000000
+      internalID: -8622777936479312761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_123
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6addb2be37d9740800000000000000
+      internalID: 5160408201926911719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_124
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8855b66ebe1f4f0800000000000000
+      internalID: -796596284192094019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_125
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db39bd0ae041f4200800000000000000
+      internalID: 166373764296840125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_126
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2dd05f05325a160800000000000000
+      internalID: 7036068823451947699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_127
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b5fd302f3ae2230800000000000000
+      internalID: 3616007810667469647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02ff3900b63acf20800000000000000
+      internalID: 3443624994775495181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_129
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1b0158aa57bceb0800000000000000
+      internalID: -4698532410993626689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_130
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2215f557414f5d0800000000000000
+      internalID: -3029774154970619177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_131
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c7845b7960c2a80800000000000000
+      internalID: -8490403948848972759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_132
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a9ee7a8c0c6b3e0800000000000000
+      internalID: -2038229813295146403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_133
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c460ebda2b531ee10800000000000000
+      internalID: 2225118732433098316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_134
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4819ebf09aa0dd0800000000000000
+      internalID: -2519015156473559830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_135
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b27d20a9fcd8a20800000000000000
+      internalID: 3066335181688744792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_136
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5671c4b09498cc0800000000000000
+      internalID: -3708352505292823109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_137
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1da687781b329c40800000000000000
+      internalID: 5517537469752847642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_138
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c5cd2bb761581a0800000000000000
+      internalID: -6808010541163062114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_139
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34423afa7c938d90800000000000000
+      internalID: -7096656535808228292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_140
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d9119973d16e560800000000000000
+      internalID: 7342588367102647576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_141
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1c7d7dfa7c463a0800000000000000
+      internalID: -6672989189801786945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_142
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ef0ce3f6078e500800000000000000
+      internalID: 425713787883028067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_143
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f5eb10f10604630800000000000000
+      internalID: 3909230162847096733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ac56d44645aa4f0800000000000000
+      internalID: -816747592642344403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_145
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dffb65b94c59e70800000000000000
+      internalID: 9121412791763205387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_146
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a825ef63208a79a10800000000000000
+      internalID: 1916184893935473290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_147
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72099d88fd2140720800000000000000
+      internalID: 2811392818668998695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_148
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fce1c264ec13a30800000000000000
+      internalID: 4193359528841891713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_149
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdb8d8de44f45a50800000000000000
+      internalID: 6509095980939918796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_150
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8092cc65fef39430800000000000000
+      internalID: 3788652041593852046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_151
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a687c87f9f852ae70800000000000000
+      internalID: 9124953625629325418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a07c258931327fe0800000000000000
+      internalID: -1192836828182581083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_153
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a6d984f388ae4b0800000000000000
+      internalID: -5410362196949636506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_154
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab5158c70c746ef0800000000000000
+      internalID: -115831317537399902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_155
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff03a48a534555b0800000000000000
+      internalID: -5380320123772792844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_156
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d65e9ba85e417470800000000000000
+      internalID: 8390573723511314137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_157
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09610e697be56c600800000000000000
+      internalID: 488181752219571856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_158
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c996ac6ccc649fc0800000000000000
+      internalID: -3489044186053305913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_159
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae691c4bfcd9fe0d0800000000000000
+      internalID: -3391318478970317078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e06ea581457ffd0800000000000000
+      internalID: -2308283820423115171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_161
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5620e19d4ce4e0520800000000000000
+      internalID: 2670158236440461925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_162
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e9f4fe2417f9b80800000000000000
+      internalID: -8385859448843821567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_163
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92894777e0d0395f0800000000000000
+      internalID: -751242357055907799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_164
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb82ba87ab4a34e0800000000000000
+      internalID: -2001203901454185550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_165
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe2f62f50d64c500800000000000000
+      internalID: 415576937934565107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_166
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f311c56ac1e15a420800000000000000
+      internalID: 2640549864921633087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_167
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca10961499a2556c0800000000000000
+      internalID: -4155368243463650900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_168
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5135e9a406ea354d0800000000000000
+      internalID: -3146979986009861355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_169
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b04b55060219f950800000000000000
+      internalID: 6483232955645509812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_170
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25203b3d209b8aa60800000000000000
+      internalID: 7685596185900548690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_171
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0227fcacfad4fc10800000000000000
+      internalID: 2086533306147873290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_172
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0e6f34dabcad620800000000000000
+      internalID: 2799774063394218207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_173
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0b6c73edd2c4940800000000000000
+      internalID: 5281646895440507133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_174
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845e0d340652813d0800000000000000
+      internalID: -3235795236880849592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_175
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3475659039e4d80800000000000000
+      internalID: -8264506597865733149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c477e41827495d00800000000000000
+      internalID: 961878232895288513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_177
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a098f925e2fdf90800000000000000
+      internalID: -6926766769473779159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_178
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e20d949c68c3afa0800000000000000
+      internalID: -5790564327192984864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_179
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14047d6ee31799390800000000000000
+      internalID: -7811087563722637247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_180
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70bf140b0da3bcf0800000000000000
+      internalID: -237656092495073154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_181
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9a343f26aa23f40800000000000000
+      internalID: 5706811019796654557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_182
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a15e4b7511574ec0800000000000000
+      internalID: -3582805825845046880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_183
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb673e84980d89550800000000000000
+      internalID: 6167908977735857851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_184
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8050687a7b0a610d0800000000000000
+      internalID: -3452395353682868984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_185
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f7239298d755d30800000000000000
+      internalID: 4419576637389176624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_186
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698d672984b88ad00800000000000000
+      internalID: 984189662391621782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_187
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7dd2abf4e96e970800000000000000
+      internalID: 8783882188495902626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_188
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afc0b228190ddcd0800000000000000
+      internalID: -2531857416246472799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_189
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ebaa908def47650800000000000000
+      internalID: 6229884388388814386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_190
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fedfcfbe34df5e40800000000000000
+      internalID: 5647465823717023480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_191
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11191c2e0c976820800000000000000
+      internalID: 2911467268801630490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecc42d3208238b40800000000000000
+      internalID: 5441236764874558692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_193
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955365cbb0b8f4950800000000000000
+      internalID: 6435515275056395609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_194
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634315a4d66f6330800000000000000
+      internalID: 3706294081837810536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_195
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc20d1eb8ab513360800000000000000
+      internalID: 7147594863915893451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_196
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de186242932aee060800000000000000
+      internalID: 6984698438401556973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_197
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a66a58ad7fd7cb0800000000000000
+      internalID: -4864459504573060503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_198
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70463b8ad082be20800000000000000
+      internalID: 3364893547725996158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_199
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5518808cd761ee0800000000000000
+      internalID: -1290705945105443419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_200
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d18517b0a8177f0800000000000000
+      internalID: -616559892222173942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_201
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3a6ebb0b7bb2c80800000000000000
+      internalID: -8346375514706500664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_202
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fa6c24d425f8e30800000000000000
+      internalID: 4507912243807432465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_203
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32227e377601abec0800000000000000
+      internalID: -3550507319716011485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_204
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de800e2733c633930800000000000000
+      internalID: 4121757052200552685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_205
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fc2d02679c899c0800000000000000
+      internalID: -3920161966432006303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_206
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65e657de8851eef0800000000000000
+      internalID: -80685947794561683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_207
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bdcc2ba15a12ea0800000000000000
+      internalID: -5899252502791136403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53488d8b3f6905eb0800000000000000
+      internalID: -4733117234843974603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_209
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab02cfb39e8aaf00800000000000000
+      internalID: 1128871421838232488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_210
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff57ca75e9a57dd0800000000000000
+      internalID: -2488896415979839497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_211
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36059404d67327e20800000000000000
+      internalID: 3346798415459209315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_212
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765307a0ca514d530800000000000000
+      internalID: 3878749007726523751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_213
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8f0f3f6a6d122e0800000000000000
+      internalID: -2152203134360815443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_214
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49c88775fe929480800000000000000
+      internalID: -8893871536993679027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_215
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c1601386f327c30800000000000000
+      internalID: 4355613506352323645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_216
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8d40ca8798ee830800000000000000
+      internalID: 4102367461956180221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_217
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f652c4181cbe57000800000000000000
+      internalID: 33191788605613423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_218
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fffa4109ca52c830800000000000000
+      internalID: 4089931230962450418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_219
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58eee23f611e519e0800000000000000
+      internalID: -1651166199675949435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_220
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bb0ddf99915b8f0800000000000000
+      internalID: -525485632339788899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_221
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0d816563f4a0670800000000000000
+      internalID: 8505697941033898226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_222
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f603b7b81e27765f0800000000000000
+      internalID: -763515298782695313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_223
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08cb33ab20821610800000000000000
+      internalID: 1590474543325759502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44812334079dbc30800000000000000
+      internalID: 4376820457167488074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_225
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376dfa7dfc4a6a730800000000000000
+      internalID: 4010073730803816051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_226
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c636a3b1b2a9d90800000000000000
+      internalID: -7090307267397718925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_227
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cc5e47a6584bc20800000000000000
+      internalID: 3221346325750991902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_228
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478b1d319bdd11880800000000000000
+      internalID: -8641882422976071564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_229
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cb2bb10c31cfd40800000000000000
+      internalID: 5619388150870883440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_230
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d38629ac1c39190800000000000000
+      internalID: -7956803040849674859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_231
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf9130fe0f891600800000000000000
+      internalID: 439539732967432120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_232
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad8760a1a0265060800000000000000
+      internalID: 6941771754191162794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_233
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc4cb8500193f210800000000000000
+      internalID: 1365594542698155186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_234
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aad4c188a6c7840800000000000000
+      internalID: 5223166800665881199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_235
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d870fc202c0c270800000000000000
+      internalID: 8268822233171332389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_236
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3513b43b30d4730800000000000000
+      internalID: 3984845313888310180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_237
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cfa83c9763bff40800000000000000
+      internalID: 5763260044750289925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_238
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d2beb7805b057c0800000000000000
+      internalID: -4084565813981663959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_239
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4155a901f1f0c43d0800000000000000
+      internalID: -3221183007379794668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeebfe1684ba795c0800000000000000
+      internalID: -4208706999385342226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_241
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c00dc2ebc0a2fdb0800000000000000
+      internalID: -4759565058633301822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_242
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6e3812437bf76b0800000000000000
+      internalID: -5296313202235939143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_243
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b85e3f009ed7980800000000000000
+      internalID: -8539413128123413615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_244
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47725b558abf74b0800000000000000
+      internalID: -5440424742914721972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_245
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365a9818ab429aa90800000000000000
+      internalID: -7302264937348749981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_246
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff5975c6d4481740800000000000000
+      internalID: 5122920265360695289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_247
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9017138445a6d4bb0800000000000000
+      internalID: -4950183505189310199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_248
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451a142085051e380800000000000000
+      internalID: -8943779046055894700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_249
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13eb240c839f48e90800000000000000
+      internalID: -7024215496652046799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_250
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b503e27f4777680800000000000000
+      internalID: -8757402345417974990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_251
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e52c1716ccdd90800000000000000
+      internalID: -7071559512319729538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_252
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b00bc341bcb5830800000000000000
+      internalID: 4061062776782588809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_253
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b515c64c44e0730800000000000000
+      internalID: 3967183932181535629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_254
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3156cf61721368a0800000000000000
+      internalID: -6313181974227431106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSX Cyrillic_255
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465324961d547d090800000000000000
+      internalID: -8009856646538709660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57b6e2f04bc528143b54a5ca30522d60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
