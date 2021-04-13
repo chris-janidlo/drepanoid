@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
+using crass;
 
 public class Ball : MonoBehaviour
 {
@@ -11,7 +12,21 @@ public class Ball : MonoBehaviour
     [Tooltip("Abstract constant that contains every variable in the drag equation that isn't velocity (so it includes coefficient of drag, reference area, and fluid density, which are all held constant throughout the game)")]
     public float DragCoefficient;
 
+    public TransitionableFloat SpawnScaleTransition;
+    public int SpawnScaleTransitionRounding;
+
     public VoidEvent BallDied;
+
+    void Start ()
+    {
+        SpawnScaleTransition.AttachMonoBehaviour(this);
+        SpawnScaleTransition.FlashFromTo(0, 1);
+    }
+
+    void Update ()
+    {
+        transform.localScale = Vector3.one * (Mathf.Round(SpawnScaleTransition.Value * SpawnScaleTransitionRounding) / SpawnScaleTransitionRounding);
+    }
 
     void FixedUpdate ()
     {
