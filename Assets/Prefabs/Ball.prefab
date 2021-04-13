@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gravity: 20
   DragCoefficient: 0.01
+  BallDied: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
 --- !u!50 &8033173079964833136
 Rigidbody2D:
   serializedVersion: 4
