@@ -9,7 +9,7 @@ public class PaddleSegment : MonoBehaviour
     [Range(-90, 90)]
     public float BounceAngle;
 
-    private void OnCollisionEnter2D (Collision2D collision)
+    void OnCollisionEnter2D (Collision2D collision)
     {
         if (collision.gameObject.GetComponent<Ball>() is Ball ball)
         {
