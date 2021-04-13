@@ -11,7 +11,9 @@ public class PaddleSegment : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<Ball>() is Ball ball)
+        Ball ball = collision.gameObject.GetComponent<Ball>();
+
+        if (ball != null)
         {
             ball.SetVelocity(BounceSpeed * angleToVector(BounceAngle));
         }
