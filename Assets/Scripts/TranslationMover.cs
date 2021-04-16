@@ -15,11 +15,12 @@ public class TranslationMover : MonoBehaviour
 
     void FixedUpdate ()
     {
-        if (MovementAxis.Value == 0)
+        if (MovementAxis.Value == 0 || Mathf.Sign(MovementAxis.Value) != Mathf.Sign(Velocity))
         {
             Velocity = 0;
         }
-        else
+
+        if (MovementAxis.Value != 0)
         {
             Velocity += Acceleration * MovementAxis.Value * Time.deltaTime;
             positionOnLine += Velocity * Time.deltaTime;
