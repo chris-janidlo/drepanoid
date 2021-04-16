@@ -7,7 +7,7 @@ public class TranslationMover : MonoBehaviour
 {
     public float Velocity { get; private set; }
 
-    public float Acceleration;
+    public float MaxVelocity, AccelerationTime;
     public Transform LineLeftEdge, LineRightEdge;
     public FloatVariable MovementAxis;
 
@@ -22,7 +22,9 @@ public class TranslationMover : MonoBehaviour
 
         if (MovementAxis.Value != 0)
         {
-            Velocity += Acceleration * MovementAxis.Value * Time.deltaTime;
+            Velocity += (MaxVelocity / AccelerationTime) * MovementAxis.Value * Time.deltaTime;
+            Velocity = Mathf.Clamp(Velocity, -MaxVelocity, MaxVelocity);
+
             positionOnLine += Velocity * Time.deltaTime;
             positionOnLine = Mathf.Clamp(positionOnLine, 0, 1);
         }
