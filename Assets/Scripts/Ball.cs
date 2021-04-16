@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour
     public TransitionableFloat SpawnScaleTransition;
     public int SpawnScaleTransitionRounding;
 
+    public float KillFloorY;
     public VoidEvent BallDied;
 
     void Start ()
@@ -36,6 +37,8 @@ public class Ball : MonoBehaviour
         Velocity += dragAcceleration * Time.deltaTime;
 
         transform.position += (Vector3) Velocity * Time.deltaTime;
+
+        if (transform.position.y < KillFloorY) Kill();
     }
 
     public void SetVelocity (Vector2 value)
