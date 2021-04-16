@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
+  BounceSpeed: 20
   BounceAngle: 0
-  InheritSpeedAngleMultiplier: 5
+  InheritSpeedAngleMultiplier: 20
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296371208276
 SpriteRenderer:
@@ -205,9 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
-  BounceAngle: -45
-  InheritSpeedAngleMultiplier: 2
+  BounceSpeed: 20
+  BounceAngle: -20
+  InheritSpeedAngleMultiplier: 16
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296407592300
 SpriteRenderer:
@@ -336,9 +336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
+  BounceSpeed: 20
   BounceAngle: 0
-  InheritSpeedAngleMultiplier: 5
+  InheritSpeedAngleMultiplier: 20
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296671113420
 SpriteRenderer:
@@ -463,9 +463,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
-  BounceAngle: 45
-  InheritSpeedAngleMultiplier: 2
+  BounceSpeed: 20
+  BounceAngle: 20
+  InheritSpeedAngleMultiplier: 16
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297015235809
 SpriteRenderer:
@@ -594,9 +594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
-  BounceAngle: 15
-  InheritSpeedAngleMultiplier: 3
+  BounceSpeed: 20
+  BounceAngle: 5
+  InheritSpeedAngleMultiplier: 12
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297230172062
 SpriteRenderer:
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559a3920aa0b914479661ba68eab3f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 20
+  Acceleration: 10
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
@@ -777,9 +777,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 15
-  BounceAngle: -15
-  InheritSpeedAngleMultiplier: 3
+  BounceSpeed: 20
+  BounceAngle: -5
+  InheritSpeedAngleMultiplier: 12
   Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297579847708
 SpriteRenderer:

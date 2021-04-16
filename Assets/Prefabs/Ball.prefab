@@ -46,13 +46,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa90f7844cbcef4da1d08eedb87120b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gravity: 20
+  Gravity: 25
   DragCoefficient: 0.01
   SpawnScaleTransition:
     value: 0
     Time: 0.7
     Ease: 24
   SpawnScaleTransitionRounding: 3
+  KillFloorY: -150
   BallDied: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
 --- !u!50 &8033173079964833136
 Rigidbody2D:
