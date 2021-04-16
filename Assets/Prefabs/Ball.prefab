@@ -53,6 +53,8 @@ MonoBehaviour:
     Time: 0.7
     Ease: 24
   SpawnScaleTransitionRounding: 3
+  BounceSpinMultiplier: 75
+  AngularDrag: 0.9
   KillFloorY: -150
   BallDied: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
 --- !u!50 &8033173079964833136

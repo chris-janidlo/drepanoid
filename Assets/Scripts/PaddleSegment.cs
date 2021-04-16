@@ -24,7 +24,7 @@ public class PaddleSegment : MonoBehaviour
 
             var trueSpeed = BounceSpeed + Mathf.Abs(Mover.Velocity) * InheritSpeedBounceMultiplier;
 
-            ball.SetVelocity(trueSpeed * angleToVector(trueAngle));
+            ball.Bounce(trueSpeed * angleToVector(trueAngle), Vector2Int.up);
         }
     }
 
