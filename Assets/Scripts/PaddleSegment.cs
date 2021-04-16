@@ -9,13 +9,20 @@ public class PaddleSegment : MonoBehaviour
     [Range(-90, 90)]
     public float BounceAngle;
 
+    public float InheritSpeedAngleMultiplier;
+
+    public TranslationMover Mover;
+
     void OnCollisionEnter2D (Collision2D collision)
     {
         Ball ball = collision.gameObject.GetComponent<Ball>();
 
         if (ball != null)
         {
-            ball.SetVelocity(BounceSpeed * angleToVector(BounceAngle));
+            var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
+            var mixedAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
+
+            ball.SetVelocity(BounceSpeed * angleToVector(mixedAngle));
         }
     }
 

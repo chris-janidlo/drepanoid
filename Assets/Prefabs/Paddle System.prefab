@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: 0
+  InheritSpeedAngleMultiplier: 5
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296371208276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,6 +207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: -45
+  InheritSpeedAngleMultiplier: 2
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296407592300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -334,6 +338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: 0
+  InheritSpeedAngleMultiplier: 5
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718296671113420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -459,6 +465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: 45
+  InheritSpeedAngleMultiplier: 2
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297015235809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -588,6 +596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: 15
+  InheritSpeedAngleMultiplier: 3
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297230172062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -769,6 +779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 15
   BounceAngle: -15
+  InheritSpeedAngleMultiplier: 3
+  Mover: {fileID: 3344544277422841597}
 --- !u!212 &5006718297579847708
 SpriteRenderer:
   m_ObjectHideFlags: 0

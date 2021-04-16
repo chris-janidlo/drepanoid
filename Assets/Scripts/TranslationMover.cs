@@ -5,22 +5,24 @@ using UnityAtoms.BaseAtoms;
 
 public class TranslationMover : MonoBehaviour
 {
+    public float Velocity { get; private set; }
+
     public float Acceleration;
     public Transform LineLeftEdge, LineRightEdge;
     public FloatVariable MovementAxis;
 
-    float velocity, positionOnLine = 0.5f;
+    float positionOnLine = 0.5f;
 
     void FixedUpdate ()
     {
         if (MovementAxis.Value == 0)
         {
-            velocity = 0;
+            Velocity = 0;
         }
         else
         {
-            velocity += Acceleration * MovementAxis.Value * Time.deltaTime;
-            positionOnLine += velocity * Time.deltaTime;
+            Velocity += Acceleration * MovementAxis.Value * Time.deltaTime;
+            positionOnLine += Velocity * Time.deltaTime;
             positionOnLine = Mathf.Clamp(positionOnLine, 0, 1);
         }
 
