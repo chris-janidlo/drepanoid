@@ -59,6 +59,7 @@ public class Ball : MonoBehaviour
     /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
+        // might be able to use a composite collider on paddles instead
         if (collidedThisFrame) return;
         collidedThisFrame = true;
 
