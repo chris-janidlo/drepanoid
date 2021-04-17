@@ -431,6 +431,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0
   TimeUntilWanderRange: {x: 5, y: 5}
   TimeBetweenWanderingsRange: {x: 5, y: 5}
@@ -528,6 +530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0.125
   TimeUntilWanderRange: {x: 5, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
@@ -629,6 +633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0
   TimeUntilWanderRange: {x: 5, y: 5}
   TimeBetweenWanderingsRange: {x: 5, y: 5}
@@ -726,6 +732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0.125
   TimeUntilWanderRange: {x: 5, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
@@ -827,6 +835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0.8
   TimeUntilWanderRange: {x: 5, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
@@ -981,6 +991,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
   WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
+  BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
+  BounceFlashTime: 0.1
   WanderRadius: 0.8
   TimeUntilWanderRange: {x: 5, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}

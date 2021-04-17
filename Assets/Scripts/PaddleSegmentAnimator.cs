@@ -5,7 +5,9 @@ using crass;
 
 public class PaddleSegmentAnimator : MonoBehaviour
 {
-    public Color NormalColor, WanderColor;
+    public Color NormalColor, WanderColor, BounceFlashColor;
+
+    public float BounceFlashTime;
 
     public float WanderRadius;
     public Vector2 TimeUntilWanderRange, TimeBetweenWanderingsRange;
@@ -15,7 +17,7 @@ public class PaddleSegmentAnimator : MonoBehaviour
 
     bool wandering;
     Vector3 wanderLocalPosition;
-    float wanderWaitTimer;
+    float wanderWaitTimer, bounceFlashTimer;
 
     void Start ()
     {
@@ -46,7 +48,6 @@ public class PaddleSegmentAnimator : MonoBehaviour
         }
 
         Visual.transform.localPosition = wandering ? wanderLocalPosition : Vector3.zero;
-        Visual.color = wandering ? WanderColor : NormalColor;
 
         Visual.transform.position = new Vector3
         (
@@ -54,6 +55,21 @@ public class PaddleSegmentAnimator : MonoBehaviour
             Mathf.Round(Visual.transform.position.y * 8) / 8,
             Mathf.Round(Visual.transform.position.z * 8) / 8
         );
+
+        if (bounceFlashTimer > 0)
+        {
+            Visual.color = BounceFlashColor;
+        }
+        else
+        {
+            Visual.color = wandering ? WanderColor : NormalColor;
+        }
+        bounceFlashTimer -= Time.deltaTime;
+    }
+
+    void OnCollisionEnter2D (Collision2D collision)
+    {
+        bounceFlashTimer = BounceFlashTime;
     }
 
     IEnumerator wander ()
