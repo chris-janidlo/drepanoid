@@ -51,19 +51,17 @@ public class PaddleSegment : MonoBehaviour
     void OnCollisionEnter2D (Collision2D collision)
     {
         Ball ball = collision.gameObject.GetComponent<Ball>();
+        if (ball == null) return;
 
-        if (ball != null)
-        {
-            var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
-            var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
+        var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
+        var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
 
-            var trueSpeed = BounceSpeed + Mathf.Abs(Mover.Velocity) * InheritSpeedBounceMultiplier;
+        var trueSpeed = BounceSpeed + Mathf.Abs(Mover.Velocity) * InheritSpeedBounceMultiplier;
 
-            var newVelocity = trueSpeed * angleToVector(trueAngle);
-            newVelocity.x += ball.Velocity.x * OriginalXSpeedOfBallRetainedOnBounce;
+        var newVelocity = trueSpeed * angleToVector(trueAngle);
+        newVelocity.x += ball.Velocity.x * OriginalXSpeedOfBallRetainedOnBounce;
 
-            ball.Bounce(newVelocity, Vector2Int.up);
-        }
+        ball.Bounce(newVelocity, Vector2Int.up);
     }
 
     Vector2 angleToVector (float angle)
