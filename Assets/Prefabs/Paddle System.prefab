@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.08
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.08
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.125
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalColor: {r: 0.87058824, g: 0.93333334, b: 0.8392157, a: 1}
-  WanderColor: {r: 0.1882353, g: 0.20392157, b: 0.42745098, a: 1}
+  WanderColor: {r: 0.52156866, g: 0.58431375, b: 0.6313726, a: 1}
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.125
