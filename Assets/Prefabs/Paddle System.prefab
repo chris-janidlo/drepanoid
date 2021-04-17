@@ -416,6 +416,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
+  MoveLagOffset: 0.15
+  LagTransitionMultiplierWhenNotMoving: 0.25
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1872676481818795759
 MonoBehaviour:
@@ -515,6 +521,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
+  MoveLagOffset: 0.08
+  LagTransitionMultiplierWhenNotMoving: 0.15
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1828667829544008958
 MonoBehaviour:
@@ -618,6 +630,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
+  MoveLagOffset: 0.15
+  LagTransitionMultiplierWhenNotMoving: 0.25
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &8884917621203931739
 MonoBehaviour:
@@ -717,6 +735,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
+  MoveLagOffset: 0.08
+  LagTransitionMultiplierWhenNotMoving: 0.15
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &3917294438047615051
 MonoBehaviour:
@@ -820,6 +844,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
+  MoveLagOffset: 0.2
+  LagTransitionMultiplierWhenNotMoving: 0.25
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &711530532147293333
 MonoBehaviour:
@@ -881,6 +911,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5006718297578559508}
   - component: {fileID: 3344544277422841597}
+  - component: {fileID: 6005873260074512267}
+  - component: {fileID: 5040267765032130086}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -925,6 +957,49 @@ MonoBehaviour:
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
+--- !u!50 &6005873260074512267
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006718297578559509}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!66 &5040267765032130086
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006718297578559509}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
 --- !u!1 &5006718297579847706
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +1051,12 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
+  MoveLagOffset: 0.2
+  LagTransitionMultiplierWhenNotMoving: 0.25
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 9
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1310745706049045485
 MonoBehaviour:
