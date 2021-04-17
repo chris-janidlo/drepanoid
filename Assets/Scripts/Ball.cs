@@ -23,12 +23,18 @@ public class Ball : MonoBehaviour
     public float KillFloorY;
     public VoidEvent BallDied;
 
+    public Sprite OnSprite, OffSprite;
+    public SpriteRenderer SpriteRenderer;
+
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
+    bool collidedThisFrame, spriteIsOn;
 
     void Start ()
     {
         SpawnScaleTransition.AttachMonoBehaviour(this);
         SpawnScaleTransition.FlashFromTo(0, 1);
+
+        SpriteRenderer.sprite = OffSprite;
     }
 
     void Update ()
@@ -42,6 +48,8 @@ public class Ball : MonoBehaviour
         spin();
 
         if (transform.position.y < KillFloorY) Kill();
+
+        collidedThisFrame = false;
     }
 
     /// <summary>
@@ -51,6 +59,9 @@ public class Ball : MonoBehaviour
     /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
+        if (collidedThisFrame) return;
+        collidedThisFrame = true;
+
         var validNormals = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
         if (!validNormals.Contains(cardinalCollisionNormal))
         {
@@ -62,6 +73,9 @@ public class Ball : MonoBehaviour
         angularVelocity += resultingVelocity.x * BounceSpinMultiplier;
 
         Velocity = resultingVelocity;
+
+        spriteIsOn = !spriteIsOn;
+        SpriteRenderer.sprite = spriteIsOn ? OnSprite : OffSprite;
     }
 
     public void Kill ()
