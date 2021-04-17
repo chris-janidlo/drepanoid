@@ -947,8 +947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559a3920aa0b914479661ba68eab3f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxVelocity: 3
-  AccelerationTime: 0.3
+  MaxVelocity: 2
+  AccelerationTime: 0.5
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
