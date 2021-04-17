@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: 0
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
   Mover: {fileID: 3344544277422841597}
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: -20
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
   Mover: {fileID: 3344544277422841597}
@@ -340,6 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: 0
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
   Mover: {fileID: 3344544277422841597}
@@ -468,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: 20
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
   Mover: {fileID: 3344544277422841597}
@@ -600,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: 5
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
   Mover: {fileID: 3344544277422841597}
@@ -785,6 +790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: -5
+  OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
   Mover: {fileID: 3344544277422841597}

@@ -9,6 +9,9 @@ public class PaddleSegment : MonoBehaviour
     [Range(-90, 90)]
     public float BounceAngle;
 
+    [Range(0, 1)]
+    public float OriginalXSpeedOfBallRetainedOnBounce;
+
     public float InheritSpeedAngleMultiplier, InheritSpeedBounceMultiplier;
 
     public TranslationMover Mover;
@@ -24,7 +27,10 @@ public class PaddleSegment : MonoBehaviour
 
             var trueSpeed = BounceSpeed + Mathf.Abs(Mover.Velocity) * InheritSpeedBounceMultiplier;
 
-            ball.Bounce(trueSpeed * angleToVector(trueAngle), Vector2Int.up);
+            var newVelocity = trueSpeed * angleToVector(trueAngle);
+            newVelocity.x += ball.Velocity.x * OriginalXSpeedOfBallRetainedOnBounce;
+
+            ball.Bounce(newVelocity, Vector2Int.up);
         }
     }
 
