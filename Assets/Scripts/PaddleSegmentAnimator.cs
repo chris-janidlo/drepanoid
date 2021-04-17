@@ -47,14 +47,21 @@ public class PaddleSegmentAnimator : MonoBehaviour
             }
         }
 
-        Visual.transform.localPosition = wandering ? wanderLocalPosition : Vector3.zero;
+        if (wandering)
+        {
+            Visual.transform.localPosition = wanderLocalPosition;
 
-        Visual.transform.position = new Vector3
-        (
-            Mathf.Round(Visual.transform.position.x * 8) / 8,
-            Mathf.Round(Visual.transform.position.y * 8) / 8,
-            Mathf.Round(Visual.transform.position.z * 8) / 8
-        );
+            Visual.transform.position = new Vector3
+            (
+                Mathf.Round(Visual.transform.position.x * 8) / 8,
+                Mathf.Round(Visual.transform.position.y * 8) / 8,
+                Mathf.Round(Visual.transform.position.z * 8) / 8
+            );
+        }
+        else
+        {
+            Visual.transform.localPosition = Vector3.zero;
+        }
 
         if (bounceFlashTimer > 0)
         {
