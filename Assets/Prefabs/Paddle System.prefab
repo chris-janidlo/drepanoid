@@ -416,12 +416,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
-  MoveLagOffset: 0.15
-  LagTransitionMultiplierWhenNotMoving: 0.25
   MoveLagTransition:
     value: 0
-    Time: 0.3
-    Ease: 9
+    Time: 0.1
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1872676481818795759
 MonoBehaviour:
@@ -522,12 +520,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
-  MoveLagOffset: 0.08
-  LagTransitionMultiplierWhenNotMoving: 0.15
   MoveLagTransition:
     value: 0
-    Time: 0.3
-    Ease: 9
+    Time: 0
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1828667829544008958
 MonoBehaviour:
@@ -632,12 +628,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
-  MoveLagOffset: 0.15
-  LagTransitionMultiplierWhenNotMoving: 0.25
   MoveLagTransition:
     value: 0
-    Time: 0.3
-    Ease: 9
+    Time: 0.1
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &8884917621203931739
 MonoBehaviour:
@@ -738,12 +732,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
-  MoveLagOffset: 0.08
-  LagTransitionMultiplierWhenNotMoving: 0.15
   MoveLagTransition:
     value: 0
-    Time: 0.3
-    Ease: 9
+    Time: 0
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &3917294438047615051
 MonoBehaviour:
@@ -848,12 +840,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
-  MoveLagOffset: 0.2
-  LagTransitionMultiplierWhenNotMoving: 0.25
   MoveLagTransition:
     value: 0
     Time: 0.3
-    Ease: 9
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &711530532147293333
 MonoBehaviour:
@@ -1056,12 +1046,10 @@ MonoBehaviour:
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
-  MoveLagOffset: 0.2
-  LagTransitionMultiplierWhenNotMoving: 0.25
   MoveLagTransition:
     value: 0
     Time: 0.3
-    Ease: 9
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
 --- !u!114 &1310745706049045485
 MonoBehaviour:

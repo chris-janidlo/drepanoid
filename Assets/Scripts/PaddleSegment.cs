@@ -16,20 +16,19 @@ public class PaddleSegment : MonoBehaviour
 
     public float InheritSpeedAngleMultiplier, InheritSpeedBounceMultiplier;
 
-    public float MoveLagOffset;
-    [Range(0, 1)]
-    public float LagTransitionMultiplierWhenNotMoving;
     public TransitionableFloat MoveLagTransition;
 
     public TranslationMover Mover;
 
-    Vector3 originalLocalPosition;
+    Vector3 startingLocalPosition, positionAtStartOfLag;
     int previousMoveDirection;
 
     void Start ()
     {
         MoveLagTransition.AttachMonoBehaviour(this);
-        originalLocalPosition = transform.localPosition;
+        MoveLagTransition.Value = 1;
+
+        startingLocalPosition = transform.localPosition;
     }
 
     void Update ()
@@ -41,17 +40,12 @@ public class PaddleSegment : MonoBehaviour
 
             if (moveDirection != 0)
             {
-                var startValue = MoveLagOffset * -moveDirection;
-                var targetValue = 0;
-
-                MoveLagTransition.FlashFromTo(startValue, targetValue);
+                positionAtStartOfLag = transform.position;
+                MoveLagTransition.FlashFromTo(0, 1);
             }
         }
 
-        var moveLagOffset = MoveLagTransition.Value;
-        if (moveDirection == 0) moveLagOffset *= LagTransitionMultiplierWhenNotMoving;
-
-        transform.localPosition = originalLocalPosition + Vector3.right * moveLagOffset;
+        transform.position = Vector3.Lerp(positionAtStartOfLag, transform.parent.position + startingLocalPosition, MoveLagTransition.Value);
     }
 
     void OnCollisionEnter2D (Collision2D collision)
