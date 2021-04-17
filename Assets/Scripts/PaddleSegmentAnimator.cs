@@ -10,14 +10,14 @@ public class PaddleSegmentAnimator : MonoBehaviour
     public float BounceFlashTime;
 
     public float WanderRadius;
-    public Vector2 TimeUntilWanderRange, TimeBetweenWanderingsRange;
+    public Vector2 TimeUntilWanderRange, TimeBetweenWanderingsRange, TimeToReturnToNormalColorRange;
 
     public TranslationMover Mover;
     public SpriteRenderer Visual;
 
     bool wandering;
     Vector3 wanderLocalPosition;
-    float wanderWaitTimer, bounceFlashTimer;
+    float wanderWaitTimer, returnToNormalColorTimer, bounceFlashTimer;
 
     void Start ()
     {
@@ -44,6 +44,7 @@ public class PaddleSegmentAnimator : MonoBehaviour
             {
                 wandering = true;
                 StartCoroutine(wander());
+                returnToNormalColorTimer = RandomExtra.Range(TimeToReturnToNormalColorRange);
             }
         }
 
@@ -60,6 +61,7 @@ public class PaddleSegmentAnimator : MonoBehaviour
         }
         else
         {
+            returnToNormalColorTimer -= Time.deltaTime;
             Visual.transform.localPosition = Vector3.zero;
         }
 
@@ -69,7 +71,7 @@ public class PaddleSegmentAnimator : MonoBehaviour
         }
         else
         {
-            Visual.color = wandering ? WanderColor : NormalColor;
+            Visual.color = returnToNormalColorTimer > 0 ? WanderColor : NormalColor;
         }
         bounceFlashTimer -= Time.deltaTime;
     }
