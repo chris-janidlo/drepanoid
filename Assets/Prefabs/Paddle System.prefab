@@ -434,8 +434,8 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0
-  TimeUntilWanderRange: {x: 5, y: 5}
-  TimeBetweenWanderingsRange: {x: 5, y: 5}
+  TimeUntilWanderRange: {x: 9, y: 10}
+  TimeBetweenWanderingsRange: {x: 10, y: 10}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6169930906684778033}
 --- !u!61 &5006718296371208279
@@ -533,7 +533,7 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.125
-  TimeUntilWanderRange: {x: 5, y: 20}
+  TimeUntilWanderRange: {x: 10, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6300202809046288339}
@@ -636,8 +636,8 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0
-  TimeUntilWanderRange: {x: 5, y: 5}
-  TimeBetweenWanderingsRange: {x: 5, y: 5}
+  TimeUntilWanderRange: {x: 9, y: 10}
+  TimeBetweenWanderingsRange: {x: 10, y: 10}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 7136475774545520138}
 --- !u!61 &5006718296671113423
@@ -735,7 +735,7 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.125
-  TimeUntilWanderRange: {x: 5, y: 20}
+  TimeUntilWanderRange: {x: 10, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 4074524428632079029}
@@ -838,7 +838,7 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.8
-  TimeUntilWanderRange: {x: 5, y: 20}
+  TimeUntilWanderRange: {x: 10, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 39404304067791657}
@@ -994,7 +994,7 @@ MonoBehaviour:
   BounceFlashColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   BounceFlashTime: 0.1
   WanderRadius: 0.8
-  TimeUntilWanderRange: {x: 5, y: 20}
+  TimeUntilWanderRange: {x: 10, y: 20}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6451194425400790099}
