@@ -76,7 +76,7 @@ public class PaddleSegmentAnimator : MonoBehaviour
         bounceFlashTimer -= Time.deltaTime;
     }
 
-    void OnCollisionEnter2D (Collision2D collision)
+    public void OnBounce ()
     {
         bounceFlashTimer = BounceFlashTime;
     }

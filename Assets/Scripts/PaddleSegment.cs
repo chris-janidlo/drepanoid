@@ -11,6 +11,9 @@ public class PaddleSegment : MonoBehaviour
     [Range(-90, 90)]
     public float BounceAngle;
 
+    [Tooltip("Any collisions that happen below this Y value, which is in local space, are not considered bounces")]
+    public float BounceCutoffY;
+
     [Range(0, 1)]
     public float OriginalXSpeedOfBallRetainedOnBounce;
 
@@ -19,6 +22,7 @@ public class PaddleSegment : MonoBehaviour
     public TransitionableFloat MoveLagTransition;
 
     public TranslationMover Mover;
+    public PaddleSegmentAnimator Animator;
 
     Vector3 startingLocalPosition, positionAtStartOfLag;
     int previousMoveDirection;
@@ -53,6 +57,12 @@ public class PaddleSegment : MonoBehaviour
         Ball ball = collision.gameObject.GetComponent<Ball>();
         if (ball == null) return;
 
+        if (collision.transform.position.y < transform.position.y + BounceCutoffY)
+        {
+            ball.Velocity = new Vector2(ball.Velocity.x, 0);
+            return;
+        }
+
         var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
         var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
 
@@ -62,6 +72,7 @@ public class PaddleSegment : MonoBehaviour
         newVelocity.x += ball.Velocity.x * OriginalXSpeedOfBallRetainedOnBounce;
 
         ball.Bounce(newVelocity, Vector2Int.up);
+        Animator.OnBounce();
     }
 
     Vector2 angleToVector (float angle)

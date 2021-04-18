@@ -7,7 +7,7 @@ using crass;
 
 public class Ball : MonoBehaviour
 {
-    public Vector2 Velocity { get; private set; }
+    public Vector2 Velocity { get; set; }
 
     public float Gravity;
     [Tooltip("Abstract constant that contains every variable in the drag equation that isn't velocity (so it includes coefficient of drag, reference area, and fluid density, which are all held constant throughout the game)")]
