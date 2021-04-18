@@ -419,7 +419,7 @@ MonoBehaviour:
   InheritSpeedBounceMultiplier: 0.25
   MoveLagTransition:
     value: 0
-    Time: 0.1
+    Time: 0.275
     Ease: 21
   Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 1872676481818795759}
@@ -635,7 +635,7 @@ MonoBehaviour:
   InheritSpeedBounceMultiplier: 0.25
   MoveLagTransition:
     value: 0
-    Time: 0.1
+    Time: 0.275
     Ease: 21
   Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 8884917621203931739}
