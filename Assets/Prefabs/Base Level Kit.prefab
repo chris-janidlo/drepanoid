@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 8297977597355872456}
   - component: {fileID: 2730405434620197742}
   - component: {fileID: 1133974362147307953}
+  - component: {fileID: 4230730252139146711}
   m_Layer: 0
   m_Name: Danger
   m_TagString: Untagged
@@ -317,6 +318,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd114a7fe6b27d43ae6cb08e5827e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4230730252139146711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597355872462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5390ac43cd26048b980f39e3efa858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileDisplacementRadius: 0.07
+  RountTilesToNearestPixel: 1
+  TimeBetweenTwitchesRange: {x: 0.7, y: 0.7}
+  ChanceToTwitchPerTile: 1
+  Tilemap: {fileID: 8297977597355872457}
 --- !u!1 &8297977597545156294
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +890,7 @@ GameObject:
   - component: {fileID: 8297977599257942349}
   - component: {fileID: 8297977599257942351}
   - component: {fileID: 8297977599257942350}
+  - component: {fileID: 2597473515731779171}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -979,3 +998,20 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &2597473515731779171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977599257942348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5390ac43cd26048b980f39e3efa858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileDisplacementRadius: 0.25
+  RountTilesToNearestPixel: 0
+  TimeBetweenTwitchesRange: {x: 0.3, y: 1}
+  ChanceToTwitchPerTile: 0.01
+  Tilemap: {fileID: 8297977599257942351}
