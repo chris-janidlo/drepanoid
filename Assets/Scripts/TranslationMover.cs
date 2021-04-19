@@ -27,6 +27,11 @@ public class TranslationMover : MonoBehaviour
 
             positionOnLine += Velocity * Time.deltaTime;
             positionOnLine = Mathf.Clamp(positionOnLine, 0, 1);
+
+            if ((positionOnLine == 0 && Velocity < 0) || (positionOnLine == 1 && Velocity > 0))
+            {
+                Velocity = 0;
+            }
         }
 
         transform.position = Vector3.Lerp(LineLeftEdge.position, LineRightEdge.position, positionOnLine);
