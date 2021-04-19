@@ -8,13 +8,15 @@ using crass;
 public class Ball : MonoBehaviour
 {
     public Vector2 Velocity { get; set; }
+    public bool Dying { get; private set; }
 
     public float Gravity;
     [Tooltip("Abstract constant that contains every variable in the drag equation that isn't velocity (so it includes coefficient of drag, reference area, and fluid density, which are all held constant throughout the game)")]
     public float DragCoefficient;
 
-    public TransitionableFloat SpawnScaleTransition;
-    public int SpawnScaleTransitionRounding;
+    public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
+    public int SpawnScaleTransitionRounding, DeathScaleTarget;
+    public float DeathAnimationWaitTimeBeforeShrinking;
 
     public float BounceSpinMultiplier;
     [Range(0, 1)]
@@ -25,6 +27,7 @@ public class Ball : MonoBehaviour
 
     public Sprite OnSprite, OffSprite;
     public SpriteRenderer SpriteRenderer;
+    public Collider2D Collider;
 
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool collidedThisFrame, spriteIsOn;
@@ -33,17 +36,24 @@ public class Ball : MonoBehaviour
     {
         SpawnScaleTransition.AttachMonoBehaviour(this);
         SpawnScaleTransition.FlashFromTo(0, 1);
+        DeathScaleTransition.AttachMonoBehaviour(this);
 
         SpriteRenderer.sprite = OffSprite;
     }
 
     void Update ()
     {
-        transform.localScale = Vector3.one * (Mathf.Round(SpawnScaleTransition.Value * SpawnScaleTransitionRounding) / SpawnScaleTransitionRounding);
+        float scale = Dying
+            ? DeathScaleTransition.Value
+            : Mathf.Round(SpawnScaleTransition.Value * SpawnScaleTransitionRounding) / SpawnScaleTransitionRounding;
+
+        transform.localScale = Vector3.one * scale;
     }
 
     void FixedUpdate ()
     {
+        if (Dying) return;
+
         move();
         spin();
 
@@ -59,6 +69,8 @@ public class Ball : MonoBehaviour
     /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
+        if (Dying) return;
+
         // might be able to use a composite collider on paddles instead
         if (collidedThisFrame) return;
         collidedThisFrame = true;
@@ -81,8 +93,10 @@ public class Ball : MonoBehaviour
 
     public void Kill ()
     {
-        BallDied.Raise();
-        Destroy(gameObject);
+        if (Dying) return;
+
+        Dying = true;
+        StartCoroutine(deathRoutine());
     }
 
     void move ()
@@ -107,5 +121,18 @@ public class Ball : MonoBehaviour
         {
             angularVelocity = 0;
         }
+    }
+
+    IEnumerator deathRoutine ()
+    {
+        Collider.enabled = false;
+
+        yield return new WaitForSeconds(DeathAnimationWaitTimeBeforeShrinking);
+
+        DeathScaleTransition.StartTransitionTo(DeathScaleTarget);
+        yield return new WaitWhile(() => DeathScaleTransition.Transitioning);
+
+        BallDied.Raise();
+        Destroy(gameObject);
     }
 }

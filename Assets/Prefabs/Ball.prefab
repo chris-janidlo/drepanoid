@@ -52,7 +52,13 @@ MonoBehaviour:
     value: 0
     Time: 0.7
     Ease: 24
+  DeathScaleTransition:
+    value: 1
+    Time: 0.5
+    Ease: 29
   SpawnScaleTransitionRounding: 3
+  DeathScaleTarget: 0
+  DeathAnimationWaitTimeBeforeShrinking: 0.3
   BounceSpinMultiplier: 75
   AngularDrag: 0.9
   KillFloorY: -150
@@ -60,6 +66,7 @@ MonoBehaviour:
   OnSprite: {fileID: 21300000, guid: c9919c1fdb5f86742af8de5ecce4ab36, type: 3}
   OffSprite: {fileID: 21300000, guid: 3d7ae15ece006e54e9cf7b04bc53daa7, type: 3}
   SpriteRenderer: {fileID: 13406196421831383}
+  Collider: {fileID: 4679903320758064710}
 --- !u!50 &8033173079964833136
 Rigidbody2D:
   serializedVersion: 4
