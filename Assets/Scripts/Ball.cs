@@ -69,9 +69,9 @@ public class Ball : MonoBehaviour
             throw new ArgumentException($"axisAlignedCollisionNormal must be one of {string.Join(", ", validNormals)} - {cardinalCollisionNormal} is invalid");
         }
 
-        if (cardinalCollisionNormal != Vector2Int.up) throw new NotImplementedException("TODO: implement bouncing in other directions");
-
-        angularVelocity += resultingVelocity.x * BounceSpinMultiplier;
+        angularVelocity += cardinalCollisionNormal.x == 0
+            ? Math.Sign(cardinalCollisionNormal.y) * resultingVelocity.x * BounceSpinMultiplier
+            : -Math.Sign(cardinalCollisionNormal.x) * resultingVelocity.y * BounceSpinMultiplier;
 
         Velocity = resultingVelocity;
 
