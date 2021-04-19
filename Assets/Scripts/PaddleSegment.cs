@@ -13,6 +13,7 @@ public class PaddleSegment : MonoBehaviour
 
     [Tooltip("Any collisions that happen below this Y value, which is in local space, are not considered bounces")]
     public float BounceCutoffY;
+    public bool ReflectDownwardWhenNotBouncing;
 
     [Range(0, 1)]
     public float OriginalXSpeedOfBallRetainedOnBounce;
@@ -59,10 +60,23 @@ public class PaddleSegment : MonoBehaviour
 
         if (collision.transform.position.y < transform.position.y + BounceCutoffY)
         {
-            ball.Velocity = new Vector2(ball.Velocity.x, 0);
-            return;
+            reflectionBounce(ball, collision);
         }
+        else
+        {
+            paddleBounce(ball);
+        }
+    }
 
+    void reflectionBounce (Ball ball, Collision2D collision)
+    {
+        var reflectNormal = ReflectDownwardWhenNotBouncing ? Vector2.down : -collision.GetContact(0).normal;
+        var newVelocity = Vector2.Reflect(ball.Velocity, reflectNormal);
+        ball.Bounce(newVelocity, Vector2Int.down);
+    }
+
+    void paddleBounce (Ball ball)
+    {
         var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
         var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
 

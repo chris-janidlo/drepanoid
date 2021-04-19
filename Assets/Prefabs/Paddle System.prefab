@@ -414,6 +414,7 @@ MonoBehaviour:
   BounceSpeed: 20
   BounceAngle: 0
   BounceCutoffY: 0.4
+  ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
@@ -519,7 +520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: -20
-  BounceCutoffY: -0.2
+  BounceCutoffY: -0.1
+  ReflectDownwardWhenNotBouncing: 0
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
@@ -630,6 +632,7 @@ MonoBehaviour:
   BounceSpeed: 20
   BounceAngle: 0
   BounceCutoffY: 0.4
+  ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 0.25
@@ -735,7 +738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceSpeed: 20
   BounceAngle: 20
-  BounceCutoffY: -0.2
+  BounceCutoffY: -0.1
+  ReflectDownwardWhenNotBouncing: 0
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 16
   InheritSpeedBounceMultiplier: 2
@@ -846,6 +850,7 @@ MonoBehaviour:
   BounceSpeed: 20
   BounceAngle: 5
   BounceCutoffY: 0.4
+  ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
@@ -1054,6 +1059,7 @@ MonoBehaviour:
   BounceSpeed: 20
   BounceAngle: -5
   BounceCutoffY: 0.4
+  ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
   InheritSpeedAngleMultiplier: 12
   InheritSpeedBounceMultiplier: 1
