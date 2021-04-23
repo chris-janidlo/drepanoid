@@ -77,7 +77,8 @@ public class PaddleSegment : MonoBehaviour
 
     void paddleBounce (Ball ball)
     {
-        var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier;
+        var inheritAngleDirection = ternarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
+        var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier * inheritAngleDirection;
         var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
 
         var trueSpeed = BounceSpeed + Mathf.Abs(Mover.Velocity) * InheritSpeedBounceMultiplier;
