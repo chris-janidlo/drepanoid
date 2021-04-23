@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3448971951c1d44da3254b2aa7516d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropDelay: 1
+  DropDelay: 0.7
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
