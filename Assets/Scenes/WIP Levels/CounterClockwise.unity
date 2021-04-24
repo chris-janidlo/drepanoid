@@ -33620,16 +33620,6 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[832].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
-    - target: {fileID: 8297977597983657520, guid: 41ded67201089cb4d877be7b94074953,
-        type: 3}
-      propertyPath: m_RefResolutionX
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297977597983657520, guid: 41ded67201089cb4d877be7b94074953,
-        type: 3}
-      propertyPath: m_RefResolutionY
-      value: 421
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ded67201089cb4d877be7b94074953, type: 3}
 --- !u!1001 &2110023330

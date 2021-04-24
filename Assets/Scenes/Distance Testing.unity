@@ -9602,6 +9602,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8297977597355872463, guid: 41ded67201089cb4d877be7b94074953,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8297977597804943752, guid: 41ded67201089cb4d877be7b94074953,
         type: 3}
       propertyPath: m_Name
@@ -9661,21 +9666,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297977597983657520, guid: 41ded67201089cb4d877be7b94074953,
-        type: 3}
-      propertyPath: m_RefResolutionX
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297977597983657520, guid: 41ded67201089cb4d877be7b94074953,
-        type: 3}
-      propertyPath: m_RefResolutionY
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297977597983657521, guid: 41ded67201089cb4d877be7b94074953,
-        type: 3}
-      propertyPath: orthographic size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8297977597983657522, guid: 41ded67201089cb4d877be7b94074953,
         type: 3}
