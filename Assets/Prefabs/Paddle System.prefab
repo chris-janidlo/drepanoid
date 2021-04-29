@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BounceSpeed: 20
-  BounceAngle: 5
+  BounceAngle: 2
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BounceSpeed: 20
-  BounceAngle: -5
+  BounceAngle: -2
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
   OriginalXSpeedOfBallRetainedOnBounce: 0.1
