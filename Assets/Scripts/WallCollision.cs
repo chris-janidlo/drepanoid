@@ -26,8 +26,8 @@ public class WallCollision : MonoBehaviour
     {
         return collision.contacts
             .Select(c => c.normal)
-            .OrderBy(n => Mathf.Abs(Mathf.Abs(n.y) - 1)) // order by how close to up/down the y coordinate is first because I'd rather have ceiling/floor collisions act predictably than side wall collisions, since I have to choose
-            .ThenBy(n => Mathf.Abs(Mathf.Abs(n.x) - 1))
+            .OrderBy(n => (Mathf.Abs(n.x) == 1 || Math.Abs(n.y) == 1) ? 0 : Mathf.Infinity)
+            .ThenBy(n => Mathf.Abs(n.sqrMagnitude - 1))
             .First();
     }
 
