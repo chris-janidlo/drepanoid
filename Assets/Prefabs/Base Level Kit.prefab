@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6321923485378824653}
   - component: {fileID: 7025534754144648808}
   - component: {fileID: 6421898974675631064}
+  - component: {fileID: 7176194068828047497}
   m_Layer: 0
   m_Name: Ball Dropper
   m_TagString: Untagged
@@ -46,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3448971951c1d44da3254b2aa7516d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropDelay: 0.7
+  InitialDropDelay: 1.5
+  RespawnDropDelay: 0.7
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
@@ -139,6 +141,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7176194068828047497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749131111907394443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9812ca1cc056b438ce84ec9590141a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0
+  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  SpriteRenderer: {fileID: 6421898974675631064}
 --- !u!1 &6641137933160327824
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +200,7 @@ GameObject:
   - component: {fileID: 2730405434620197742}
   - component: {fileID: 1133974362147307953}
   - component: {fileID: 4230730252139146711}
+  - component: {fileID: 1874329454654600113}
   m_Layer: 0
   m_Name: Danger
   m_TagString: Untagged
@@ -335,6 +353,21 @@ MonoBehaviour:
   TimeBetweenTwitchesRange: {x: 0.7, y: 0.7}
   ChanceToTwitchPerTile: 1
   Tilemap: {fileID: 8297977597355872457}
+--- !u!114 &1874329454654600113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597355872462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0.7
+  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  Tilemap: {fileID: 8297977597355872457}
 --- !u!1 &8297977597545156294
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa01394cafc51243a0fb9285537ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelLoadDelay: 1.5
   MoveAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
 --- !u!114 &8297977597545156288
 MonoBehaviour:
@@ -577,6 +611,7 @@ GameObject:
   - component: {fileID: 8297977597812611051}
   - component: {fileID: 6555465827887985193}
   - component: {fileID: 5919353465776524419}
+  - component: {fileID: 1960023900497822189}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -712,6 +747,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aad8973e6bf87a418b9cf9d3738e633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1960023900497822189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597812611049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0.6
+  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  Tilemap: {fileID: 8297977597812611044}
 --- !u!1 &8297977597825549467
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +986,7 @@ GameObject:
   - component: {fileID: 8297977599257942351}
   - component: {fileID: 8297977599257942350}
   - component: {fileID: 2597473515731779171}
+  - component: {fileID: 7775373638361466922}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1060,6 +1111,21 @@ MonoBehaviour:
   TimeBetweenTwitchesRange: {x: 0.3, y: 1}
   ChanceToTwitchPerTile: 0.01
   Tilemap: {fileID: 8297977599257942351}
+--- !u!114 &7775373638361466922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977599257942348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0.9
+  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  Tilemap: {fileID: 8297977599257942351}
 --- !u!1 &8345523708363224435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1137,7 @@ GameObject:
   - component: {fileID: 9145905055985556593}
   - component: {fileID: 203681258947157634}
   - component: {fileID: 452304057195247817}
+  - component: {fileID: 192222043461863689}
   m_Layer: 0
   m_Name: Collision-less Level Geometry
   m_TagString: Untagged
@@ -1342,3 +1409,18 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &192222043461863689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345523708363224435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0.8
+  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  Tilemap: {fileID: 203681258947157634}

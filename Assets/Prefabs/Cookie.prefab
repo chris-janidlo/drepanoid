@@ -55,6 +55,8 @@ MonoBehaviour:
   SpriteRenderer: {fileID: 7253605202877373893}
   Collider: {fileID: 7253605202877373894}
   Animator: {fileID: 4486655717324533121}
+  ShowAnimationDelay: 0
+  LoadAnimation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
 --- !u!58 &7253605202877373894
 CircleCollider2D:
   m_ObjectHideFlags: 0

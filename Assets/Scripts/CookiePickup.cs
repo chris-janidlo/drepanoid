@@ -15,15 +15,22 @@ public class CookiePickup : MonoBehaviour
     public Collider2D Collider;
     public Animator Animator;
 
+    public float ShowAnimationDelay;
+    public CharacterLoadAnimation LoadAnimation;
+
     bool alreadyCollected;
     Vector3 initialPosition;
 
-    void Start ()
+    IEnumerator Start ()
     {
         alreadyCollected = CollectedCookies.Contains(Cookie);
         SpriteRenderer.color = alreadyCollected ? AlreadyCollectedColor : NormalColor;
 
         initialPosition = transform.position;
+
+        Animator.enabled = false;
+        yield return StartCoroutine(LoadAnimation.DoAnimation(ShowAnimationDelay, frame => SpriteRenderer.sprite = frame.Sprite, resultSprite: SpriteRenderer.sprite));
+        Animator.enabled = true;
     }
 
     void Update ()

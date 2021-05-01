@@ -6,10 +6,19 @@ using UnityEngine.InputSystem;
 
 public class MoveInputReader : MonoBehaviour
 {
+    public float LevelLoadDelay;
     public FloatVariable MoveAxis;
+
+    bool readEnabled;
+
+    IEnumerator Start ()
+    {
+        yield return new WaitForSeconds(LevelLoadDelay);
+        readEnabled = true;
+    }
 
     public void OnMoveAxis (InputAction.CallbackContext context)
     {
-        MoveAxis.Value = context.ReadValue<float>();
+        if (readEnabled) MoveAxis.Value = context.ReadValue<float>();
     }
 }

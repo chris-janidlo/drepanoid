@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class BallDropper : MonoBehaviour
 {
-    public float DropDelay;
+    public float InitialDropDelay, RespawnDropDelay;
     public Transform SpawnPoint;
 
     public Ball BallPrefab;
 
-    void Start ()
+    IEnumerator Start ()
     {
+        yield return new WaitForSeconds(InitialDropDelay);
         StartCoroutine(launchRoutine());
     }
 
@@ -21,7 +22,7 @@ public class BallDropper : MonoBehaviour
 
     IEnumerator launchRoutine ()
     {
-        yield return new WaitForSeconds(DropDelay);
+        yield return new WaitForSeconds(RespawnDropDelay);
         Instantiate(BallPrefab, SpawnPoint.position, Quaternion.identity);
     }
 }
