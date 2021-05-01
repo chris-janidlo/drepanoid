@@ -7,6 +7,8 @@ using crass;
 
 public class Ball : MonoBehaviour
 {
+    private static int deathsSinceLastExplosionDeath;
+
     public Vector2 Velocity { get; set; }
     public bool Dying { get; private set; }
 
@@ -15,7 +17,8 @@ public class Ball : MonoBehaviour
     public float DragCoefficient;
 
     public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
-    public int SpawnScaleTransitionRounding, DeathScaleTarget;
+    public int SpawnScaleTransitionRounding, NormalDeathScaleTarget, ExplosionDeathScaleTarget;
+    public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
     public float DeathAnimationWaitTimeBeforeShrinking;
 
     public float BounceSpinMultiplier;
@@ -135,8 +138,19 @@ public class Ball : MonoBehaviour
 
         yield return new WaitForSeconds(DeathAnimationWaitTimeBeforeShrinking);
 
-        DeathScaleTransition.StartTransitionTo(DeathScaleTarget);
+        float explosionChance = ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath.Evaluate(deathsSinceLastExplosionDeath);
+        bool exploding = RandomExtra.Chance(explosionChance);
+
+        float targetScale = exploding
+            ? ExplosionDeathScaleTarget
+            : NormalDeathScaleTarget;
+
+        DeathScaleTransition.StartTransitionTo(targetScale);
         yield return new WaitWhile(() => DeathScaleTransition.Transitioning);
+
+        deathsSinceLastExplosionDeath = exploding
+            ? 0
+            : deathsSinceLastExplosionDeath + 1;
 
         BallDied.Raise();
         Destroy(gameObject);

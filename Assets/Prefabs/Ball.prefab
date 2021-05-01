@@ -57,7 +57,50 @@ MonoBehaviour:
     Time: 0.5
     Ease: 29
   SpawnScaleTransitionRounding: 3
-  DeathScaleTarget: 0
+  NormalDeathScaleTarget: 0
+  ExplosionDeathScaleTarget: 10
+  ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 19.999
+      value: 0
+      inSlope: -0
+      outSlope: 500.2748
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 20
+      value: 0.5
+      inSlope: 500.2748
+      outSlope: 0
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 30
+      value: 1
+      inSlope: 0.09868914
+      outSlope: 0.09868914
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08231697
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   DeathAnimationWaitTimeBeforeShrinking: 0.3
   BounceSpinMultiplier: 75
   AngularDrag: 0.9
