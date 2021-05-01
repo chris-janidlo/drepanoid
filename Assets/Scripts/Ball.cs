@@ -38,7 +38,8 @@ public class Ball : MonoBehaviour
         SpawnScaleTransition.FlashFromTo(0, 1);
         DeathScaleTransition.AttachMonoBehaviour(this);
 
-        SpriteRenderer.sprite = OffSprite;
+        spriteIsOn = RandomExtra.Chance(.5f);
+        flipSprite();
     }
 
     void Update ()
@@ -87,8 +88,7 @@ public class Ball : MonoBehaviour
 
         Velocity = resultingVelocity;
 
-        spriteIsOn = !spriteIsOn;
-        SpriteRenderer.sprite = spriteIsOn ? OnSprite : OffSprite;
+        flipSprite();
     }
 
     public void Kill ()
@@ -121,6 +121,12 @@ public class Ball : MonoBehaviour
         {
             angularVelocity = 0;
         }
+    }
+
+    void flipSprite ()
+    {
+        spriteIsOn = !spriteIsOn;
+        SpriteRenderer.sprite = spriteIsOn ? OnSprite : OffSprite;
     }
 
     IEnumerator deathRoutine ()
