@@ -524,6 +524,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   PostProcessStack: {fileID: 11400000, guid: e84df0b85367bd8499f7ab3034e2bae8, type: 2}
   Collider: {fileID: 7252330459009916758}
+  CurrentGamePhase: {fileID: 11400000, guid: b906983b46c21344b9b037e0e42b61e2, type: 2}
 --- !u!61 &7252330459009916758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -994,6 +995,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
+  CurrentGamePhase: {fileID: 11400000, guid: b906983b46c21344b9b037e0e42b61e2, type: 2}
 --- !u!114 &7025534754144648808
 MonoBehaviour:
   m_ObjectHideFlags: 0

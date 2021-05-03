@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using crass;
 
@@ -31,6 +32,8 @@ public class Ball : MonoBehaviour
     public Sprite OnSprite, OffSprite;
     public SpriteRenderer SpriteRenderer;
     public Collider2D Collider;
+
+    public GamePhaseVariable CurrentGamePhase;
 
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool collidedThisFrame, spriteIsOn;
@@ -152,7 +155,7 @@ public class Ball : MonoBehaviour
             ? 0
             : deathsSinceLastExplosionDeath + 1;
 
-        BallDied.Raise();
+        if (CurrentGamePhase.Value == GamePhase.LevelPlaying) BallDied.Raise();
         Destroy(gameObject);
     }
 }

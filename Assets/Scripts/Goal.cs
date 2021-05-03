@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
+using UnityAtoms;
 using UnityAtoms.SceneMgmt;
 
 public class Goal : MonoBehaviour
@@ -17,6 +18,8 @@ public class Goal : MonoBehaviour
     public PostProcessProfile PostProcessStack;
     public Collider2D Collider;
 
+    public GamePhaseVariable CurrentGamePhase;
+
     void OnTriggerEnter2D (Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Ball>() == null) return;
@@ -29,6 +32,7 @@ public class Goal : MonoBehaviour
     {
         transform.parent = null;
         DontDestroyOnLoad(gameObject);
+        CurrentGamePhase.Value = GamePhase.LevelCompleted;
 
         LensDistortion lensLayer;
         ChromaticAberration chromaticAberrationLayer;
@@ -54,5 +58,6 @@ public class Goal : MonoBehaviour
         chromaticAberrationLayer.intensity.value = ChromaticAberrationByTimeSinceCollision.keys.First().value;
 
         Destroy(gameObject);
+        CurrentGamePhase.Value = GamePhase.LevelLoading;
     }
 }
