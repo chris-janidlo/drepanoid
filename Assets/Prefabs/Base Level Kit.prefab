@@ -449,7 +449,7 @@ MonoBehaviour:
     _sceneAsset: {fileID: 102900000, guid: 98c4ec346cd8d5449b72f4b94076c3b9, type: 3}
     _sceneName: Placeholder
     _scenePath: Assets/Scenes/Placeholder.unity
-    _buildIndex: 0
+    _buildIndex: 5
   TimescaleByTimeSinceCollision:
     serializedVersion: 2
     m_Curve:
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa01394cafc51243a0fb9285537ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelLoadDelay: 1.5
+  LevelLoadDelay: 0.7
   MoveAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
 --- !u!114 &8297977597545156288
 MonoBehaviour:
