@@ -59643,7 +59643,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Cookie
       value: 
-      objectReference: {fileID: 11400000, guid: d972fd1707566d645bbe3068abceefc4,
+      objectReference: {fileID: 11400000, guid: dffd98454b2abae40b1f6782208afb69,
         type: 2}
     - target: {fileID: 7253605202877373895, guid: b2822f651cef29d40ac9cfc1f3baf455,
         type: 3}
