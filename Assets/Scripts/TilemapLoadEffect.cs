@@ -31,14 +31,14 @@ public class TilemapLoadEffect : MonoBehaviour
 
     IEnumerator playAnimation ()
     {
-        List<IndividualTileAnimationTracker> individualAnimationData = new List<IndividualTileAnimationTracker>();
+        List<IndividualTileAnimationTracker> animationData = new List<IndividualTileAnimationTracker>();
 
         foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
         {
             var tile = Tilemap.GetTile(cellPosition);
             if (tile == null) continue;
 
-            individualAnimationData.Add(new IndividualTileAnimationTracker
+            animationData.Add(new IndividualTileAnimationTracker
             {
                 Position = cellPosition,
                 FinalTile = tile,
@@ -51,27 +51,27 @@ public class TilemapLoadEffect : MonoBehaviour
 
         yield return new WaitForSeconds(ShowDelay);
 
-        Vector3Int[] positionArray = new Vector3Int[individualAnimationData.Count];
-        TileBase[] tileArray = new TileBase[individualAnimationData.Count];
+        Vector3Int[] positionArray = new Vector3Int[animationData.Count];
+        TileBase[] tileArray = new TileBase[animationData.Count];
         int cursor = 0;
 
-        while (individualAnimationData.Count > 0)
+        while (animationData.Count > 0)
         {
-            foreach (var anim in individualAnimationData)
+            foreach (var data in animationData)
             {
-                anim.Timer -= Time.deltaTime;
-                if (anim.Timer > 0) continue;
+                data.Timer -= Time.deltaTime;
+                if (data.Timer > 0) continue;
 
-                anim.Timer = RandomExtra.Range(Animation.FrameTimeRange);
-                anim.CurrentFrame++;
+                data.Timer = RandomExtra.Range(Animation.FrameTimeRange);
+                data.CurrentFrame++;
 
-                positionArray[cursor] = anim.Position;
-                tileArray[cursor] = anim.CurrentTile;
+                positionArray[cursor] = data.Position;
+                tileArray[cursor] = data.CurrentTile;
                 cursor++;
             }
 
             Tilemap.SetTiles(positionArray, tileArray);
-            individualAnimationData.RemoveAll(anim => anim.IsFinished);
+            animationData.RemoveAll(anim => anim.IsFinished);
 
             yield return null;
 
