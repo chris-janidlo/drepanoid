@@ -29,7 +29,7 @@ public class CookiePickup : MonoBehaviour
         initialPosition = transform.position;
 
         Animator.enabled = false;
-        yield return StartCoroutine(LoadAnimation.DoAnimation(ShowAnimationDelay, frame => SpriteRenderer.sprite = frame.Sprite, resultSprite: SpriteRenderer.sprite));
+        yield return StartCoroutine(LoadAnimation.AnimateSpriteRenderer(ShowAnimationDelay, SpriteRenderer));
         Animator.enabled = true;
     }
 

@@ -18,17 +18,18 @@ public class CharacterLoadAnimation : ScriptableObject
     public List<AnimationFrame> Frames;
     public Vector2 FrameTimeRange;
 
-    public IEnumerator DoAnimation (float showDelay, Action<AnimationFrame> applyFrame, TileBase resultTile = null, Sprite resultSprite = null)
+    public IEnumerator AnimateSpriteRenderer (float showDelay, SpriteRenderer spriteRenderer)
     {
-        applyFrame(new AnimationFrame { Tile = null, Sprite = null });
+        var initialSprite = spriteRenderer.sprite;
+        spriteRenderer.sprite = null;
         yield return new WaitForSeconds(showDelay);
 
         foreach (var frame in Frames)
         {
-            applyFrame(frame);
+            spriteRenderer.sprite = frame.Sprite;
             yield return new WaitForSeconds(RandomExtra.Range(FrameTimeRange));
         }
 
-        applyFrame(new AnimationFrame { Tile = resultTile, Sprite = resultSprite });
+        spriteRenderer.sprite = initialSprite;
     }
 }

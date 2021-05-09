@@ -10,6 +10,6 @@ public class SpriteLoadEffect : MonoBehaviour
 
     void Start ()
     {
-        StartCoroutine(Animation.DoAnimation(ShowDelay, frame => SpriteRenderer.sprite = frame.Sprite, resultSprite: SpriteRenderer.sprite));
+        StartCoroutine(Animation.AnimateSpriteRenderer(ShowDelay, SpriteRenderer));
     }
 }
