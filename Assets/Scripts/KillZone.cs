@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityAtoms.BaseAtoms;
 
 public class KillZone : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class KillZone : MonoBehaviour
 
         DestroyImmediate(bakedCollisions.GetComponent<TilemapLoadEffect>());
         DestroyImmediate(bakedCollisions.GetComponent<TilemapTwitcher>());
+        DestroyImmediate(bakedCollisions.GetComponent<VoidBaseEventReferenceListener>());
         bakedCollisions.GetComponent<Tilemap>().color = Color.clear;
         bakedCollisions.name = $"_{name} (baked collisions)";
 

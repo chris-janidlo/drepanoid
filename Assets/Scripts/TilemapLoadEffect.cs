@@ -8,7 +8,7 @@ using crass;
 public class TilemapLoadEffect : MonoBehaviour
 {
     public float ShowDelay;
-    public CharacterLoadAnimation Animation;
+    public CharacterAnimationsForLevelTransitions Animation;
 
     public Tilemap Tilemap;
 
@@ -18,18 +18,23 @@ public class TilemapLoadEffect : MonoBehaviour
         public TileBase FinalTile;
         public int CurrentFrame;
         public float Timer;
-        public CharacterLoadAnimation Animation;
+        public List<CharacterAnimationsForLevelTransitions.AnimationFrame> Frames;
 
-        public TileBase CurrentTile => IsFinished ? FinalTile : Animation.Frames[CurrentFrame].Tile;
-        public bool IsFinished => CurrentFrame >= Animation.Frames.Count;
+        public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
+        public bool IsFinished => CurrentFrame >= Frames.Count;
     }
 
     void Start ()
     {
-        StartCoroutine(playAnimation());
+        StartCoroutine(playAnimation(true));
     }
 
-    IEnumerator playAnimation ()
+    public void OnLevelGoalReached ()
+    {
+        StartCoroutine(playAnimation(false));
+    }
+
+    IEnumerator playAnimation (bool loading)
     {
         List<IndividualTileAnimationTracker> animationData = new List<IndividualTileAnimationTracker>();
 
@@ -41,12 +46,12 @@ public class TilemapLoadEffect : MonoBehaviour
             animationData.Add(new IndividualTileAnimationTracker
             {
                 Position = cellPosition,
-                FinalTile = tile,
+                FinalTile = loading ? tile : null,
                 CurrentFrame = -1,
-                Animation = Animation
+                Frames = loading ? Animation.LevelLoadAnimation : Animation.LevelUnloadAnimation
             });
 
-            Tilemap.SetTile(cellPosition, null);
+            if (loading) Tilemap.SetTile(cellPosition, null);
         }
 
         yield return new WaitForSeconds(ShowDelay);

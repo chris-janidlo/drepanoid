@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5680157568890512708}
   - component: {fileID: 6300202809046288339}
   - component: {fileID: 4069764023844113142}
+  - component: {fileID: 8791297785843778550}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -99,6 +100,44 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 6300202809046288339}
+--- !u!114 &8791297785843778550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292547307639644078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4069764023844113142}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &3438251875049329514
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +149,7 @@ GameObject:
   - component: {fileID: 5614163001194861181}
   - component: {fileID: 6451194425400790099}
   - component: {fileID: 4663485702982535330}
+  - component: {fileID: 1307146629664301105}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -198,6 +238,44 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 6451194425400790099}
+--- !u!114 &1307146629664301105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3438251875049329514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4663485702982535330}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &3639727620996809797
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +287,7 @@ GameObject:
   - component: {fileID: 4126754495949262774}
   - component: {fileID: 7136475774545520138}
   - component: {fileID: 599810956674300965}
+  - component: {fileID: 6860728647606068857}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -297,6 +376,44 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 7136475774545520138}
+--- !u!114 &6860728647606068857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639727620996809797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 599810956674300965}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &4014414679294877939
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +425,7 @@ GameObject:
   - component: {fileID: 8823596777281719142}
   - component: {fileID: 4074524428632079029}
   - component: {fileID: 6350168760971001435}
+  - component: {fileID: 2066506523315610201}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -396,6 +514,44 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 4074524428632079029}
+--- !u!114 &2066506523315610201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014414679294877939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6350168760971001435}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &5006718296284899847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1411,7 @@ GameObject:
   - component: {fileID: 3786483448013450304}
   - component: {fileID: 39404304067791657}
   - component: {fileID: 9133454473235252186}
+  - component: {fileID: 6832492564638995012}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -1343,6 +1500,44 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 39404304067791657}
+--- !u!114 &6832492564638995012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6548770253720612627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9133454473235252186}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &6570063063461685703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1549,7 @@ GameObject:
   - component: {fileID: 8733533329268637221}
   - component: {fileID: 6169930906684778033}
   - component: {fileID: 2049617758180247881}
+  - component: {fileID: 8763475563901588850}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -1442,3 +1638,41 @@ MonoBehaviour:
   ShowDelay: 0
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   SpriteRenderer: {fileID: 6169930906684778033}
+--- !u!114 &8763475563901588850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570063063461685703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2049617758180247881}
+        m_TargetAssemblyTypeName: SpriteLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}

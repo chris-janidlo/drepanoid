@@ -16,7 +16,7 @@ public class CookiePickup : MonoBehaviour
     public Animator Animator;
 
     public float ShowAnimationDelay;
-    public CharacterLoadAnimation LoadAnimation;
+    public CharacterAnimationsForLevelTransitions Animation;
 
     bool alreadyCollected;
     Vector3 initialPosition;
@@ -29,7 +29,7 @@ public class CookiePickup : MonoBehaviour
         initialPosition = transform.position;
 
         Animator.enabled = false;
-        yield return StartCoroutine(LoadAnimation.AnimateSpriteRenderer(ShowAnimationDelay, SpriteRenderer));
+        yield return StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowAnimationDelay, SpriteRenderer));
         Animator.enabled = true;
     }
 
@@ -46,6 +46,12 @@ public class CookiePickup : MonoBehaviour
 
         Animator.SetTrigger(AnimatorDeathTrigger);
         Collider.enabled = false;
+    }
+
+    public void OnLevelGoalReached ()
+    {
+        Animator.enabled = false;
+        StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowAnimationDelay, SpriteRenderer));
     }
 
     public void FinalizeCollect ()

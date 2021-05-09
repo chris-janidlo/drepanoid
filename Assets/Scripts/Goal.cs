@@ -5,57 +5,42 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 using UnityAtoms.SceneMgmt;
 
 public class Goal : MonoBehaviour
 {
     public const float MIN_TIMESCALE = 0.01f;
     public SceneField TargetScene;
-    public AnimationCurve TimescaleByTimeSinceCollision;
+    public float LevelUnloadAnimationTime;
 
-    public AnimationCurve LensDistortionIntensityByTimeSinceCollision, ChromaticAberrationByTimeSinceCollision;
-
-    public PostProcessProfile PostProcessStack;
     public Collider2D Collider;
 
+    public VoidEvent LevelGoalReached;
     public GamePhaseVariable CurrentGamePhase;
 
     void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Ball>() == null) return;
+        var ball = collision.gameObject.GetComponent<Ball>();
+        if (ball == null) return;
 
-        Collider.enabled = false;
-        StartCoroutine(goalHit());
+        StartCoroutine(unloadLevel(ball));
     }
 
-    IEnumerator goalHit ()
+    IEnumerator unloadLevel (Ball currentBall)
     {
+        Collider.enabled = false;
         transform.parent = null;
-        DontDestroyOnLoad(gameObject);
+
         CurrentGamePhase.Value = GamePhase.LevelCompleted;
+        currentBall.Kill();        
 
-        LensDistortion lensLayer;
-        ChromaticAberration chromaticAberrationLayer;
-        PostProcessStack.TryGetSettings(out lensLayer);
-        PostProcessStack.TryGetSettings(out chromaticAberrationLayer);
+        LevelGoalReached.Raise();
+        yield return new WaitForSeconds(LevelUnloadAnimationTime);
 
-        float timer = 0;
-        while (timer < TimescaleByTimeSinceCollision.keys.Last().time)
-        {
-            Time.timeScale = Mathf.Max(TimescaleByTimeSinceCollision.Evaluate(timer), MIN_TIMESCALE);
-            lensLayer.intensity.value = LensDistortionIntensityByTimeSinceCollision.Evaluate(timer);
-            chromaticAberrationLayer.intensity.value = ChromaticAberrationByTimeSinceCollision.Evaluate(timer);
-
-            timer += Time.deltaTime;
-            yield return null;
-        }
-
+        DontDestroyOnLoad(gameObject);
         var loadOperation = SceneManager.LoadSceneAsync(TargetScene);
         yield return new WaitUntil(() => loadOperation.isDone);
-
-        Time.timeScale = 1;
-        lensLayer.intensity.value = LensDistortionIntensityByTimeSinceCollision.keys.First().value;
-        chromaticAberrationLayer.intensity.value = ChromaticAberrationByTimeSinceCollision.keys.First().value;
 
         Destroy(gameObject);
         CurrentGamePhase.Value = GamePhase.LevelLoading;

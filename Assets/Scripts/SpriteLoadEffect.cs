@@ -5,11 +5,16 @@ using UnityEngine;
 public class SpriteLoadEffect : MonoBehaviour
 {
     public float ShowDelay;
-    public CharacterLoadAnimation Animation;
+    public CharacterAnimationsForLevelTransitions Animation;
     public SpriteRenderer SpriteRenderer;
 
     void Start ()
     {
-        StartCoroutine(Animation.AnimateSpriteRenderer(ShowDelay, SpriteRenderer));
+        StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowDelay, SpriteRenderer));
+    }
+
+    public void OnLevelGoalReached ()
+    {
+        StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowDelay, SpriteRenderer));
     }
 }
