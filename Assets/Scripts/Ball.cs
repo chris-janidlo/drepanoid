@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour
     public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
     public int SpawnScaleTransitionRounding, NormalDeathScaleTarget, ExplosionDeathScaleTarget;
     public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
-    public float DeathAnimationWaitTimeBeforeShrinking;
+    public float DeathAnimationWaitTimeBeforeShrinking, VictoriousDespawnWaitTime;
 
     public float BounceSpinMultiplier;
     [Range(0, 1)]
@@ -33,7 +33,7 @@ public class Ball : MonoBehaviour
     public SpriteRenderer SpriteRenderer;
     public Collider2D Collider;
 
-    public GamePhaseVariable CurrentGamePhase;
+    public CharacterAnimationsForLevelTransitions CharacterAnimationsForLevelTransitions;
 
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool collidedThisFrame, spriteIsOn;
@@ -105,6 +105,13 @@ public class Ball : MonoBehaviour
         StartCoroutine(deathRoutine());
     }
 
+    public void DespawnVictoriously ()
+    {
+        Dying = true;
+
+        StartCoroutine(victoryRoutine());
+    }
+
     void move ()
     {
         Velocity += Vector2.down * Gravity * Time.deltaTime;
@@ -155,7 +162,15 @@ public class Ball : MonoBehaviour
             ? 0
             : deathsSinceLastExplosionDeath + 1;
 
-        if (CurrentGamePhase.Value == GamePhase.LevelPlaying) BallDied.Raise();
+        BallDied.Raise();
         Destroy(gameObject);
+    }
+
+    IEnumerator victoryRoutine ()
+    {
+        yield return new WaitForSeconds(VictoriousDespawnWaitTime);
+
+        transform.rotation = Quaternion.identity;
+        StartCoroutine(CharacterAnimationsForLevelTransitions.AnimateSpriteRendererUnload(0, SpriteRenderer));
     }
 }

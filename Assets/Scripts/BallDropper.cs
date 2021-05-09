@@ -10,12 +10,9 @@ public class BallDropper : MonoBehaviour
 
     public Ball BallPrefab;
 
-    public GamePhaseVariable CurrentGamePhase;
-
     IEnumerator Start ()
     {
         yield return new WaitForSeconds(InitialDropDelay);
-        CurrentGamePhase.Value = GamePhase.LevelPlaying;
         StartCoroutine(launchRoutine());
     }
 
@@ -27,6 +24,6 @@ public class BallDropper : MonoBehaviour
     IEnumerator launchRoutine ()
     {
         yield return new WaitForSeconds(RespawnDropDelay);
-        if (CurrentGamePhase.Value == GamePhase.LevelPlaying) Instantiate(BallPrefab, SpawnPoint.position, Quaternion.identity);
+        Instantiate(BallPrefab, SpawnPoint.position, Quaternion.identity);
     }
 }

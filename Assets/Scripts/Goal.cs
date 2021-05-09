@@ -17,23 +17,21 @@ public class Goal : MonoBehaviour
     public Collider2D Collider;
 
     public VoidEvent LevelGoalReached;
-    public GamePhaseVariable CurrentGamePhase;
 
     void OnTriggerEnter2D (Collider2D collision)
     {
         var ball = collision.gameObject.GetComponent<Ball>();
         if (ball == null) return;
 
-        StartCoroutine(unloadLevel(ball));
+        Collider.enabled = false;
+        ball.DespawnVictoriously();
+
+        StartCoroutine(unloadLevel());
     }
 
-    IEnumerator unloadLevel (Ball currentBall)
+    IEnumerator unloadLevel ()
     {
-        Collider.enabled = false;
         transform.parent = null;
-
-        CurrentGamePhase.Value = GamePhase.LevelCompleted;
-        currentBall.Kill();        
 
         LevelGoalReached.Raise();
         yield return new WaitForSeconds(LevelUnloadAnimationTime);
@@ -43,6 +41,5 @@ public class Goal : MonoBehaviour
         yield return new WaitUntil(() => loadOperation.isDone);
 
         Destroy(gameObject);
-        CurrentGamePhase.Value = GamePhase.LevelLoading;
     }
 }
