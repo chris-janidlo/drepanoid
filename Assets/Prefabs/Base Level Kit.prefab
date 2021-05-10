@@ -609,7 +609,6 @@ MonoBehaviour:
   LevelUnloadAnimationTime: 1.5
   Collider: {fileID: 7252330459009916758}
   LevelGoalReached: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-  CurrentGamePhase: {fileID: 11400000, guid: b906983b46c21344b9b037e0e42b61e2, type: 2}
 --- !u!61 &7252330459009916758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1237,7 +1236,6 @@ MonoBehaviour:
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
-  CurrentGamePhase: {fileID: 11400000, guid: b906983b46c21344b9b037e0e42b61e2, type: 2}
 --- !u!114 &7176194068828047497
 MonoBehaviour:
   m_ObjectHideFlags: 0
