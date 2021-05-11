@@ -6,15 +6,21 @@ public class SpriteLoadEffect : MonoBehaviour
 {
     public float ShowDelay;
     public CharacterAnimationsForLevelTransitions Animation;
-    public SpriteRenderer SpriteRenderer;
+    public List<SpriteRenderer> SpriteRenderers;
 
     void Start ()
     {
-        StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowDelay, SpriteRenderer));
+        foreach (var spriteRenderer in SpriteRenderers)
+        {
+            StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowDelay, spriteRenderer));
+        }
     }
 
     public void OnLevelGoalReached ()
     {
-        StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowDelay, SpriteRenderer));
+        foreach (var spriteRenderer in SpriteRenderers)
+        {
+            StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowDelay, spriteRenderer));
+        }
     }
 }
