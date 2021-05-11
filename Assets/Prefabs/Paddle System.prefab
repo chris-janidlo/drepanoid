@@ -664,6 +664,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 9, y: 10}
   TimeBetweenWanderingsRange: {x: 10, y: 10}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0.275
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6169930906684778033}
 --- !u!61 &5006718296371208279
@@ -771,6 +775,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 10, y: 11.5}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6300202809046288339}
 --- !u!60 &5006718296407592303
@@ -882,6 +890,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 9, y: 10}
   TimeBetweenWanderingsRange: {x: 10, y: 10}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0.275
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 7136475774545520138}
 --- !u!61 &5006718296671113423
@@ -989,6 +1001,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 10, y: 11.5}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 4074524428632079029}
 --- !u!60 &5006718297015235808
@@ -1100,6 +1116,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 10, y: 11.5}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 39404304067791657}
 --- !u!60 &5006718297230172129
@@ -1309,6 +1329,10 @@ MonoBehaviour:
   TimeUntilWanderRange: {x: 10, y: 11.5}
   TimeBetweenWanderingsRange: {x: 3, y: 5}
   TimeToReturnToNormalColorRange: {x: 0, y: 0.5}
+  MoveLagTransition:
+    value: 0
+    Time: 0.3
+    Ease: 21
   Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6451194425400790099}
 --- !u!60 &5006718297579847711

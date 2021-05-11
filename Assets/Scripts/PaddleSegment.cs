@@ -20,38 +20,8 @@ public class PaddleSegment : MonoBehaviour
 
     public float InheritSpeedAngleMultiplier, InheritSpeedBounceMultiplier;
 
-    public TransitionableFloat MoveLagTransition;
-
     public TranslationMover Mover;
     public PaddleSegmentAnimator Animator;
-
-    Vector3 startingLocalPosition, positionAtStartOfLag;
-    int previousMoveDirection;
-
-    void Start ()
-    {
-        MoveLagTransition.AttachMonoBehaviour(this);
-        MoveLagTransition.Value = 1;
-
-        startingLocalPosition = transform.localPosition;
-    }
-
-    void Update ()
-    {
-        var moveDirection = ternarySign(Mover.Velocity);
-        if (moveDirection != previousMoveDirection)
-        {
-            previousMoveDirection = moveDirection;
-
-            if (moveDirection != 0)
-            {
-                positionAtStartOfLag = transform.position;
-                MoveLagTransition.FlashFromTo(0, 1);
-            }
-        }
-
-        transform.position = Vector3.Lerp(positionAtStartOfLag, transform.parent.position + startingLocalPosition, MoveLagTransition.Value);
-    }
 
     void OnCollisionEnter2D (Collision2D collision)
     {
@@ -77,7 +47,7 @@ public class PaddleSegment : MonoBehaviour
 
     void paddleBounce (Ball ball)
     {
-        var inheritAngleDirection = ternarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
+        var inheritAngleDirection = MathfExtra.TernarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
         var inheritSpeedAngle = Mover.Velocity * InheritSpeedAngleMultiplier * inheritAngleDirection;
         var trueAngle = Mathf.Clamp(BounceAngle + inheritSpeedAngle, -180, 180);
 
@@ -94,10 +64,5 @@ public class PaddleSegment : MonoBehaviour
     {
         var rad = -angle * Mathf.Deg2Rad;
         return new Vector2(-Mathf.Sin(rad), Mathf.Cos(rad));
-    }
-
-    int ternarySign (float value)
-    {
-        return value == 0 ? 0 : Math.Sign(value);
     }
 }
