@@ -411,14 +411,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: 0
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: 0
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 16
+    InheritSpeedBounceMultiplier: 0.25
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 16
-  InheritSpeedBounceMultiplier: 0.25
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 1872676481818795759}
 --- !u!114 &1872676481818795759
 MonoBehaviour:
@@ -459,7 +459,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3125}
+  m_Offset: {x: 0.0625, y: 0.3125}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -470,7 +470,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.375}
+  m_Size: {x: 1.125, y: 0.375}
   m_EdgeRadius: 0
 --- !u!1 &5006718296407592298
 GameObject:
@@ -518,14 +518,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: -20
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: -20
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 16
+    InheritSpeedBounceMultiplier: 2
   BounceCutoffY: -0.1
   ReflectDownwardWhenNotBouncing: 0
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 16
-  InheritSpeedBounceMultiplier: 2
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 1828667829544008958}
 --- !u!114 &1828667829544008958
 MonoBehaviour:
@@ -581,7 +581,7 @@ PolygonCollider2D:
     - - {x: -0.25, y: 0.125}
       - {x: -0.375, y: 0}
       - {x: -0.375, y: -0.25}
-      - {x: 0.5, y: 0.375}
+      - {x: 0.625, y: 0.375}
       - {x: 0.25, y: 0.375}
 --- !u!1 &5006718296671113418
 GameObject:
@@ -629,14 +629,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: 0
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: 0
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 16
+    InheritSpeedBounceMultiplier: 0.25
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 16
-  InheritSpeedBounceMultiplier: 0.25
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 8884917621203931739}
 --- !u!114 &8884917621203931739
 MonoBehaviour:
@@ -677,7 +677,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3125}
+  m_Offset: {x: -0.0625, y: 0.3125}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -688,7 +688,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.375}
+  m_Size: {x: 1.125, y: 0.375}
   m_EdgeRadius: 0
 --- !u!1 &5006718297015235743
 GameObject:
@@ -736,14 +736,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: 20
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: 20
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 16
+    InheritSpeedBounceMultiplier: 2
   BounceCutoffY: -0.1
   ReflectDownwardWhenNotBouncing: 0
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 16
-  InheritSpeedBounceMultiplier: 2
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 3917294438047615051}
 --- !u!114 &3917294438047615051
 MonoBehaviour:
@@ -796,7 +796,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: 0.375}
+    - - {x: -0.625, y: 0.375}
       - {x: 0.375, y: -0.25}
       - {x: 0.375, y: 0}
       - {x: 0.25, y: 0.125}
@@ -847,14 +847,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: 2
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: 3
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 12
+    InheritSpeedBounceMultiplier: 1
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 12
-  InheritSpeedBounceMultiplier: 1
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 711530532147293333}
 --- !u!114 &711530532147293333
 MonoBehaviour:
@@ -907,8 +907,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.375, y: 0.5}
-      - {x: 0.375, y: 0.125}
+    - - {x: -0.5, y: 0.5}
+      - {x: 0.5, y: 0.125}
+      - {x: 0.5, y: 0.375}
       - {x: 0.375, y: 0.375}
       - {x: 0, y: 0.5}
 --- !u!1 &5006718297578559509
@@ -920,9 +921,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006718297578559508}
+  - component: {fileID: 5982228226228017169}
   - component: {fileID: 3344544277422841597}
-  - component: {fileID: 6005873260074512267}
-  - component: {fileID: 5040267765032130086}
   - component: {fileID: 5213435424915309384}
   - component: {fileID: 3057485477691327224}
   m_Layer: 0
@@ -952,6 +952,26 @@ Transform:
   m_Father: {fileID: 5006718296284899846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5982228226228017169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006718297578559509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc07e9ed8068544fb8f5dd09a50f308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Segments:
+  - {fileID: 5006718296407592302}
+  - {fileID: 5006718297579847710}
+  - {fileID: 5006718296671113422}
+  - {fileID: 5006718296371208278}
+  - {fileID: 5006718297230172128}
+  - {fileID: 5006718297015235811}
+  Mover: {fileID: 3344544277422841597}
 --- !u!114 &3344544277422841597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,49 +989,6 @@ MonoBehaviour:
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
---- !u!50 &6005873260074512267
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006718297578559509}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!66 &5040267765032130086
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006718297578559509}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
 --- !u!114 &5213435424915309384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,14 +1094,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b43bddb0cae444597805ea93c26e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSpeed: 20
-  BounceAngle: -2
+  BounceStats:
+    BounceSpeed: 20
+    BounceAngle: -3
+    OriginalXSpeedOfBallRetainedOnBounce: 0.1
+    InheritSpeedAngleMultiplier: 12
+    InheritSpeedBounceMultiplier: 1
   BounceCutoffY: 0.4
   ReflectDownwardWhenNotBouncing: 1
-  OriginalXSpeedOfBallRetainedOnBounce: 0.1
-  InheritSpeedAngleMultiplier: 12
-  InheritSpeedBounceMultiplier: 1
-  Mover: {fileID: 3344544277422841597}
   Animator: {fileID: 1310745706049045485}
 --- !u!114 &1310745706049045485
 MonoBehaviour:
@@ -1179,8 +1156,10 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0, y: 0.5}
       - {x: -0.375, y: 0.375}
+      - {x: -0.5, y: 0.375}
+      - {x: -0.5, y: 0.125}
       - {x: -0.375, y: 0.125}
-      - {x: 0.375, y: 0.5}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &6142763822189482210
 GameObject:
   m_ObjectHideFlags: 0
