@@ -26,4 +26,4 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: 33bb99f14f9fa694cbb77e10e16482bd, type: 3}
   - Tile: {fileID: 11400000, guid: 384cee66aad14594692ff2c67a53441d, type: 2}
     Sprite: {fileID: 21300000, guid: 659caf6a1ba931e4f8d1198d739ce825, type: 3}
-  FrameTimeRange: {x: 0, y: 0.2}
+  FrameTimeRange: {x: 0, y: 0.1}

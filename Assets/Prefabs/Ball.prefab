@@ -102,7 +102,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeathAnimationWaitTimeBeforeShrinking: 0.3
-  VictoriousDespawnWaitTime: 0.5
+  VictoriousDespawnWaitTime: 0.4
   BounceSpinMultiplier: 75
   AngularDrag: 0.9
   KillFloorY: -150

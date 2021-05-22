@@ -388,7 +388,7 @@ MonoBehaviour:
     _sceneName: Placeholder
     _scenePath: Assets/Scenes/Placeholder.unity
     _buildIndex: 5
-  LevelUnloadAnimationTime: 1.5
+  LevelUnloadAnimationTime: 0.7
   Collider: {fileID: 7252330459009916758}
   LevelGoalReached: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
 --- !u!61 &7252330459009916758
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3448971951c1d44da3254b2aa7516d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialDropDelay: 1.5
+  InitialDropDelay: 0.7
   RespawnDropDelay: 0.7
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowDelay: 0.7
+  ShowDelay: 0.2
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977597355872457}
 --- !u!114 &8412808528206098309
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa01394cafc51243a0fb9285537ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelLoadDelay: 0.7
+  LevelLoadDelay: 0.2
   MoveAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
 --- !u!114 &8297977597545156288
 MonoBehaviour:
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowDelay: 0.6
+  ShowDelay: 0.1
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977597812611044}
 --- !u!114 &4759918450633887690
@@ -1829,6 +1829,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8297977597983657522}
   - component: {fileID: 8297977597983657521}
+  - component: {fileID: 4005375984604903075}
+  - component: {fileID: 258817012451134314}
   - component: {fileID: 8297977597983657527}
   - component: {fileID: 8297977597983657520}
   - component: {fileID: 8297977597983657523}
@@ -1896,6 +1898,63 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &4005375984604903075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3139a8452c8c90944b814b6e49d48d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementOffset: 17
+  StartEase: 21
+  EndEase: 3
+  StartTime: 0.27
+  EndTime: 0.7
+  SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
+    type: 2}
+--- !u!114 &258817012451134314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4005375984604903075}
+        m_TargetAssemblyTypeName: CameraSceneFauxMover, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!81 &8297977597983657527
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2134,7 +2193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowDelay: 0.9
+  ShowDelay: 0.4
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977599257942351}
 --- !u!114 &3671820535866463594
@@ -2471,7 +2530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9f47b5475275e41aa6c2f60720acee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowDelay: 0.8
+  ShowDelay: 0.3
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 203681258947157634}
 --- !u!114 &889390412764876411
