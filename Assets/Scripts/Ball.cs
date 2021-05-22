@@ -36,7 +36,7 @@ public class Ball : MonoBehaviour
     public CharacterAnimationsForLevelTransitions CharacterAnimationsForLevelTransitions;
 
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
-    bool collidedThisFrame, spriteIsOn;
+    bool spriteIsOn;
 
     void Start ()
     {
@@ -65,8 +65,6 @@ public class Ball : MonoBehaviour
         spin();
 
         if (transform.position.y < KillFloorY) Kill();
-
-        collidedThisFrame = false;
     }
 
     /// <summary>
@@ -77,10 +75,6 @@ public class Ball : MonoBehaviour
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
         if (Dying) return;
-
-        // might be able to use a composite collider on paddles instead
-        if (collidedThisFrame) return;
-        collidedThisFrame = true;
 
         var validNormals = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
         if (!validNormals.Contains(cardinalCollisionNormal))
