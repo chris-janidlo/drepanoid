@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: {x: 1, y: 0}
+  _value: {x: 0, y: 0}
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}
-  _oldValue: {x: 1, y: 0}
-  _initialValue: {x: 1, y: 0}
+  _oldValue: {x: 0, y: 0}
+  _initialValue: {x: 0, y: 0}
   _preChangeTransformers: []
