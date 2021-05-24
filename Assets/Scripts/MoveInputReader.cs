@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class MoveInputReader : MonoBehaviour
 {
-    public float LevelLoadDelay;
+    public float LevelLoadDelay; // may be faster than the level load animation
     public FloatVariable MoveAxis;
 
     bool readEnabled;

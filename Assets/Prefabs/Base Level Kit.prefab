@@ -388,9 +388,9 @@ MonoBehaviour:
     _sceneName: Placeholder
     _scenePath: Assets/Scenes/Placeholder.unity
     _buildIndex: 5
-  LevelUnloadAnimationTime: 0.7
   Collider: {fileID: 7252330459009916758}
-  LevelGoalReached: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
 --- !u!61 &7252330459009916758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -855,11 +855,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3448971951c1d44da3254b2aa7516d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialDropDelay: 0.7
   RespawnDropDelay: 0.7
   SpawnPoint: {fileID: 3639872049352209259}
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
 --- !u!114 &7176194068828047497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,8 +1915,9 @@ MonoBehaviour:
   StartEase: 21
   EndEase: 3
   StartTime: 0.27
-  EndTime: 0.7
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
+    type: 2}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
 --- !u!114 &258817012451134314
 MonoBehaviour:

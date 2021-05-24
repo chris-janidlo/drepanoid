@@ -8,8 +8,10 @@ public class SceneTransitionCameraMover : MonoBehaviour
 {
     public float MovementOffset;
     public EasingFunction.Ease StartEase, EndEase;
-    public float StartTime, EndTime;
+    public float StartTime;
+
     public Vector2Variable SceneChangeDirection;
+    public SceneTransitionHelper SceneTransitionHelper;
 
     Vector3 offset => MovementOffset * SceneChangeDirection.Value;
 
@@ -37,6 +39,6 @@ public class SceneTransitionCameraMover : MonoBehaviour
 
     public void OnLevelGoalReached ()
     {
-        movementTransition.FlashFromTo(transform.position, transform.position + offset, EndTime, EndEase);
+        movementTransition.FlashFromTo(transform.position, transform.position + offset, SceneTransitionHelper.LevelUnloadAnimationTime, EndEase);
     }
 }

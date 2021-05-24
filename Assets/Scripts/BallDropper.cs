@@ -5,14 +5,15 @@ using UnityAtoms;
 
 public class BallDropper : MonoBehaviour
 {
-    public float InitialDropDelay, RespawnDropDelay;
+    public float RespawnDropDelay;
     public Transform SpawnPoint;
 
     public Ball BallPrefab;
+    public SceneTransitionHelper SceneTransitionHelper;
 
     IEnumerator Start ()
     {
-        yield return new WaitForSeconds(InitialDropDelay);
+        yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
         StartCoroutine(launchRoutine());
     }
 
