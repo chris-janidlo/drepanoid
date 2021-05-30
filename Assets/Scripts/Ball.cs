@@ -11,7 +11,6 @@ public class Ball : MonoBehaviour
     private static int deathsSinceLastExplosionDeath;
 
     public Vector2 Velocity { get; set; }
-    public bool Dying { get; private set; }
 
     public float Gravity;
     [Tooltip("Abstract constant that contains every variable in the drag equation that isn't velocity (so it includes coefficient of drag, reference area, and fluid density, which are all held constant throughout the game)")]
@@ -37,6 +36,7 @@ public class Ball : MonoBehaviour
 
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool spriteIsOn;
+    bool notInteractible, frozen;
 
     void Start ()
     {
@@ -50,7 +50,7 @@ public class Ball : MonoBehaviour
 
     void Update ()
     {
-        float scale = Dying
+        float scale = notInteractible
             ? DeathScaleTransition.Value
             : Mathf.Round(SpawnScaleTransition.Value * SpawnScaleTransitionRounding) / SpawnScaleTransitionRounding;
 
@@ -59,12 +59,11 @@ public class Ball : MonoBehaviour
 
     void FixedUpdate ()
     {
-        if (Dying) return;
+        if (!notInteractible && transform.position.y < KillFloorY) Kill();
+        if (frozen) return;
 
         move();
         spin();
-
-        if (transform.position.y < KillFloorY) Kill();
     }
 
     /// <summary>
@@ -74,7 +73,7 @@ public class Ball : MonoBehaviour
     /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
-        if (Dying) return;
+        if (notInteractible) return;
 
         var validNormals = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
         if (!validNormals.Contains(cardinalCollisionNormal))
@@ -93,15 +92,16 @@ public class Ball : MonoBehaviour
 
     public void Kill ()
     {
-        if (Dying) return;
+        if (notInteractible) return;
 
-        Dying = true;
+        notInteractible = true;
+        frozen = true;
         StartCoroutine(deathRoutine());
     }
 
     public void DespawnVictoriously ()
     {
-        Dying = true;
+        notInteractible = true;
 
         StartCoroutine(victoryRoutine());
     }
@@ -164,6 +164,7 @@ public class Ball : MonoBehaviour
     {
         yield return new WaitForSeconds(VictoriousDespawnWaitTime);
 
+        frozen = true;
         transform.rotation = Quaternion.identity;
         StartCoroutine(CharacterAnimationsForLevelTransitions.AnimateSpriteRendererUnload(0, SpriteRenderer));
     }
