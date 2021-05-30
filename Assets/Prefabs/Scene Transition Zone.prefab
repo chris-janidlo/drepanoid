@@ -52,7 +52,7 @@ MonoBehaviour:
     _buildIndex: -1
   AdjacentSceneDirection: {x: 0, y: 0}
   BallSpawnDelay: 0.7
-  ExitDisabledTimeAfterSpawning: 0.2
+  ExitDisabledTimeAfterSpawning: 0.5
   BallSpawnInitialVelocity: 10
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}

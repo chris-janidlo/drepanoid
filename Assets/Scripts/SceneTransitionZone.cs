@@ -45,6 +45,7 @@ public class SceneTransitionZone : MonoBehaviour
         if (ball == null) return;
 
         Collider.enabled = false;
+        ball.Velocity = ball.Velocity.magnitude * AdjacentSceneDirection;
         ball.DespawnVictoriously();
 
         SceneChangeDirection.Value = AdjacentSceneDirection;
