@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gravity: 25
-  DragCoefficient: 0.01
+  DragCoefficient: 0.02
   SpawnScaleTransition:
     value: 0
     Time: 0.7
