@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementOffset: 17
-  StartEase: 21
+  StartEase: 4
   EndEase: 3
   StartTime: 0.27
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
