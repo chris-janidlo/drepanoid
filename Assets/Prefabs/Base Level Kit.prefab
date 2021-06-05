@@ -797,16 +797,16 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 2
-      value: 0.3
-      inSlope: -0.1346015
-      outSlope: -0.1346015
+      value: 0.2
+      inSlope: -0.019605437
+      outSlope: -0.019605437
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.034552872
+      outWeight: 0.09543276
     - serializedVersion: 3
       time: 6
-      value: 0.13
+      value: 0.17
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -817,7 +817,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   FollowClampBoxExtents: {x: 6, y: 3}
-  MinimumDistanceToFollowBoxExtents: {x: 2, y: 8}
+  MinimumDistanceToFollowBoxExtents: {x: 0, y: 8}
   SceneTransitionMovementOffset: 17
   SceneLoadEase: 4
   SceneUnloadEase: 3
