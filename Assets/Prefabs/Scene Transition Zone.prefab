@@ -58,6 +58,8 @@ MonoBehaviour:
     type: 3}
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
+  CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
+    type: 2}
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
   Collider: {fileID: 1805651279731318352}

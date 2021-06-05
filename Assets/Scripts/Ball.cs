@@ -25,6 +25,8 @@ public class Ball : MonoBehaviour
     [Range(0, 1)]
     public float AngularDrag;
 
+    public Vector2Variable CameraTrackingPosition;
+
     public float KillFloorY;
     public VoidEvent BallDied;
 
@@ -34,6 +36,7 @@ public class Ball : MonoBehaviour
 
     public CharacterAnimationsForLevelTransitions CharacterAnimationsForLevelTransitions;
 
+    Vector3 initialPosition;
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool spriteIsOn;
     bool notInteractible, frozen;
@@ -46,6 +49,8 @@ public class Ball : MonoBehaviour
 
         spriteIsOn = RandomExtra.Chance(.5f);
         flipSprite();
+
+        initialPosition = transform.position;
     }
 
     void Update ()
@@ -59,11 +64,18 @@ public class Ball : MonoBehaviour
 
     void FixedUpdate ()
     {
+        CameraTrackingPosition.Value = transform.position;
+
         if (!notInteractible && transform.position.y < KillFloorY) Kill();
         if (frozen) return;
 
         move();
         spin();
+    }
+
+    void OnDestroy ()
+    {
+        CameraTrackingPosition.Value = initialPosition;
     }
 
     /// <summary>

@@ -15,7 +15,7 @@ public class SceneTransitionZone : MonoBehaviour
     public float BallSpawnDelay, ExitDisabledTimeAfterSpawning, BallSpawnInitialVelocity;
     public Ball BallPrefab;
 
-    public Vector2Variable SceneChangeDirection;
+    public Vector2Variable SceneChangeDirection, CameraTrackingPosition;
     public SceneTransitionHelper SceneTransitionHelper;
     public Collider2D Collider;
 
@@ -28,6 +28,7 @@ public class SceneTransitionZone : MonoBehaviour
         {
             isSpawnPoint = true;
             yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
+            CameraTrackingPosition.Value = transform.position;
             yield return respawnRoutine();
         }
     }

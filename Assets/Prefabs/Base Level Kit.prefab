@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8297977597355872462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8297977597825549461}
@@ -715,7 +715,6 @@ GameObject:
   - component: {fileID: 4005375984604903075}
   - component: {fileID: 258817012451134314}
   - component: {fileID: 8297977597983657527}
-  - component: {fileID: 8297977597983657520}
   - component: {fileID: 8297977597983657523}
   m_Layer: 0
   m_Name: Main Camera
@@ -763,8 +762,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 126.3
-  orthographic: 1
+  field of view: 129.8
+  orthographic: 0
   orthographic size: 1
   m_Depth: -1
   m_CullingMask:
@@ -793,10 +792,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3139a8452c8c90944b814b6e49d48d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementOffset: 17
-  StartEase: 4
-  EndEase: 3
-  StartTime: 0.27
+  TrackingFollowTimeByTravelDistance:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 2
+      value: 0.3
+      inSlope: -0.1346015
+      outSlope: -0.1346015
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.034552872
+    - serializedVersion: 3
+      time: 6
+      value: 0.13
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  FollowClampBoxExtents: {x: 6, y: 3}
+  MinimumDistanceToFollowBoxExtents: {x: 2, y: 8}
+  SceneTransitionMovementOffset: 17
+  SceneLoadEase: 4
+  SceneUnloadEase: 3
+  SceneLoadTransitionTime: 0.27
+  CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
+    type: 2}
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
@@ -847,26 +874,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8297977597983657526}
   m_Enabled: 1
---- !u!114 &8297977597983657520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977597983657526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AssetsPPU: 8
-  m_RefResolutionX: 512
-  m_RefResolutionY: 342
-  m_UpscaleRT: 0
-  m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
 --- !u!114 &8297977597983657523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,7 +963,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8297977599257942348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8297977597825549461}
@@ -1146,7 +1153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8345523708363224435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8297977597825549461}
