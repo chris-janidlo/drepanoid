@@ -106,25 +106,17 @@ public class CameraMover : MonoBehaviour
             updateY = Mathf.Abs(difference.y) >= MinimumDistanceToFollowBoxExtents.y;
         }
 
-        Vector2 target = new Vector2
-        (
-            updateX ? CameraTrackingPosition.Value.x : previouslyTrackedTarget.x,
-            updateY ? CameraTrackingPosition.Value.y : previouslyTrackedTarget.y
-        );
+        float x = updateX
+            ? Mathf.Round(Mathf.Clamp(CameraTrackingPosition.Value.x, -FollowClampBoxExtents.x, FollowClampBoxExtents.x)
+                * AssetPixelsPerUnit) / AssetPixelsPerUnit
+            : previouslyTrackedTarget.x;
 
-        if (updateX || updateY) previouslyTrackedTarget = target;
-
-        Vector2 clampedTarget = new Vector2
-        (
-            Mathf.Clamp(target.x, -FollowClampBoxExtents.x, FollowClampBoxExtents.x),
-            Mathf.Clamp(target.y, -FollowClampBoxExtents.y, FollowClampBoxExtents.y)
-        );
-
-        return new Vector2
-        (
-            Mathf.Round(clampedTarget.x * AssetPixelsPerUnit) / AssetPixelsPerUnit,
-            Mathf.Round(clampedTarget.y * AssetPixelsPerUnit) / AssetPixelsPerUnit
-        );
+        float y = updateY
+            ? Mathf.Round(Mathf.Clamp(CameraTrackingPosition.Value.y, -FollowClampBoxExtents.y, FollowClampBoxExtents.y)
+                * AssetPixelsPerUnit) / AssetPixelsPerUnit
+            : previouslyTrackedTarget.y;
+        
+        return previouslyTrackedTarget = new Vector2(x, y);
     }
 
     float getPixelPerfectZDistanceFromOrigin ()
