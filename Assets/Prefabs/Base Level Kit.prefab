@@ -760,9 +760,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
-  field of view: 129.8
+  field of view: 90
   orthographic: 0
   orthographic size: 1
   m_Depth: -1
@@ -792,6 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3139a8452c8c90944b814b6e49d48d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Camera: {fileID: 8297977597983657521}
   TrackingFollowTimeByTravelDistance:
     serializedVersion: 2
     m_Curve:
@@ -818,16 +819,18 @@ MonoBehaviour:
     m_RotationOrder: 4
   FollowClampBoxExtents: {x: 6, y: 3}
   MinimumDistanceToFollowBoxExtents: {x: 0, y: 8}
+  CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
+    type: 2}
   SceneTransitionMovementOffset: 17
   SceneLoadEase: 4
   SceneUnloadEase: 3
   SceneLoadTransitionTime: 0.27
-  CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
-    type: 2}
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
+  AssetPixelsPerUnit: 8
+  ReferenceResolution: {x: 512, y: 342}
 --- !u!114 &258817012451134314
 MonoBehaviour:
   m_ObjectHideFlags: 0

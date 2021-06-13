@@ -6,27 +6,39 @@ using crass;
 
 public class CameraMover : MonoBehaviour
 {
+    public Camera Camera;
+
+    [Header("Position Tracking")]
     [Tooltip("Refers to the distance the camera needs to travel, not the distance from the camera to the position it's tracking.")]
     public AnimationCurve TrackingFollowTimeByTravelDistance;
     public Vector2 FollowClampBoxExtents, MinimumDistanceToFollowBoxExtents;
+    public Vector2Variable CameraTrackingPosition;
 
+    [Header("Scene Transitions")]
     public float SceneTransitionMovementOffset;
     public EasingFunction.Ease SceneLoadEase, SceneUnloadEase;
     public float SceneLoadTransitionTime;
-
-    public Vector2Variable CameraTrackingPosition, SceneChangeDirection;
+    public Vector2Variable SceneChangeDirection;
     public SceneTransitionHelper SceneTransitionHelper;
+
+    [Header("Pixel Perfection")]
+    public int AssetPixelsPerUnit;
+    public Vector2Int ReferenceResolution;
 
     Vector3 sceneTransitionOffset => SceneTransitionMovementOffset * SceneChangeDirection.Value;
 
+    Vector2 xyPlanePosition;
+    float zDistanceFromOrigin;
+
     TransitionableVector2 sceneChangeMovementTransition;
     Vector2 smoothFollowVelocity, previouslyTrackedTarget;
-    float zPosition;
+
+    Vector2Int resolution;
+    float fov;
 
     void Start ()
     {
         CameraTrackingPosition.Value = transform.position;
-        zPosition = transform.position.z;
 
         sceneChangeMovementTransition = new TransitionableVector2();
         sceneChangeMovementTransition.AttachMonoBehaviour(this);
@@ -35,11 +47,27 @@ public class CameraMover : MonoBehaviour
 
     void Update ()
     {
-        Vector3 newPos;
+        updateXyPlanePosition();
+        updateZDistanceFromOrigin();
 
+        Camera.transform.position = new Vector3
+        (
+            xyPlanePosition.x,
+            xyPlanePosition.y,
+            -zDistanceFromOrigin
+        );
+    }
+
+    public void OnLevelGoalReached ()
+    {
+        sceneChangeMovementTransition.FlashFromTo(transform.position, transform.position + sceneTransitionOffset, SceneTransitionHelper.LevelUnloadAnimationTime, SceneUnloadEase);
+    }
+
+    void updateXyPlanePosition ()
+    {
         if (sceneChangeMovementTransition.Transitioning)
         {
-            newPos = sceneChangeMovementTransition.Value;
+            xyPlanePosition = sceneChangeMovementTransition.Value;
         }
         else
         {
@@ -47,16 +75,19 @@ public class CameraMover : MonoBehaviour
             float distance = Vector2.Distance(transform.position, target);
             float time = TrackingFollowTimeByTravelDistance.Evaluate(distance);
 
-            newPos = Vector2.SmoothDamp(transform.position, target, ref smoothFollowVelocity, time);
+            xyPlanePosition = Vector2.SmoothDamp(transform.position, target, ref smoothFollowVelocity, time);
         }
-
-        newPos.z = zPosition;
-        transform.position = newPos;
     }
 
-    public void OnLevelGoalReached ()
+    void updateZDistanceFromOrigin ()
     {
-        sceneChangeMovementTransition.FlashFromTo(transform.position, transform.position + sceneTransitionOffset, SceneTransitionHelper.LevelUnloadAnimationTime, SceneUnloadEase);
+        float currentHorizontalFov = Camera.VerticalToHorizontalFieldOfView(Camera.fieldOfView, (float) Screen.width / Screen.height);
+        if (resolution.x != Screen.width || resolution.y != Screen.height || fov != currentHorizontalFov)
+        {
+            resolution = new Vector2Int(Screen.width, Screen.height);
+            fov = currentHorizontalFov;
+            zDistanceFromOrigin = getPixelPerfectZDistanceFromOrigin();
+        }
     }
 
     Vector2 getFollowTarget ()
@@ -83,10 +114,31 @@ public class CameraMover : MonoBehaviour
 
         if (updateX || updateY) previouslyTrackedTarget = target;
 
-        return new Vector2
+        Vector2 clampedTarget = new Vector2
         (
             Mathf.Clamp(target.x, -FollowClampBoxExtents.x, FollowClampBoxExtents.x),
             Mathf.Clamp(target.y, -FollowClampBoxExtents.y, FollowClampBoxExtents.y)
         );
+
+        return new Vector2
+        (
+            Mathf.Round(clampedTarget.x * AssetPixelsPerUnit) / AssetPixelsPerUnit,
+            Mathf.Round(clampedTarget.y * AssetPixelsPerUnit) / AssetPixelsPerUnit
+        );
+    }
+
+    float getPixelPerfectZDistanceFromOrigin ()
+    {
+        float pixelMultiplier = Mathf.Max(1, Mathf.Min
+        (
+            resolution.x / ReferenceResolution.x,
+            resolution.y / ReferenceResolution.y
+        ));
+
+        float frustrumWidthShouldBe = resolution.x / AssetPixelsPerUnit / pixelMultiplier;
+        float innerFrustrumAngles = (180f - fov) / 2f * Mathf.Deg2Rad;
+        float distanceFromOrigin = Mathf.Tan(innerFrustrumAngles) * frustrumWidthShouldBe / 2f;
+
+        return distanceFromOrigin;
     }
 }
