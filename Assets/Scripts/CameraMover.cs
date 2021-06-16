@@ -18,6 +18,10 @@ public class CameraMover : MonoBehaviour
     public float SceneTransitionMovementOffset;
     public EasingFunction.Ease SceneLoadEase, SceneUnloadEase;
     public float SceneLoadTransitionTime;
+
+    public float NormalFov, FlattenedFov;
+    public TransitionableFloat SceneLoadFovTransition, SceneUnloadFovTransition;
+
     public Vector2Variable SceneChangeDirection;
     public SceneTransitionHelper SceneTransitionHelper;
 
@@ -43,10 +47,16 @@ public class CameraMover : MonoBehaviour
         sceneChangeMovementTransition = new TransitionableVector2();
         sceneChangeMovementTransition.AttachMonoBehaviour(this);
         sceneChangeMovementTransition.FlashFromTo(-sceneTransitionOffset, Vector2.zero, SceneLoadTransitionTime, SceneLoadEase);
+
+        SceneLoadFovTransition.AttachMonoBehaviour(this);
+        SceneLoadFovTransition.FlashFromTo(FlattenedFov, NormalFov);
+
+        SceneUnloadFovTransition.AttachMonoBehaviour(this);
     }
 
     void Update ()
     {
+        updateFov();
         updateXyPlanePosition();
         updateZDistanceFromOrigin();
 
@@ -61,6 +71,20 @@ public class CameraMover : MonoBehaviour
     public void OnLevelGoalReached ()
     {
         sceneChangeMovementTransition.FlashFromTo(transform.position, transform.position + sceneTransitionOffset, SceneTransitionHelper.LevelUnloadAnimationTime, SceneUnloadEase);
+        SceneUnloadFovTransition.FlashFromTo(NormalFov, FlattenedFov);
+    }
+
+    void updateFov ()
+    {
+        if (SceneLoadFovTransition.Transitioning)
+        {
+            Camera.fieldOfView = SceneLoadFovTransition.Value;
+        }
+
+        if (SceneUnloadFovTransition.Transitioning)
+        {
+            Camera.fieldOfView = SceneUnloadFovTransition.Value;
+        }
     }
 
     void updateXyPlanePosition ()
