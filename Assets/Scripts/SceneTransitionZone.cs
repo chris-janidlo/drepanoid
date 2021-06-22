@@ -8,14 +8,21 @@ public class SceneTransitionZone : MonoBehaviour
 {
     public Vector2 SpawnDirection => -AdjacentSceneDirection;
 
+    [Tooltip("When moving to the next level, the SceneTransitionTargetTag is set to TargetTransitionZoneTag. When arriving in a level, the transition zone with the Tag value that matches SceneTransitionTargetTag will be used as the spawn transition zone.")]
+    public string Tag;
+
     public SceneField AdjacentScene;
-    [Tooltip("This has 2 uses: 1) when the ball hits this (ie, this is treated as an exit), this is the direction the camera should move when transitioning to the next scene, and 2) if the value of SceneChangeDirection is the exact negative of this, then this will be treated as the spawn point for the duration that this scene is loaded")]
+    [Tooltip("When moving to the next level, the SceneTransitionTargetTag is set to TargetTransitionZoneTag. When arriving in a level, the transition zone with the Tag value that matches SceneTransitionTargetTag will be used as the spawn transition zone.")]
+    public string TargetTransitionZoneTag;
+
+    [Tooltip("The direction that the camera should travel when moving to the adjacent level, and the opposite of the direction the camera should travel when arriving here")]
     public Vector2 AdjacentSceneDirection;
 
     public float BallSpawnDelay, ExitDisabledTimeAfterSpawning, BallSpawnInitialVelocity;
     public Ball BallPrefab;
 
     public Vector2Variable SceneChangeDirection, CameraTrackingPosition;
+    public StringVariable SceneTransitionTargetTag;
     public SceneTransitionHelper SceneTransitionHelper;
     public Collider2D Collider;
 
@@ -24,7 +31,7 @@ public class SceneTransitionZone : MonoBehaviour
 
     IEnumerator Start ()
     {
-        if (SceneChangeDirection.Value == SpawnDirection)
+        if (SceneTransitionTargetTag.Value == Tag)
         {
             isSpawnPoint = true;
             yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
@@ -50,6 +57,7 @@ public class SceneTransitionZone : MonoBehaviour
         ball.DespawnVictoriously();
 
         SceneChangeDirection.Value = AdjacentSceneDirection;
+        SceneTransitionTargetTag.Value = TargetTransitionZoneTag;
         StartCoroutine(SceneTransitionHelper.UnloadCurrentLevelAndLoadNextRoutine(AdjacentScene));
     }
 

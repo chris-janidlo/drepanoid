@@ -45,11 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbe1b4823c8df7459328edd9f030f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tag: 
   AdjacentScene:
     _sceneAsset: {fileID: 0}
     _sceneName: 
     _scenePath: 
     _buildIndex: -1
+  TargetTransitionZoneTag: 
   AdjacentSceneDirection: {x: 0, y: 0}
   BallSpawnDelay: 0.7
   ExitDisabledTimeAfterSpawning: 0.5
@@ -59,6 +61,8 @@ MonoBehaviour:
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
+    type: 2}
+  SceneTransitionTargetTag: {fileID: 11400000, guid: 706e3356135a2804bb19233c8c7acb23,
     type: 2}
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
