@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Finished Levels/Tutorial 0.unity
+    path: Assets/Scenes/Levels/Tutorial 0.unity
     guid: aaebc5b1a4551dc44a11f1462a4d0261
   - enabled: 1
-    path: Assets/Scenes/Finished Levels/Tutorial 1.unity
+    path: Assets/Scenes/Levels/Tutorial 1.unity
     guid: 9154e8212622fbe4c86fbfaca97b8096
   - enabled: 1
-    path: Assets/Scenes/Finished Levels/Screen Peeking.unity
+    path: Assets/Scenes/Levels/Screen Peeking.unity
     guid: 4d69739d991aa634b999a1b4bbdce0d4
   - enabled: 1
-    path: Assets/Scenes/Finished Levels/Under and Over.unity
+    path: Assets/Scenes/Levels/Under and Over.unity
     guid: 8fe39bce85a7e3a408323e9b131955ba
   - enabled: 1
     path: Assets/Scenes/Demo Done.unity
@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Placeholder.unity
     guid: 98c4ec346cd8d5449b72f4b94076c3b9
   - enabled: 1
-    path: Assets/Scenes/WIP Levels/Endless Fallway.unity
+    path: Assets/Scenes/Prototype Levels/Endless Fallway.unity
     guid: 7e9d0679e36b0b9479f014050839bc96
   m_configObjects: {}
