@@ -9,7 +9,7 @@ public class Paddle : MonoBehaviour
     public List<PaddleSegment> Segments;
     public TranslationMover Mover;
 
-    PaddleSegmentCollision lastCollisionThisFrame, penultimateCollisionThisFrame;
+    PaddleCollision lastBounceThisFrame, penultimateBounceThisFrame, reflectionThisFrame;
 
     void Start ()
     {
@@ -21,56 +21,56 @@ public class Paddle : MonoBehaviour
 
     void FixedUpdate ()
     {
-        if (lastCollisionThisFrame == null) return;
-
-        if (lastCollisionThisFrame.IsReflectionBounce)
+        if (lastBounceThisFrame != null)
         {
-            reflectionBounce();
+            bounce();
         }
-        else
+        else if (reflectionThisFrame != null)
         {
-            paddleBounce();
+            reflect();
         }
 
-        lastCollisionThisFrame = null;
-        penultimateCollisionThisFrame = null;
+        lastBounceThisFrame = null;
+        penultimateBounceThisFrame = null;
+        reflectionThisFrame = null;
     }
 
-    public void RegisterCollision (PaddleSegmentCollision collision)
+    public void RegisterBounce (PaddleCollision collision)
     {
-        penultimateCollisionThisFrame = lastCollisionThisFrame;
-        lastCollisionThisFrame = collision;
+        penultimateBounceThisFrame = lastBounceThisFrame;
+        lastBounceThisFrame = collision;
     }
 
-    void reflectionBounce ()
+    public void RegisterReflection (PaddleCollision collision)
     {
-        var ball = lastCollisionThisFrame.Ball;
-        var reflectNormal =  lastCollisionThisFrame.PaddleSegment.ReflectDownwardWhenNotBouncing
-            ? Vector2.down
-            : -lastCollisionThisFrame.Collision.GetContact(0).normal;
-        var newVelocity = Vector2.Reflect(ball.Velocity, reflectNormal);
+        reflectionThisFrame = collision;
+    }
+
+    void reflect ()
+    {
+        Ball ball = reflectionThisFrame.Ball;
+        Vector2 newVelocity = Vector2.Reflect(ball.Velocity, Vector2.down);
         ball.Bounce(newVelocity, Vector2Int.down);
     }
 
-    void paddleBounce ()
+    void bounce ()
     {
-        List<PaddleSegmentBounceStats> statBlocks = new List<PaddleSegmentBounceStats>();
-        statBlocks.Add(lastCollisionThisFrame.PaddleSegment.BounceStats);
+        List<PaddleSegmentBounceStats> statBlocks = new List<PaddleSegmentBounceStats> { lastBounceThisFrame.PaddleSegment.BounceStats };
 
-        if (penultimateCollisionThisFrame != null && collisionsWereNextToEachOther())
+        if (penultimateBounceThisFrame != null && collisionsWereNextToEachOther())
         {
-            statBlocks.Add(penultimateCollisionThisFrame.PaddleSegment.BounceStats);
+            statBlocks.Add(penultimateBounceThisFrame.PaddleSegment.BounceStats);
         }
 
         PaddleSegmentBounceStats bounceStats = PaddleSegmentBounceStats.Average(statBlocks);
 
-        var inheritAngleDirection = MathfExtra.TernarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
-        var inheritSpeedAngle = Mover.Velocity * bounceStats.InheritSpeedAngleMultiplier * inheritAngleDirection;
-        var trueAngle = Mathf.Clamp(bounceStats.BounceAngle + inheritSpeedAngle, -180, 180);
+        float inheritAngleDirection = MathfExtra.TernarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
+        float inheritSpeedAngle = Mover.Velocity * bounceStats.InheritSpeedAngleMultiplier * inheritAngleDirection;
+        float exitAngleOffPaddle = Mathf.Clamp(bounceStats.BounceAngle + inheritSpeedAngle, -180, 180);
 
-        var ball = lastCollisionThisFrame.Ball;
-        var trueSpeed = bounceStats.BounceSpeed + Mathf.Abs(Mover.Velocity) * bounceStats.InheritSpeedBounceMultiplier;
-        var newVelocity = trueSpeed * angleToVector(trueAngle);
+        Ball ball = lastBounceThisFrame.Ball;
+        float speed = bounceStats.BounceSpeed + Mathf.Abs(Mover.Velocity) * bounceStats.InheritSpeedBounceMultiplier;
+        Vector2 newVelocity = speed * angleToVector(exitAngleOffPaddle);
         newVelocity.x += ball.Velocity.x * bounceStats.OriginalXSpeedOfBallRetainedOnBounce;
 
         ball.Bounce(newVelocity, Vector2Int.up);
@@ -78,14 +78,14 @@ public class Paddle : MonoBehaviour
 
     bool collisionsWereNextToEachOther ()
     {
-        PaddleSegment lastSegment = lastCollisionThisFrame.PaddleSegment,
-            penultimateSegment = penultimateCollisionThisFrame.PaddleSegment;
+        PaddleSegment lastSegment = lastBounceThisFrame.PaddleSegment,
+            penultimateSegment = penultimateBounceThisFrame.PaddleSegment;
         return Mathf.Abs(Segments.IndexOf(lastSegment) - Segments.IndexOf(penultimateSegment)) == 1;
     }
 
     Vector2 angleToVector (float angle)
     {
-        var rad = -angle * Mathf.Deg2Rad;
+        float rad = -angle * Mathf.Deg2Rad;
         return new Vector2(-Mathf.Sin(rad), Mathf.Cos(rad));
     }
 }

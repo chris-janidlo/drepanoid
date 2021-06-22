@@ -249,6 +249,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3649230059897373334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2765321117496608592}
+  - component: {fileID: 6950383409735620358}
+  - component: {fileID: 249983982596711728}
+  m_Layer: 0
+  m_Name: Reflection Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2765321117496608592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649230059897373334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5006718297578559508}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6950383409735620358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649230059897373334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1382641cf71a8da408ba1b8541e8c965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Paddle: {fileID: 5982228226228017169}
+--- !u!60 &249983982596711728
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649230059897373334}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2, y: 0.125}
+      - {x: -2, y: 0.125}
+      - {x: -2.875, y: -0.25}
+      - {x: -2.625, y: -0.5}
+      - {x: 2.625, y: -0.5}
+      - {x: 2.875, y: -0.25}
 --- !u!1 &4014414679294877939
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,8 +493,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 16
     InheritSpeedBounceMultiplier: 0.25
-  BounceCutoffY: 0.4
-  ReflectDownwardWhenNotBouncing: 1
   Animator: {fileID: 1872676481818795759}
 --- !u!114 &1872676481818795759
 MonoBehaviour:
@@ -524,8 +598,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 16
     InheritSpeedBounceMultiplier: 2
-  BounceCutoffY: -0.1
-  ReflectDownwardWhenNotBouncing: 0
   Animator: {fileID: 1828667829544008958}
 --- !u!114 &1828667829544008958
 MonoBehaviour:
@@ -635,8 +707,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 16
     InheritSpeedBounceMultiplier: 0.25
-  BounceCutoffY: 0.4
-  ReflectDownwardWhenNotBouncing: 1
   Animator: {fileID: 8884917621203931739}
 --- !u!114 &8884917621203931739
 MonoBehaviour:
@@ -742,8 +812,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 16
     InheritSpeedBounceMultiplier: 2
-  BounceCutoffY: -0.1
-  ReflectDownwardWhenNotBouncing: 0
   Animator: {fileID: 3917294438047615051}
 --- !u!114 &3917294438047615051
 MonoBehaviour:
@@ -853,8 +921,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 12
     InheritSpeedBounceMultiplier: 1
-  BounceCutoffY: 0.4
-  ReflectDownwardWhenNotBouncing: 1
   Animator: {fileID: 711530532147293333}
 --- !u!114 &711530532147293333
 MonoBehaviour:
@@ -949,6 +1015,7 @@ Transform:
   - {fileID: 5006718296371208277}
   - {fileID: 5006718297230172063}
   - {fileID: 5006718297015235742}
+  - {fileID: 2765321117496608592}
   m_Father: {fileID: 5006718296284899846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1100,8 +1167,6 @@ MonoBehaviour:
     OriginalXSpeedOfBallRetainedOnBounce: 0.1
     InheritSpeedAngleMultiplier: 12
     InheritSpeedBounceMultiplier: 1
-  BounceCutoffY: 0.4
-  ReflectDownwardWhenNotBouncing: 1
   Animator: {fileID: 1310745706049045485}
 --- !u!114 &1310745706049045485
 MonoBehaviour:
