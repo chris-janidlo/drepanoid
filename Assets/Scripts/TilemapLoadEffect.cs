@@ -11,6 +11,7 @@ public class TilemapLoadEffect : MonoBehaviour
     public CharacterAnimationsForLevelTransitions Animation;
 
     public Tilemap Tilemap;
+    public TilemapCollider2D TilemapCollider;
 
     class IndividualTileAnimationTracker
     {
@@ -36,6 +37,8 @@ public class TilemapLoadEffect : MonoBehaviour
 
     IEnumerator playAnimation (bool loading)
     {
+        if (TilemapCollider != null) TilemapCollider.enabled = false;
+
         List<IndividualTileAnimationTracker> animationData = new List<IndividualTileAnimationTracker>();
 
         foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
@@ -84,5 +87,7 @@ public class TilemapLoadEffect : MonoBehaviour
             Array.Clear(tileArray, 0, cursor);
             cursor = 0;
         }
+
+        if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
     }
 }

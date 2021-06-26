@@ -151,8 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd114a7fe6b27d43ae6cb08e5827e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bakedCollisions: {fileID: 0}
-  isABakedCollisionsObject: 0
 --- !u!114 &4230730252139146711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +183,7 @@ MonoBehaviour:
   ShowDelay: 0.2
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977597355872457}
+  TilemapCollider: {fileID: 2730405434620197742}
 --- !u!114 &8412808528206098309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +616,7 @@ MonoBehaviour:
   ShowDelay: 0.1
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977597812611044}
+  TilemapCollider: {fileID: 6555465827887985193}
 --- !u!114 &4759918450633887690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,6 +1100,7 @@ MonoBehaviour:
   ShowDelay: 0.4
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 8297977599257942351}
+  TilemapCollider: {fileID: 0}
 --- !u!114 &3671820535866463594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,6 +1438,7 @@ MonoBehaviour:
   ShowDelay: 0.3
   Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
   Tilemap: {fileID: 203681258947157634}
+  TilemapCollider: {fileID: 0}
 --- !u!114 &889390412764876411
 MonoBehaviour:
   m_ObjectHideFlags: 0
