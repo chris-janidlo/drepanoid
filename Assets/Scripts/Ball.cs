@@ -39,7 +39,7 @@ public class Ball : MonoBehaviour
     Vector3 initialPosition;
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
     bool spriteIsOn;
-    bool notInteractible, frozen;
+    bool frozen, despawningVictoriously;
 
     void Start ()
     {
@@ -55,7 +55,7 @@ public class Ball : MonoBehaviour
 
     void Update ()
     {
-        float scale = notInteractible
+        float scale = frozen
             ? DeathScaleTransition.Value
             : Mathf.Round(SpawnScaleTransition.Value * SpawnScaleTransitionRounding) / SpawnScaleTransitionRounding;
 
@@ -64,13 +64,13 @@ public class Ball : MonoBehaviour
 
     void FixedUpdate ()
     {
-        CameraTrackingPosition.Value = transform.position;
-
-        if (!notInteractible && transform.position.y < KillFloorY) Kill();
         if (frozen) return;
+        else if (transform.position.y < KillFloorY) Kill();
 
         move();
         spin();
+
+        CameraTrackingPosition.Value = transform.position;
     }
 
     void OnDestroy ()
@@ -85,7 +85,7 @@ public class Ball : MonoBehaviour
     /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
     public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
     {
-        if (notInteractible) return;
+        if (frozen) return;
 
         var validNormals = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
         if (!validNormals.Contains(cardinalCollisionNormal))
@@ -104,26 +104,29 @@ public class Ball : MonoBehaviour
 
     public void Kill ()
     {
-        if (notInteractible) return;
+        if (frozen) return;
 
-        notInteractible = true;
         frozen = true;
         StartCoroutine(deathRoutine());
     }
 
     public void DespawnVictoriously ()
     {
-        notInteractible = true;
+        if (frozen || despawningVictoriously) return;
 
+        despawningVictoriously = true;
         StartCoroutine(victoryRoutine());
     }
 
     void move ()
     {
-        Velocity += Vector2.down * Gravity * Time.deltaTime;
+        if (!despawningVictoriously)
+        {
+            Velocity += Vector2.down * Gravity * Time.deltaTime;
 
-        var dragAcceleration = DragCoefficient * (Velocity.sqrMagnitude / 2) * -Velocity.normalized; // drag equation
-        Velocity += dragAcceleration * Time.deltaTime;
+            var dragAcceleration = DragCoefficient * (Velocity.sqrMagnitude / 2) * -Velocity.normalized; // drag equation
+            Velocity += dragAcceleration * Time.deltaTime;
+        }
 
         transform.position += (Vector3) Velocity * Time.deltaTime;
     }
