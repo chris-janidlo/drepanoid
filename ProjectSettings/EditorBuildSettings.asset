@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Tutorial 1.unity
     guid: 9154e8212622fbe4c86fbfaca97b8096
   - enabled: 1
-    path: Assets/Scenes/Levels/Screen Peeking.unity
+    path: Assets/Scenes/Levels/Tutorial Escape Boss.unity
     guid: 4d69739d991aa634b999a1b4bbdce0d4
   - enabled: 1
     path: Assets/Scenes/Levels/Under and Over.unity
