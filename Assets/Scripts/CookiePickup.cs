@@ -16,7 +16,7 @@ public class CookiePickup : MonoBehaviour
     public Animator Animator;
 
     public float ShowAnimationDelay;
-    public CharacterAnimationsForLevelTransitions Animation;
+    public CharacterLoadAnimations Animation;
 
     bool alreadyCollected;
     Vector3 initialPosition;

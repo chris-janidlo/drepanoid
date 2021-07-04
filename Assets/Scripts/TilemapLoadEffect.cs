@@ -8,7 +8,7 @@ using crass;
 public class TilemapLoadEffect : MonoBehaviour
 {
     public float ShowDelay;
-    public CharacterAnimationsForLevelTransitions Animation;
+    public CharacterLoadAnimations Animation;
 
     public Tilemap Tilemap;
     public TilemapCollider2D TilemapCollider;
@@ -19,7 +19,7 @@ public class TilemapLoadEffect : MonoBehaviour
         public TileBase FinalTile;
         public int CurrentFrame;
         public float Timer;
-        public List<CharacterAnimationsForLevelTransitions.AnimationFrame> Frames;
+        public List<CharacterLoadAnimations.AnimationFrame> Frames;
 
         public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
         public bool IsFinished => CurrentFrame >= Frames.Count;
@@ -51,7 +51,7 @@ public class TilemapLoadEffect : MonoBehaviour
                 Position = cellPosition,
                 FinalTile = loading ? tile : null,
                 CurrentFrame = -1,
-                Frames = loading ? Animation.LevelLoadAnimation : Animation.LevelUnloadAnimation
+                Frames = loading ? Animation.LoadAnimation : Animation.UnloadAnimation
             });
 
             if (loading) Tilemap.SetTile(cellPosition, null);

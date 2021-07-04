@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpriteLoadEffect : MonoBehaviour
 {
     public float ShowDelay;
-    public CharacterAnimationsForLevelTransitions Animation;
+    public CharacterLoadAnimations Animation;
     public List<SpriteRenderer> SpriteRenderers;
 
     void Start ()

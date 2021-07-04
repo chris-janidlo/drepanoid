@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Serialization;
 using crass;
 
 [CreateAssetMenu(menuName = "Character Animations for Level Transitions", fileName = "newCharacterAnimations.asset")]
-public class CharacterAnimationsForLevelTransitions : ScriptableObject
+public class CharacterLoadAnimations : ScriptableObject
 {
     [Serializable]
     public struct AnimationFrame
@@ -15,7 +16,10 @@ public class CharacterAnimationsForLevelTransitions : ScriptableObject
         public Sprite Sprite;
     }
 
-    public List<AnimationFrame> LevelLoadAnimation, LevelUnloadAnimation;
+    [FormerlySerializedAs("LevelLoadAnimation")]
+    public List<AnimationFrame> LoadAnimation;
+    [FormerlySerializedAs("LevelUnloadAnimation")]
+    public List<AnimationFrame> UnloadAnimation;
     public Vector2 FrameTimeRange;
 
     public IEnumerator AnimateSpriteRendererLoad (float showDelay, SpriteRenderer spriteRenderer)
@@ -35,7 +39,7 @@ public class CharacterAnimationsForLevelTransitions : ScriptableObject
         if (loading) spriteRenderer.sprite = null;
         yield return new WaitForSeconds(showDelay);
 
-        var frames = loading ? LevelLoadAnimation : LevelUnloadAnimation;
+        var frames = loading ? LoadAnimation : UnloadAnimation;
         foreach (var frame in frames)
         {
             spriteRenderer.sprite = frame.Sprite;

@@ -34,7 +34,7 @@ public class Ball : MonoBehaviour
     public SpriteRenderer SpriteRenderer;
     public Collider2D Collider;
 
-    public CharacterAnimationsForLevelTransitions CharacterAnimationsForLevelTransitions;
+    public CharacterLoadAnimations CharacterAnimationsForLevelTransitions;
 
     Vector3 initialPosition;
     float angularVelocity; // positive = clockwise, negative = counter-clockwise
