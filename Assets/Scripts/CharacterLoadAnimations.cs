@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,24 @@ public class CharacterLoadAnimations : ScriptableObject
     public List<AnimationFrame> UnloadAnimation;
     public Vector2 FrameTimeRange;
 
+    public class TileSpecification
+    {
+        public Vector3Int Position;
+        public TileBase Tile;
+    }
+
+    class TileAnimationTracker
+    {
+        public Vector3Int Position;
+        public TileBase FinalTile;
+        public int CurrentFrame;
+        public float Timer;
+        public List<AnimationFrame> Frames;
+
+        public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
+        public bool IsFinished => CurrentFrame >= Frames.Count;
+    }
+
     public IEnumerator AnimateSpriteRendererLoad (float showDelay, SpriteRenderer spriteRenderer)
     {
         yield return animateSpriteRendererInternal(showDelay, spriteRenderer, true);
@@ -30,6 +49,50 @@ public class CharacterLoadAnimations : ScriptableObject
     public IEnumerator AnimateSpriteRendererUnload (float showDelay, SpriteRenderer spriteRenderer)
     {
         yield return animateSpriteRendererInternal(showDelay, spriteRenderer, false);
+    }
+
+    public IEnumerator AnimateTileset (float showDelay, Tilemap tilemap, List<TileSpecification> tiles, bool loading)
+    {
+        List<TileAnimationTracker> animationData = tiles.
+            Select(t => new TileAnimationTracker
+            {
+                Position = t.Position,
+                FinalTile = loading ? t.Tile : null,
+                CurrentFrame = -1,
+                Frames = loading ? LoadAnimation : UnloadAnimation
+            })
+            .ToList();
+
+        yield return new WaitForSeconds(showDelay);
+
+        Vector3Int[] positionArray = new Vector3Int[animationData.Count];
+        TileBase[] tileArray = new TileBase[animationData.Count];
+        int cursor = 0;
+
+        while (animationData.Count > 0)
+        {
+            foreach (var data in animationData)
+            {
+                data.Timer -= Time.deltaTime;
+                if (data.Timer > 0) continue;
+
+                data.Timer = RandomExtra.Range(FrameTimeRange);
+                data.CurrentFrame++;
+
+                positionArray[cursor] = data.Position;
+                tileArray[cursor] = data.CurrentTile;
+                cursor++;
+            }
+
+            tilemap.SetTiles(positionArray, tileArray);
+            animationData.RemoveAll(anim => anim.IsFinished);
+
+            yield return null;
+
+            Array.Clear(positionArray, 0, cursor);
+            Array.Clear(tileArray, 0, cursor);
+            cursor = 0;
+        }
     }
 
     IEnumerator animateSpriteRendererInternal (float showDelay, SpriteRenderer spriteRenderer, bool loading)

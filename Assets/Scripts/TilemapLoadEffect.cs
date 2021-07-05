@@ -39,54 +39,19 @@ public class TilemapLoadEffect : MonoBehaviour
     {
         if (TilemapCollider != null) TilemapCollider.enabled = false;
 
-        List<IndividualTileAnimationTracker> animationData = new List<IndividualTileAnimationTracker>();
+        List<CharacterLoadAnimations.TileSpecification> tiles = new List<CharacterLoadAnimations.TileSpecification>();
 
         foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
         {
             var tile = Tilemap.GetTile(cellPosition);
             if (tile == null) continue;
 
-            animationData.Add(new IndividualTileAnimationTracker
-            {
-                Position = cellPosition,
-                FinalTile = loading ? tile : null,
-                CurrentFrame = -1,
-                Frames = loading ? Animation.LoadAnimation : Animation.UnloadAnimation
-            });
+            tiles.Add(new CharacterLoadAnimations.TileSpecification { Position = cellPosition, Tile = tile, });
 
             if (loading) Tilemap.SetTile(cellPosition, null);
         }
 
-        yield return new WaitForSeconds(ShowDelay);
-
-        Vector3Int[] positionArray = new Vector3Int[animationData.Count];
-        TileBase[] tileArray = new TileBase[animationData.Count];
-        int cursor = 0;
-
-        while (animationData.Count > 0)
-        {
-            foreach (var data in animationData)
-            {
-                data.Timer -= Time.deltaTime;
-                if (data.Timer > 0) continue;
-
-                data.Timer = RandomExtra.Range(Animation.FrameTimeRange);
-                data.CurrentFrame++;
-
-                positionArray[cursor] = data.Position;
-                tileArray[cursor] = data.CurrentTile;
-                cursor++;
-            }
-
-            Tilemap.SetTiles(positionArray, tileArray);
-            animationData.RemoveAll(anim => anim.IsFinished);
-
-            yield return null;
-
-            Array.Clear(positionArray, 0, cursor);
-            Array.Clear(tileArray, 0, cursor);
-            cursor = 0;
-        }
+        yield return Animation.AnimateTileset(ShowDelay, Tilemap, tiles, loading);
 
         if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
     }
