@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e14c93c160eed5348a5f8f168897c8a8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Font: {fileID: 11400000, guid: 6f8864388a88cc54e9d6bb763eebb74b, type: 2}
+  - Animations: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  - TextQueue: {fileID: 11400000, guid: eb1ca770dbd2d7946ad4c7311997bab0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
