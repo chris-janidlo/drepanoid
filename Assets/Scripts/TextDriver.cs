@@ -102,6 +102,6 @@ public class TextDriver : MonoBehaviour
 
         MainTextTilemap.SetTiles(positions, tiles);
 
-        // TODO: everything
+        // TODO: animatinos, scrolling deletions
     }
 }
