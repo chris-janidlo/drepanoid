@@ -1,28 +1,31 @@
 using System;
 using UnityEngine;
 
-[Serializable]
-public class SerializableNullable<T> where T : struct
+namespace Drepanoid
 {
-    [SerializeField] private T _value;
-    public bool HasValue;
-
-    public T? ToNullable
+    [Serializable]
+    public class SerializableNullable<T> where T : struct
     {
-        get => HasValue ? _value : null as T?;
-        set
+        [SerializeField] private T _value;
+        public bool HasValue;
+
+        public T? ToNullable
         {
-            HasValue = value.HasValue;
-            if (HasValue) _value = value.Value;
+            get => HasValue ? _value : null as T?;
+            set
+            {
+                HasValue = value.HasValue;
+                if (HasValue) _value = value.Value;
+            }
         }
-    }
 
-    public T Value => ToNullable.Value;
+        public T Value => ToNullable.Value;
 
-    public SerializableNullable () { }
+        public SerializableNullable () { }
 
-    public SerializableNullable(T? value)
-    {
-        ToNullable = value;
+        public SerializableNullable (T? value)
+        {
+            ToNullable = value;
+        }
     }
 }

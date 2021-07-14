@@ -3,60 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms;
 
-public class CookiePickup : MonoBehaviour
+namespace Drepanoid
 {
-    public Cookie Cookie;
-    public Color NormalColor, AlreadyCollectedColor;
-    public float FloatSpeed;
-    public string AnimatorDeathTrigger;
-
-    public CookieValueList CollectedCookies;
-    public SpriteRenderer SpriteRenderer;
-    public Collider2D Collider;
-    public Animator Animator;
-
-    public float ShowAnimationDelay;
-    public CharacterLoadAnimations Animation;
-
-    bool alreadyCollected;
-    Vector3 initialPosition;
-
-    IEnumerator Start ()
+    public class CookiePickup : MonoBehaviour
     {
-        alreadyCollected = CollectedCookies.Contains(Cookie);
-        SpriteRenderer.color = alreadyCollected ? AlreadyCollectedColor : NormalColor;
+        public Cookie Cookie;
+        public Color NormalColor, AlreadyCollectedColor;
+        public float FloatSpeed;
+        public string AnimatorDeathTrigger;
 
-        initialPosition = transform.position;
+        public CookieValueList CollectedCookies;
+        public SpriteRenderer SpriteRenderer;
+        public Collider2D Collider;
+        public Animator Animator;
 
-        Animator.enabled = false;
-        yield return StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowAnimationDelay, SpriteRenderer));
-        Animator.enabled = true;
-    }
+        public float ShowAnimationDelay;
+        public CharacterLoadAnimations Animation;
 
-    void Update ()
-    {
-        var yOffset = Mathf.Sin(FloatSpeed * Time.time) / 8f;
-        yOffset = Mathf.Round(yOffset * 8f) / 8f;
-        transform.position = initialPosition + Vector3.up * yOffset;
-    }
-    
-    void OnTriggerEnter2D (Collider2D collision)
-    {
-        if (collision.gameObject.GetComponent<Ball>() == null) return;
+        bool alreadyCollected;
+        Vector3 initialPosition;
 
-        Animator.SetTrigger(AnimatorDeathTrigger);
-        Collider.enabled = false;
-    }
+        IEnumerator Start ()
+        {
+            alreadyCollected = CollectedCookies.Contains(Cookie);
+            SpriteRenderer.color = alreadyCollected ? AlreadyCollectedColor : NormalColor;
 
-    public void OnLevelGoalReached ()
-    {
-        Animator.enabled = false;
-        StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowAnimationDelay, SpriteRenderer));
-    }
+            initialPosition = transform.position;
 
-    public void FinalizeCollect ()
-    {
-        if (!alreadyCollected) CollectedCookies.Add(Cookie);
-        Destroy(gameObject);
+            Animator.enabled = false;
+            yield return StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowAnimationDelay, SpriteRenderer));
+            Animator.enabled = true;
+        }
+
+        void Update ()
+        {
+            var yOffset = Mathf.Sin(FloatSpeed * Time.time) / 8f;
+            yOffset = Mathf.Round(yOffset * 8f) / 8f;
+            transform.position = initialPosition + Vector3.up * yOffset;
+        }
+
+        void OnTriggerEnter2D (Collider2D collision)
+        {
+            if (collision.gameObject.GetComponent<Ball>() == null) return;
+
+            Animator.SetTrigger(AnimatorDeathTrigger);
+            Collider.enabled = false;
+        }
+
+        public void OnLevelGoalReached ()
+        {
+            Animator.enabled = false;
+            StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowAnimationDelay, SpriteRenderer));
+        }
+
+        public void FinalizeCollect ()
+        {
+            if (!alreadyCollected) CollectedCookies.Add(Cookie);
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,15 +1,18 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Cookie Data", fileName = "newCookie.asset")]
-public class Cookie : ScriptableObject, IEquatable<Cookie>
+namespace Drepanoid
 {
-    public string Header;
-    [TextArea(5, 500)]
-    public string Data;
-
-    public bool Equals (Cookie other)
+    [CreateAssetMenu(menuName = "Cookie Data", fileName = "newCookie.asset")]
+    public class Cookie : ScriptableObject, IEquatable<Cookie>
     {
-        return base.Equals(other);
+        public string Header;
+        [TextArea(5, 500)]
+        public string Data;
+
+        public bool Equals (Cookie other)
+        {
+            return base.Equals(other);
+        }
     }
 }

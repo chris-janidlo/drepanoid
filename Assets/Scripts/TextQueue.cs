@@ -4,33 +4,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 
-[CreateAssetMenu(menuName = "Text Queue", fileName = "newTextQueue.asset")]
-public class TextQueue : ScriptableObject
+namespace Drepanoid
 {
-    public delegate IEnumerator Setter (TextEffectData data);
-    public delegate void Deleter (Vector2Int regionStartPosition, Vector2Int regionExtents);
-
-    Setter setter;
-    Deleter deleter;
-
-    public void RegisterProcessors (Setter setter, Deleter deleter)
+    [CreateAssetMenu(menuName = "Text Queue", fileName = "newTextQueue.asset")]
+    public class TextQueue : ScriptableObject
     {
-        if (this.setter != null || this.deleter != null)
+        public delegate IEnumerator Setter (TextEffectData data);
+        public delegate void Deleter (Vector2Int regionStartPosition, Vector2Int regionExtents);
+
+        Setter setter;
+        Deleter deleter;
+
+        public void RegisterProcessors (Setter setter, Deleter deleter)
         {
-            throw new InvalidOperationException("processors are already registered");
+            if (this.setter != null || this.deleter != null)
+            {
+                throw new InvalidOperationException("processors are already registered");
+            }
+
+            this.setter = setter;
+            this.deleter = deleter;
         }
 
-        this.setter = setter;
-        this.deleter = deleter;
-    }
+        public IEnumerator SetText (TextEffectData effectData)
+        {
+            yield return setter(effectData);
+        }
 
-    public IEnumerator SetText (TextEffectData effectData)
-    {
-        yield return setter(effectData);
-    }
-
-    public void Delete (Vector2Int regionStartPosition, Vector2Int regionExtents)
-    {
-        deleter(regionStartPosition, regionExtents);
+        public void Delete (Vector2Int regionStartPosition, Vector2Int regionExtents)
+        {
+            deleter(regionStartPosition, regionExtents);
+        }
     }
 }

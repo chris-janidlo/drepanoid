@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class TextEffectData : IEquatable<TextEffectData>
+namespace Drepanoid
 {
-    [Header("Required Data")]
-    public string Text;
-    public Vector2Int StartingPosition;
-    public TilesetFont Font;
-
-    [Header("Optional Data")]
-    public SerializableNullable<int> CharactersPerSecondScroll;
-    public CharacterLoadAnimations Animations;
-
-    public bool Equals (TextEffectData other)
+    [Serializable]
+    public class TextEffectData : IEquatable<TextEffectData>
     {
-        return base.Equals(other);
+        [Header("Required Data")]
+        public string Text;
+        public Vector2Int StartingPosition;
+        public TilesetFont Font;
+
+        [Header("Optional Data")]
+        public SerializableNullable<int> CharactersPerSecondScroll;
+        public CharacterLoadAnimations Animations;
+
+        public bool Equals (TextEffectData other)
+        {
+            return base.Equals(other);
+        }
     }
 }

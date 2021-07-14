@@ -7,16 +7,18 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityAtoms.BaseAtoms;
 
-public class KillZone : MonoBehaviour
+namespace Drepanoid
 {
-    void OnTriggerEnter2D (Collider2D collision)
+    public class KillZone : MonoBehaviour
     {
-        Ball ball = collision.GetComponent<Ball>();
-
-        if (ball != null)
+        void OnTriggerEnter2D (Collider2D collision)
         {
-            ball.Kill();
+            Ball ball = collision.GetComponent<Ball>();
+
+            if (ball != null)
+            {
+                ball.Kill();
+            }
         }
     }
 }
-

@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class PaddleSegment : MonoBehaviour
+namespace Drepanoid
 {
-    public PaddleSegmentBounceStats BounceStats;
-    public PaddleSegmentAnimator Animator;
-
-    Paddle paddle;
-
-    public void Initialize (Paddle paddle)
+    [RequireComponent(typeof(Collider2D))]
+    public class PaddleSegment : MonoBehaviour
     {
-        this.paddle = paddle;
-    }
+        public PaddleSegmentBounceStats BounceStats;
+        public PaddleSegmentAnimator Animator;
 
-    void OnCollisionEnter2D (Collision2D collision)
-    {
-        Ball ball = collision.gameObject.GetComponent<Ball>();
-        if (ball == null) return;
+        Paddle paddle;
 
-        paddle.RegisterBounce(new PaddleCollision { PaddleSegment = this, Ball = ball, Collision = collision });
-        Animator.OnBounce();
+        public void Initialize (Paddle paddle)
+        {
+            this.paddle = paddle;
+        }
+
+        void OnCollisionEnter2D (Collision2D collision)
+        {
+            Ball ball = collision.gameObject.GetComponent<Ball>();
+            if (ball == null) return;
+
+            paddle.RegisterBounce(new PaddleCollision { PaddleSegment = this, Ball = ball, Collision = collision });
+            Animator.OnBounce();
+        }
     }
 }

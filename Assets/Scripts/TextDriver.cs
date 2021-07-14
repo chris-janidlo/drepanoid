@@ -5,103 +5,106 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class TextDriver : MonoBehaviour
+namespace Drepanoid
 {
-    public Tilemap MainTextTilemap, TextShadowTilemap;
-    public TextQueue TextQueue;
-
-    void Awake ()
+    public class TextDriver : MonoBehaviour
     {
-        TextQueue.RegisterProcessors(setTextRoutine, clearTextRoutine);
-    }
+        public Tilemap MainTextTilemap, TextShadowTilemap;
+        public TextQueue TextQueue;
 
-    IEnumerator setTextRoutine (TextEffectData data)
-    {
-        string cleanedText = data.Text.Replace("\r", "");
-
-        if (cleanedText.Any(c => !data.Font.CanPrint(c)))
+        void Awake ()
         {
-            throw new ArgumentException("text contains unprintable characters");
+            TextQueue.RegisterProcessors(setTextRoutine, clearTextRoutine);
         }
 
-        Vector3Int tilemapCursor = new Vector3Int(data.StartingPosition.x, data.StartingPosition.y, 0);
-        int textCursor = 0;
-
-        float? charactersPerSecond = data.CharactersPerSecondScroll.ToNullable;
-        List<CharacterLoadAnimations.TileSpecification> tilesToAdd = new List<CharacterLoadAnimations.TileSpecification>(cleanedText.Length);
-
-        while (textCursor < cleanedText.Length)
+        IEnumerator setTextRoutine (TextEffectData data)
         {
-            int charactersPerFrame = charactersPerSecond.HasValue
-                ? Mathf.Max(Mathf.RoundToInt(charactersPerSecond.Value * Time.deltaTime), 1)
-                : cleanedText.Length;
+            string cleanedText = data.Text.Replace("\r", "");
 
-            int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - textCursor);
-            string textToSet = cleanedText.Substring(textCursor, textToSetLength);
-            textCursor += textToSetLength;
-
-            tilesToAdd.Clear();
-
-            foreach (char c in textToSet)
+            if (cleanedText.Any(c => !data.Font.CanPrint(c)))
             {
-                switch (c)
-                {
-                    case '\t':
-                        tilemapCursor += Vector3Int.right * data.Font.SpacesPerTab;
-                        break;
-                    case '\n':
-                        tilemapCursor = new Vector3Int(data.StartingPosition.x, tilemapCursor.y - 1, 0);
-                        break;
-                    default:
-                        Tile tile = data.Font.GetPrintableAsciiCharacter(c);
-                        tilesToAdd.Add(new CharacterLoadAnimations.TileSpecification { Position = tilemapCursor, Tile = tile });
-                        tilemapCursor += Vector3Int.right;
-                        break;
-                }
+                throw new ArgumentException("text contains unprintable characters");
             }
 
-            if (tilesToAdd.Count > 0)
+            Vector3Int tilemapCursor = new Vector3Int(data.StartingPosition.x, data.StartingPosition.y, 0);
+            int textCursor = 0;
+
+            float? charactersPerSecond = data.CharactersPerSecondScroll.ToNullable;
+            List<CharacterLoadAnimations.TileSpecification> tilesToAdd = new List<CharacterLoadAnimations.TileSpecification>(cleanedText.Length);
+
+            while (textCursor < cleanedText.Length)
             {
-                // TODO: figure out which tilemap(s) to do
-                Tilemap tilemap = MainTextTilemap;
+                int charactersPerFrame = charactersPerSecond.HasValue
+                    ? Mathf.Max(Mathf.RoundToInt(charactersPerSecond.Value * Time.deltaTime), 1)
+                    : cleanedText.Length;
 
-                if (data.Animations != null)
+                int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - textCursor);
+                string textToSet = cleanedText.Substring(textCursor, textToSetLength);
+                textCursor += textToSetLength;
+
+                tilesToAdd.Clear();
+
+                foreach (char c in textToSet)
                 {
-                    // TODO: manage the lifecycle of these animations properly (ie, abort the animation if something else is printed over or if the position gets deleted)
-                    StartCoroutine(data.Animations.AnimateTileset(0, tilemap, tilesToAdd, true));
+                    switch (c)
+                    {
+                        case '\t':
+                            tilemapCursor += Vector3Int.right * data.Font.SpacesPerTab;
+                            break;
+                        case '\n':
+                            tilemapCursor = new Vector3Int(data.StartingPosition.x, tilemapCursor.y - 1, 0);
+                            break;
+                        default:
+                            Tile tile = data.Font.GetPrintableAsciiCharacter(c);
+                            tilesToAdd.Add(new CharacterLoadAnimations.TileSpecification { Position = tilemapCursor, Tile = tile });
+                            tilemapCursor += Vector3Int.right;
+                            break;
+                    }
                 }
-                else
+
+                if (tilesToAdd.Count > 0)
                 {
-                    tilemap.SetTiles(tilesToAdd.Select(t => t.Position).ToArray(), tilesToAdd.Select(t => t.Tile).ToArray());
+                    // TODO: figure out which tilemap(s) to do
+                    Tilemap tilemap = MainTextTilemap;
+
+                    if (data.Animations != null)
+                    {
+                        // TODO: manage the lifecycle of these animations properly (ie, abort the animation if something else is printed over or if the position gets deleted)
+                        StartCoroutine(data.Animations.AnimateTileset(0, tilemap, tilesToAdd, true));
+                    }
+                    else
+                    {
+                        tilemap.SetTiles(tilesToAdd.Select(t => t.Position).ToArray(), tilesToAdd.Select(t => t.Tile).ToArray());
+                    }
                 }
-            }
 
-            if (charactersPerSecond.HasValue) yield return new WaitForSeconds(1f / charactersPerSecond.Value);
-        }
-    }
-
-    void clearTextRoutine (Vector2Int regionStartPosition, Vector2Int regionExtents)
-    {
-        int
-            xWidth = Mathf.Abs(regionExtents.x),
-            yWidth = Mathf.Abs(regionExtents.y),
-            xDir = Math.Sign(regionExtents.x),
-            yDir = Math.Sign(regionExtents.y);
-
-        Vector3Int[,] positions2d = new Vector3Int[xWidth, yWidth];
-        for (int i = 0; i < xWidth; i++)
-        {
-            for (int j = 0; j < yWidth; j++)
-            {
-                positions2d[i, j] = new Vector3Int(regionStartPosition.x + xDir * i, regionStartPosition.y + yDir * j, 0);
+                if (charactersPerSecond.HasValue) yield return new WaitForSeconds(1f / charactersPerSecond.Value);
             }
         }
 
-        Vector3Int[] positions = positions2d.Cast<Vector3Int>().ToArray();
-        TileBase[] tiles = Enumerable.Repeat<TileBase>(null, xWidth * yWidth).ToArray();
+        void clearTextRoutine (Vector2Int regionStartPosition, Vector2Int regionExtents)
+        {
+            int
+                xWidth = Mathf.Abs(regionExtents.x),
+                yWidth = Mathf.Abs(regionExtents.y),
+                xDir = Math.Sign(regionExtents.x),
+                yDir = Math.Sign(regionExtents.y);
 
-        MainTextTilemap.SetTiles(positions, tiles);
+            Vector3Int[,] positions2d = new Vector3Int[xWidth, yWidth];
+            for (int i = 0; i < xWidth; i++)
+            {
+                for (int j = 0; j < yWidth; j++)
+                {
+                    positions2d[i, j] = new Vector3Int(regionStartPosition.x + xDir * i, regionStartPosition.y + yDir * j, 0);
+                }
+            }
 
-        // TODO: animatinos, scrolling deletions
+            Vector3Int[] positions = positions2d.Cast<Vector3Int>().ToArray();
+            TileBase[] tiles = Enumerable.Repeat<TileBase>(null, xWidth * yWidth).ToArray();
+
+            MainTextTilemap.SetTiles(positions, tiles);
+
+            // TODO: animatinos, scrolling deletions
+        }
     }
 }

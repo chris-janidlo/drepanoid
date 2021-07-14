@@ -5,54 +5,57 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using crass;
 
-public class TilemapLoadEffect : MonoBehaviour
+namespace Drepanoid
 {
-    public float ShowDelay;
-    public CharacterLoadAnimations Animation;
-
-    public Tilemap Tilemap;
-    public TilemapCollider2D TilemapCollider;
-
-    class IndividualTileAnimationTracker
+    public class TilemapLoadEffect : MonoBehaviour
     {
-        public Vector3Int Position;
-        public TileBase FinalTile;
-        public int CurrentFrame;
-        public float Timer;
-        public List<CharacterLoadAnimations.AnimationFrame> Frames;
+        public float ShowDelay;
+        public CharacterLoadAnimations Animation;
 
-        public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
-        public bool IsFinished => CurrentFrame >= Frames.Count;
-    }
+        public Tilemap Tilemap;
+        public TilemapCollider2D TilemapCollider;
 
-    void Start ()
-    {
-        StartCoroutine(playAnimation(true));
-    }
-
-    public void OnLevelGoalReached ()
-    {
-        StartCoroutine(playAnimation(false));
-    }
-
-    IEnumerator playAnimation (bool loading)
-    {
-        if (TilemapCollider != null) TilemapCollider.enabled = false;
-
-        List<CharacterLoadAnimations.TileSpecification> tiles = new List<CharacterLoadAnimations.TileSpecification>();
-
-        foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
+        class IndividualTileAnimationTracker
         {
-            var tile = Tilemap.GetTile(cellPosition);
-            if (tile == null) continue;
+            public Vector3Int Position;
+            public TileBase FinalTile;
+            public int CurrentFrame;
+            public float Timer;
+            public List<CharacterLoadAnimations.AnimationFrame> Frames;
 
-            tiles.Add(new CharacterLoadAnimations.TileSpecification { Position = cellPosition, Tile = tile, });
-
-            if (loading) Tilemap.SetTile(cellPosition, null);
+            public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
+            public bool IsFinished => CurrentFrame >= Frames.Count;
         }
 
-        yield return Animation.AnimateTileset(ShowDelay, Tilemap, tiles, loading);
+        void Start ()
+        {
+            StartCoroutine(playAnimation(true));
+        }
 
-        if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
+        public void OnLevelGoalReached ()
+        {
+            StartCoroutine(playAnimation(false));
+        }
+
+        IEnumerator playAnimation (bool loading)
+        {
+            if (TilemapCollider != null) TilemapCollider.enabled = false;
+
+            List<CharacterLoadAnimations.TileSpecification> tiles = new List<CharacterLoadAnimations.TileSpecification>();
+
+            foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
+            {
+                var tile = Tilemap.GetTile(cellPosition);
+                if (tile == null) continue;
+
+                tiles.Add(new CharacterLoadAnimations.TileSpecification { Position = cellPosition, Tile = tile, });
+
+                if (loading) Tilemap.SetTile(cellPosition, null);
+            }
+
+            yield return Animation.AnimateTileset(ShowDelay, Tilemap, tiles, loading);
+
+            if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
+        }
     }
 }

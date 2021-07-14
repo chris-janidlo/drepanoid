@@ -4,70 +4,73 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiagnosticLogEffect : MonoBehaviour
+namespace Drepanoid
 {
-    [Serializable]
-    public class LogLine
+    public class DiagnosticLogEffect : MonoBehaviour
     {
-        public string Text;
-        public float EndDelay;
-    }
-
-    [Header("Data")]
-    public List<LogLine> LogTextLines;
-    public Vector2Int StartingPosition;
-    [Min(1)] public int CharactersPerSecondScroll = 1;
-    [Min(0)] public int MaximumLinesOfHistoryToDisplay = 1;
-    public TilesetFont Font;
-    public CharacterLoadAnimations Animations;
-
-    [Header("References")]
-    public TextQueue TextQueue;
-
-    IEnumerator Start ()
-    {
-        int lineCursor = 0;
-        LogLine currentLine;
-        List<string> logHistory = new List<string>(MaximumLinesOfHistoryToDisplay + 1);
-
-        int maxLineLength = LogTextLines.Max(l => l.Text.Length);
-
-        while (true)
+        [Serializable]
+        public class LogLine
         {
-            TextQueue.Delete(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1));
+            public string Text;
+            public float EndDelay;
+        }
 
-            currentLine = LogTextLines[lineCursor];
+        [Header("Data")]
+        public List<LogLine> LogTextLines;
+        public Vector2Int StartingPosition;
+        [Min(1)] public int CharactersPerSecondScroll = 1;
+        [Min(0)] public int MaximumLinesOfHistoryToDisplay = 1;
+        public TilesetFont Font;
+        public CharacterLoadAnimations Animations;
 
-            var currentLineTextEffectData = new TextEffectData
+        [Header("References")]
+        public TextQueue TextQueue;
+
+        IEnumerator Start ()
+        {
+            int lineCursor = 0;
+            LogLine currentLine;
+            List<string> logHistory = new List<string>(MaximumLinesOfHistoryToDisplay + 1);
+
+            int maxLineLength = LogTextLines.Max(l => l.Text.Length);
+
+            while (true)
             {
-                Text = currentLine.Text,
-                StartingPosition = StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay,
-                Font = Font,
-                CharactersPerSecondScroll = new SerializableNullable<int>(CharactersPerSecondScroll),
-                Animations = Animations
-            };
+                TextQueue.Delete(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1));
 
-            yield return TextQueue.SetText(currentLineTextEffectData);
-            yield return new WaitForSeconds(currentLine.EndDelay);
+                currentLine = LogTextLines[lineCursor];
 
-            logHistory.Add(currentLine.Text);
-            if (logHistory.Count > MaximumLinesOfHistoryToDisplay) logHistory.RemoveAt(0);
+                var currentLineTextEffectData = new TextEffectData
+                {
+                    Text = currentLine.Text,
+                    StartingPosition = StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay,
+                    Font = Font,
+                    CharactersPerSecondScroll = new SerializableNullable<int>(CharactersPerSecondScroll),
+                    Animations = Animations
+                };
 
-            TextQueue.Delete(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay));
+                yield return TextQueue.SetText(currentLineTextEffectData);
+                yield return new WaitForSeconds(currentLine.EndDelay);
 
-            var historyTextEffectData = new TextEffectData
-            {
-                Text = string.Join("\n", logHistory),
-                StartingPosition = StartingPosition + Vector2Int.down * (MaximumLinesOfHistoryToDisplay - logHistory.Count),
-                Font = Font,
-                CharactersPerSecondScroll = new SerializableNullable<int>(null), // ensures that entire block of text displays immediately
-                Animations = Animations
-            };
+                logHistory.Add(currentLine.Text);
+                if (logHistory.Count > MaximumLinesOfHistoryToDisplay) logHistory.RemoveAt(0);
 
-            StartCoroutine(TextQueue.SetText(historyTextEffectData));
+                TextQueue.Delete(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay));
 
-            lineCursor++;
-            lineCursor %= LogTextLines.Count;
+                var historyTextEffectData = new TextEffectData
+                {
+                    Text = string.Join("\n", logHistory),
+                    StartingPosition = StartingPosition + Vector2Int.down * (MaximumLinesOfHistoryToDisplay - logHistory.Count),
+                    Font = Font,
+                    CharactersPerSecondScroll = new SerializableNullable<int>(null), // ensures that entire block of text displays immediately
+                    Animations = Animations
+                };
+
+                StartCoroutine(TextQueue.SetText(historyTextEffectData));
+
+                lineCursor++;
+                lineCursor %= LogTextLines.Count;
+            }
         }
     }
 }

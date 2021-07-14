@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaddleReflectionBounceZone : MonoBehaviour
+namespace Drepanoid
 {
-    public Paddle Paddle;
-
-    void OnCollisionEnter2D (Collision2D collision)
+    public class PaddleReflectionBounceZone : MonoBehaviour
     {
-        Ball ball = collision.gameObject.GetComponent<Ball>();
-        if (ball == null) return;
+        public Paddle Paddle;
 
-        Paddle.RegisterReflection(new PaddleCollision { Ball = ball, Collision = collision });
+        void OnCollisionEnter2D (Collision2D collision)
+        {
+            Ball ball = collision.gameObject.GetComponent<Ball>();
+            if (ball == null) return;
+
+            Paddle.RegisterReflection(new PaddleCollision { Ball = ball, Collision = collision });
+        }
     }
 }

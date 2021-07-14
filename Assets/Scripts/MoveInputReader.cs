@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using UnityEngine.InputSystem;
 
-public class MoveInputReader : MonoBehaviour
+namespace Drepanoid
 {
-    public float LevelLoadDelay; // may be faster than the level load animation
-    public FloatVariable MoveAxis;
-
-    bool readEnabled;
-
-    IEnumerator Start ()
+    public class MoveInputReader : MonoBehaviour
     {
-        yield return new WaitForSeconds(LevelLoadDelay);
-        readEnabled = true;
-    }
+        public float LevelLoadDelay; // may be faster than the level load animation
+        public FloatVariable MoveAxis;
 
-    public void OnMoveAxis (InputAction.CallbackContext context)
-    {
-        if (readEnabled) MoveAxis.Value = context.ReadValue<float>();
+        bool readEnabled;
+
+        IEnumerator Start ()
+        {
+            yield return new WaitForSeconds(LevelLoadDelay);
+            readEnabled = true;
+        }
+
+        public void OnMoveAxis (InputAction.CallbackContext context)
+        {
+            if (readEnabled) MoveAxis.Value = context.ReadValue<float>();
+        }
     }
 }
