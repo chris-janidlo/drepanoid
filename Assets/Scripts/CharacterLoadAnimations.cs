@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.Serialization;
 using crass;
 
 namespace Drepanoid
@@ -19,10 +18,7 @@ namespace Drepanoid
             public Sprite Sprite;
         }
 
-        [FormerlySerializedAs("LevelLoadAnimation")]
-        public List<AnimationFrame> LoadAnimation;
-        [FormerlySerializedAs("LevelUnloadAnimation")]
-        public List<AnimationFrame> UnloadAnimation;
+        public List<AnimationFrame> LoadAnimation, UnloadAnimation;
         public Vector2 FrameTimeRange;
 
         class TileAnimationTracker
