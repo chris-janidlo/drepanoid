@@ -30,7 +30,7 @@ namespace Drepanoid
             int textCursor = 0;
 
             float? charactersPerSecond = data.CharactersPerSecondScroll.ToNullable;
-            List<CharacterLoadAnimations.TileSpecification> tilesToAdd = new List<CharacterLoadAnimations.TileSpecification>(cleanedText.Length);
+            TilePositionCollection tilesToAdd = new TilePositionCollection(cleanedText.Length);
 
             while (textCursor < cleanedText.Length)
             {
@@ -56,7 +56,7 @@ namespace Drepanoid
                             break;
                         default:
                             Tile tile = data.Font.GetPrintableAsciiCharacter(c);
-                            tilesToAdd.Add(new CharacterLoadAnimations.TileSpecification { Position = tilemapCursor, Tile = tile });
+                            tilesToAdd.Add(tilemapCursor, tile);
                             tilemapCursor += Vector3Int.right;
                             break;
                     }
@@ -74,7 +74,7 @@ namespace Drepanoid
                     }
                     else
                     {
-                        tilemap.SetTiles(tilesToAdd.Select(t => t.Position).ToArray(), tilesToAdd.Select(t => t.Tile).ToArray());
+                        tilemap.SetTiles(tilesToAdd.Positions, tilesToAdd.Tiles);
                     }
                 }
 

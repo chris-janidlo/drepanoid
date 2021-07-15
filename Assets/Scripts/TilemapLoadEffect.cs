@@ -41,14 +41,17 @@ namespace Drepanoid
         {
             if (TilemapCollider != null) TilemapCollider.enabled = false;
 
-            List<CharacterLoadAnimations.TileSpecification> tiles = new List<CharacterLoadAnimations.TileSpecification>();
+            BoundsInt bounds = Tilemap.cellBounds;
+            int maximumTileCount = (bounds.xMax - bounds.xMin) * (bounds.yMax - bounds.yMin);
 
-            foreach (var cellPosition in Tilemap.cellBounds.allPositionsWithin)
+            TilePositionCollection tiles = new TilePositionCollection(maximumTileCount);
+
+            foreach (var cellPosition in bounds.allPositionsWithin)
             {
                 var tile = Tilemap.GetTile(cellPosition);
                 if (tile == null) continue;
 
-                tiles.Add(new CharacterLoadAnimations.TileSpecification { Position = cellPosition, Tile = tile, });
+                tiles.Add(cellPosition, loading ? tile : null);
 
                 if (loading) Tilemap.SetTile(cellPosition, null);
             }

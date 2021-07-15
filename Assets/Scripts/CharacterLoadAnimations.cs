@@ -25,11 +25,6 @@ namespace Drepanoid
         public List<AnimationFrame> UnloadAnimation;
         public Vector2 FrameTimeRange;
 
-        public class TileSpecification
-        {
-            public Vector3Int Position;
-            public TileBase Tile;
-        }
         class TileAnimationTracker
         {
             public Vector3Int Position;
@@ -52,17 +47,20 @@ namespace Drepanoid
             yield return animateSpriteRendererInternal(showDelay, spriteRenderer, false);
         }
 
-        public IEnumerator AnimateTileset (float showDelay, Tilemap tilemap, List<TileSpecification> tiles, bool loading)
+        public IEnumerator AnimateTileset (float showDelay, Tilemap tilemap, TilePositionCollection tiles, bool loading)
         {
-            List<TileAnimationTracker> animationData = tiles.
-                Select(t => new TileAnimationTracker
+            List<TileAnimationTracker> animationData = new List<TileAnimationTracker>(tiles.Count);
+
+            for (int i = 0; i < tiles.Count; i++)
+            {
+                animationData.Add(new TileAnimationTracker
                 {
-                    Position = t.Position,
-                    FinalTile = loading ? t.Tile : null,
+                    Position = tiles.Positions[i],
+                    FinalTile = tiles.Tiles[i],
                     CurrentFrame = -1,
                     Frames = loading ? LoadAnimation : UnloadAnimation
-                })
-                .ToList();
+                });
+            }
 
             yield return new WaitForSeconds(showDelay);
 
