@@ -1,49 +1,37 @@
 using System;
-using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using crass;
 
-namespace Drepanoid
+namespace Drepanoid.Drivers
 {
-    [CreateAssetMenu(menuName = "Character Animations for Level Transitions", fileName = "newCharacterAnimations.asset")]
-    public class CharacterLoadAnimations : ScriptableObject
+    public class CharacterAnimationDriver : MonoBehaviour
     {
-        [Serializable]
-        public struct AnimationFrame
-        {
-            public TileBase Tile;
-            public Sprite Sprite;
-        }
-
-        public List<AnimationFrame> LoadAnimation, UnloadAnimation;
-        public Vector2 FrameTimeRange;
-
         class TileAnimationTracker
         {
             public Vector3Int Position;
             public TileBase FinalTile;
             public int CurrentFrame;
             public float Timer;
-            public List<AnimationFrame> Frames;
+            public List<CharacterAnimation.AnimationFrame> Frames;
 
             public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
             public bool IsFinished => CurrentFrame >= Frames.Count;
         }
 
-        public IEnumerator AnimateSpriteRendererLoad (float showDelay, SpriteRenderer spriteRenderer)
+        public IEnumerator AnimateSpriteRendererLoad (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer)
         {
-            yield return animateSpriteRendererInternal(showDelay, spriteRenderer, true);
+            yield return animateSpriteRendererInternal(animation, showDelay, spriteRenderer, true);
         }
 
-        public IEnumerator AnimateSpriteRendererUnload (float showDelay, SpriteRenderer spriteRenderer)
+        public IEnumerator AnimateSpriteRendererUnload (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer)
         {
-            yield return animateSpriteRendererInternal(showDelay, spriteRenderer, false);
+            yield return animateSpriteRendererInternal(animation, showDelay, spriteRenderer, false);
         }
 
-        public IEnumerator AnimateTileset (float showDelay, Tilemap tilemap, TilePositionCollection tiles, bool loading)
+        public IEnumerator AnimateTileset (CharacterAnimation animation, float showDelay, Tilemap tilemap, TilePositionCollection tiles)
         {
             List<TileAnimationTracker> animationData = new List<TileAnimationTracker>(tiles.Count);
 
@@ -54,7 +42,7 @@ namespace Drepanoid
                     Position = tiles.Positions[i],
                     FinalTile = tiles.Tiles[i],
                     CurrentFrame = -1,
-                    Frames = loading ? LoadAnimation : UnloadAnimation
+                    Frames = animation.Frames
                 });
             }
 
@@ -71,7 +59,7 @@ namespace Drepanoid
                     data.Timer -= Time.deltaTime;
                     if (data.Timer > 0) continue;
 
-                    data.Timer = RandomExtra.Range(FrameTimeRange);
+                    data.Timer = RandomExtra.Range(animation.FrameTimeRange);
                     data.CurrentFrame++;
 
                     positionArray[cursor] = data.Position;
@@ -90,18 +78,18 @@ namespace Drepanoid
             }
         }
 
-        IEnumerator animateSpriteRendererInternal (float showDelay, SpriteRenderer spriteRenderer, bool loading)
+        IEnumerator animateSpriteRendererInternal (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer, bool loading)
         {
             Sprite finalSprite = loading ? spriteRenderer.sprite : null;
 
             if (loading) spriteRenderer.sprite = null;
             yield return new WaitForSeconds(showDelay);
 
-            var frames = loading ? LoadAnimation : UnloadAnimation;
+            var frames = animation.Frames;
             foreach (var frame in frames)
             {
                 spriteRenderer.sprite = frame.Sprite;
-                yield return new WaitForSeconds(RandomExtra.Range(FrameTimeRange));
+                yield return new WaitForSeconds(RandomExtra.Range(animation.FrameTimeRange));
             }
 
             spriteRenderer.sprite = finalSprite;

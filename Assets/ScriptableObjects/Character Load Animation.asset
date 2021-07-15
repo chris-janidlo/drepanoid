@@ -10,18 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91955758b3e121c46adae390a6f714c8, type: 3}
-  m_Name: Character Animations
+  m_Name: Character Load Animation
   m_EditorClassIdentifier: 
-  LoadAnimation:
+  Frames:
   - Tile: {fileID: 11400000, guid: 384cee66aad14594692ff2c67a53441d, type: 2}
     Sprite: {fileID: 21300000, guid: 659caf6a1ba931e4f8d1198d739ce825, type: 3}
-  - Tile: {fileID: 11400000, guid: 57184777441a2af4198870ed7541fcfb, type: 2}
-    Sprite: {fileID: 21300000, guid: 33bb99f14f9fa694cbb77e10e16482bd, type: 3}
-  - Tile: {fileID: 11400000, guid: 384cee66aad14594692ff2c67a53441d, type: 2}
-    Sprite: {fileID: 21300000, guid: 659caf6a1ba931e4f8d1198d739ce825, type: 3}
-  UnloadAnimation:
-  - Tile: {fileID: 11400000, guid: 1870ffa76e7f6ce4eb5d2f275c471eb8, type: 2}
-    Sprite: {fileID: 21300000, guid: 51e043314e5b0c14c88766f20e9b5c36, type: 3}
   - Tile: {fileID: 11400000, guid: 57184777441a2af4198870ed7541fcfb, type: 2}
     Sprite: {fileID: 21300000, guid: 33bb99f14f9fa694cbb77e10e16482bd, type: 3}
   - Tile: {fileID: 11400000, guid: 384cee66aad14594692ff2c67a53441d, type: 2}

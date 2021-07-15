@@ -1069,7 +1069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowDelay: 0
-  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
+  UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   SpriteRenderers:
   - {fileID: 6300202809046288339}
   - {fileID: 6451194425400790099}

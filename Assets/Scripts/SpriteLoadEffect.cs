@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Drepanoid.Drivers;
 
 namespace Drepanoid
 {
     public class SpriteLoadEffect : MonoBehaviour
     {
         public float ShowDelay;
-        public CharacterLoadAnimations Animation;
+        public CharacterAnimation LoadAnimation, UnloadAnimation;
         public List<SpriteRenderer> SpriteRenderers;
 
         void Start ()
         {
             foreach (var spriteRenderer in SpriteRenderers)
             {
-                StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowDelay, spriteRenderer));
+                StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererLoad(LoadAnimation, ShowDelay, spriteRenderer));
             }
         }
 
@@ -22,7 +23,7 @@ namespace Drepanoid
         {
             foreach (var spriteRenderer in SpriteRenderers)
             {
-                StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowDelay, spriteRenderer));
+                StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererUnload(UnloadAnimation, ShowDelay, spriteRenderer));
             }
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using crass;
+using Drepanoid.Drivers;
 
 namespace Drepanoid
 {
@@ -36,7 +37,7 @@ namespace Drepanoid
         public SpriteRenderer SpriteRenderer;
         public Collider2D Collider;
 
-        public CharacterLoadAnimations CharacterAnimationsForLevelTransitions;
+        public CharacterAnimation UnloadAnimation;
 
         Vector3 initialPosition;
         float angularVelocity; // positive = clockwise, negative = counter-clockwise
@@ -183,7 +184,7 @@ namespace Drepanoid
 
             frozen = true;
             transform.rotation = Quaternion.identity;
-            StartCoroutine(CharacterAnimationsForLevelTransitions.AnimateSpriteRendererUnload(0, SpriteRenderer));
+            StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererUnload(UnloadAnimation, 0, SpriteRenderer));
         }
     }
 }

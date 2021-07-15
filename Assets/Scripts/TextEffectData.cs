@@ -15,7 +15,7 @@ namespace Drepanoid
 
         [Header("Optional Data")]
         public SerializableNullable<int> CharactersPerSecondScroll;
-        public CharacterLoadAnimations Animations;
+        public CharacterAnimation LoadAnimation;
 
         public bool Equals (TextEffectData other)
         {

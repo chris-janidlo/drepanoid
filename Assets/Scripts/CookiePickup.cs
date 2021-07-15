@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms;
+using Drepanoid.Drivers;
 
 namespace Drepanoid
 {
@@ -18,7 +19,7 @@ namespace Drepanoid
         public Animator Animator;
 
         public float ShowAnimationDelay;
-        public CharacterLoadAnimations Animation;
+        public CharacterAnimation Animation;
 
         bool alreadyCollected;
         Vector3 initialPosition;
@@ -31,7 +32,7 @@ namespace Drepanoid
             initialPosition = transform.position;
 
             Animator.enabled = false;
-            yield return StartCoroutine(Animation.AnimateSpriteRendererLoad(ShowAnimationDelay, SpriteRenderer));
+            yield return StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererLoad(Animation, ShowAnimationDelay, SpriteRenderer));
             Animator.enabled = true;
         }
 
@@ -53,7 +54,7 @@ namespace Drepanoid
         public void OnLevelGoalReached ()
         {
             Animator.enabled = false;
-            StartCoroutine(Animation.AnimateSpriteRendererUnload(ShowAnimationDelay, SpriteRenderer));
+            StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererUnload(Animation, ShowAnimationDelay, SpriteRenderer));
         }
 
         public void FinalizeCollect ()

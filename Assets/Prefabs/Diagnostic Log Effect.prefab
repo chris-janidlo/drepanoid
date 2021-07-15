@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 990870405696863889}
   - component: {fileID: 990870405696863894}
   m_Layer: 0
-  m_Name: Log Effect
+  m_Name: Diagnostic Log Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,5 +48,4 @@ MonoBehaviour:
   CharactersPerSecondScroll: 100
   MaximumLinesOfHistoryToDisplay: 1
   Font: {fileID: 11400000, guid: 6f8864388a88cc54e9d6bb763eebb74b, type: 2}
-  Animations: {fileID: 0}
-  TextQueue: {fileID: 11400000, guid: eb1ca770dbd2d7946ad4c7311997bab0, type: 2}
+  LoadAnimation: {fileID: 0}

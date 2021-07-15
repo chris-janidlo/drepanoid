@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using crass;
+using Drepanoid.Drivers;
 
 namespace Drepanoid
 {
     public class TilemapLoadEffect : MonoBehaviour
     {
         public float ShowDelay;
-        public CharacterLoadAnimations Animation;
+        public CharacterAnimation LoadAnimation, UnloadAnimation;
 
         public Tilemap Tilemap;
         public TilemapCollider2D TilemapCollider;
@@ -21,7 +22,7 @@ namespace Drepanoid
             public TileBase FinalTile;
             public int CurrentFrame;
             public float Timer;
-            public List<CharacterLoadAnimations.AnimationFrame> Frames;
+            public List<CharacterAnimation.AnimationFrame> Frames;
 
             public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
             public bool IsFinished => CurrentFrame >= Frames.Count;
@@ -56,7 +57,7 @@ namespace Drepanoid
                 if (loading) Tilemap.SetTile(cellPosition, null);
             }
 
-            yield return Animation.AnimateTileset(ShowDelay, Tilemap, tiles, loading);
+            yield return Driver.CharacterAnimations.AnimateTileset(loading ? LoadAnimation : UnloadAnimation, ShowDelay, Tilemap, tiles);
 
             if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
         }

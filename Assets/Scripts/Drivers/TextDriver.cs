@@ -5,19 +5,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-namespace Drepanoid
+namespace Drepanoid.Drivers
 {
     public class TextDriver : MonoBehaviour
     {
         public Tilemap MainTextTilemap, TextShadowTilemap;
-        public TextQueue TextQueue;
 
-        void Awake ()
-        {
-            TextQueue.RegisterProcessors(setTextRoutine, clearTextRoutine);
-        }
-
-        IEnumerator setTextRoutine (TextEffectData data)
+        public IEnumerator SetText (TextEffectData data)
         {
             string cleanedText = data.Text.Replace("\r", "");
 
@@ -67,10 +61,10 @@ namespace Drepanoid
                     // TODO: figure out which tilemap(s) to do
                     Tilemap tilemap = MainTextTilemap;
 
-                    if (data.Animations != null)
+                    if (data.LoadAnimation != null)
                     {
                         // TODO: manage the lifecycle of these animations properly (ie, abort the animation if something else is printed over or if the position gets deleted)
-                        StartCoroutine(data.Animations.AnimateTileset(0, tilemap, tilesToAdd, true));
+                        StartCoroutine(Driver.CharacterAnimations.AnimateTileset(data.LoadAnimation, 0, tilemap, tilesToAdd));
                     }
                     else
                     {
@@ -82,7 +76,7 @@ namespace Drepanoid
             }
         }
 
-        void clearTextRoutine (Vector2Int regionStartPosition, Vector2Int regionExtents)
+        public void Delete (Vector2Int regionStartPosition, Vector2Int regionExtents)
         {
             int
                 xWidth = Mathf.Abs(regionExtents.x),
