@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 2083086866257884412}
   - component: {fileID: 3559362785300935857}
   - component: {fileID: 8996879431531404282}
-  - component: {fileID: 4431409265674197094}
   m_Layer: 0
   m_Name: Text Shadow
   m_TagString: Untagged
@@ -227,25 +226,127 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 2083086866257884412}
   TilemapCollider: {fileID: 0}
---- !u!114 &4431409265674197094
+--- !u!1 &7891971641819170094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5355083451855521705}
+  - component: {fileID: 6486988335099630219}
+  m_Layer: 0
+  m_Name: Listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5355083451855521705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891971641819170094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8297977597804943753}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6486988335099630219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4829933187989125527}
+  m_GameObject: {fileID: 7891971641819170094}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: text animates in differently than other tilemaps, but still
-    needs to fizzle out with them
+  _developerDescription: 
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4005375984604903075}
+        m_TargetAssemblyTypeName: Drepanoid.CameraMover, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1960023900497822189}
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1874329454654600113}
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 192222043461863689}
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8576063653192715771}
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8996879431531404282}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7775373638361466922}
+        m_TargetAssemblyTypeName: Drepanoid.TilemapLoadEffect, Assembly-CSharp
         m_MethodName: OnLevelGoalReached
         m_Mode: 1
         m_Arguments:
@@ -257,7 +358,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _actionResponses: []
-  _replayEventBufferOnRegister: 1
+  _replayEventBufferOnRegister: 0
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
@@ -326,7 +427,6 @@ GameObject:
   - component: {fileID: 1133974362147307953}
   - component: {fileID: 4230730252139146711}
   - component: {fileID: 1874329454654600113}
-  - component: {fileID: 8412808528206098309}
   m_Layer: 0
   m_Name: Danger
   m_TagString: Untagged
@@ -496,44 +596,6 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 8297977597355872457}
   TilemapCollider: {fileID: 2730405434620197742}
---- !u!114 &8412808528206098309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977597355872462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1874329454654600113}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
 --- !u!1 &8297977597545156294
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +809,7 @@ Transform:
   - {fileID: 8297977597637470149}
   - {fileID: 8297977597545156295}
   - {fileID: 2670926399819871835}
+  - {fileID: 5355083451855521705}
   - {fileID: 8297977597825549461}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -778,7 +841,6 @@ GameObject:
   - component: {fileID: 6555465827887985193}
   - component: {fileID: 5919353465776524419}
   - component: {fileID: 1960023900497822189}
-  - component: {fileID: 4759918450633887690}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -931,44 +993,6 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 8297977597812611044}
   TilemapCollider: {fileID: 6555465827887985193}
---- !u!114 &4759918450633887690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977597812611049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1960023900497822189}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
 --- !u!1 &8297977597825549467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1028,7 @@ Transform:
   - {fileID: 980905963716545537}
   - {fileID: 8297977599257942349}
   m_Father: {fileID: 8297977597804943753}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &8297977597825549460
 Grid:
@@ -1029,7 +1053,6 @@ GameObject:
   - component: {fileID: 8297977597983657522}
   - component: {fileID: 8297977597983657521}
   - component: {fileID: 4005375984604903075}
-  - component: {fileID: 258817012451134314}
   - component: {fileID: 8297977597983657527}
   - component: {fileID: 8297977597983657523}
   m_Layer: 0
@@ -1157,44 +1180,6 @@ MonoBehaviour:
     type: 2}
   AssetPixelsPerUnit: 8
   ReferenceResolution: {x: 512, y: 342}
---- !u!114 &258817012451134314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977597983657526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4005375984604903075}
-        m_TargetAssemblyTypeName: CameraSceneFauxMover, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
 --- !u!81 &8297977597983657527
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1276,7 +1261,6 @@ GameObject:
   - component: {fileID: 8297977599257942350}
   - component: {fileID: 2597473515731779171}
   - component: {fileID: 7775373638361466922}
-  - component: {fileID: 3671820535866463594}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1418,44 +1402,6 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 8297977599257942351}
   TilemapCollider: {fileID: 0}
---- !u!114 &3671820535866463594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977599257942348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7775373638361466922}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
 --- !u!1 &8345523708363224435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,7 +1414,6 @@ GameObject:
   - component: {fileID: 203681258947157634}
   - component: {fileID: 452304057195247817}
   - component: {fileID: 192222043461863689}
-  - component: {fileID: 889390412764876411}
   m_Layer: 0
   m_Name: Collision-less Level Geometry
   m_TagString: Untagged
@@ -1757,44 +1702,6 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 203681258947157634}
   TilemapCollider: {fileID: 0}
---- !u!114 &889390412764876411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345523708363224435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 192222043461863689}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
 --- !u!1 &8779312574507417748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +1714,6 @@ GameObject:
   - component: {fileID: 7358607359844977680}
   - component: {fileID: 7278943755755466560}
   - component: {fileID: 8576063653192715771}
-  - component: {fileID: 8786436126748672780}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -1932,42 +1838,3 @@ MonoBehaviour:
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   Tilemap: {fileID: 7358607359844977680}
   TilemapCollider: {fileID: 0}
---- !u!114 &8786436126748672780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8779312574507417748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: text animates in differently than other tilemaps, but still
-    needs to fizzle out with them
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8576063653192715771}
-        m_TargetAssemblyTypeName: TilemapLoadEffect, Assembly-CSharp
-        m_MethodName: OnLevelGoalReached
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
