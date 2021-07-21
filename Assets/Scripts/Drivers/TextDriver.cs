@@ -96,6 +96,7 @@ namespace Drepanoid.Drivers
             Vector3Int[] positions = positions2d.Cast<Vector3Int>().ToArray();
             TileBase[] tiles = Enumerable.Repeat<TileBase>(null, xWidth * yWidth).ToArray();
 
+            Driver.CharacterAnimations.StopAnimations(MainTextTilemap, positions.ToList());
             MainTextTilemap.SetTiles(positions, tiles);
 
             // TODO: animatinos, scrolling deletions

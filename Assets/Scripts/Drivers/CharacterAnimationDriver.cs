@@ -89,6 +89,18 @@ namespace Drepanoid.Drivers
             yield return new WaitWhile(() => currentTileAnimations.Contains(tilesetData));
         }
 
+        public void StopAnimations (Tilemap tilemap, List<Vector3Int> positions)
+        {
+            for (int i = currentTileAnimations.Count - 1; i >= 0; i--)
+            {
+                TilesetAnimationTracker anim = currentTileAnimations[i];
+                if (anim.Tilemap != tilemap) continue;
+
+                anim.TileData.RemoveAll(data => positions.Contains(data.Position));
+                if (anim.TileData.Count == 0) currentTileAnimations.RemoveAt(i);
+            }
+        }
+
         void animateFrameTilemap (TilesetAnimationTracker tilesetAnimation)
         {
             TilePositionCollection tilePositions = tilesetAnimation.TilePositionCollection;
