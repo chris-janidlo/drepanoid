@@ -24,6 +24,11 @@ namespace Drepanoid
         public TilesetFont Font;
         public CharacterAnimation LoadAnimation;
 
+        public void OnLevelGoalReached ()
+        {
+            StopAllCoroutines();
+        }
+
         IEnumerator Start ()
         {
             int lineCursor = 0;

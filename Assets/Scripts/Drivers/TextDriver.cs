@@ -11,8 +11,44 @@ namespace Drepanoid.Drivers
     {
         public Tilemap MainTextTilemap, TextShadowTilemap;
 
+        class TextAnimationTracker
+        {
+            public string CleanedText;
+            public float Timer;
+            public TextEffectData EffectData;
+            public Vector3Int PositionCursor;
+            public int TextCursor;
+            public TilePositionCollection TilePositionCollection;
+        }
+
+        bool endingLevel;
+        List<TextAnimationTracker> currentAnimations = new List<TextAnimationTracker>();
+
+        void Update ()
+        {
+            if (endingLevel) return;
+
+            for (int i = currentAnimations.Count - 1; i >= 0; i--)
+            {
+                TextAnimationTracker tracker = currentAnimations[i];
+                tracker.Timer -= Time.deltaTime;
+                if (tracker.Timer <= 0) animateFrame(tracker);
+                if (tracker.TextCursor >= tracker.CleanedText.Length) currentAnimations.RemoveAt(i);
+            }
+        }
+
+        public void OnLevelGoalReached ()
+        {
+            Driver.CharacterAnimations.StopAllAnimations(MainTextTilemap);
+            Driver.CharacterAnimations.StopAllAnimations(TextShadowTilemap);
+            currentAnimations.Clear();
+            endingLevel = true;
+        }
+
         public IEnumerator SetText (TextEffectData data)
         {
+            if (endingLevel) yield break;
+
             string cleanedText = data.Text.Replace("\r", "");
 
             if (cleanedText.Any(c => !data.Font.CanPrint(c)))
@@ -20,59 +56,27 @@ namespace Drepanoid.Drivers
                 throw new ArgumentException("text contains unprintable characters");
             }
 
-            Vector3Int tilemapCursor = new Vector3Int(data.StartingPosition.x, data.StartingPosition.y, 0);
-            int textCursor = 0;
-
-            float? charactersPerSecond = data.CharactersPerSecondScroll.ToNullable;
-            TilePositionCollection tilesToAdd = new TilePositionCollection(cleanedText.Length);
-
-            while (textCursor < cleanedText.Length)
+            TilePositionCollection tilePositionCollection = new TilePositionCollection(cleanedText.Length);
+            Vector3Int startingPosition = new Vector3Int(data.StartingPosition.x, data.StartingPosition.y, 0);
+            if (data.CharactersPerSecondScroll.HasValue)
             {
-                int charactersPerFrame = charactersPerSecond.HasValue
-                    ? Mathf.Max(Mathf.RoundToInt(charactersPerSecond.Value * Time.deltaTime), 1)
-                    : cleanedText.Length;
-
-                int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - textCursor);
-                string textToSet = cleanedText.Substring(textCursor, textToSetLength);
-                textCursor += textToSetLength;
-
-                tilesToAdd.Clear();
-
-                foreach (char c in textToSet)
+                TextAnimationTracker tracker = new TextAnimationTracker
                 {
-                    switch (c)
-                    {
-                        case '\t':
-                            tilemapCursor += Vector3Int.right * data.Font.SpacesPerTab;
-                            break;
-                        case '\n':
-                            tilemapCursor = new Vector3Int(data.StartingPosition.x, tilemapCursor.y - 1, 0);
-                            break;
-                        default:
-                            Tile tile = data.Font.GetPrintableAsciiCharacter(c);
-                            tilesToAdd.Add(tilemapCursor, tile);
-                            tilemapCursor += Vector3Int.right;
-                            break;
-                    }
-                }
+                    CleanedText = cleanedText,
+                    Timer = 0,
+                    EffectData = data,
+                    PositionCursor = startingPosition,
+                    TextCursor = 0,
+                    TilePositionCollection = tilePositionCollection
+                };
 
-                if (tilesToAdd.Count > 0)
-                {
-                    // TODO: figure out which tilemap(s) to do
-                    Tilemap tilemap = MainTextTilemap;
-
-                    if (data.LoadAnimation != null)
-                    {
-                        // TODO: manage the lifecycle of these animations properly (ie, abort the animation if something else is printed over or if the position gets deleted)
-                        StartCoroutine(Driver.CharacterAnimations.AnimateTileset(data.LoadAnimation, 0, tilemap, tilesToAdd));
-                    }
-                    else
-                    {
-                        tilemap.SetTiles(tilesToAdd.Positions, tilesToAdd.Tiles);
-                    }
-                }
-
-                if (charactersPerSecond.HasValue) yield return new WaitForSeconds(1f / charactersPerSecond.Value);
+                currentAnimations.Add(tracker);
+                yield return new WaitWhile(() => currentAnimations.Contains(tracker));
+            }
+            else
+            {
+                setTilesToText(cleanedText, tilePositionCollection, ref startingPosition, data);
+                yield break;
             }
         }
 
@@ -100,6 +104,63 @@ namespace Drepanoid.Drivers
             MainTextTilemap.SetTiles(positions, tiles);
 
             // TODO: animatinos, scrolling deletions
+        }
+
+        void animateFrame (TextAnimationTracker tracker)
+        {
+            if (endingLevel) return;
+
+            float charactersPerSecondScroll = tracker.EffectData.CharactersPerSecondScroll.Value;
+            int charactersPerFrame = Mathf.Max(Mathf.RoundToInt(charactersPerSecondScroll * Time.deltaTime), 1);
+
+            string cleanedText = tracker.CleanedText;
+            int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - tracker.TextCursor);
+            string textToSet = cleanedText.Substring(tracker.TextCursor, textToSetLength);
+
+            setTilesToText(textToSet, tracker.TilePositionCollection, ref tracker.PositionCursor, tracker.EffectData);
+            tracker.TextCursor += textToSetLength;
+
+            tracker.Timer = 1f / charactersPerSecondScroll;
+        }
+
+        void setTilesToText (string text, TilePositionCollection tilePositionCollection, ref Vector3Int tilemapCursor, TextEffectData data)
+        {
+            if (endingLevel) return;
+
+            tilePositionCollection.Clear();
+
+            foreach (char c in text)
+            {
+                switch (c)
+                {
+                    case '\t':
+                        tilemapCursor += Vector3Int.right * data.Font.SpacesPerTab;
+                        break;
+                    case '\n':
+                        tilemapCursor = new Vector3Int(data.StartingPosition.x, tilemapCursor.y - 1, 0);
+                        break;
+                    default:
+                        Tile tile = data.Font.GetPrintableAsciiCharacter(c);
+                        tilePositionCollection.Add(tilemapCursor, tile);
+                        tilemapCursor += Vector3Int.right;
+                        break;
+                }
+            }
+
+            if (tilePositionCollection.Count > 0)
+            {
+                // TODO: figure out which tilemap(s) to do
+                Tilemap tilemap = MainTextTilemap;
+
+                if (data.LoadAnimation != null)
+                {
+                    StartCoroutine(Driver.CharacterAnimations.AnimateTileset(data.LoadAnimation, 0, tilemap, tilePositionCollection));
+                }
+                else
+                {
+                    tilemap.SetTiles(tilePositionCollection.Positions, tilePositionCollection.Tiles);
+                }
+            }
         }
     }
 }

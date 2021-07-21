@@ -101,6 +101,18 @@ namespace Drepanoid.Drivers
             }
         }
 
+        public void StopAllAnimations (Tilemap tilemap)
+        {
+            for (int i = currentTileAnimations.Count - 1; i >= 0; i--)
+            {
+                TilesetAnimationTracker anim = currentTileAnimations[i];
+                if (anim.Tilemap != tilemap) continue;
+
+                anim.TileData.Clear();
+                currentTileAnimations.RemoveAt(i);
+            }
+        }
+
         void animateFrameTilemap (TilesetAnimationTracker tilesetAnimation)
         {
             TilePositionCollection tilePositions = tilesetAnimation.TilePositionCollection;

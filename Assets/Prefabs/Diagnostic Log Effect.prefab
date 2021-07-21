@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990870405696863889}
   - component: {fileID: 990870405696863894}
+  - component: {fileID: 2253258115825743207}
   m_Layer: 0
   m_Name: Diagnostic Log Effect
   m_TagString: Untagged
@@ -49,3 +50,41 @@ MonoBehaviour:
   MaximumLinesOfHistoryToDisplay: 1
   Font: {fileID: 11400000, guid: 6f8864388a88cc54e9d6bb763eebb74b, type: 2}
   LoadAnimation: {fileID: 0}
+--- !u!114 &2253258115825743207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990870405696863895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 990870405696863894}
+        m_TargetAssemblyTypeName: Drepanoid.DiagnosticLogEffect, Assembly-CSharp
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
