@@ -8,7 +8,7 @@ namespace Drepanoid
 {
     // zero-garbage container for tracking repeated tile operations over multiple tiles
     // especially useful with Tilemap.SetTiles
-    public struct TilePositionCollection
+    public class TilePositionCollection
     {
         public readonly Vector3Int[] Positions;
         public readonly TileBase[] Tiles;

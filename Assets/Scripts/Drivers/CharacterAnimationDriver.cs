@@ -15,10 +15,41 @@ namespace Drepanoid.Drivers
             public TileBase FinalTile;
             public int CurrentFrame;
             public float Timer;
-            public List<CharacterAnimation.AnimationFrame> Frames;
+            public CharacterAnimation Animation;
 
-            public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
-            public bool IsFinished => CurrentFrame >= Frames.Count;
+            public TileBase CurrentTile => IsFinished ? FinalTile : Animation.Frames[CurrentFrame].Tile;
+            public bool IsFinished => CurrentFrame >= Animation.Frames.Count;
+
+            public void AdvanceFrame ()
+            {
+                CurrentFrame++;
+                Timer = RandomExtra.Range(Animation.FrameTimeRange);
+            }
+        }
+        
+        class TilesetAnimationTracker
+        {
+            public Tilemap Tilemap;
+            public TilePositionCollection TilePositionCollection;
+            public float ShowDelayTimer;
+
+            public List<TileAnimationTracker> TileData;
+        }
+
+        List<TilesetAnimationTracker> currentTileAnimations = new List<TilesetAnimationTracker>();
+
+        void Update ()
+        {
+            for (int i = currentTileAnimations.Count - 1; i >= 0; i--)
+            {
+                TilesetAnimationTracker anim = currentTileAnimations[i];
+                anim.ShowDelayTimer -= Time.deltaTime;
+                if (anim.ShowDelayTimer <= 0)
+                {
+                    animateFrameTilemap(anim);
+                    if (anim.TileData.Count == 0) currentTileAnimations.RemoveAt(i);
+                }
+            }
         }
 
         public IEnumerator AnimateSpriteRendererLoad (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer)
@@ -33,49 +64,47 @@ namespace Drepanoid.Drivers
 
         public IEnumerator AnimateTileset (CharacterAnimation animation, float showDelay, Tilemap tilemap, TilePositionCollection tiles)
         {
-            List<TileAnimationTracker> animationData = new List<TileAnimationTracker>(tiles.Count);
+            List<TileAnimationTracker> tileData = new List<TileAnimationTracker>(tiles.Count);
 
             for (int i = 0; i < tiles.Count; i++)
             {
-                animationData.Add(new TileAnimationTracker
+                tileData.Add(new TileAnimationTracker
                 {
                     Position = tiles.Positions[i],
                     FinalTile = tiles.Tiles[i],
                     CurrentFrame = -1,
-                    Frames = animation.Frames
+                    Animation = animation
                 });
             }
 
-            yield return new WaitForSeconds(showDelay);
-
-            Vector3Int[] positionArray = new Vector3Int[animationData.Count];
-            TileBase[] tileArray = new TileBase[animationData.Count];
-            int cursor = 0;
-
-            while (animationData.Count > 0)
+            TilesetAnimationTracker tilesetData = new TilesetAnimationTracker
             {
-                foreach (var data in animationData)
-                {
-                    data.Timer -= Time.deltaTime;
-                    if (data.Timer > 0) continue;
+                Tilemap = tilemap,
+                TilePositionCollection = new TilePositionCollection(tileData.Count),
+                ShowDelayTimer = showDelay,
+                TileData = tileData
+            };
+            currentTileAnimations.Add(tilesetData);
 
-                    data.Timer = RandomExtra.Range(animation.FrameTimeRange);
-                    data.CurrentFrame++;
+            yield return new WaitWhile(() => currentTileAnimations.Contains(tilesetData));
+        }
 
-                    positionArray[cursor] = data.Position;
-                    tileArray[cursor] = data.CurrentTile;
-                    cursor++;
-                }
+        void animateFrameTilemap (TilesetAnimationTracker tilesetAnimation)
+        {
+            TilePositionCollection tilePositions = tilesetAnimation.TilePositionCollection;
+            tilePositions.Clear();
 
-                tilemap.SetTiles(positionArray, tileArray);
-                animationData.RemoveAll(anim => anim.IsFinished);
+            foreach (var data in tilesetAnimation.TileData)
+            {
+                data.Timer -= Time.deltaTime;
+                if (data.Timer > 0) continue;
 
-                yield return null;
-
-                Array.Clear(positionArray, 0, cursor);
-                Array.Clear(tileArray, 0, cursor);
-                cursor = 0;
+                data.AdvanceFrame();
+                tilePositions.Add(data.Position, data.CurrentTile);
             }
+
+            tilesetAnimation.Tilemap.SetTiles(tilePositions.Positions, tilePositions.Tiles);
+            tilesetAnimation.TileData.RemoveAll(d => d.IsFinished);
         }
 
         IEnumerator animateSpriteRendererInternal (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer, bool loading)
