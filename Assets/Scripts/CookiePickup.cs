@@ -11,7 +11,10 @@ namespace Drepanoid
         public Cookie Cookie;
         public Color NormalColor, AlreadyCollectedColor;
         public float FloatSpeed;
+
         public string AnimatorDeathTrigger;
+        public TextEffectData PickupTextEffect;
+        public float PickupTextEffectVisibilityTime;
 
         public CookieValueList CollectedCookies;
         public SpriteRenderer SpriteRenderer;
@@ -47,8 +50,7 @@ namespace Drepanoid
         {
             if (collision.gameObject.GetComponent<Ball>() == null) return;
 
-            Animator.SetTrigger(AnimatorDeathTrigger);
-            Collider.enabled = false;
+            StartCoroutine(deathRoutine());
         }
 
         public void OnLevelGoalReached ()
@@ -57,9 +59,17 @@ namespace Drepanoid
             StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererUnload(Animation, ShowAnimationDelay, SpriteRenderer));
         }
 
-        public void FinalizeCollect ()
+        IEnumerator deathRoutine ()
         {
+            Collider.enabled = false;
+            Animator.SetTrigger(AnimatorDeathTrigger);
+
             if (!alreadyCollected) CollectedCookies.Add(Cookie);
+
+            yield return Driver.Text.SetText(PickupTextEffect);
+            yield return new WaitForSeconds(PickupTextEffectVisibilityTime);
+            Driver.Text.Delete(PickupTextEffect.StartingPosition, new Vector2Int(PickupTextEffect.Text.Length, 1));
+
             Destroy(gameObject);
         }
     }
