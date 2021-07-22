@@ -224,6 +224,7 @@ MonoBehaviour:
   ShowDelay: 0
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 2083086866257884412}
   TilemapCollider: {fileID: 0}
 --- !u!1 &7891971641819170094
@@ -594,6 +595,8 @@ MonoBehaviour:
   TimeBetweenTwitchesRange: {x: 0.7, y: 0.7}
   ChanceToTwitchPerTile: 1
   Tilemap: {fileID: 8297977597355872457}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
 --- !u!114 &1874329454654600113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +612,7 @@ MonoBehaviour:
   ShowDelay: 0.2
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 8297977597355872457}
   TilemapCollider: {fileID: 2730405434620197742}
 --- !u!1 &8297977597545156294
@@ -1006,6 +1010,7 @@ MonoBehaviour:
   ShowDelay: 0.1
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 8297977597812611044}
   TilemapCollider: {fileID: 6555465827887985193}
 --- !u!1 &8297977597825549467
@@ -1400,6 +1405,8 @@ MonoBehaviour:
   TimeBetweenTwitchesRange: {x: 0.3, y: 1}
   ChanceToTwitchPerTile: 0.01
   Tilemap: {fileID: 8297977599257942351}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
 --- !u!114 &7775373638361466922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,6 +1422,7 @@ MonoBehaviour:
   ShowDelay: 0.4
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 8297977599257942351}
   TilemapCollider: {fileID: 0}
 --- !u!1 &8345523708363224435
@@ -1715,6 +1723,7 @@ MonoBehaviour:
   ShowDelay: 0.3
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 203681258947157634}
   TilemapCollider: {fileID: 0}
 --- !u!1 &8779312574507417748
@@ -1851,5 +1860,6 @@ MonoBehaviour:
   ShowDelay: 0
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 7358607359844977680}
   TilemapCollider: {fileID: 0}

@@ -12,6 +12,7 @@ namespace Drepanoid
     {
         public float ShowDelay;
         public CharacterAnimation LoadAnimation, UnloadAnimation;
+        public TileBase EmptyTile;
 
         public Tilemap Tilemap;
         public TilemapCollider2D TilemapCollider;
@@ -40,9 +41,9 @@ namespace Drepanoid
                 var tile = Tilemap.GetTile(cellPosition);
                 if (tile == null) continue;
 
-                tiles.Add(cellPosition, loading ? tile : null);
+                tiles.Add(cellPosition, loading ? tile : EmptyTile);
 
-                if (loading) Tilemap.SetTile(cellPosition, null);
+                if (loading) Tilemap.SetTile(cellPosition, EmptyTile);
             }
 
             yield return Driver.CharacterAnimations.AnimateTileset(loading ? LoadAnimation : UnloadAnimation, ShowDelay, Tilemap, tiles);
