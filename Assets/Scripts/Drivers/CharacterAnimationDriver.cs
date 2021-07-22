@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,16 +16,10 @@ namespace Drepanoid.Drivers
             public TileBase FinalTile;
             public int CurrentFrame;
             public float Timer;
-            public CharacterAnimation Animation;
 
-            public TileBase CurrentTile => IsFinished ? FinalTile : Animation.Frames[CurrentFrame].Tile;
-            public bool IsFinished => CurrentFrame >= Animation.Frames.Count;
-
-            public void AdvanceFrame ()
-            {
-                CurrentFrame++;
-                Timer = RandomExtra.Range(Animation.FrameTimeRange);
-            }
+            // copied from CharacterAnimation to reduce retrievals
+            public TileBase[] Frames;
+            public Vector2 FrameTimeRange;
         }
         
         class TilesetAnimationTracker
@@ -73,7 +68,8 @@ namespace Drepanoid.Drivers
                     Position = tiles.Positions[i],
                     FinalTile = tiles.Tiles[i],
                     CurrentFrame = -1,
-                    Animation = animation
+                    Frames = animation.Frames.Select(f => f.Tile).ToArray(),
+                    FrameTimeRange = animation.FrameTimeRange
                 });
             }
 
@@ -118,17 +114,24 @@ namespace Drepanoid.Drivers
             TilePositionCollection tilePositions = tilesetAnimation.TilePositionCollection;
             tilePositions.Clear();
 
-            foreach (var data in tilesetAnimation.TileData)
+            for (int i = tilesetAnimation.TileData.Count - 1; i >= 0; i--)
             {
+                TileAnimationTracker data = tilesetAnimation.TileData[i];
                 data.Timer -= Time.deltaTime;
                 if (data.Timer > 0) continue;
 
-                data.AdvanceFrame();
-                tilePositions.Add(data.Position, data.CurrentTile);
+                data.CurrentFrame++;
+                data.Timer = RandomExtra.Range(data.FrameTimeRange);
+
+                bool isFinished = data.CurrentFrame >= data.Frames.Length;
+                TileBase currentTile = isFinished ? data.FinalTile : data.Frames[data.CurrentFrame];
+
+                tilePositions.Add(data.Position, currentTile);
+
+                if (isFinished) tilesetAnimation.TileData.RemoveAt(i);
             }
 
             tilesetAnimation.Tilemap.SetTiles(tilePositions.Positions, tilePositions.Tiles);
-            tilesetAnimation.TileData.RemoveAll(d => d.IsFinished);
         }
 
         IEnumerator animateSpriteRendererInternal (CharacterAnimation animation, float showDelay, SpriteRenderer spriteRenderer, bool loading)
