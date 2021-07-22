@@ -16,18 +16,6 @@ namespace Drepanoid
         public Tilemap Tilemap;
         public TilemapCollider2D TilemapCollider;
 
-        class IndividualTileAnimationTracker
-        {
-            public Vector3Int Position;
-            public TileBase FinalTile;
-            public int CurrentFrame;
-            public float Timer;
-            public List<CharacterAnimation.AnimationFrame> Frames;
-
-            public TileBase CurrentTile => IsFinished ? FinalTile : Frames[CurrentFrame].Tile;
-            public bool IsFinished => CurrentFrame >= Frames.Count;
-        }
-
         void Start ()
         {
             StartCoroutine(playAnimation(true));
