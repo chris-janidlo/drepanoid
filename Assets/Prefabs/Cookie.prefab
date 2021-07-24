@@ -59,9 +59,9 @@ MonoBehaviour:
     CharactersPerSecondScroll:
       _value: 300
       HasValue: 1
-    LoadAnimation: {fileID: 11400000, guid: 38b07ef848358d549a2e8e365990b749, type: 2}
+    LoadAnimation: {fileID: 11400000, guid: 69a3921a332daef408c0f0064d866b97, type: 2}
   PopupVisibilityTime: 0.5
-  PopupDeleteAnimation: {fileID: 11400000, guid: 38b07ef848358d549a2e8e365990b749,
+  PopupDeleteAnimation: {fileID: 11400000, guid: 8c744ff630438974bbe33969473073dc,
     type: 2}
   CollectedCookies: {fileID: 11400000, guid: e782b952c64538f40bbefd4dc5a2ac56, type: 2}
   SpriteRenderer: {fileID: 7253605202877373893}
