@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Drepanoid
 {
     [Serializable]
-    public class TextEffectData : IEquatable<TextEffectData>
+    public class TextEffectData
     {
         [Header("Required Data")]
         public string Text;
@@ -16,10 +16,5 @@ namespace Drepanoid
         [Header("Optional Data")]
         public SerializableNullable<int> CharactersPerSecondScroll;
         public CharacterAnimation LoadAnimation;
-
-        public bool Equals (TextEffectData other)
-        {
-            return base.Equals(other);
-        }
     }
 }
