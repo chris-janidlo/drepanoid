@@ -16,7 +16,12 @@ namespace Drepanoid
         public SerializableNullable<int> CharactersPerSecondScroll;
         public CharacterAnimation Animation;
 
-        public DeleteTextOptions (Vector2Int regionStartPosition, Vector2Int regionExtents)
+        public DeleteTextOptions ()
+        {
+            CharactersPerSecondScroll = new SerializableNullable<int>(null);
+        }
+
+        public DeleteTextOptions (Vector2Int regionStartPosition, Vector2Int regionExtents) : this()
         {
             RegionStartPosition = regionStartPosition;
             RegionExtents = regionExtents;
