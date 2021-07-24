@@ -57,16 +57,16 @@ namespace Drepanoid.Drivers
             yield return animateSpriteRendererInternal(animation, showDelay, spriteRenderer, false);
         }
 
-        public IEnumerator AnimateTileset (CharacterAnimation animation, float showDelay, Tilemap tilemap, TilePositionCollection tiles)
+        public IEnumerator AnimateTileset (CharacterAnimation animation, float showDelay, Tilemap tilemap, TilePositionCollection targets)
         {
-            List<TileAnimationTracker> tileData = new List<TileAnimationTracker>(tiles.Count);
+            List<TileAnimationTracker> tileData = new List<TileAnimationTracker>(targets.Count);
 
-            for (int i = 0; i < tiles.Count; i++)
+            for (int i = 0; i < targets.Count; i++)
             {
                 tileData.Add(new TileAnimationTracker
                 {
-                    Position = tiles.Positions[i],
-                    FinalTile = tiles.Tiles[i],
+                    Position = targets.Positions[i],
+                    FinalTile = targets.Tiles[i],
                     CurrentFrame = -1,
                     Frames = animation.Frames.Select(f => f.Tile).ToArray(),
                     FrameTimeRange = animation.FrameTimeRange
