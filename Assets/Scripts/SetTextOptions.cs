@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Drepanoid
 {
     [Serializable]
-    public class TextEffectData
+    public class SetTextOptions
     {
         [Header("Required Data")]
         public string Text;

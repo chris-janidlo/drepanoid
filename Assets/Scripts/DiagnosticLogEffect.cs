@@ -39,11 +39,11 @@ namespace Drepanoid
 
             while (true)
             {
-                Driver.Text.Delete(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1));
+                Driver.Text.Delete(new DeleteTextOptions(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1)));
 
                 currentLine = LogTextLines[lineCursor];
 
-                var currentLineTextEffectData = new TextEffectData
+                var currentLineTextOptions = new SetTextOptions
                 {
                     Text = currentLine.Text,
                     StartingPosition = StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay,
@@ -52,15 +52,15 @@ namespace Drepanoid
                     LoadAnimation = LoadAnimation
                 };
 
-                yield return Driver.Text.SetText(currentLineTextEffectData);
+                yield return Driver.Text.SetText(currentLineTextOptions);
                 yield return new WaitForSeconds(currentLine.EndDelay);
 
                 logHistory.Add(currentLine.Text);
                 if (logHistory.Count > MaximumLinesOfHistoryToDisplay) logHistory.RemoveAt(0);
 
-                Driver.Text.Delete(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay));
+                Driver.Text.Delete(new DeleteTextOptions(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay)));
 
-                var historyTextEffectData = new TextEffectData
+                var historyTextOptions = new SetTextOptions
                 {
                     Text = string.Join("\n", logHistory),
                     StartingPosition = StartingPosition + Vector2Int.down * (MaximumLinesOfHistoryToDisplay - logHistory.Count),
@@ -69,7 +69,7 @@ namespace Drepanoid
                     LoadAnimation = LoadAnimation
                 };
 
-                StartCoroutine(Driver.Text.SetText(historyTextEffectData));
+                StartCoroutine(Driver.Text.SetText(historyTextOptions));
 
                 lineCursor++;
                 lineCursor %= LogTextLines.Count;

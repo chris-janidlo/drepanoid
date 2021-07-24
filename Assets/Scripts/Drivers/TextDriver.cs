@@ -11,18 +11,18 @@ namespace Drepanoid.Drivers
     {
         public Tilemap MainTextTilemap, TextShadowTilemap;
 
-        class TextAnimationTracker
+        class SetTextAnimationTracker
         {
             public string CleanedText;
             public float Timer;
-            public TextEffectData EffectData;
+            public SetTextOptions Options;
             public Vector3Int PositionCursor;
             public int TextCursor;
             public TilePositionCollection TilePositionCollection;
         }
 
         bool endingLevel;
-        List<TextAnimationTracker> currentAnimations = new List<TextAnimationTracker>();
+        List<SetTextAnimationTracker> currentAnimations = new List<SetTextAnimationTracker>();
 
         void Update ()
         {
@@ -30,7 +30,7 @@ namespace Drepanoid.Drivers
 
             for (int i = currentAnimations.Count - 1; i >= 0; i--)
             {
-                TextAnimationTracker tracker = currentAnimations[i];
+                SetTextAnimationTracker tracker = currentAnimations[i];
                 tracker.Timer -= Time.deltaTime;
                 if (tracker.Timer <= 0) animateFrame(tracker);
                 if (tracker.TextCursor >= tracker.CleanedText.Length) currentAnimations.RemoveAt(i);
@@ -45,26 +45,26 @@ namespace Drepanoid.Drivers
             endingLevel = true;
         }
 
-        public IEnumerator SetText (TextEffectData data)
+        public IEnumerator SetText (SetTextOptions options)
         {
             if (endingLevel) yield break;
 
-            string cleanedText = data.Text.Replace("\r", "");
+            string cleanedText = options.Text.Replace("\r", "");
 
-            if (cleanedText.Any(c => !data.Font.CanPrint(c)))
+            if (cleanedText.Any(c => !options.Font.CanPrint(c)))
             {
                 throw new ArgumentException("text contains unprintable characters");
             }
 
             TilePositionCollection tilePositionCollection = new TilePositionCollection(cleanedText.Length);
-            Vector3Int startingPosition = new Vector3Int(data.StartingPosition.x, data.StartingPosition.y, 0);
-            if (data.CharactersPerSecondScroll.HasValue)
+            Vector3Int startingPosition = new Vector3Int(options.StartingPosition.x, options.StartingPosition.y, 0);
+            if (options.CharactersPerSecondScroll.HasValue)
             {
-                TextAnimationTracker tracker = new TextAnimationTracker
+                SetTextAnimationTracker tracker = new SetTextAnimationTracker
                 {
                     CleanedText = cleanedText,
                     Timer = 0,
-                    EffectData = data,
+                    Options = options,
                     PositionCursor = startingPosition,
                     TextCursor = 0,
                     TilePositionCollection = tilePositionCollection
@@ -75,25 +75,25 @@ namespace Drepanoid.Drivers
             }
             else
             {
-                setTilesToText(cleanedText, tilePositionCollection, ref startingPosition, data);
+                setTilesToText(cleanedText, tilePositionCollection, ref startingPosition, options);
                 yield break;
             }
         }
 
-        public void Delete (Vector2Int regionStartPosition, Vector2Int regionExtents)
+        public void Delete (DeleteTextOptions options)
         {
             int
-                xWidth = Mathf.Abs(regionExtents.x),
-                yWidth = Mathf.Abs(regionExtents.y),
-                xDir = Math.Sign(regionExtents.x),
-                yDir = Math.Sign(regionExtents.y);
+                xWidth = Mathf.Abs(options.RegionExtents.x),
+                yWidth = Mathf.Abs(options.RegionExtents.y),
+                xDir = Math.Sign(options.RegionExtents.x),
+                yDir = Math.Sign(options.RegionExtents.y);
 
             Vector3Int[,] positions2d = new Vector3Int[xWidth, yWidth];
             for (int i = 0; i < xWidth; i++)
             {
                 for (int j = 0; j < yWidth; j++)
                 {
-                    positions2d[i, j] = new Vector3Int(regionStartPosition.x + xDir * i, regionStartPosition.y + yDir * j, 0);
+                    positions2d[i, j] = new Vector3Int(options.RegionStartPosition.x + xDir * i, options.RegionStartPosition.y + yDir * j, 0);
                 }
             }
 
@@ -106,24 +106,24 @@ namespace Drepanoid.Drivers
             // TODO: animatinos, scrolling deletions
         }
 
-        void animateFrame (TextAnimationTracker tracker)
+        void animateFrame (SetTextAnimationTracker tracker)
         {
             if (endingLevel) return;
 
-            float charactersPerSecondScroll = tracker.EffectData.CharactersPerSecondScroll.Value;
+            float charactersPerSecondScroll = tracker.Options.CharactersPerSecondScroll.Value;
             int charactersPerFrame = Mathf.Max(Mathf.RoundToInt(charactersPerSecondScroll * Time.deltaTime), 1);
 
             string cleanedText = tracker.CleanedText;
             int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - tracker.TextCursor);
             string textToSet = cleanedText.Substring(tracker.TextCursor, textToSetLength);
 
-            setTilesToText(textToSet, tracker.TilePositionCollection, ref tracker.PositionCursor, tracker.EffectData);
+            setTilesToText(textToSet, tracker.TilePositionCollection, ref tracker.PositionCursor, tracker.Options);
             tracker.TextCursor += textToSetLength;
 
             tracker.Timer = 1f / charactersPerSecondScroll;
         }
 
-        void setTilesToText (string text, TilePositionCollection tilePositionCollection, ref Vector3Int tilemapCursor, TextEffectData data)
+        void setTilesToText (string text, TilePositionCollection tilePositionCollection, ref Vector3Int tilemapCursor, SetTextOptions data)
         {
             if (endingLevel) return;
 

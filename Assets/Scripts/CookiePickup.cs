@@ -13,7 +13,7 @@ namespace Drepanoid
         public float FloatSpeed;
 
         public string AnimatorDeathTrigger;
-        public TextEffectData PickupTextEffect;
+        public SetTextOptions PickupTextEffect;
         public float PickupTextEffectVisibilityTime;
 
         public CookieValueList CollectedCookies;
@@ -68,7 +68,7 @@ namespace Drepanoid
 
             yield return Driver.Text.SetText(PickupTextEffect);
             yield return new WaitForSeconds(PickupTextEffectVisibilityTime);
-            Driver.Text.Delete(PickupTextEffect.StartingPosition, new Vector2Int(PickupTextEffect.Text.Length, 1));
+            Driver.Text.Delete(new DeleteTextOptions(PickupTextEffect.StartingPosition, new Vector2Int(PickupTextEffect.Text.Length, 1)));
 
             Destroy(gameObject);
         }
