@@ -52,7 +52,7 @@ MonoBehaviour:
   AlreadyCollectedColor: {r: 0.8235294, g: 0.49019608, b: 0.17254902, a: 1}
   FloatSpeed: 1
   AnimatorDeathTrigger: Die
-  PickupTextEffect:
+  PopupSetTextOptions:
     Text: cookie.get()
     StartingPosition: {x: 0, y: 0}
     Font: {fileID: 11400000, guid: 6f8864388a88cc54e9d6bb763eebb74b, type: 2}
@@ -60,7 +60,9 @@ MonoBehaviour:
       _value: 300
       HasValue: 1
     LoadAnimation: {fileID: 11400000, guid: 38b07ef848358d549a2e8e365990b749, type: 2}
-  PickupTextEffectVisibilityTime: 0.5
+  PopupVisibilityTime: 0.5
+  PopupDeleteAnimation: {fileID: 11400000, guid: 38b07ef848358d549a2e8e365990b749,
+    type: 2}
   CollectedCookies: {fileID: 11400000, guid: e782b952c64538f40bbefd4dc5a2ac56, type: 2}
   SpriteRenderer: {fileID: 7253605202877373893}
   Collider: {fileID: 7253605202877373894}

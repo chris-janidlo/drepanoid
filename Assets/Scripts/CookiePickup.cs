@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityAtoms;
 using Drepanoid.Drivers;
 
@@ -13,8 +14,11 @@ namespace Drepanoid
         public float FloatSpeed;
 
         public string AnimatorDeathTrigger;
-        public SetTextOptions PickupTextEffect;
-        public float PickupTextEffectVisibilityTime;
+        [FormerlySerializedAs("PickupTextEffect")]
+        public SetTextOptions PopupSetTextOptions;
+        [FormerlySerializedAs("PickupTextEffectVisibilityTime")]
+        public float PopupVisibilityTime;
+        public CharacterAnimation PopupDeleteAnimation;
 
         public CookieValueList CollectedCookies;
         public SpriteRenderer SpriteRenderer;
@@ -66,9 +70,14 @@ namespace Drepanoid
 
             if (!alreadyCollected) CollectedCookies.Add(Cookie);
 
-            yield return Driver.Text.SetText(PickupTextEffect);
-            yield return new WaitForSeconds(PickupTextEffectVisibilityTime);
-            Driver.Text.Delete(new DeleteTextOptions(PickupTextEffect.StartingPosition, new Vector2Int(PickupTextEffect.Text.Length, 1)));
+            yield return Driver.Text.SetText(PopupSetTextOptions);
+            yield return new WaitForSeconds(PopupVisibilityTime);
+            yield return Driver.Text.Delete(new DeleteTextOptions
+            {
+                RegionStartPosition = PopupSetTextOptions.StartingPosition,
+                RegionExtents = new Vector2Int(PopupSetTextOptions.Text.Length, 1),
+                Animation = PopupDeleteAnimation
+            });
 
             Destroy(gameObject);
         }

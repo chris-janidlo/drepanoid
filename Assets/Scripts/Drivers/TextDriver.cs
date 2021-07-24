@@ -80,7 +80,7 @@ namespace Drepanoid.Drivers
             }
         }
 
-        public void Delete (DeleteTextOptions options)
+        public IEnumerator Delete (DeleteTextOptions options)
         {
             int
                 xWidth = Mathf.Abs(options.RegionExtents.x),
@@ -88,22 +88,34 @@ namespace Drepanoid.Drivers
                 xDir = Math.Sign(options.RegionExtents.x),
                 yDir = Math.Sign(options.RegionExtents.y);
 
-            Vector3Int[,] positions2d = new Vector3Int[xWidth, yWidth];
+            TilePositionCollection tiles = new TilePositionCollection(xWidth * yWidth);
+
             for (int i = 0; i < xWidth; i++)
             {
                 for (int j = 0; j < yWidth; j++)
                 {
-                    positions2d[i, j] = new Vector3Int(options.RegionStartPosition.x + xDir * i, options.RegionStartPosition.y + yDir * j, 0);
+                    Vector3Int position = new Vector3Int
+                    (
+                        options.RegionStartPosition.x + xDir * i,
+                        options.RegionStartPosition.y + yDir * j,
+                        0
+                    );
+                    tiles.Add(position, null);
                 }
             }
 
-            Vector3Int[] positions = positions2d.Cast<Vector3Int>().ToArray();
-            TileBase[] tiles = Enumerable.Repeat<TileBase>(null, xWidth * yWidth).ToArray();
+            Driver.CharacterAnimations.StopAnimations(MainTextTilemap, tiles.Positions.ToList());
 
-            Driver.CharacterAnimations.StopAnimations(MainTextTilemap, positions.ToList());
-            MainTextTilemap.SetTiles(positions, tiles);
+            if (options.Animation != null)
+            {
+                yield return Driver.CharacterAnimations.AnimateTileset(options.Animation, 0, MainTextTilemap, tiles);
+            }
+            else
+            {
+                MainTextTilemap.SetTiles(tiles.Positions, tiles.Tiles);
+            }
 
-            // TODO: animatinos, scrolling deletions
+            // TODO: scrolling deletions
         }
 
         void animateFrame (SetTextAnimationTracker tracker)

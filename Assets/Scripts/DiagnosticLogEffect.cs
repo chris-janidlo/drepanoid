@@ -39,7 +39,7 @@ namespace Drepanoid
 
             while (true)
             {
-                Driver.Text.Delete(new DeleteTextOptions(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1)));
+                yield return Driver.Text.Delete(new DeleteTextOptions(StartingPosition + Vector2Int.down * MaximumLinesOfHistoryToDisplay, new Vector2Int(maxLineLength, 1)));
 
                 currentLine = LogTextLines[lineCursor];
 
@@ -58,7 +58,7 @@ namespace Drepanoid
                 logHistory.Add(currentLine.Text);
                 if (logHistory.Count > MaximumLinesOfHistoryToDisplay) logHistory.RemoveAt(0);
 
-                Driver.Text.Delete(new DeleteTextOptions(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay)));
+                yield return Driver.Text.Delete(new DeleteTextOptions(StartingPosition, new Vector2Int(maxLineLength, -MaximumLinesOfHistoryToDisplay)));
 
                 var historyTextOptions = new SetTextOptions
                 {
