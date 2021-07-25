@@ -64,6 +64,7 @@ MonoBehaviour:
     type: 2}
   SceneTransitionTargetTag: {fileID: 11400000, guid: 706e3356135a2804bb19233c8c7acb23,
     type: 2}
+  MinBallTransitionSpeed: 10
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
   Collider: {fileID: 1805651279731318352}

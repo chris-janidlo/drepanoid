@@ -25,6 +25,8 @@ namespace Drepanoid
 
         public Vector2Variable SceneChangeDirection, CameraTrackingPosition;
         public StringVariable SceneTransitionTargetTag;
+        public float MinBallTransitionSpeed;
+
         public SceneTransitionHelper SceneTransitionHelper;
         public Collider2D Collider;
 
@@ -55,7 +57,8 @@ namespace Drepanoid
             if (ball == null) return;
 
             Collider.enabled = false;
-            ball.Velocity = Vector3.Project(ball.Velocity, AdjacentSceneDirection);
+            float speedInDirectionOfAdjacentScene = Vector2.Dot(ball.Velocity, AdjacentSceneDirection); // from https://docs.unity3d.com/2019.3/Documentation/Manual/AmountVectorMagnitudeInAnotherDirection.html
+            ball.Velocity = AdjacentSceneDirection * Mathf.Max(speedInDirectionOfAdjacentScene, MinBallTransitionSpeed);
             ball.DespawnVictoriously();
 
             SceneChangeDirection.Value = AdjacentSceneDirection;
