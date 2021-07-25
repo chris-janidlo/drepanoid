@@ -98,8 +98,10 @@ namespace Drepanoid
 
             return
                 popupStart.y == regionStart.y &&
-                (popupStart.x >= regionStart.x && popupStart.x <= regionEnd.x) ||
-                (popupEnd.x >= regionStart.x && popupEnd.x <= regionEnd.x);
+                (
+                    (popupStart.x >= regionStart.x && popupStart.x <= regionEnd.x) ||
+                    (popupEnd.x >= regionStart.x && popupEnd.x <= regionEnd.x)
+                );
         }
     }
 }
