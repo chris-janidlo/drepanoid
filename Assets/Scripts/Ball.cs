@@ -28,6 +28,10 @@ namespace Drepanoid
         [Range(0, 1)]
         public float AngularDrag;
 
+        public ParticleSystem TrailParticles;
+        public AnimationCurve BaseTrailEmissionRateOverDistanceBySpeed;
+        public float MinBounceSpeedForFeverTrail, FeverTrailRateOverDistance;
+
         public Vector2Variable CameraTrackingPosition;
 
         public float KillFloorY;
@@ -43,6 +47,7 @@ namespace Drepanoid
         float angularVelocity; // positive = clockwise, negative = counter-clockwise
         bool spriteIsOn;
         bool frozen, despawningVictoriously;
+        bool feverTrail;
 
         void Start ()
         {
@@ -54,6 +59,7 @@ namespace Drepanoid
             flipSprite();
 
             initialPosition = transform.position;
+            transform.localScale = Vector3.zero;
         }
 
         void Update ()
@@ -74,6 +80,12 @@ namespace Drepanoid
             spin();
 
             CameraTrackingPosition.Value = transform.position;
+
+            if (!feverTrail)
+            {
+                float rate = BaseTrailEmissionRateOverDistanceBySpeed.Evaluate(Velocity.magnitude);
+                setTrailEmissionRateOverDistance(rate);
+            }
         }
 
         void OnDestroy ()
@@ -101,6 +113,9 @@ namespace Drepanoid
                 : -Math.Sign(cardinalCollisionNormal.x) * resultingVelocity.y * BounceSpinMultiplier;
 
             Velocity = resultingVelocity;
+
+            feverTrail = Velocity.sqrMagnitude >= MinBounceSpeedForFeverTrail * MinBounceSpeedForFeverTrail;
+            if (feverTrail) setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
 
             flipSprite();
         }
@@ -148,6 +163,12 @@ namespace Drepanoid
             }
         }
 
+        void setTrailEmissionRateOverDistance (float rate)
+        {
+            var emission = TrailParticles.emission;
+            emission.rateOverDistance = rate;
+        }
+
         void flipSprite ()
         {
             spriteIsOn = !spriteIsOn;
@@ -157,6 +178,7 @@ namespace Drepanoid
         IEnumerator deathRoutine ()
         {
             Collider.enabled = false;
+            TrailParticles.transform.parent = null;
 
             yield return new WaitForSeconds(DeathAnimationWaitTimeBeforeShrinking);
 
@@ -174,6 +196,8 @@ namespace Drepanoid
                 ? 0
                 : deathsSinceLastExplosionDeath + 1;
 
+            Destroy(TrailParticles.gameObject, TrailParticles.main.startLifetime.constantMax);
+
             BallDied.Raise();
             Destroy(gameObject);
         }
@@ -184,7 +208,9 @@ namespace Drepanoid
 
             frozen = true;
             transform.rotation = Quaternion.identity;
-            StartCoroutine(Driver.CharacterAnimations.AnimateSpriteRendererUnload(UnloadAnimation, 0, SpriteRenderer));
+
+            yield return Driver.CharacterAnimations.AnimateSpriteRendererUnload(UnloadAnimation, 0, SpriteRenderer);
+            Destroy(gameObject);
         }
     }
 }
