@@ -239,8 +239,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowDelay: 0.4
-  Animation: {fileID: 11400000, guid: 8df6ae1fd9cf050458beaea19f146e59, type: 2}
+  LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
+  UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 136060619}
+  TilemapCollider: {fileID: 136060613}
 --- !u!114 &136060617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +261,8 @@ MonoBehaviour:
   TimeBetweenTwitchesRange: {x: 1, y: 1}
   ChanceToTwitchPerTile: 0.5
   Tilemap: {fileID: 136060619}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
 --- !u!483693784 &136060618
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -54315,6 +54320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene Transition Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492746815315415485, guid: 9bf858ef0db61164e964e833864a93cd,
+        type: 3}
+      propertyPath: Tag
+      value: top
       objectReference: {fileID: 0}
     - target: {fileID: 6492746815315415485, guid: 9bf858ef0db61164e964e833864a93cd,
         type: 3}
