@@ -21,7 +21,7 @@ namespace Drepanoid
                 ? new Vector2Int(Math.Sign(normal.x), 0)
                 : new Vector2Int(0, Math.Sign(normal.y));
 
-            ball.Bounce(resultingSpeed, cardinalNormal);
+            ball.Bounce(resultingSpeed, cardinalNormal, false);
         }
 
         Vector2 getStraightestNormal (Collision2D collision)

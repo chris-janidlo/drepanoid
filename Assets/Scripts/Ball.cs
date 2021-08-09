@@ -98,7 +98,7 @@ namespace Drepanoid
         /// </summary>
         /// <param name="resultingVelocity">How fast, and in what direction, the ball should be travelling after this collision.</param>
         /// <param name="cardinalCollisionNormal">The cardinal direction (ie up, down, left, right) that most closely matches the normal of the collision.</param>
-        public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal)
+        public void Bounce (Vector2 resultingVelocity, Vector2Int cardinalCollisionNormal, bool canChangeFeverState)
         {
             if (frozen) return;
 
@@ -114,8 +114,11 @@ namespace Drepanoid
 
             Velocity = resultingVelocity;
 
-            feverTrail = Velocity.sqrMagnitude >= MinBounceSpeedForFeverTrail * MinBounceSpeedForFeverTrail;
-            if (feverTrail) setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
+            if (canChangeFeverState)
+            {
+                feverTrail = Velocity.sqrMagnitude >= MinBounceSpeedForFeverTrail * MinBounceSpeedForFeverTrail;
+                if (feverTrail) setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
+            }
 
             BounceParticles.Stop();
             BounceParticles.Play();

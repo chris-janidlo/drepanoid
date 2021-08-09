@@ -52,7 +52,7 @@ namespace Drepanoid
         {
             Ball ball = reflectionThisFrame.Ball;
             Vector2 newVelocity = Vector2.Reflect(ball.Velocity, Vector2.down);
-            ball.Bounce(newVelocity, Vector2Int.down);
+            ball.Bounce(newVelocity, Vector2Int.down, false);
         }
 
         void bounce ()
@@ -75,7 +75,7 @@ namespace Drepanoid
             Vector2 newVelocity = speed * angleToVector(exitAngleOffPaddle);
             newVelocity.x += ball.Velocity.x * bounceStats.OriginalXSpeedOfBallRetainedOnBounce;
 
-            ball.Bounce(newVelocity, Vector2Int.up);
+            ball.Bounce(newVelocity, Vector2Int.up, true);
         }
 
         bool collisionsWereNextToEachOther ()
