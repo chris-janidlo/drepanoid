@@ -28,7 +28,7 @@ namespace Drepanoid
         [Range(0, 1)]
         public float AngularDrag;
 
-        public ParticleSystem TrailParticles;
+        public ParticleSystem BounceParticles, TrailParticles;
         public AnimationCurve BaseTrailEmissionRateOverDistanceBySpeed;
         public float MinBounceSpeedForFeverTrail, FeverTrailRateOverDistance;
 
@@ -116,6 +116,9 @@ namespace Drepanoid
 
             feverTrail = Velocity.sqrMagnitude >= MinBounceSpeedForFeverTrail * MinBounceSpeedForFeverTrail;
             if (feverTrail) setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
+
+            BounceParticles.Stop();
+            BounceParticles.Play();
 
             flipSprite();
         }
