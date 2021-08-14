@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
-using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityAtoms.BaseAtoms;
 
 namespace Drepanoid
