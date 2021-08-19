@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 
-namespace Drepanoid
+namespace Drepanoid.Drivers
 {
-    public class TranslationMover : MonoBehaviour
+    public class TranslationMovementDriver : MonoBehaviour
     {
         public float Velocity { get; private set; }
+        public float PositionOnLine { get; private set; } = 0.5f;
 
         public float MaxVelocity, AccelerationTime;
-        public Transform LineLeftEdge, LineRightEdge;
         public FloatVariable MovementAxis;
-
-        float positionOnLine = 0.5f;
 
         void FixedUpdate ()
         {
@@ -27,16 +25,14 @@ namespace Drepanoid
                 Velocity += MaxVelocity / AccelerationTime * MovementAxis.Value * Time.deltaTime;
                 Velocity = Mathf.Clamp(Velocity, -MaxVelocity, MaxVelocity);
 
-                positionOnLine += Velocity * Time.deltaTime;
-                positionOnLine = Mathf.Clamp(positionOnLine, 0, 1);
+                PositionOnLine += Velocity * Time.deltaTime;
+                PositionOnLine = Mathf.Clamp(PositionOnLine, 0, 1);
 
-                if (positionOnLine == 0 && Velocity < 0 || positionOnLine == 1 && Velocity > 0)
+                if (PositionOnLine == 0 && Velocity < 0 || PositionOnLine == 1 && Velocity > 0)
                 {
                     Velocity = 0;
                 }
             }
-
-            transform.position = Vector3.Lerp(LineLeftEdge.position, LineRightEdge.position, positionOnLine);
         }
     }
 }

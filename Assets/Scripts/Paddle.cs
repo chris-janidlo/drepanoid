@@ -2,6 +2,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Drepanoid.Drivers;
 using crass;
 
 namespace Drepanoid
@@ -9,7 +10,7 @@ namespace Drepanoid
     public class Paddle : MonoBehaviour
     {
         public List<PaddleSegment> Segments;
-        public TranslationMover Mover;
+        public Transform LineLeftEdge, LineRightEdge;
 
         PaddleCollision lastBounceThisFrame, penultimateBounceThisFrame, reflectionThisFrame;
 
@@ -23,6 +24,8 @@ namespace Drepanoid
 
         void FixedUpdate ()
         {
+            transform.position = Vector3.Lerp(LineLeftEdge.position, LineRightEdge.position, Driver.Mover.PositionOnLine);
+
             if (lastBounceThisFrame != null)
             {
                 bounce();
@@ -66,12 +69,12 @@ namespace Drepanoid
 
             PaddleSegmentBounceStats bounceStats = PaddleSegmentBounceStats.Average(statBlocks);
 
-            float inheritAngleDirection = MathfExtra.TernarySign(Mover.LineRightEdge.position.x - Mover.LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
-            float inheritSpeedAngle = Mover.Velocity * bounceStats.InheritSpeedAngleMultiplier * inheritAngleDirection;
+            float inheritAngleDirection = MathfExtra.TernarySign(LineRightEdge.position.x - LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
+            float inheritSpeedAngle = Driver.Mover.Velocity * bounceStats.InheritSpeedAngleMultiplier * inheritAngleDirection;
             float exitAngleOffPaddle = Mathf.Clamp(bounceStats.BounceAngle + inheritSpeedAngle, -180, 180);
 
             Ball ball = lastBounceThisFrame.Ball;
-            float speed = bounceStats.BounceSpeed + Mathf.Abs(Mover.Velocity) * bounceStats.InheritSpeedBounceMultiplier;
+            float speed = bounceStats.BounceSpeed + Mathf.Abs(Driver.Mover.Velocity) * bounceStats.InheritSpeedBounceMultiplier;
             Vector2 newVelocity = speed * angleToVector(exitAngleOffPaddle);
             newVelocity.x += ball.Velocity.x * bounceStats.OriginalXSpeedOfBallRetainedOnBounce;
 

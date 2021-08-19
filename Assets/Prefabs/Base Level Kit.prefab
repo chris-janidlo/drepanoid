@@ -30,6 +30,7 @@ Transform:
   m_Children:
   - {fileID: 2041638163383586353}
   - {fileID: 117959542214201551}
+  - {fileID: 8263389467414939469}
   m_Father: {fileID: 8297977597804943753}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDriverReference: {fileID: 6117317433623721460}
   CharacterAnimationDriverReference: {fileID: 6879697698901402753}
+  TranslationMovementReference: {fileID: 6799379689478698892}
 --- !u!1 &4553857479060411087
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +229,52 @@ MonoBehaviour:
   EmptyTile: {fileID: 11400000, guid: 23724120f51357844b77333ee1223dcc, type: 2}
   Tilemap: {fileID: 2083086866257884412}
   TilemapCollider: {fileID: 0}
+--- !u!1 &6972104344641220714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8263389467414939469}
+  - component: {fileID: 6799379689478698892}
+  m_Layer: 0
+  m_Name: Mover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8263389467414939469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6972104344641220714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2670926399819871835}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6799379689478698892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6972104344641220714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559a3920aa0b914479661ba68eab3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxVelocity: 2
+  AccelerationTime: 0.3
+  MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
 --- !u!1 &7891971641819170094
 GameObject:
   m_ObjectHideFlags: 0

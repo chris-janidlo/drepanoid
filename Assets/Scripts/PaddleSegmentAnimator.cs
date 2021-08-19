@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Drepanoid.Drivers;
 using crass;
 
 namespace Drepanoid
@@ -16,7 +17,6 @@ namespace Drepanoid
 
         public TransitionableFloat MoveLagTransition;
 
-        public TranslationMover Mover;
         public SpriteRenderer Visual;
 
         bool wandering;
@@ -50,7 +50,7 @@ namespace Drepanoid
 
         void manageMoveLag ()
         {
-            var moveDirection = MathfExtra.TernarySign(Mover.Velocity);
+            var moveDirection = MathfExtra.TernarySign(Driver.Mover.Velocity);
             if (moveDirection != previousMoveDirection)
             {
                 previousMoveDirection = moveDirection;
@@ -67,7 +67,7 @@ namespace Drepanoid
 
         void manageWandering ()
         {
-            if (Mover.Velocity != 0)
+            if (Driver.Mover.Velocity != 0)
             {
                 wanderWaitTimer = RandomExtra.Range(TimeUntilWanderRange);
 

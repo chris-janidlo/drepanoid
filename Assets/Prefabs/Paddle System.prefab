@@ -518,7 +518,6 @@ MonoBehaviour:
     value: 0
     Time: 0.275
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6169930906684778033}
 --- !u!61 &5006718296371208279
 BoxCollider2D:
@@ -623,7 +622,6 @@ MonoBehaviour:
     value: 0
     Time: 0
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6300202809046288339}
 --- !u!60 &5006718296407592303
 PolygonCollider2D:
@@ -732,7 +730,6 @@ MonoBehaviour:
     value: 0
     Time: 0.275
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 7136475774545520138}
 --- !u!61 &5006718296671113423
 BoxCollider2D:
@@ -837,7 +834,6 @@ MonoBehaviour:
     value: 0
     Time: 0
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 4074524428632079029}
 --- !u!60 &5006718297015235808
 PolygonCollider2D:
@@ -946,7 +942,6 @@ MonoBehaviour:
     value: 0
     Time: 0.3
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 39404304067791657}
 --- !u!60 &5006718297230172129
 PolygonCollider2D:
@@ -988,7 +983,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5006718297578559508}
   - component: {fileID: 5982228226228017169}
-  - component: {fileID: 3344544277422841597}
   - component: {fileID: 5213435424915309384}
   - component: {fileID: 3057485477691327224}
   m_Layer: 0
@@ -1038,24 +1032,8 @@ MonoBehaviour:
   - {fileID: 5006718296371208278}
   - {fileID: 5006718297230172128}
   - {fileID: 5006718297015235811}
-  Mover: {fileID: 3344544277422841597}
---- !u!114 &3344544277422841597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006718297578559509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 559a3920aa0b914479661ba68eab3f1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxVelocity: 2
-  AccelerationTime: 0.3
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
-  MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
 --- !u!114 &5213435424915309384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1171,6 @@ MonoBehaviour:
     value: 0
     Time: 0.3
     Ease: 21
-  Mover: {fileID: 3344544277422841597}
   Visual: {fileID: 6451194425400790099}
 --- !u!60 &5006718297579847711
 PolygonCollider2D:
