@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
+using crass;
 
 namespace Drepanoid.Drivers
 {
@@ -15,24 +16,21 @@ namespace Drepanoid.Drivers
 
         void FixedUpdate ()
         {
-            if (MovementAxis.Value == 0 || Mathf.Sign(MovementAxis.Value) != Mathf.Sign(Velocity))
+            int moveDirection = MathfExtra.TernarySign(MovementAxis.Value);
+
+            if (moveDirection == 0 || PositionOnLine == 0 && moveDirection == -1 || PositionOnLine == 1 && moveDirection == 1)
             {
                 Velocity = 0;
+                return;
             }
 
-            if (MovementAxis.Value != 0)
-            {
-                Velocity += MaxVelocity / AccelerationTime * MovementAxis.Value * Time.deltaTime;
-                Velocity = Mathf.Clamp(Velocity, -MaxVelocity, MaxVelocity);
+            float accelerationThisFrame = MaxVelocity / AccelerationTime * MovementAxis.Value * Time.deltaTime;
+            float unclampedVelocity = moveDirection != Mathf.Sign(Velocity)
+                ? accelerationThisFrame
+                : Velocity + accelerationThisFrame;
 
-                PositionOnLine += Velocity * Time.deltaTime;
-                PositionOnLine = Mathf.Clamp(PositionOnLine, 0, 1);
-
-                if (PositionOnLine == 0 && Velocity < 0 || PositionOnLine == 1 && Velocity > 0)
-                {
-                    Velocity = 0;
-                }
-            }
+            Velocity = Mathf.Clamp(unclampedVelocity, -MaxVelocity, MaxVelocity);
+            PositionOnLine = Mathf.Clamp(PositionOnLine + Velocity * Time.deltaTime, 0, 1);
         }
     }
 }
