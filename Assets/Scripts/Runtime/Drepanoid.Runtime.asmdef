@@ -1,0 +1,20 @@
+{
+    "name": "Drepanoid.Runtime",
+    "rootNamespace": "Drepanoid",
+    "references": [
+        "GUID:5e1e42ef5b88c4e2092f9609983cb2b7",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:14165214884ae4a619bfb290f28194a7",
+        "GUID:29492541a59d04a81b47a7f225e8a22d",
+        "GUID:7cead87e598844809ae298f71540fc18"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
