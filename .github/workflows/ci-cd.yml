@@ -1,0 +1,143 @@
+name: 'Test, Build and Release'
+
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - bug/**
+      - feature/**
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Set this to true to deploy to the staging environment after running the workflow'
+        required: true
+        default: 'false'
+
+
+env:
+  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        testMode:
+          - PlayMode
+          - EditMode
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+          submodules: recursive
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-drepanoid-test-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-drepanoid-test-
+      - name: Run tests
+        uses: game-ci/unity-test-runner@v2
+        with:
+          testMode: ${{ matrix.testMode }}
+
+      - name: Upload test report
+        if: ${{ success() || failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-report-${{ matrix.testMode }}
+          path: artifacts
+
+
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - WebGL
+          - StandaloneWindows
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+          submodules: recursive
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-drepanoid-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-drepanoid-
+      - name: Build
+        uses: game-ci/unity-builder@v2
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+          buildName: drepanoid-${{ matrix.targetPlatform }}
+      
+      - name: Group Windows artifacts into a folder
+        if: ${{ matrix.targetPlatform == 'StandaloneWindows' }}
+        run: |
+          mkdir tmp
+          mv build/StandaloneWindows/* tmp/
+          mkdir build/StandaloneWindows/drepanoid-StandaloneWindows
+          mv tmp/* build/StandaloneWindows/drepanoid-StandaloneWindows
+      - name: Upload build artifact to github cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: drepanoid-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
+
+
+  release:
+    # only run if both test and build jobs succeeded, and if either the 'deploy' input is set to true during a workflow_dispatch, or the branch is either 'master' or 'develop'
+    needs: [test, build]
+    if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop' || github.event.inputs.deploy }}
+    runs-on: ubuntu-latest
+    env:
+      ITCH_USER: crass-sandwich
+      BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - builder-name: WebGL
+            itch-name: webgl
+          - builder-name: StandaloneWindows
+            itch-name: win
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: drepanoid-${{ matrix.builder-name }}
+
+      - name: Set the name of the itch.io page to deploy to for master branch
+        if: ${{ github.ref == 'refs/heads/production' }}
+        run: echo "ITCH_GAME=drepanoid" >> $GITHUB_ENV
+
+      - name: Set the name of the itch.io page to deploy to for develop branch / manual deployment
+        if: ${{ github.ref == 'refs/heads/development' || github.event.inputs.deploy }}
+        run: echo "ITCH_GAME=drepanoid-secret-version" >> $GITHUB_ENV
+
+      - name: Push to itch.io
+        uses: josephbmanley/butler-publish-itchio-action@v1
+        env:
+          PACKAGE: drepanoid-${{ matrix.builder-name }}
+          CHANNEL: ${{ matrix.itch-name }}
