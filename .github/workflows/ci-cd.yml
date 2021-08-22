@@ -95,7 +95,7 @@ jobs:
         run: |
           mkdir tmp
           sudo mv build/StandaloneWindows/* tmp/
-          mkdir build/StandaloneWindows/drepanoid-StandaloneWindows
+          sudo mkdir build/StandaloneWindows/drepanoid-StandaloneWindows
           sudo mv tmp/* build/StandaloneWindows/drepanoid-StandaloneWindows
       - name: Upload build artifact to github cache
         uses: actions/upload-artifact@v2
