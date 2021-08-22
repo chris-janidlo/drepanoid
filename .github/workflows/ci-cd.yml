@@ -137,7 +137,7 @@ jobs:
         run: echo "ITCH_GAME=drepanoid-secret-version" >> $GITHUB_ENV
 
       - name: Push to itch.io
-        uses: josephbmanley/butler-publish-itchio-action@v1
+        uses: josephbmanley/butler-publish-itchio-action@v1.0.2
         env:
           PACKAGE: drepanoid-${{ matrix.builder-name }}
           CHANNEL: ${{ matrix.itch-name }}
