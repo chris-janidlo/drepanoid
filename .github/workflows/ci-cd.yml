@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy:
-        description: 'Deploy after build? (production builds are always deployed regardless of this setting)'
+        description: 'Deploy after build? (builds on "production" and "development" are always deployed regardless of this setting)'
         required: true
         default: 'false'
 
@@ -105,9 +105,9 @@ jobs:
 
 
   release:
-    # only run if both test and build jobs succeeded, and if either the 'deploy' input is set to true during a workflow_dispatch, or the branch is either 'master' or 'develop'
+    # only run if both test and build jobs succeeded, and if either the 'deploy' input is set to true during a workflow_dispatch, or the branch is either 'production' or 'development'
     needs: [test, build]
-    if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop' || github.event.inputs.deploy }}
+    if: ${{ github.ref == 'refs/heads/production' || github.ref == 'refs/heads/development' || github.event.inputs.deploy }}
     runs-on: ubuntu-20.04
     env:
       ITCH_USER: crass-sandwich
@@ -128,11 +128,11 @@ jobs:
         with:
           name: drepanoid-${{ matrix.builder-name }}
 
-      - name: Set the name of the itch.io page to deploy to for master branch
+      - name: Set the name of the itch.io page to deploy to for production branch
         if: ${{ github.ref == 'refs/heads/production' }}
         run: echo "ITCH_GAME=drepanoid" >> $GITHUB_ENV
 
-      - name: Set the name of the itch.io page to deploy to for develop branch / manual deployment
+      - name: Set the name of the itch.io page to deploy to for development branch / manual deployment
         if: ${{ github.ref == 'refs/heads/development' || github.event.inputs.deploy }}
         run: echo "ITCH_GAME=drepanoid-secret-version" >> $GITHUB_ENV
 
