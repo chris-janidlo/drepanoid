@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy:
-        description: 'Set this to true to deploy to the staging environment after running the workflow'
+        description: 'Deploy after build? (production builds are always deployed regardless of this setting)'
         required: true
         default: 'false'
 
@@ -24,7 +24,7 @@ env:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     strategy:
       fail-fast: false
@@ -61,7 +61,7 @@ jobs:
 
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     strategy:
       fail-fast: false
@@ -94,9 +94,9 @@ jobs:
         if: ${{ matrix.targetPlatform == 'StandaloneWindows' }}
         run: |
           mkdir tmp
-          mv build/StandaloneWindows/* tmp/
+          sudo mv build/StandaloneWindows/* tmp/
           mkdir build/StandaloneWindows/drepanoid-StandaloneWindows
-          mv tmp/* build/StandaloneWindows/drepanoid-StandaloneWindows
+          sudo mv tmp/* build/StandaloneWindows/drepanoid-StandaloneWindows
       - name: Upload build artifact to github cache
         uses: actions/upload-artifact@v2
         with:
@@ -108,7 +108,7 @@ jobs:
     # only run if both test and build jobs succeeded, and if either the 'deploy' input is set to true during a workflow_dispatch, or the branch is either 'master' or 'develop'
     needs: [test, build]
     if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop' || github.event.inputs.deploy }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     env:
       ITCH_USER: crass-sandwich
       BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
