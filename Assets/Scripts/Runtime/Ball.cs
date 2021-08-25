@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,13 @@ namespace Drepanoid
 {
     public class Ball : MonoBehaviour
     {
+        [Serializable]
+        public class BounceSound
+        {
+            public float MinSpeed;
+            public AudioClip Clip;
+        }
+
         private static int deathsSinceLastExplosionDeath;
 
         public Vector2 Velocity { get; set; }
@@ -35,7 +43,12 @@ namespace Drepanoid
         public Vector2Variable CameraTrackingPosition;
 
         public float KillFloorY;
+
+        public List<BounceSound> RegularBounceSounds;
+        public AudioClip FeverBounceSound;
+
         public VoidEvent BallDied;
+        public SoundEffectPlayer SoundEffectPlayer;
 
         public Sprite OnSprite, OffSprite;
         public SpriteRenderer SpriteRenderer;
@@ -113,11 +126,21 @@ namespace Drepanoid
                 : -Math.Sign(cardinalCollisionNormal.x) * resultingVelocity.y * BounceSpinMultiplier;
 
             Velocity = resultingVelocity;
+            float speed = Velocity.magnitude;
 
             if (canChangeFeverState)
             {
-                feverTrail = Velocity.sqrMagnitude >= MinBounceSpeedForFeverTrail * MinBounceSpeedForFeverTrail;
-                if (feverTrail) setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
+                feverTrail = speed >= MinBounceSpeedForFeverTrail;
+            }
+            
+            if (canChangeFeverState && feverTrail)
+            {
+                setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);
+                SoundEffectPlayer.Play(FeverBounceSound);
+            }
+            else
+            {
+                SoundEffectPlayer.Play(RegularBounceSounds.First(bs => speed >= bs.MinSpeed).Clip);
             }
 
             BounceParticles.Stop();

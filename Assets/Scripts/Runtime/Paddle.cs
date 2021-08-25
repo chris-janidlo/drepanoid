@@ -12,6 +12,8 @@ namespace Drepanoid
         public List<PaddleSegment> Segments;
         public Transform LineLeftEdge, LineRightEdge;
 
+        public SoundEffectPlayer SoundEffectPlayer;
+
         PaddleCollision lastBounceThisFrame, penultimateBounceThisFrame, reflectionThisFrame;
 
         void Start ()
