@@ -14,7 +14,12 @@ namespace Drepanoid
 
         public void Play (AudioClip clip)
         {
-            var source = spawnedAudioSources.FirstOrDefault(s => !s.Playing);
+            if (spawnedAudioSources.Any(s => s == null))
+            {
+                spawnedAudioSources.Clear();
+            }
+
+            SfxAudioSource source = spawnedAudioSources.FirstOrDefault(s => !s.Playing);
 
             if (source == null)
             {
