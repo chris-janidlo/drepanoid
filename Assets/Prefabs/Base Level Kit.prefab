@@ -1392,7 +1392,7 @@ MonoBehaviour:
     value: 0
     Time: 0.2
     Ease: 21
-  MobileZoomWaitTime: 0.7
+  MobileZoomWaitTime: 1.15
   MobileZoomTransition:
     value: 0
     Time: 0.8

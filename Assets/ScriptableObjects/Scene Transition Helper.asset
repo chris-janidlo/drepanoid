@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d233c1142bc1c446800b03d3ebfadc8, type: 3}
   m_Name: Scene Transition Helper
   m_EditorClassIdentifier: 
-  LevelLoadAnimationTime: 0.7
+  LevelLoadAnimationTime: 1.15
   LevelUnloadAnimationTime: 0.7
   LevelGoalReached: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
