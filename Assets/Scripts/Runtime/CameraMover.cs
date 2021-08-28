@@ -28,12 +28,16 @@ namespace Drepanoid
         public float NormalFov, FlattenedFov;
         public TransitionableFloat SceneLoadFovTransition, SceneUnloadFovTransition;
 
+        public float MobileZoomWaitTime;
+        public TransitionableFloat MobileZoomTransition;
+
         public Vector2Variable SceneChangeDirection;
         public SceneTransitionHelper SceneTransitionHelper;
 
         [Header("Pixel Perfection")]
         public int AssetPixelsPerUnit;
         public Vector2Int ReferenceResolution;
+        public float MobileZoomAmount;
 
         Vector3 sceneTransitionOffset => SceneTransitionMovementOffset * SceneChangeDirection.Value;
 
@@ -44,9 +48,10 @@ namespace Drepanoid
         Vector2 smoothFollowVelocity, followTargetMemory;
 
         Vector2Int resolution;
-        float fov;
+        float fov, zoom;
+        bool zoomChanged;
 
-        void Start ()
+        IEnumerator Start ()
         {
             CameraTrackingPosition.Value = transform.position;
 
@@ -58,6 +63,25 @@ namespace Drepanoid
             SceneLoadFovTransition.FlashFromTo(FlattenedFov, NormalFov);
 
             SceneUnloadFovTransition.AttachMonoBehaviour(this);
+
+            zoom = 1;
+#if UNITY_ANDROID || UNITY_IOS
+            yield return new WaitForSeconds(MobileZoomWaitTime);
+            MobileZoomTransition.AttachMonoBehaviour(this);
+            MobileZoomTransition.FlashFromTo(zoom, MobileZoomAmount);
+
+            while (MobileZoomTransition.Transitioning)
+            {
+                zoom = MobileZoomTransition.Value;
+                zoomChanged = true;
+                yield return null;
+            }
+
+            zoom = MobileZoomAmount;
+            zoomChanged = true;
+#else
+            yield return null;
+#endif
         }
 
         void Update ()
@@ -112,8 +136,9 @@ namespace Drepanoid
         void updateZDistanceFromOrigin ()
         {
             float currentHorizontalFov = Camera.VerticalToHorizontalFieldOfView(Camera.fieldOfView, (float) Screen.width / Screen.height);
-            if (resolution.x != Screen.width || resolution.y != Screen.height || fov != currentHorizontalFov)
+            if (zoomChanged || resolution.x != Screen.width || resolution.y != Screen.height || fov != currentHorizontalFov)
             {
+                zoomChanged = false;
                 resolution = new Vector2Int(Screen.width, Screen.height);
                 fov = currentHorizontalFov;
                 zDistanceFromOrigin = getPixelPerfectZDistanceFromOrigin();
@@ -154,7 +179,7 @@ namespace Drepanoid
                 resolution.y / ReferenceResolution.y
             ));
 
-            float frustrumWidthShouldBe = resolution.x / AssetPixelsPerUnit / pixelMultiplier;
+            float frustrumWidthShouldBe = resolution.x / AssetPixelsPerUnit / pixelMultiplier / zoom;
             float innerFrustrumAngles = (180f - fov) / 2f * Mathf.Deg2Rad;
             float distanceFromOrigin = Mathf.Tan(innerFrustrumAngles) * frustrumWidthShouldBe / 2f;
 
