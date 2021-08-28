@@ -15,6 +15,8 @@ namespace Drepanoid
         public AnimationCurve TrackingFollowTimeByTravelDistance;
         public Vector2 FollowClampBoxExtents, MinimumDistanceToFollowBoxExtents;
         public Vector2Variable CameraTrackingPosition;
+        [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
+        public float CameraSnapTrackingDistanceThreshold;
 
         [Header("Scene Transitions")]
         public float SceneTransitionMovementOffset;
@@ -37,7 +39,7 @@ namespace Drepanoid
         float zDistanceFromOrigin;
 
         TransitionableVector2 sceneChangeMovementTransition;
-        Vector2 smoothFollowVelocity, previouslyTrackedTarget;
+        Vector2 smoothFollowVelocity, followTargetMemory;
 
         Vector2Int resolution;
         float fov;
@@ -116,33 +118,23 @@ namespace Drepanoid
             }
         }
 
+        static readonly int[] _getFollowTargetAxes = new int[] { 0, 1 }; // as in more than one axis
         Vector2 getFollowTarget ()
         {
-            bool updateX, updateY;
+            bool shouldSnap = Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > CameraSnapTrackingDistanceThreshold;
 
-            // detect if camera tracking target has snapped to a new position, and not smoothly moved to that new position ('1' is an arbitrary value that should encompass that)
-            if (Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > 1)
+            foreach (int i in _getFollowTargetAxes)
             {
-                updateX = updateY = true;
+                float trackingPosition = CameraTrackingPosition.Value[i];
+                if (!shouldSnap && Mathf.Abs(trackingPosition - transform.position[i]) < MinimumDistanceToFollowBoxExtents[i]) continue;
+
+                float clampExtent = FollowClampBoxExtents[i];
+                float clampedPosition = Mathf.Clamp(trackingPosition, -clampExtent, clampExtent);
+
+                followTargetMemory[i] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
             }
-            else
-            {
-                Vector2 difference = CameraTrackingPosition.Value - (Vector2) transform.position;
-                updateX = Mathf.Abs(difference.x) >= MinimumDistanceToFollowBoxExtents.x;
-                updateY = Mathf.Abs(difference.y) >= MinimumDistanceToFollowBoxExtents.y;
-            }
 
-            float x = updateX
-                ? Mathf.Round(Mathf.Clamp(CameraTrackingPosition.Value.x, -FollowClampBoxExtents.x, FollowClampBoxExtents.x)
-                    * AssetPixelsPerUnit) / AssetPixelsPerUnit
-                : previouslyTrackedTarget.x;
-
-            float y = updateY
-                ? Mathf.Round(Mathf.Clamp(CameraTrackingPosition.Value.y, -FollowClampBoxExtents.y, FollowClampBoxExtents.y)
-                    * AssetPixelsPerUnit) / AssetPixelsPerUnit
-                : previouslyTrackedTarget.y;
-
-            return previouslyTrackedTarget = new Vector2(x, y);
+            return followTargetMemory;
         }
 
         float getPixelPerfectZDistanceFromOrigin ()
