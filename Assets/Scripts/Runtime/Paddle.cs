@@ -2,6 +2,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 using Drepanoid.Drivers;
 using crass;
 
@@ -13,6 +14,7 @@ namespace Drepanoid
         public Transform LineLeftEdge, LineRightEdge;
 
         public SoundEffectPlayer SoundEffectPlayer;
+        public VoidEvent BallBouncedOnPaddle;
 
         PaddleCollision lastBounceThisFrame, penultimateBounceThisFrame, reflectionThisFrame;
 
@@ -81,6 +83,8 @@ namespace Drepanoid
             newVelocity.x += ball.Velocity.x * bounceStats.OriginalXSpeedOfBallRetainedOnBounce;
 
             ball.Bounce(newVelocity, Vector2Int.up, true);
+
+            BallBouncedOnPaddle.Raise();
         }
 
         bool collisionsWereNextToEachOther ()

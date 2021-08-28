@@ -1025,16 +1025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cc07e9ed8068544fb8f5dd09a50f308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceSounds:
-  - MinSpeed: 22
-    Clip: {fileID: 8300000, guid: 372166258bab5084e82078c0417f34dd, type: 3}
-  - MinSpeed: 20.2
-    Clip: {fileID: 8300000, guid: 4267fe18837b16144819a72b5f9df6e6, type: 3}
-  - MinSpeed: 0
-    Clip: {fileID: 8300000, guid: 76588fe6e3c3f4d4fb5e5485c2960ba6, type: 3}
-  BounceSounds2:
-  - MinSpeed: 0
-    Clip: {fileID: 0}
   Segments:
   - {fileID: 5006718296407592302}
   - {fileID: 5006718297579847710}
@@ -1045,6 +1035,8 @@ MonoBehaviour:
   LineLeftEdge: {fileID: 8576565548323230087}
   LineRightEdge: {fileID: 6448029912907040587}
   SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
+  BallBouncedOnPaddle: {fileID: 11400000, guid: 6b022f0bd5eff2b439f437ac28ab2e8e,
+    type: 2}
 --- !u!114 &5213435424915309384
 MonoBehaviour:
   m_ObjectHideFlags: 0

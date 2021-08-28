@@ -49,7 +49,7 @@ namespace Drepanoid
 
         Vector2Int resolution;
         float fov, zoom;
-        bool zoomChanged;
+        bool zoomChanged, ballBouncedOnPaddleThisFrame;
 
         IEnumerator Start ()
         {
@@ -104,6 +104,11 @@ namespace Drepanoid
             SceneUnloadFovTransition.FlashFromTo(NormalFov, FlattenedFov);
         }
 
+        public void OnBallBouncedOnPaddle ()
+        {
+            ballBouncedOnPaddleThisFrame = true;
+        }
+
         void updateFov ()
         {
             if (SceneLoadFovTransition.Transitioning)
@@ -148,14 +153,15 @@ namespace Drepanoid
         static readonly int[] _getFollowTargetAxes = new int[] { 0, 1 }; // as in more than one axis
         Vector2 getFollowTarget ()
         {
-            bool shouldSnap = Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > CameraSnapTrackingDistanceThreshold;
+            bool forceUpdate = ballBouncedOnPaddleThisFrame ||
+                Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > CameraSnapTrackingDistanceThreshold; // ball snapped position
 
             foreach (int i in _getFollowTargetAxes)
             {
                 float trackingPosition = CameraTrackingPosition.Value[i],
                       currentPosition = transform.position[i];
 
-                if (!shouldSnap && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[i]) continue;
+                if (!forceUpdate && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[i]) continue;
 
                 // http://answers.unity.com/answers/1638803/view.html
                 float frustumAngle = (i == 0 ? fov : Camera.fieldOfView) / 2,
@@ -167,6 +173,8 @@ namespace Drepanoid
 
                 followTargetMemory[i] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
             }
+
+            ballBouncedOnPaddleThisFrame = false;
 
             return followTargetMemory;
         }
