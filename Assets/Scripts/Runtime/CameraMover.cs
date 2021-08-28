@@ -13,7 +13,9 @@ namespace Drepanoid
         [Header("Position Tracking")]
         [Tooltip("Refers to the distance the camera needs to travel, not the distance from the camera to the position it's tracking.")]
         public AnimationCurve TrackingFollowTimeByTravelDistance;
-        public Vector2 FollowClampBoxExtents, MinimumDistanceToFollowBoxExtents;
+        public Vector2 MinimumDistanceToFollowBoxExtents;
+        [Tooltip("Defines the region of the level that the camera stays inside")]
+        public Transform LowerLeftClampingPoint, UpperRightClampingPoint;
         public Vector2Variable CameraTrackingPosition;
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
@@ -61,8 +63,8 @@ namespace Drepanoid
         void Update ()
         {
             updateFov();
-            updateXyPlanePosition();
             updateZDistanceFromOrigin();
+            updateXyPlanePosition();
 
             Camera.transform.position = new Vector3
             (
@@ -125,11 +127,18 @@ namespace Drepanoid
 
             foreach (int i in _getFollowTargetAxes)
             {
-                float trackingPosition = CameraTrackingPosition.Value[i];
-                if (!shouldSnap && Mathf.Abs(trackingPosition - transform.position[i]) < MinimumDistanceToFollowBoxExtents[i]) continue;
+                float trackingPosition = CameraTrackingPosition.Value[i],
+                      currentPosition = transform.position[i];
 
-                float clampExtent = FollowClampBoxExtents[i];
-                float clampedPosition = Mathf.Clamp(trackingPosition, -clampExtent, clampExtent);
+                if (!shouldSnap && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[i]) continue;
+
+                // http://answers.unity.com/answers/1638803/view.html
+                float frustumAngle = (i == 0 ? fov : Camera.fieldOfView) / 2,
+                      halfScreen = zDistanceFromOrigin * Mathf.Tan(frustumAngle * Mathf.Deg2Rad);
+
+                float clampMin = Mathf.Min(LowerLeftClampingPoint.position[i] + halfScreen, currentPosition),
+                      clampMax = Mathf.Max(UpperRightClampingPoint.position[i] - halfScreen, currentPosition),
+                      clampedPosition = Mathf.Clamp(trackingPosition, clampMin, clampMax);
 
                 followTargetMemory[i] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
             }
