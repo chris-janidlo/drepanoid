@@ -156,22 +156,22 @@ namespace Drepanoid
             bool forceUpdate = ballBouncedOnPaddleThisFrame ||
                 Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > CameraSnapTrackingDistanceThreshold; // ball snapped position
 
-            foreach (int i in _getFollowTargetAxes)
+            foreach (int axis in _getFollowTargetAxes)
             {
-                float trackingPosition = CameraTrackingPosition.Value[i],
-                      currentPosition = transform.position[i];
+                float trackingPosition = CameraTrackingPosition.Value[axis],
+                      currentPosition = transform.position[axis];
 
-                if (!forceUpdate && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[i]) continue;
+                if (!forceUpdate && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[axis]) continue;
 
                 // http://answers.unity.com/answers/1638803/view.html
-                float frustumAngle = (i == 0 ? fov : Camera.fieldOfView) / 2,
+                float frustumAngle = (axis == 0 ? fov : Camera.fieldOfView) / 2,
                       halfScreen = zDistanceFromOrigin * Mathf.Tan(frustumAngle * Mathf.Deg2Rad);
 
-                float clampMin = Mathf.Min(LowerLeftClampingPoint.position[i] + halfScreen, currentPosition),
-                      clampMax = Mathf.Max(UpperRightClampingPoint.position[i] - halfScreen, currentPosition),
+                float clampMin = Mathf.Min(LowerLeftClampingPoint.position[axis] + halfScreen, currentPosition),
+                      clampMax = Mathf.Max(UpperRightClampingPoint.position[axis] - halfScreen, currentPosition),
                       clampedPosition = Mathf.Clamp(trackingPosition, clampMin, clampMax);
 
-                followTargetMemory[i] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
+                followTargetMemory[axis] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
             }
 
             ballBouncedOnPaddleThisFrame = false;
@@ -187,9 +187,9 @@ namespace Drepanoid
                 resolution.y / ReferenceResolution.y
             ));
 
-            float frustrumWidthShouldBe = resolution.x / AssetPixelsPerUnit / pixelMultiplier / zoom;
-            float innerFrustrumAngles = (180f - fov) / 2f * Mathf.Deg2Rad;
-            float distanceFromOrigin = Mathf.Tan(innerFrustrumAngles) * frustrumWidthShouldBe / 2f;
+            float frustumWidthShouldBe = resolution.x / AssetPixelsPerUnit / pixelMultiplier / zoom;
+            float innerFrustumAngles = (180f - fov) / 2f * Mathf.Deg2Rad;
+            float distanceFromOrigin = Mathf.Tan(innerFrustumAngles) * frustumWidthShouldBe / 2f;
 
             return distanceFromOrigin;
         }
