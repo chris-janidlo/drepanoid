@@ -1354,15 +1354,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 2
       value: 0.2
-      inSlope: -0.019605437
-      outSlope: -0.019605437
+      inSlope: 0.024879063
+      outSlope: 0.024879063
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.09543276
+      outWeight: 0.07317072
     - serializedVersion: 3
       time: 6
-      value: 0.17
+      value: 0.27
       inSlope: 0
       outSlope: 0
       tangentMode: 0
