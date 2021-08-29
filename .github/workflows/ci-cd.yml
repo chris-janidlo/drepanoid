@@ -69,6 +69,7 @@ jobs:
         targetPlatform:
           - WebGL
           - StandaloneWindows
+          - Android
 
     steps:
       - name: Checkout code
@@ -90,13 +91,13 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: drepanoid-${{ matrix.targetPlatform }}
       
-      - name: Group Windows artifacts into a folder
-        if: ${{ matrix.targetPlatform == 'StandaloneWindows' }}
+      - name: Group artifacts into a folder
+        if: ${{ matrix.targetPlatform != 'WebGL' }} # webgl artifacts are already grouped
         run: |
           mkdir tmp
-          sudo mv build/StandaloneWindows/* tmp/
-          sudo mkdir build/StandaloneWindows/drepanoid-StandaloneWindows
-          sudo mv tmp/* build/StandaloneWindows/drepanoid-StandaloneWindows
+          sudo mv build/${{ matrix.targetPlatform }}/* tmp/
+          sudo mkdir build/${{ matrix.targetPlatform }}/drepanoid-${{ matrix.targetPlatform }}
+          sudo mv tmp/* build/${{ matrix.targetPlatform }}/drepanoid-${{ matrix.targetPlatform }}
       - name: Upload build artifact to github cache
         uses: actions/upload-artifact@v2
         with:
@@ -121,6 +122,8 @@ jobs:
             itch-name: webgl
           - builder-name: StandaloneWindows
             itch-name: win
+          - builder-name: Android
+            itch-name: android
 
     steps:
       - name: Download build artifact
