@@ -28,9 +28,13 @@ namespace Drepanoid
         public float DragCoefficient;
 
         public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
-        public int SpawnScaleTransitionRounding, NormalDeathScaleTarget, ExplosionDeathScaleTarget;
+        public int SpawnScaleTransitionRounding, NormalDeathScaleTarget;
+        
+        
         public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
+        public int ExplosionDeathScaleTarget;
         public float DeathAnimationWaitTimeBeforeShrinking, VictoriousDespawnWaitTime;
+        public AudioClip DeathSound;
 
         public float BounceSpinMultiplier;
         [Range(0, 1)]
@@ -208,6 +212,8 @@ namespace Drepanoid
         {
             Collider.enabled = false;
             TrailParticles.transform.parent = null;
+
+            SoundEffectPlayer.Play(DeathSound);
 
             yield return new WaitForSeconds(DeathAnimationWaitTimeBeforeShrinking);
 

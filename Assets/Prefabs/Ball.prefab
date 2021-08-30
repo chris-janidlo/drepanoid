@@ -60,7 +60,6 @@ MonoBehaviour:
     Ease: 29
   SpawnScaleTransitionRounding: 3
   NormalDeathScaleTarget: 0
-  ExplosionDeathScaleTarget: 10
   ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath:
     serializedVersion: 2
     m_Curve:
@@ -85,8 +84,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  ExplosionDeathScaleTarget: 10
   DeathAnimationWaitTimeBeforeShrinking: 0.3
   VictoriousDespawnWaitTime: 0.4
+  DeathSound: {fileID: 8300000, guid: 0b054000648f63847b6e4d7fae2b50ce, type: 3}
   BounceSpinMultiplier: 75
   AngularDrag: 0.9
   BounceParticles: {fileID: 745532827337727209}
