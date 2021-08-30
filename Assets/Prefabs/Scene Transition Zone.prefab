@@ -58,6 +58,7 @@ MonoBehaviour:
   BallSpawnInitialVelocity: 10
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
+  SoundEffect: {fileID: 8300000, guid: 594d82d24e94ada448c578ec896cbd1f, type: 3}
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
@@ -67,6 +68,7 @@ MonoBehaviour:
   MinBallTransitionSpeed: 10
   SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
+  SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
   Collider: {fileID: 1805651279731318352}
 --- !u!61 &1805651279731318352
 BoxCollider2D:
