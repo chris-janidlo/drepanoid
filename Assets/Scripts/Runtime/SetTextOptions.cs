@@ -9,6 +9,7 @@ namespace Drepanoid
     public class SetTextOptions
     {
         [Header("Required Data")]
+        [TextArea]
         public string Text;
         public Vector2Int StartingPosition;
         public TilesetFont Font;
