@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Tutorial Escape Boss.unity
     guid: 4d69739d991aa634b999a1b4bbdce0d4
   - enabled: 1
-    path: Assets/Scenes/Demo Done.unity
-    guid: cb48dfc6bc777564699658acc2a7d4ac
-  - enabled: 1
     path: Assets/Scenes/Levels/Tutorial Escape Hub.unity
     guid: f20cca04731a74049a75b52efc8d1be2
   - enabled: 1
