@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Tutorial Escape Two-Tunnel 2.unity
     guid: 6160ed96aed0e0340b70f5b33e8a55b2
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Placeholder Outro.unity
+    guid: fc99917e7731ee94cb82fa2fdf0b8f42
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c589560e4bb85274286ca8f820ae021b,
       type: 2}
