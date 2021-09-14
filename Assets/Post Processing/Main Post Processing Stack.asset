@@ -16,9 +16,21 @@ MonoBehaviour:
   enabled:
     overrideState: 1
     value: 1
-  ScanlineJitter:
+  Intensity:
     overrideState: 1
     value: 0
+  Noisiness:
+    overrideState: 1
+    value: 0.11
+  NoiseUpdateChancePerFrame:
+    overrideState: 1
+    value: 0.05
+  TrashFrame1UpdateInterval:
+    overrideState: 1
+    value: 31
+  TrashFrame2UpdateInterval:
+    overrideState: 1
+    value: 73
 --- !u!114 &-4522228734135720439
 MonoBehaviour:
   m_ObjectHideFlags: 3

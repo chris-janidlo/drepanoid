@@ -1,33 +1,35 @@
 Shader "Hidden/Custom/Glitch"
 {
+    // based off the digital glitch from KinoGlitch (https://github.com/keijiro/KinoGlitch/tree/e102950361c260aba8967d55f14212b5a70f4cce)
+
     HLSLINCLUDE
 
         #include "Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl"
 
         TEXTURE2D_SAMPLER2D(_MainTex, sampler_MainTex);
+        TEXTURE2D_SAMPLER2D(_NoiseTex, sampler_NoiseTex);
+        TEXTURE2D_SAMPLER2D(_TrashTex, sampler_TrashTex);
 
-        float _ScanlineJitterFrequency;
-        float _ScanlineJitterDisplacement;
-
-        // Pseudo random number generator with 2D coordinates
-        float UVRandom(float u, float v)
-        {
-            return frac(sin(dot(float2(u, v), float2(12.9898,78.233))) * 43758.5453);
-        }
+        float _Intensity;
 
         float4 Frag(VaryingsDefault i) : SV_Target
         {
-            // uses a combination of the analogue glitch's scanline jitter and the digital glitch from KinoGlitch (https://github.com/keijiro/KinoGlitch/tree/e102950361c260aba8967d55f14212b5a70f4cce)
+            float2 xy = i.texcoord;
 
-            float u = i.texcoord.x;
-            float v = i.texcoord.y;
+            float4 glitch = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, xy);
 
-            float jitter = UVRandom(v, _Time.x) * 2 - 1;
-            jitter *= step(_ScanlineJitterFrequency, abs(jitter)) * _ScanlineJitterDisplacement;
+            float thresh = 1.001 - _Intensity * 1.001;
+            float w_d = step(thresh, pow(glitch.z, 2.5)); // displacement glitch
+            float w_f = step(thresh, pow(glitch.w, 2.5)); // frame glitch
 
-            // TODO: digital glitch
+            // Displacement.
+            float2 uv = frac(xy + glitch.xy * w_d);
+            float4 source = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv);
 
-            return SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, float2(frac(u + jitter), v));
+            // Mix with trash frame.
+            float3 color = lerp(source, SAMPLE_TEXTURE2D(_TrashTex, sampler_TrashTex, uv), w_f).rgb;
+
+            return float4(color, source.a);
         }
 
     ENDHLSL
