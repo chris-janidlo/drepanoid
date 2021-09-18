@@ -30,7 +30,6 @@ namespace Drepanoid
         public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
         public int SpawnScaleTransitionRounding, NormalDeathScaleTarget;
         
-        
         public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
         public int ExplosionDeathScaleTarget;
         public float DeathAnimationWaitTimeBeforeShrinking, VictoriousDespawnWaitTime;
@@ -61,7 +60,6 @@ namespace Drepanoid
         public CharacterAnimation UnloadAnimation;
         public FloatVariable BallSpeed;
 
-        Vector3 initialPosition;
         float angularVelocity; // positive = clockwise, negative = counter-clockwise
         bool spriteIsOn;
         bool frozen, despawningVictoriously;
@@ -76,7 +74,6 @@ namespace Drepanoid
             spriteIsOn = RandomExtra.Chance(.5f);
             flipSprite();
 
-            initialPosition = transform.position;
             transform.localScale = Vector3.zero;
         }
 
@@ -105,11 +102,6 @@ namespace Drepanoid
                 float rate = BaseTrailEmissionRateOverDistanceBySpeed.Evaluate(Velocity.magnitude);
                 setTrailEmissionRateOverDistance(rate);
             }
-        }
-
-        void OnDestroy ()
-        {
-            CameraTrackingPosition.Value = initialPosition;
         }
 
         /// <summary>

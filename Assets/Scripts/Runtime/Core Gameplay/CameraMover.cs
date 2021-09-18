@@ -20,6 +20,8 @@ namespace Drepanoid
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
 
+        public float BallDeathPositionResetDelay;
+
         [Header("Scene Transitions")]
         public float SceneTransitionMovementOffset;
         public EasingFunction.Ease SceneLoadEase, SceneUnloadEase;
@@ -45,7 +47,7 @@ namespace Drepanoid
         float zDistanceFromOrigin;
 
         TransitionableVector2 sceneChangeMovementTransition;
-        Vector2 smoothFollowVelocity, followTargetMemory;
+        Vector2 smoothFollowVelocity, followTargetMemory, ballSpawnPosition;
 
         Vector2Int resolution;
         float fov, zoom;
@@ -90,12 +92,7 @@ namespace Drepanoid
             updateZDistanceFromOrigin();
             updateXyPlanePosition();
 
-            Camera.transform.position = new Vector3
-            (
-                xyPlanePosition.x,
-                xyPlanePosition.y,
-                -zDistanceFromOrigin
-            );
+            applyPosition();
         }
 
         public void OnLevelGoalReached ()
@@ -107,6 +104,16 @@ namespace Drepanoid
         public void OnBallBouncedOnPaddle ()
         {
             ballBouncedOnPaddleThisFrame = true;
+        }
+
+        public void OnBallSpawned (Vector2 position)
+        {
+            ballSpawnPosition = position;
+        }
+
+        public void OnBallDied ()
+        {
+            StartCoroutine(deathResetRoutine());
         }
 
         void updateFov ()
@@ -192,6 +199,25 @@ namespace Drepanoid
             float distanceFromOrigin = Mathf.Tan(innerFrustumAngles) * frustumWidthShouldBe / 2f;
 
             return distanceFromOrigin;
+        }
+
+        void applyPosition ()
+        {
+            Camera.transform.position = new Vector3
+            (
+                xyPlanePosition.x,
+                xyPlanePosition.y,
+                -zDistanceFromOrigin
+            );
+        }
+
+        IEnumerator deathResetRoutine ()
+        {
+            yield return new WaitForSeconds(BallDeathPositionResetDelay);
+            CameraTrackingPosition.Value = ballSpawnPosition;
+            followTargetMemory = ballSpawnPosition;
+            xyPlanePosition = ballSpawnPosition;
+            applyPosition();
         }
     }
 }
