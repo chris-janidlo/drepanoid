@@ -13,6 +13,8 @@ namespace Drepanoid
         public AnimationCurve GlitchIntensityByTimeSinceDeath;
 
         public PostProcessProfile PostProcessProfile;
+        public RetriggerFilter RetriggerFilter;
+
         public BoolVariable DeathGlitchEffectIsOn;
         public VoidEvent DeathReset;
 
@@ -36,6 +38,7 @@ namespace Drepanoid
             bool haveReset = false;
 
             DeathGlitchEffectIsOn.Value = true;
+            RetriggerFilter.Active = true; // TODO: when implementing music system, record the audio position at the start of the effect and restore back to that position at the end, so that the retrigger is more like a stall
 
             while (timer < totalTime)
             {
@@ -58,6 +61,7 @@ namespace Drepanoid
         {
             glitch.Intensity.value = 0;
             DeathGlitchEffectIsOn.Value = false;
+            RetriggerFilter.Active = false;
         }
     }
 }

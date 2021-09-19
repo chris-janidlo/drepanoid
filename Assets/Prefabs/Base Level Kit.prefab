@@ -1515,8 +1515,9 @@ GameObject:
   - component: {fileID: 8297977597983657521}
   - component: {fileID: 4005375984604903075}
   - component: {fileID: 1408338180178490034}
-  - component: {fileID: 8297977597983657527}
   - component: {fileID: 8297977597983657523}
+  - component: {fileID: 8297977597983657527}
+  - component: {fileID: 91531402848810810}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1715,17 +1716,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   PostProcessProfile: {fileID: 11400000, guid: e84df0b85367bd8499f7ab3034e2bae8, type: 2}
+  RetriggerFilter: {fileID: 91531402848810810}
   DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
     type: 2}
   DeathReset: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
---- !u!81 &8297977597983657527
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297977597983657526}
-  m_Enabled: 1
 --- !u!114 &8297977597983657523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1788,6 +1782,28 @@ MonoBehaviour:
   m_AfterStackBundles:
   - assemblyQualifiedName: Drepanoid.Glitch, Drepanoid.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!81 &8297977597983657527
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+--- !u!114 &91531402848810810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669adc9e59eb4d14cacc06d184058f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleLengthRange: {x: 0.2, y: 0.5}
+  Active: 0
 --- !u!1 &8297977599257942348
 GameObject:
   m_ObjectHideFlags: 0
