@@ -388,6 +388,8 @@ MonoBehaviour:
   HitEndOfTrackSound: {fileID: 8300000, guid: 7afbdb9aae4326d428ec8a1513835e8c, type: 3}
   MovementSoundSource: {fileID: 6694117299819258263}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
   SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
 --- !u!82 &6694117299819258263
 AudioSource:

@@ -19,6 +19,7 @@ namespace Drepanoid.Drivers
         public AudioSource MovementSoundSource;
 
         public FloatVariable MovementAxis;
+        public BoolVariable DeathGlitchEffectIsOn;
         public SoundEffectPlayer SoundEffectPlayer;
 
         float idleTimer;
@@ -57,7 +58,7 @@ namespace Drepanoid.Drivers
 
         void Update ()
         {
-            idleTimer += Time.deltaTime;
+            if (!DeathGlitchEffectIsOn.Value) idleTimer += Time.deltaTime;
 
             if (idleTimer >= TimeUntilIdle && !playedIdleSound)
             {
