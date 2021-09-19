@@ -20,8 +20,6 @@ namespace Drepanoid
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
 
-        public float BallDeathPositionResetDelay;
-
         [Header("Scene Transitions")]
         public float SceneTransitionMovementOffset;
         public EasingFunction.Ease SceneLoadEase, SceneUnloadEase;
@@ -111,9 +109,12 @@ namespace Drepanoid
             ballSpawnPosition = position;
         }
 
-        public void OnBallDied ()
+        public void OnDeathReset ()
         {
-            StartCoroutine(deathResetRoutine());
+            CameraTrackingPosition.Value = ballSpawnPosition;
+            followTargetMemory = ballSpawnPosition;
+            xyPlanePosition = ballSpawnPosition;
+            applyPosition();
         }
 
         void updateFov ()
@@ -209,15 +210,6 @@ namespace Drepanoid
                 xyPlanePosition.y,
                 -zDistanceFromOrigin
             );
-        }
-
-        IEnumerator deathResetRoutine ()
-        {
-            yield return new WaitForSeconds(BallDeathPositionResetDelay);
-            CameraTrackingPosition.Value = ballSpawnPosition;
-            followTargetMemory = ballSpawnPosition;
-            xyPlanePosition = ballSpawnPosition;
-            applyPosition();
         }
     }
 }

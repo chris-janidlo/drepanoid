@@ -14,7 +14,6 @@ namespace Drepanoid.Drivers
         public float MaxVelocity, AccelerationTime;
 
         public float TimeUntilIdle;
-        public float BallDeathPositionResetDelay;
 
         public AudioClip StartedIdlingSound, HitEndOfTrackSound;
         public AudioSource MovementSoundSource;
@@ -67,14 +66,8 @@ namespace Drepanoid.Drivers
             }
         }
 
-        public void OnBallDied ()
+        public void OnDeathReset ()
         {
-            StartCoroutine(ballDeathRoutine());
-        }
-
-        IEnumerator ballDeathRoutine ()
-        {
-            yield return new WaitForSeconds(BallDeathPositionResetDelay);
             PositionOnLine = 0.5f;
         }
     }

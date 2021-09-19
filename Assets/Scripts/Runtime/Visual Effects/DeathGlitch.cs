@@ -9,10 +9,12 @@ namespace Drepanoid
 {
     public class DeathGlitch : MonoBehaviour
     {
+        public float DeathResetTime;
         public AnimationCurve GlitchIntensityByTimeSinceDeath;
 
         public PostProcessProfile PostProcessProfile;
         public BoolVariable DeathGlitchEffectIsOn;
+        public VoidEvent DeathReset;
 
         public void OnBallDied ()
         {
@@ -23,6 +25,7 @@ namespace Drepanoid
         {
             float timer = 0;
             float totalTime = GlitchIntensityByTimeSinceDeath.keys.Last().time;
+            bool haveReset = false;
 
             PostProcessProfile.TryGetSettings(out Glitch glitch);
 
@@ -32,6 +35,13 @@ namespace Drepanoid
             {
                 glitch.Intensity.value = GlitchIntensityByTimeSinceDeath.Evaluate(timer);
                 timer += Time.deltaTime;
+
+                if (timer >= DeathResetTime && !haveReset)
+                {
+                    haveReset = true;
+                    DeathReset.Raise();
+                }
+
                 yield return null;
             }
 
