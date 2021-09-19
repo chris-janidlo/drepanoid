@@ -16,6 +16,14 @@ namespace Drepanoid
         public BoolVariable DeathGlitchEffectIsOn;
         public VoidEvent DeathReset;
 
+        Glitch glitch;
+
+        void Start ()
+        {
+            PostProcessProfile.TryGetSettings(out glitch);
+            resetEffect();
+        }
+
         public void OnBallDied ()
         {
             StartCoroutine(deathRoutine());
@@ -26,8 +34,6 @@ namespace Drepanoid
             float timer = 0;
             float totalTime = GlitchIntensityByTimeSinceDeath.keys.Last().time;
             bool haveReset = false;
-
-            PostProcessProfile.TryGetSettings(out Glitch glitch);
 
             DeathGlitchEffectIsOn.Value = true;
 
@@ -45,6 +51,11 @@ namespace Drepanoid
                 yield return null;
             }
 
+            resetEffect();
+        }
+
+        void resetEffect ()
+        {
             glitch.Intensity.value = 0;
             DeathGlitchEffectIsOn.Value = false;
         }
