@@ -10,6 +10,7 @@ namespace Drepanoid
     {
         public float LevelLoadDelay; // may be faster than the level load animation
         public FloatVariable MoveAxis;
+        public BoolVariable DeathGlitchEffectIsOn;
 
         bool moveEnabled;
         float mostRecentMoveAxisInput;
@@ -22,19 +23,23 @@ namespace Drepanoid
 
         void Update ()
         {
-            if (moveEnabled)
-            {
-                // want to allow touch and other input at the same time because:
-                    // plenty of devices have both a touchscreen and other input
-                    // want to support gamepads on phones
-                    // windows devices don't play well with common ways of detecting if you're on mobile
-                MoveAxis.Value = sideOfScreenBeingTouched() ?? mostRecentMoveAxisInput;
-            }
+            // want to allow touch and other input at the same time because:
+                // plenty of devices have both a touchscreen and other input
+                // want to support gamepads on phones
+                // windows devices don't play well with common ways of detecting if you're on mobile
+            MoveAxis.Value = moveEnabled && !DeathGlitchEffectIsOn.Value
+                ? sideOfScreenBeingTouched() ?? mostRecentMoveAxisInput
+                : 0;
         }
 
         public void OnMoveAxis (InputAction.CallbackContext context)
         {
             mostRecentMoveAxisInput = context.ReadValue<float>();
+        }
+
+        public void OnLevelGoalReached ()
+        {
+            moveEnabled = false;
         }
 
         float? sideOfScreenBeingTouched ()

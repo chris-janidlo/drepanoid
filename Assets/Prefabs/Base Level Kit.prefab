@@ -384,6 +384,7 @@ MonoBehaviour:
   MaxVelocity: 2
   AccelerationTime: 0.3
   TimeUntilIdle: 9
+  BallDeathPositionResetDelay: 0.4
   StartedIdlingSound: {fileID: 8300000, guid: 5f8975ee6cb8cfe49aaefc3fe155e2cf, type: 3}
   HitEndOfTrackSound: {fileID: 8300000, guid: 7afbdb9aae4326d428ec8a1513835e8c, type: 3}
   MovementSoundSource: {fileID: 6694117299819258263}
@@ -634,6 +635,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8297977597545156289}
+        m_TargetAssemblyTypeName: Drepanoid.MoveInputReader, Drepanoid.Runtime
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _actionResponses: []
   _replayEventBufferOnRegister: 0
   _eventReference:
@@ -712,6 +725,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 4005375984604903075}
         m_TargetAssemblyTypeName: Drepanoid.CameraMover, Drepanoid.Runtime
+        m_MethodName: OnBallDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6799379689478698892}
+        m_TargetAssemblyTypeName: Drepanoid.Drivers.TranslationMovementDriver, Drepanoid.Runtime
         m_MethodName: OnBallDied
         m_Mode: 1
         m_Arguments:
@@ -1044,8 +1069,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa01394cafc51243a0fb9285537ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelLoadDelay: 0.2
+  LevelLoadDelay: 0
   MoveAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!114 &8297977597545156288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1642,6 +1669,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   PostProcessProfile: {fileID: 11400000, guid: e84df0b85367bd8499f7ab3034e2bae8, type: 2}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!81 &8297977597983657527
 AudioListener:
   m_ObjectHideFlags: 0

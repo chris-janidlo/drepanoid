@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityAtoms.BaseAtoms;
 
 namespace Drepanoid
 {
@@ -11,6 +12,7 @@ namespace Drepanoid
         public AnimationCurve GlitchIntensityByTimeSinceDeath;
 
         public PostProcessProfile PostProcessProfile;
+        public BoolVariable DeathGlitchEffectIsOn;
 
         public void OnBallDied ()
         {
@@ -24,6 +26,8 @@ namespace Drepanoid
 
             PostProcessProfile.TryGetSettings(out Glitch glitch);
 
+            DeathGlitchEffectIsOn.Value = true;
+
             while (timer < totalTime)
             {
                 glitch.Intensity.value = GlitchIntensityByTimeSinceDeath.Evaluate(timer);
@@ -32,6 +36,7 @@ namespace Drepanoid
             }
 
             glitch.Intensity.value = 0;
+            DeathGlitchEffectIsOn.Value = false;
         }
     }
 }
