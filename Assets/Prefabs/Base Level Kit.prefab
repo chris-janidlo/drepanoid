@@ -1642,7 +1642,7 @@ MonoBehaviour:
   MobileZoomWaitTime: 1.15
   MobileZoomTransition:
     value: 0
-    Time: 0.8
+    Time: 1.15
     Ease: 2
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
@@ -1704,10 +1704,10 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.06402439
     - serializedVersion: 3
-      time: 1.5
+      time: 1
       value: 0.25
-      inSlope: -0.75
-      outSlope: -0.75
+      inSlope: -1.5
+      outSlope: -1.5
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334

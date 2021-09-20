@@ -42,8 +42,8 @@ namespace Drepanoid
             if (SceneTransitionTargetTag.Value == Tag)
             {
                 isSpawnPoint = true;
-                StartCoroutine(respawnRoutine());
                 yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
+                StartCoroutine(respawnRoutine());
                 CameraTrackingPosition.Value = transform.position;
             }
         }
