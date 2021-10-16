@@ -112,8 +112,13 @@ namespace Drepanoid
         public void OnDeathReset ()
         {
             CameraTrackingPosition.Value = ballSpawnPosition;
-            followTargetMemory = ballSpawnPosition;
-            xyPlanePosition = ballSpawnPosition;
+
+            xyPlanePosition = followTargetMemory = new Vector2
+            (
+                getEffectivePositionOnAxis(ballSpawnPosition.x, 0),
+                getEffectivePositionOnAxis(ballSpawnPosition.y, 1)
+            );
+
             applyPosition();
         }
 
@@ -166,20 +171,9 @@ namespace Drepanoid
 
             foreach (int axis in _getFollowTargetAxes)
             {
-                float trackingPosition = CameraTrackingPosition.Value[axis],
-                      currentPosition = transform.position[axis];
+                if (!forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < MinimumDistanceToFollowBoxExtents[axis]) continue;
 
-                if (!forceUpdate && Mathf.Abs(trackingPosition - currentPosition) < MinimumDistanceToFollowBoxExtents[axis]) continue;
-
-                // http://answers.unity.com/answers/1638803/view.html
-                float frustumAngle = (axis == 0 ? fov : Camera.fieldOfView) / 2,
-                      halfScreen = zDistanceFromOrigin * Mathf.Tan(frustumAngle * Mathf.Deg2Rad);
-
-                float clampMin = Mathf.Min(LowerLeftClampingPoint.position[axis] + halfScreen, currentPosition),
-                      clampMax = Mathf.Max(UpperRightClampingPoint.position[axis] - halfScreen, currentPosition),
-                      clampedPosition = Mathf.Clamp(trackingPosition, clampMin, clampMax);
-
-                followTargetMemory[axis] = Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
+                followTargetMemory[axis] = getEffectivePositionOnAxis(CameraTrackingPosition.Value[axis], axis);
             }
 
             ballBouncedOnPaddleThisFrame = false;
@@ -200,6 +194,26 @@ namespace Drepanoid
             float distanceFromOrigin = Mathf.Tan(innerFrustumAngles) * frustumWidthShouldBe / 2f;
 
             return distanceFromOrigin;
+        }
+
+        /// <summary>
+        /// Returns the position on the axis with all constraints applied (clamping, pixel perfection, etc)
+        /// </summary>
+        /// <param name="desiredPosition">Position of e.g. tracking atom, to constrain</param>
+        /// <param name="axis">0 for x, 1 for y</param>
+        float getEffectivePositionOnAxis (float desiredPosition, int axis)
+        {
+            float currentPosition = transform.position[axis];
+
+            // http://answers.unity.com/answers/1638803/view.html
+            float frustumAngle = (axis == 0 ? fov : Camera.fieldOfView) / 2,
+                  halfScreen = zDistanceFromOrigin * Mathf.Tan(frustumAngle * Mathf.Deg2Rad);
+
+            float clampMin = Mathf.Min(LowerLeftClampingPoint.position[axis] + halfScreen, currentPosition),
+                  clampMax = Mathf.Max(UpperRightClampingPoint.position[axis] - halfScreen, currentPosition),
+                  clampedPosition = Mathf.Clamp(desiredPosition, clampMin, clampMax);
+
+            return Mathf.Round(clampedPosition * AssetPixelsPerUnit) / AssetPixelsPerUnit;
         }
 
         void applyPosition ()
