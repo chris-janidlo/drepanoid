@@ -388,6 +388,8 @@ MonoBehaviour:
   HitEndOfTrackSound: {fileID: 8300000, guid: 7afbdb9aae4326d428ec8a1513835e8c, type: 3}
   MovementSoundSource: {fileID: 6694117299819258263}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
   SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
 --- !u!82 &6694117299819258263
 AudioSource:
@@ -496,6 +498,9 @@ GameObject:
   - component: {fileID: 5355083451855521705}
   - component: {fileID: 6486988335099630219}
   - component: {fileID: 2435494115916092396}
+  - component: {fileID: 324074036154109668}
+  - component: {fileID: 5486772147194851104}
+  - component: {fileID: 8193427464404843189}
   m_Layer: 0
   m_Name: Listeners
   m_TagString: Untagged
@@ -632,6 +637,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8297977597545156289}
+        m_TargetAssemblyTypeName: Drepanoid.MoveInputReader, Drepanoid.Runtime
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _actionResponses: []
   _replayEventBufferOnRegister: 0
   _eventReference:
@@ -675,6 +692,130 @@ MonoBehaviour:
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: 6b022f0bd5eff2b439f437ac28ab2e8e, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &324074036154109668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891971641819170094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1408338180178490034}
+        m_TargetAssemblyTypeName: Drepanoid.DeathGlitch, Drepanoid.Runtime
+        m_MethodName: OnBallDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &5486772147194851104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891971641819170094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41cf904d84eb4825bcbaec1aaabf06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4005375984604903075}
+        m_TargetAssemblyTypeName: Drepanoid.CameraMover, Drepanoid.Runtime
+        m_MethodName: OnBallSpawned
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: b4d4ef7053f955e429b14492af83f336, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &8193427464404843189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891971641819170094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4005375984604903075}
+        m_TargetAssemblyTypeName: Drepanoid.CameraMover, Drepanoid.Runtime
+        m_MethodName: OnDeathReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6799379689478698892}
+        m_TargetAssemblyTypeName: Drepanoid.Drivers.TranslationMovementDriver, Drepanoid.Runtime
+        m_MethodName: OnDeathReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
     _eventInstancer: {fileID: 0}
     _collection: {fileID: 0}
     _list: {fileID: 0}
@@ -956,8 +1097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa01394cafc51243a0fb9285537ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelLoadDelay: 0.2
+  LevelLoadDelay: 0
   MoveAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!114 &8297977597545156288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,8 +1514,10 @@ GameObject:
   - component: {fileID: 8297977597983657522}
   - component: {fileID: 8297977597983657521}
   - component: {fileID: 4005375984604903075}
-  - component: {fileID: 8297977597983657527}
+  - component: {fileID: 1408338180178490034}
   - component: {fileID: 8297977597983657523}
+  - component: {fileID: 8297977597983657527}
+  - component: {fileID: 91531402848810810}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1497,7 +1642,7 @@ MonoBehaviour:
   MobileZoomWaitTime: 1.15
   MobileZoomTransition:
     value: 0
-    Time: 0.8
+    Time: 1.15
     Ease: 2
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
@@ -1506,14 +1651,75 @@ MonoBehaviour:
   AssetPixelsPerUnit: 8
   ReferenceResolution: {x: 512, y: 342}
   MobileZoomAmount: 2
---- !u!81 &8297977597983657527
-AudioListener:
+--- !u!114 &1408338180178490034
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8297977597983657526}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15208aef80180d549aff208b5a5265df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathResetTime: 0.4
+  GlitchIntensityByTimeSinceDeath:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3.3333333
+      outSlope: 3.3333333
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.06402439
+    - serializedVersion: 3
+      time: 1
+      value: 0.25
+      inSlope: -1.5
+      outSlope: -1.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  PostProcessProfile: {fileID: 11400000, guid: e84df0b85367bd8499f7ab3034e2bae8, type: 2}
+  RetriggerFilter: {fileID: 91531402848810810}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
+  DeathReset: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
 --- !u!114 &8297977597983657523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,7 +1779,31 @@ MonoBehaviour:
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+  m_AfterStackBundles:
+  - assemblyQualifiedName: Drepanoid.Glitch, Drepanoid.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!81 &8297977597983657527
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+--- !u!114 &91531402848810810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669adc9e59eb4d14cacc06d184058f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleLengthRange: {x: 0.2, y: 0.5}
+  Active: 0
 --- !u!1 &8297977599257942348
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,7 @@ namespace Drepanoid
         public StringVariable SceneTransitionTargetTag;
         public float MinBallTransitionSpeed;
 
+        public Vector2Event BallSpawned;
         public SceneTransitionHelper SceneTransitionHelper;
         public SoundEffectPlayer SoundEffectPlayer;
         public Collider2D Collider;
@@ -42,8 +43,8 @@ namespace Drepanoid
             {
                 isSpawnPoint = true;
                 yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
+                StartCoroutine(respawnRoutine());
                 CameraTrackingPosition.Value = transform.position;
-                yield return respawnRoutine();
             }
         }
 
@@ -81,6 +82,7 @@ namespace Drepanoid
             yield return new WaitForSeconds(BallSpawnDelay);
             var ball = Instantiate(BallPrefab, transform.position, Quaternion.identity);
             ball.Velocity = SpawnDirection * BallSpawnInitialVelocity;
+            BallSpawned.Raise(transform.position);
             timeSinceLastSpawn = 0;
         }
     }
