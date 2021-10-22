@@ -46,6 +46,9 @@ sysinfo.txt
 # Visual Studio project files
 *.leu
 
+# Visual Studio for Mac working files
+*.cs~
+
 # Compressed Files
 *.7z
 *.dmg
