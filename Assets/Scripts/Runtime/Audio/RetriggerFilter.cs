@@ -1,3 +1,4 @@
+using System.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,30 +10,27 @@ namespace Drepanoid
     [RequireComponent(typeof(AudioBehaviour))]
     public class RetriggerFilter : MonoBehaviour
     {
-        public Vector2 SampleLengthRange;
+        public List<float> PossibleSampleLengths;
         public bool Active;
 
         float[] currentSample => sampleHolders[currentSampleLength];
 
-        Vector2Int sampleCountRange;
+        int[] possibleSampleCounts;
         int currentSampleLength, sampleRecorderPointer, samplePlayerPointer;
         float[][] sampleHolders;
         Random random;
 
         void Start ()
         {
-            int sampleRate = AudioSettings.outputSampleRate;
-            sampleCountRange = new Vector2Int
-            (
-                Mathf.RoundToInt(SampleLengthRange.x * sampleRate),
-                Mathf.RoundToInt(SampleLengthRange.y * sampleRate)
-            );
+            possibleSampleCounts = PossibleSampleLengths
+                .Select(l => Mathf.RoundToInt(l * AudioSettings.outputSampleRate))
+                .ToArray();
 
-            sampleHolders = new float[sampleCountRange.y + 1][];
+            sampleHolders = new float[possibleSampleCounts.Last() + 1][];
 
-            for (int i = sampleCountRange.x; i <= sampleCountRange.y; i++)
+            foreach (var count in possibleSampleCounts)
             {
-                sampleHolders[i] = new float[i];
+                sampleHolders[count] = new float[count];
             }
 
             random = new Random();
@@ -47,7 +45,7 @@ namespace Drepanoid
             }
             else if (currentSampleLength == 0)
             {
-                currentSampleLength = random.Next(sampleCountRange.x, sampleCountRange.y);
+                currentSampleLength = possibleSampleCounts[random.Next(possibleSampleCounts.Length - 1)];
                 sampleRecorderPointer = 0;
                 samplePlayerPointer = 0;
             }

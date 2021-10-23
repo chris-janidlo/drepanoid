@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 3882391252442373713}
   - component: {fileID: 3343124296023217449}
   - component: {fileID: 8103725997522880826}
+  - component: {fileID: 8493275216540805202}
   m_Layer: 0
   m_Name: Music Player
   m_TagString: Untagged
@@ -100,6 +101,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   Source: {fileID: 8103725997522880826}
+  MusicTrackPosition: {fileID: 11400000, guid: 5f896774888455940b426f9a81206821, type: 2}
 --- !u!82 &8103725997522880826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -196,6 +198,43 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8493275216540805202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649376968233548837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: this needs its own listener because its in DontDestroyOnLoad
+    and the global Base Level Kit listener gets destroyed between levels
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3343124296023217449}
+        m_TargetAssemblyTypeName: Drepanoid.MusicPlayer, Drepanoid.Runtime
+        m_MethodName: OnMusicTrackPositionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: a04ada9a8557e114799be744f2a3be63, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &2347655920825430910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1926,7 @@ MonoBehaviour:
   DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
     type: 2}
   DeathReset: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
+  MusicTrackPosition: {fileID: 11400000, guid: 5f896774888455940b426f9a81206821, type: 2}
 --- !u!114 &8297977597983657523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,7 +2009,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669adc9e59eb4d14cacc06d184058f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SampleLengthRange: {x: 0.2, y: 0.5}
+  PossibleSampleLengths:
+  - 0.25
+  - 0.33333334
+  - 0.5
+  - 10
   Active: 0
 --- !u!1 &8297977599257942348
 GameObject:

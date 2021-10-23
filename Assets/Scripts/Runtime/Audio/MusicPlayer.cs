@@ -2,6 +2,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 namespace Drepanoid
 {
@@ -13,7 +14,10 @@ namespace Drepanoid
         public AnimationCurve FadeOutCurve;
         public AudioSource Source;
 
+        public FloatVariable MusicTrackPosition;
+
         IEnumerator fadeOutEnum;
+        float lastRecordedTrackPosition;
 
         public void Start ()
         {
@@ -34,6 +38,16 @@ namespace Drepanoid
             Source.volume *= Track.Volume;
             Source.loop = true;
             Source.Play();
+        }
+
+        public void Update ()
+        {
+            if (fadeOutEnum == null) MusicTrackPosition.Value = Source.time;
+        }
+
+        public void OnMusicTrackPositionChanged (float value)
+        {
+            if (fadeOutEnum == null && value != lastRecordedTrackPosition) Source.time = value;
         }
 
         private void FadeOut ()
