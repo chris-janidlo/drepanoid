@@ -45,7 +45,7 @@ namespace Drepanoid
             }
             else if (currentSampleLength == 0)
             {
-                currentSampleLength = possibleSampleCounts[random.Next(possibleSampleCounts.Length - 1)];
+                currentSampleLength = possibleSampleCounts[random.Next(possibleSampleCounts.Length)];
                 sampleRecorderPointer = 0;
                 samplePlayerPointer = 0;
             }
