@@ -17,7 +17,6 @@ namespace Drepanoid
         public FloatVariable MusicTrackPosition;
 
         IEnumerator fadeOutEnum;
-        float lastRecordedTrackPosition;
 
         public void Start ()
         {
@@ -47,7 +46,7 @@ namespace Drepanoid
 
         public void OnMusicTrackPositionChanged (float value)
         {
-            if (fadeOutEnum == null && value != lastRecordedTrackPosition) Source.time = value;
+            if (fadeOutEnum == null) Source.time = value;
         }
 
         private void FadeOut ()
