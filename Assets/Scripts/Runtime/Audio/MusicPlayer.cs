@@ -10,6 +10,9 @@ namespace Drepanoid
     {
         private static MusicPlayer Instance;
 
+        [Range(0, 1)]
+        public float BaseVolume;
+
         public MusicTrack Track;
         public AnimationCurve FadeOutCurve;
         public AudioSource Source;
@@ -34,7 +37,7 @@ namespace Drepanoid
             DontDestroyOnLoad(gameObject);
 
             Source.clip = Track.Clip;
-            Source.volume *= Track.Volume;
+            Source.volume = BaseVolume * Track.Volume;
             Source.loop = true;
             Source.Play();
         }
