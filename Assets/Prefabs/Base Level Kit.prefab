@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21b9654e5e919a40816a978949a3ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseVolume: 0.35
   Track: {fileID: 0}
   FadeOutCurve:
     serializedVersion: 2
@@ -2016,6 +2017,7 @@ MonoBehaviour:
   - 0.5
   - 0.5
   - 0.5
+  Volume: 0.75
   Active: 0
 --- !u!1 &8297977599257942348
 GameObject:

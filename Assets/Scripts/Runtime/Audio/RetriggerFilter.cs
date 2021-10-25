@@ -11,6 +11,8 @@ namespace Drepanoid
     public class RetriggerFilter : MonoBehaviour
     {
         public List<float> PossibleSampleLengths;
+        [Range(0, 1)]
+        public float Volume;
         public bool Active;
 
         float[] currentSample => sampleHolders[currentSampleLength];
@@ -54,6 +56,7 @@ namespace Drepanoid
             {
                 if (sampleRecorderPointer < currentSampleLength)
                 {
+                    data[i] *= Volume; // quiet the sample the first time it plays and also every time it plays afterward as a result of this effect
                     currentSample[sampleRecorderPointer++] = data[i];
                 }
                 else
