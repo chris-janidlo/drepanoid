@@ -156,6 +156,8 @@ MonoBehaviour:
   VerticalAcceleration: 60
   FallCatcherThreshold: -17
   DragCoefficient: 0.4
+  BallMagnetismRange: 2.5
+  BallMagnetismAmount: 0.5
   LeftWall: {fileID: 1954432734481541002}
   RightWall: {fileID: 1954432735551947129}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,

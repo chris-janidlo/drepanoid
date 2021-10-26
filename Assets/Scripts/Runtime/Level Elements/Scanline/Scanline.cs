@@ -13,14 +13,21 @@ namespace Drepanoid
         public float FallCatcherThreshold;
         public float DragCoefficient;
 
+        public float BallMagnetismRange;
+        [Range(0, 1)]
+        public float BallMagnetismAmount;
+
         public Transform LeftWall, RightWall;
         public Vector2Variable CameraTrackingPosition;
 
         void FixedUpdate ()
         {
+            float lerpedLinePosition = Mathf.Lerp(LeftWall.position.x, RightWall.position.x, Driver.Mover.PositionOnLine);
+            float fullyMagnetizedLinePosition = Mathf.Clamp(CameraTrackingPosition.Value.x, lerpedLinePosition - BallMagnetismRange, lerpedLinePosition + BallMagnetismRange);
+
             transform.position = new Vector3
             (
-                Mathf.Lerp(LeftWall.position.x, RightWall.position.x, Driver.Mover.PositionOnLine),
+                Mathf.Lerp(lerpedLinePosition, fullyMagnetizedLinePosition, BallMagnetismAmount),
                 CameraTrackingPosition.Value.y,
                 0
             );
