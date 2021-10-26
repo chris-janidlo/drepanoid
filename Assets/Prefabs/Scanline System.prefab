@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VerticalAcceleration: 60
+  InheritSpeedMultiplier: 0.25
   FallCatcherThreshold: -17
   DragCoefficient: 0.4
   BallMagnetismRange: 2.5

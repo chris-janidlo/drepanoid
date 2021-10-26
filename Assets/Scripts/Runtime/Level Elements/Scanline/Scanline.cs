@@ -8,7 +8,7 @@ namespace Drepanoid
 {
     public class Scanline : MonoBehaviour
     {
-        public float VerticalAcceleration;
+        public float VerticalAcceleration, InheritSpeedMultiplier;
         [Tooltip("If the ball's vertical speed is lower than this while in contact with the scanline, the scanline will apply a drag acceleration to both the ball's x and y velocity axes. Otherwise, the scanline only applies its drag vertically.")]
         public float FallCatcherThreshold;
         public float DragCoefficient;
@@ -43,6 +43,7 @@ namespace Drepanoid
                 : DragCoefficient * (ball.Velocity.y * ball.Velocity.y / 2) * Mathf.Sign(ball.Velocity.y) * Vector2.down;
 
             ball.Velocity += (VerticalAcceleration * Vector2.up + dragAcceleration) * Time.deltaTime;
+            ball.Velocity += Driver.Mover.Velocity * InheritSpeedMultiplier * Vector2.right;
         }
     }
 }
