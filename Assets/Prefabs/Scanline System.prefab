@@ -155,8 +155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VerticalAcceleration: 60
   InheritSpeedMultiplier: 0.25
+  DragCoefficient: 0.2
+  FallCatcherDragCoefficient: 0.4
   FallCatcherThreshold: -17
-  DragCoefficient: 0.4
   BallMagnetismRange: 2.5
   BallMagnetismAmount: 0.5
   LeftWall: {fileID: 1954432734481541002}
