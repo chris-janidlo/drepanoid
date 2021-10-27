@@ -16,7 +16,7 @@ namespace Drepanoid
         public AudioLowPassFilter LowPassFilter;
         public AudioHighPassFilter HighPassFilter;
 
-        public float filterMidpoint, fadeMultiplier;
+        float filterMidpoint, fadeMultiplier;
 
         void Start ()
         {
