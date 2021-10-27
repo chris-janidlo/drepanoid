@@ -327,7 +327,7 @@ MonoBehaviour:
     Ease: 1
   FadeOutTransition:
     value: 0
-    Time: 0.1
+    Time: 0.3
     Ease: 1
   Source: {fileID: 7235644836765940918}
   LowPassFilter: {fileID: 2307996437283854048}
