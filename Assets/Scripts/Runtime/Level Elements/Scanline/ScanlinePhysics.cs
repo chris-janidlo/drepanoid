@@ -6,7 +6,7 @@ using Drepanoid.Drivers;
 
 namespace Drepanoid
 {
-    public class Scanline : MonoBehaviour
+    public class ScanlinePhysics : MonoBehaviour
     {
         public float VerticalAcceleration, InheritSpeedMultiplier;
         public float DragCoefficient, FallCatcherDragCoefficient;
