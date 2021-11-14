@@ -21,9 +21,20 @@ namespace Drepanoid
 
         public Transform LeftAnchor, RightAnchor;
         public Vector2Variable CameraTrackingPosition;
+        public SceneTransitionHelper SceneTransitionHelper;
+
+        bool active;
+
+        IEnumerator Start ()
+        {
+            yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
+            active = true;
+        }
 
         void FixedUpdate ()
         {
+            if (!active) return;
+
             float lerpedLinePosition = Mathf.Lerp(LeftAnchor.position.x, RightAnchor.position.x, Driver.Mover.PositionOnLine);
             float fullyMagnetizedLinePosition = Mathf.Clamp(CameraTrackingPosition.Value.x, lerpedLinePosition - BallMagnetismRange, lerpedLinePosition + BallMagnetismRange);
             float partiallyMagnetizedLinePosition = Mathf.Lerp(lerpedLinePosition, fullyMagnetizedLinePosition, BallMagnetismAmount);
@@ -38,6 +49,8 @@ namespace Drepanoid
 
         void OnTriggerStay2D (Collider2D collision)
         {
+            if (!active) return;
+
             Ball ball = collision.gameObject.GetComponent<Ball>();
             if (ball == null) return;
 
@@ -47,6 +60,11 @@ namespace Drepanoid
 
             ball.Velocity += (VerticalAcceleration * Vector2.up + dragAcceleration) * Time.deltaTime;
             ball.Velocity += Driver.Mover.Velocity * InheritSpeedMultiplier * Vector2.right;
+        }
+
+        public void OnLevelGoalReached ()
+        {
+            active = false;
         }
     }
 }

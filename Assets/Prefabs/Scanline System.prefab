@@ -370,7 +370,9 @@ GameObject:
   - component: {fileID: 3413086742281211012}
   - component: {fileID: 5228981965875481381}
   - component: {fileID: 3735123759269601911}
+  - component: {fileID: 7934398913473848867}
   - component: {fileID: 3739412061982693462}
+  - component: {fileID: 8727868606290491054}
   m_Layer: 0
   m_Name: Behavior
   m_TagString: Untagged
@@ -415,6 +417,8 @@ MonoBehaviour:
   LeftAnchor: {fileID: 1954432734481541002}
   RightAnchor: {fileID: 1954432735551947129}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
+    type: 2}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
     type: 2}
 --- !u!114 &5228981965875481381
 MonoBehaviour:
@@ -511,6 +515,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinDistanceToTurnOnParticles: 6
   HorizontalLineVerticalOffset: 0.0625
+  SceneLoadDelayBeforeLoadingLines: 0.15
+  LineTransition:
+    value: 0
+    Time: 0.3
+    Ease: 16
   Levitator: {fileID: 8382104378070154485}
   LeftAnchor: {fileID: 1954432734481541002}
   RightAnchor: {fileID: 1954432735551947129}
@@ -520,6 +529,27 @@ MonoBehaviour:
   VerticalLine: {fileID: 8841010450602120728}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
     type: 2}
+  SceneTransitionHelper: {fileID: 11400000, guid: d582a9b8845d1c14b877740097f33f5d,
+    type: 2}
+--- !u!114 &7934398913473848867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954432735428180158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9812ca1cc056b438ce84ec9590141a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDelay: 0
+  LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
+  UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
+  SpriteRenderers:
+  - {fileID: 6713854996808583241}
+  - {fileID: 9019947293762038658}
+  - {fileID: 4629545965126919558}
 --- !u!61 &3739412061982693462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -546,6 +576,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 2.5}
   m_EdgeRadius: 0
+--- !u!114 &8727868606290491054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954432735428180158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7934398913473848867}
+        m_TargetAssemblyTypeName: Drepanoid.SpriteLoadEffect, Drepanoid.Runtime
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3735123759269601911}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlineVisuals, Drepanoid.Runtime
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3413086742281211012}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlinePhysics, Drepanoid.Runtime
+        m_MethodName: OnLevelGoalReached
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5b014b3737fd0944481052dbca5c3853, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1 &1954432735551947130
 GameObject:
   m_ObjectHideFlags: 0
