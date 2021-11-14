@@ -17,18 +17,21 @@ namespace Drepanoid
         [Range(0, 1)]
         public float BallMagnetismAmount;
 
-        public Transform LeftWall, RightWall;
+        public float MinVerticalLineLength;
+
+        public Transform LeftAnchor, RightAnchor;
         public Vector2Variable CameraTrackingPosition;
 
         void FixedUpdate ()
         {
-            float lerpedLinePosition = Mathf.Lerp(LeftWall.position.x, RightWall.position.x, Driver.Mover.PositionOnLine);
+            float lerpedLinePosition = Mathf.Lerp(LeftAnchor.position.x, RightAnchor.position.x, Driver.Mover.PositionOnLine);
             float fullyMagnetizedLinePosition = Mathf.Clamp(CameraTrackingPosition.Value.x, lerpedLinePosition - BallMagnetismRange, lerpedLinePosition + BallMagnetismRange);
+            float partiallyMagnetizedLinePosition = Mathf.Lerp(lerpedLinePosition, fullyMagnetizedLinePosition, BallMagnetismAmount);
 
             transform.position = new Vector3
             (
-                Mathf.Lerp(lerpedLinePosition, fullyMagnetizedLinePosition, BallMagnetismAmount),
-                CameraTrackingPosition.Value.y,
+                Mathf.Clamp(partiallyMagnetizedLinePosition, LeftAnchor.position.x, RightAnchor.position.x),
+                Mathf.Min(CameraTrackingPosition.Value.y, LeftAnchor.position.y - MinVerticalLineLength),
                 0
             );
         }
