@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,9 +17,8 @@ namespace Drepanoid
         public ParticleSystem LevitatorParticles;
         public LineRenderer HorizontalLine, VerticalLine;
         public Vector2Variable CameraTrackingPosition;
-        public SceneTransitionHelper SceneTransitionHelper;
 
-        bool active;
+        bool active = true, animatingLine = true;
 
         IEnumerator Start ()
         {
@@ -26,22 +26,21 @@ namespace Drepanoid
 
             yield return new WaitForSeconds(SceneLoadDelayBeforeLoadingLines);
             yield return lineAnimation(true);
-            
-            yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime - SceneLoadDelayBeforeLoadingLines - LineTransition.Time);
-            active = true;
         }
 
         void FixedUpdate ()
         {
             if (!active) return;
 
+            bool particlesOn = Vector2.Distance(transform.position, CameraTrackingPosition.Value) < MinDistanceToTurnOnParticles;
+
+            setLevitatorState(particlesOn);
             Levitator.position = transform.position;
+
+            if (animatingLine) return;
 
             VerticalLine.SetPosition(0, LevitatorLineConnector.position);
             VerticalLine.SetPosition(1, getLineMeetupPoint());
-
-            bool particlesOn = Vector2.Distance(transform.position, CameraTrackingPosition.Value) < MinDistanceToTurnOnParticles;
-            setLevitatorState(particlesOn);
         }
 
         public void OnLevelGoalReached ()
@@ -49,6 +48,15 @@ namespace Drepanoid
             active = false;
             setLevitatorState(false);
             StartCoroutine(lineAnimation(false));
+        }
+
+        public void OnDeathReset ()
+        {
+            setLevitatorState(false);
+
+            // clear all current particles too
+            var emptyParticles = new ParticleSystem.Particle[LevitatorParticles.particleCount];
+            LevitatorParticles.SetParticles(emptyParticles);
         }
 
         void setLevitatorState (bool on)
@@ -73,17 +81,17 @@ namespace Drepanoid
                 horizontalLineRightTarget = RightAnchor.position + Vector3.up * HorizontalLineVerticalOffset,
                 horizontalLineMidpoint = (horizontalLineLeftTarget + horizontalLineRightTarget) / 2;
 
-            Vector3
-                verticalLineBottomTarget = LevitatorLineConnector.position,
-                verticalLineTopTarget = getLineMeetupPoint(),
-                verticalLineMidpoint = (verticalLineBottomTarget + verticalLineTopTarget) / 2;
+            Func<Vector3>
+                verticalLineBottomTarget = () => LevitatorLineConnector.position,
+                verticalLineTopTarget = getLineMeetupPoint,
+                verticalLineMidpoint = () => (verticalLineBottomTarget() + verticalLineTopTarget()) / 2;
 
             void lerpLines (float lerp)
             {
                 HorizontalLine.SetPosition(0, Vector3.Lerp(horizontalLineMidpoint, horizontalLineLeftTarget, lerp));
                 HorizontalLine.SetPosition(1, Vector3.Lerp(horizontalLineMidpoint, horizontalLineRightTarget, lerp));
-                VerticalLine.SetPosition(0, Vector3.Lerp(verticalLineMidpoint, verticalLineBottomTarget, lerp));
-                VerticalLine.SetPosition(1, Vector3.Lerp(verticalLineMidpoint, verticalLineTopTarget, lerp));
+                VerticalLine.SetPosition(0, Vector3.Lerp(verticalLineMidpoint(), verticalLineBottomTarget(), lerp));
+                VerticalLine.SetPosition(1, Vector3.Lerp(verticalLineMidpoint(), verticalLineTopTarget(), lerp));
             }
 
             LineTransition.AttachMonoBehaviour(this);
@@ -95,6 +103,8 @@ namespace Drepanoid
             };
 
             lerpLines(end);
+
+            animatingLine = false;
         }
     }
 }

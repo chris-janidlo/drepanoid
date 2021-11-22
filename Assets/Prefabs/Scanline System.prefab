@@ -373,6 +373,9 @@ GameObject:
   - component: {fileID: 7934398913473848867}
   - component: {fileID: 3739412061982693462}
   - component: {fileID: 8727868606290491054}
+  - component: {fileID: 188665171255196687}
+  - component: {fileID: 7974752224178045821}
+  - component: {fileID: 6745009562035244774}
   m_Layer: 0
   m_Name: Behavior
   m_TagString: Untagged
@@ -413,7 +416,33 @@ MonoBehaviour:
   FallCatcherThreshold: -17
   BallMagnetismRange: 2.5
   BallMagnetismAmount: 0.5
+  BallMagnetismStrengthByDistanceToBall:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1.25
+      value: 1
+      inSlope: -0.3016311
+      outSlope: -0.3016311
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.01626016
+    - serializedVersion: 3
+      time: 10
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.024390303
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  VerticalFollowTime: 0.7
   MinVerticalLineLength: 3
+  InitialPosition: {x: 0, y: 0}
   LeftAnchor: {fileID: 1954432734481541002}
   RightAnchor: {fileID: 1954432735551947129}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
@@ -513,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37dd5114d453b504b96ad04131064137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinDistanceToTurnOnParticles: 6
+  MinDistanceToTurnOnParticles: 2.5
   HorizontalLineVerticalOffset: 0.0625
   SceneLoadDelayBeforeLoadingLines: 0.15
   LineTransition:
@@ -638,6 +667,130 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+--- !u!114 &188665171255196687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954432735428180158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3413086742281211012}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlinePhysics, Drepanoid.Runtime
+        m_MethodName: OnDeathReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &7974752224178045821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954432735428180158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3413086742281211012}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlinePhysics, Drepanoid.Runtime
+        m_MethodName: OnBallDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3735123759269601911}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlineVisuals, Drepanoid.Runtime
+        m_MethodName: OnDeathReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &6745009562035244774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954432735428180158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41cf904d84eb4825bcbaec1aaabf06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3413086742281211012}
+        m_TargetAssemblyTypeName: Drepanoid.ScanlinePhysics, Drepanoid.Runtime
+        m_MethodName: OnBallSpawned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: b4d4ef7053f955e429b14492af83f336, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &1954432735551947130
 GameObject:
   m_ObjectHideFlags: 0

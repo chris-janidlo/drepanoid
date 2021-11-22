@@ -16,33 +16,44 @@ namespace Drepanoid
         public float BallMagnetismRange;
         [Range(0, 1)]
         public float BallMagnetismAmount;
+        public AnimationCurve BallMagnetismStrengthByDistanceToBall;
+
+        public float VerticalFollowTime;
 
         public float MinVerticalLineLength;
 
+        public float InitialYPosition;
+
         public Transform LeftAnchor, RightAnchor;
         public Vector2Variable CameraTrackingPosition;
-        public SceneTransitionHelper SceneTransitionHelper;
 
-        bool active;
-
-        IEnumerator Start ()
-        {
-            yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
-            active = true;
-        }
+        bool active = true, ballLive;
+        float verticalFollowCurrentSpeed;
 
         void FixedUpdate ()
         {
             if (!active) return;
 
-            float lerpedLinePosition = Mathf.Lerp(LeftAnchor.position.x, RightAnchor.position.x, Driver.Mover.PositionOnLine);
-            float fullyMagnetizedLinePosition = Mathf.Clamp(CameraTrackingPosition.Value.x, lerpedLinePosition - BallMagnetismRange, lerpedLinePosition + BallMagnetismRange);
-            float partiallyMagnetizedLinePosition = Mathf.Lerp(lerpedLinePosition, fullyMagnetizedLinePosition, BallMagnetismAmount);
+            Vector2 fullMagnetPos = fullStrengthMagnetismPosition();
+
+            float magnetismStrength = BallMagnetismStrengthByDistanceToBall.Evaluate(Mathf.Abs(ballPosition().x - transform.position.x));
+
+            Vector2 newPosition;
+
+            if (magnetismStrength >= 1)
+            {
+                verticalFollowCurrentSpeed = 0;
+                newPosition = fullMagnetPos;
+            }
+            else
+            {
+                newPosition = Vector2.Lerp(nonMagnetizedPosition(), fullMagnetPos, magnetismStrength);
+            }
 
             transform.position = new Vector3
             (
-                Mathf.Clamp(partiallyMagnetizedLinePosition, LeftAnchor.position.x, RightAnchor.position.x),
-                Mathf.Min(CameraTrackingPosition.Value.y, LeftAnchor.position.y - MinVerticalLineLength),
+                Mathf.Clamp(newPosition.x, LeftAnchor.position.x, RightAnchor.position.x),
+                Mathf.Min(newPosition.y, LeftAnchor.position.y - MinVerticalLineLength),
                 0
             );
         }
@@ -65,6 +76,55 @@ namespace Drepanoid
         public void OnLevelGoalReached ()
         {
             active = false;
+        }
+
+        public void OnBallDied ()
+        {
+            active = false;
+            ballLive = false;
+        }
+
+        public void OnBallSpawned ()
+        {
+            ballLive = true;
+        }
+
+        public void OnDeathReset ()
+        {
+            transform.position = new Vector3(initialPosition().x, initialPosition().y, transform.position.z);
+            active = true;
+        }
+
+        float lerpedLinePosition (float? t = null)
+        {
+            return Mathf.Lerp(LeftAnchor.position.x, RightAnchor.position.x, t ?? Driver.Mover.PositionOnLine);
+        }
+
+        Vector2 initialPosition ()
+        {
+            return new Vector2(lerpedLinePosition(.5f), InitialYPosition);
+        }
+
+        Vector2 ballPosition ()
+        {
+            return ballLive ? CameraTrackingPosition.Value : initialPosition();
+        }
+
+        Vector2 fullStrengthMagnetismPosition ()
+        {
+            float unlerpedMagnetPosition = Mathf.Clamp(ballPosition().x, lerpedLinePosition() - BallMagnetismRange, lerpedLinePosition() + BallMagnetismRange);
+            float magnetizedLinePosition = Mathf.Lerp(lerpedLinePosition(), unlerpedMagnetPosition, BallMagnetismAmount);
+
+            return new Vector2(magnetizedLinePosition, ballPosition().y);
+        }
+
+        Vector2 nonMagnetizedPosition ()
+        {
+            return new Vector2
+            (
+                lerpedLinePosition(),
+                Mathf.SmoothDamp(transform.position.y, ballPosition().y, ref verticalFollowCurrentSpeed, VerticalFollowTime)
+            );
         }
     }
 }
