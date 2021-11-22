@@ -52,7 +52,7 @@ namespace Drepanoid
 
             transform.position = new Vector3
             (
-                Mathf.Clamp(newPosition.x, LeftAnchor.position.x, RightAnchor.position.x),
+                newPosition.x,
                 Mathf.Min(newPosition.y, LeftAnchor.position.y - MinVerticalLineLength),
                 0
             );
