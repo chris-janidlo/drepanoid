@@ -654,8 +654,8 @@ MonoBehaviour:
   LoadAnimation: {fileID: 11400000, guid: 1a22f79eb01653945b3fcf4cbfdc5cbf, type: 2}
   UnloadAnimation: {fileID: 11400000, guid: 41d3b77c0d4d86d48b16c39bdb4768a5, type: 2}
   SpriteRenderers:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7691355428738946999}
+  - {fileID: 5607701261333775603}
   - {fileID: 4629545965126919558}
 --- !u!61 &3739412061982693462
 BoxCollider2D:
