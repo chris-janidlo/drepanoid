@@ -26,6 +26,7 @@ namespace Drepanoid
 
         public Transform LeftAnchor, RightAnchor;
         public Vector2Variable CameraTrackingPosition;
+        public BoolVariable BallIsInScanline;
 
         bool active = true, ballLive;
         float verticalFollowCurrentSpeed;
@@ -71,6 +72,16 @@ namespace Drepanoid
 
             ball.Velocity += (VerticalAcceleration * Vector2.up + dragAcceleration) * Time.deltaTime;
             ball.Velocity += Driver.Mover.Velocity * InheritSpeedMultiplier * Vector2.right;
+
+            BallIsInScanline.Value = true;
+        }
+
+        void OnTriggerExit2D (Collider2D collision)
+        {
+            Ball ball = collision.gameObject.GetComponent<Ball>();
+            if (ball == null) return;
+
+            BallIsInScanline.Value = false;
         }
 
         public void OnLevelGoalReached ()

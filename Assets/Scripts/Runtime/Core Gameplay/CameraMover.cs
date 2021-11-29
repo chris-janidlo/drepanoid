@@ -13,12 +13,13 @@ namespace Drepanoid
         [Header("Position Tracking")]
         [Tooltip("Refers to the distance the camera needs to travel, not the distance from the camera to the position it's tracking.")]
         public AnimationCurve TrackingFollowTimeByTravelDistance;
-        public Vector2 MinimumDistanceToFollowBoxExtents;
+        public Vector2 MinimumDistanceToFollowBoxExtents, ScanlineFollowBoxExtents;
         [Tooltip("Defines the region of the level that the camera stays inside")]
         public Transform LowerLeftClampingPoint, UpperRightClampingPoint;
         public Vector2Variable CameraTrackingPosition;
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
+        public BoolVariable BallIsInScanline;
 
         [Header("Scene Transitions")]
         public float SceneTransitionMovementOffset;
@@ -171,7 +172,8 @@ namespace Drepanoid
 
             foreach (int axis in _getFollowTargetAxes)
             {
-                if (!forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < MinimumDistanceToFollowBoxExtents[axis]) continue;
+                float extent = BallIsInScanline.Value ? ScanlineFollowBoxExtents[axis] : MinimumDistanceToFollowBoxExtents[axis];
+                if (!forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < extent) continue;
 
                 followTargetMemory[axis] = getEffectivePositionOnAxis(CameraTrackingPosition.Value[axis], axis);
             }

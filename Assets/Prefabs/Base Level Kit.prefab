@@ -1620,11 +1620,13 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   MinimumDistanceToFollowBoxExtents: {x: 0, y: 8}
+  ScanlineFollowBoxExtents: {x: 1, y: 3}
   LowerLeftClampingPoint: {fileID: 8881630347287140789}
   UpperRightClampingPoint: {fileID: 2067560362897295695}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
     type: 2}
   CameraSnapTrackingDistanceThreshold: 1
+  BallIsInScanline: {fileID: 11400000, guid: 7c08dea6b7984459ea685fbc513c860a, type: 2}
   SceneTransitionMovementOffset: 17
   SceneLoadEase: 4
   SceneUnloadEase: 3
