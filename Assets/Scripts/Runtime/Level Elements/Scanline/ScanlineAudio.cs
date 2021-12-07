@@ -8,38 +8,38 @@ namespace Drepanoid
 {
     public class ScanlineAudio : MonoBehaviour
     {
-        public AnimationCurve BallVerticalSpeedToFilterCutoffFrequency, FilterCutoffFrequencyToVolume;
-        public float FilterBandWidth;
-        public TransitionableFloat FadeInTransition, FadeOutTransition;
+        [Range(0, 1)]
+        public float WooWooVolume, PickUpDropOffVolume;
 
-        public AudioSource Source;
-        public AudioLowPassFilter LowPassFilter;
-        public AudioHighPassFilter HighPassFilter;
+        public TransitionableFloat LoopFadeInTransition, LoopFadeOutTransition;
 
-        float filterMidpoint, fadeMultiplier;
+        public AudioClip PickUpClip, DropOffClip; 
+
+        public AudioSource WooWooSource;
+        public SoundEffectPlayer SoundEffectPlayer;
+
+        float whooshFilterMidpoint, fadeMultiplier;
+        IEnumerator fadeRoutine;
 
         void Start ()
         {
-            FadeInTransition.AttachMonoBehaviour(this);
-            FadeOutTransition.AttachMonoBehaviour(this);
+            LoopFadeInTransition.AttachMonoBehaviour(this);
+            LoopFadeOutTransition.AttachMonoBehaviour(this);
         }
 
         void Update ()
         {
-            Source.volume = fadeMultiplier * FilterCutoffFrequencyToVolume.Evaluate(filterMidpoint);
+            WooWooSource.volume = fadeMultiplier * WooWooVolume;
         }
 
-        void OnTriggerStay2D (Collider2D collision)
+        void OnTriggerEnter2D (Collider2D collision)
         {
             Ball ball = collision.gameObject.GetComponent<Ball>();
             if (ball == null) return;
 
-            if (fadeMultiplier == 0) StartCoroutine(fade(false));
-
-            filterMidpoint =
-                BallVerticalSpeedToFilterCutoffFrequency.Evaluate(Mathf.Abs(ball.Velocity.y));
-            LowPassFilter.cutoffFrequency = filterMidpoint + FilterBandWidth / 2;
-            HighPassFilter.cutoffFrequency = filterMidpoint - FilterBandWidth / 2;
+            if (fadeRoutine != null) StopCoroutine(fadeRoutine);
+            StartCoroutine(fadeRoutine = fade(false));
+            SoundEffectPlayer.Play(PickUpClip, PickUpDropOffVolume);
         }
 
         void OnTriggerExit2D (Collider2D collision)
@@ -47,12 +47,14 @@ namespace Drepanoid
             Ball ball = collision.gameObject.GetComponent<Ball>();
             if (ball == null) return;
 
-            StartCoroutine(fade(true));
+            if (fadeRoutine != null) StopCoroutine(fadeRoutine);
+            StartCoroutine(fadeRoutine = fade(true));
+            SoundEffectPlayer.Play(DropOffClip, PickUpDropOffVolume);
         }
 
         IEnumerator fade (bool fadeOut)
         {
-            var transition = fadeOut ? FadeOutTransition : FadeInTransition;
+            var transition = fadeOut ? LoopFadeOutTransition : LoopFadeInTransition;
             float start = fadeOut ? 1 : 0, end = fadeOut ? 0 : 1;
             transition.FlashFromTo(start, end);
 
