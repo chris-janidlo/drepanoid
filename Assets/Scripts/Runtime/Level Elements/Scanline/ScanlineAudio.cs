@@ -9,16 +9,16 @@ namespace Drepanoid
     public class ScanlineAudio : MonoBehaviour
     {
         [Range(0, 1)]
-        public float WooWooVolume, PickUpDropOffVolume;
+        public float WooWooVolume;
 
         public TransitionableFloat LoopFadeInTransition, LoopFadeOutTransition;
 
-        public AudioClip PickUpClip, DropOffClip; 
+        public SoundEffect PickUpEffect, DropOffEffect; 
 
         public AudioSource WooWooSource;
         public SoundEffectPlayer SoundEffectPlayer;
 
-        float whooshFilterMidpoint, fadeMultiplier;
+        float fadeMultiplier;
         IEnumerator fadeRoutine;
 
         void Start ()
@@ -39,7 +39,7 @@ namespace Drepanoid
 
             if (fadeRoutine != null) StopCoroutine(fadeRoutine);
             StartCoroutine(fadeRoutine = fade(false));
-            SoundEffectPlayer.Play(PickUpClip, PickUpDropOffVolume);
+            SoundEffectPlayer.Play(PickUpEffect);
         }
 
         void OnTriggerExit2D (Collider2D collision)
@@ -49,7 +49,7 @@ namespace Drepanoid
 
             if (fadeRoutine != null) StopCoroutine(fadeRoutine);
             StartCoroutine(fadeRoutine = fade(true));
-            SoundEffectPlayer.Play(DropOffClip, PickUpDropOffVolume);
+            SoundEffectPlayer.Play(DropOffEffect);
         }
 
         IEnumerator fade (bool fadeOut)

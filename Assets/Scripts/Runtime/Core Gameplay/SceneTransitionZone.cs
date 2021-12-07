@@ -23,7 +23,7 @@ namespace Drepanoid
         public float BallSpawnDelay, ExitDisabledTimeAfterSpawning, BallSpawnInitialVelocity;
         public Ball BallPrefab;
 
-        public AudioClip SoundEffect;
+        public SoundEffect SoundEffect;
 
         public Vector2Variable SceneChangeDirection, CameraTrackingPosition;
         public StringVariable SceneTransitionTargetTag;

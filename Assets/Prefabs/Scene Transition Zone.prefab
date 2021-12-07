@@ -58,7 +58,7 @@ MonoBehaviour:
   BallSpawnInitialVelocity: 10
   BallPrefab: {fileID: 13406196421831381, guid: 83a3907bc4dacce4a81f88fec7ac6dc0,
     type: 3}
-  SoundEffect: {fileID: 8300000, guid: 594d82d24e94ada448c578ec896cbd1f, type: 3}
+  SoundEffect: {fileID: 11400000, guid: 4bc7e8edc27cbfd4991067c8e0aae99e, type: 2}
   SceneChangeDirection: {fileID: 11400000, guid: 62234217146b53341893e59785335dd9,
     type: 2}
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,

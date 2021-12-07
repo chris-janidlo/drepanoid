@@ -15,7 +15,7 @@ namespace Drepanoid.Drivers
 
         public float TimeUntilIdle;
 
-        public AudioClip StartedIdlingSound, HitEndOfTrackSound;
+        public SoundEffect StartedIdlingSound, HitEndOfTrackSound;
         public AudioSource MovementSoundSource;
 
         public FloatVariable MovementAxis;

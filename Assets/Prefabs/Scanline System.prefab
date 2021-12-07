@@ -375,7 +375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WooWooVolume: 0.5
-  PickUpDropOffVolume: 0.15
   LoopFadeInTransition:
     value: 0
     Time: 0.05
@@ -384,8 +383,8 @@ MonoBehaviour:
     value: 0
     Time: 0.3
     Ease: 1
-  PickUpClip: {fileID: 8300000, guid: be8107539e0fd434c8c219cc728aef3f, type: 3}
-  DropOffClip: {fileID: 8300000, guid: 88e5d392bf23c704ebd631f3d72c31a7, type: 3}
+  PickUpEffect: {fileID: 11400000, guid: 41509eb23f12cd24295af0baea7ef977, type: 2}
+  DropOffEffect: {fileID: 11400000, guid: dcdb482fbd61d554cad2998075f534ef, type: 2}
   WooWooSource: {fileID: 5081662745555462651}
   SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
 --- !u!114 &3735123759269601911

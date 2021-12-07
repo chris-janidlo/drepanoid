@@ -12,10 +12,11 @@ namespace Drepanoid
 
         List<SfxAudioSource> spawnedAudioSources = new List<SfxAudioSource>();
 
-        public void Play (AudioClip clip, float? volume = null)
+        public void Play (SoundEffect soundEffect)
         {
             if (spawnedAudioSources.Any(s => s == null))
             {
+                // clean up when restarting in player
                 spawnedAudioSources.Clear();
             }
 
@@ -27,7 +28,7 @@ namespace Drepanoid
                 spawnedAudioSources.Add(source);
             }
 
-            source.Play(clip, volume);
+            source.Play(soundEffect);
         }
     }
 }

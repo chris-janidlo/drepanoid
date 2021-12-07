@@ -590,8 +590,8 @@ MonoBehaviour:
   MaxVelocity: 2
   AccelerationTime: 0.3
   TimeUntilIdle: 9
-  StartedIdlingSound: {fileID: 8300000, guid: 5f8975ee6cb8cfe49aaefc3fe155e2cf, type: 3}
-  HitEndOfTrackSound: {fileID: 8300000, guid: 7afbdb9aae4326d428ec8a1513835e8c, type: 3}
+  StartedIdlingSound: {fileID: 11400000, guid: 1491a5f8a08d469428344f271f81ba0d, type: 2}
+  HitEndOfTrackSound: {fileID: 11400000, guid: 54c6dd449270e87418b7ed24ec369ef5, type: 2}
   MovementSoundSource: {fileID: 6694117299819258263}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
   DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,

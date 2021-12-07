@@ -16,7 +16,7 @@ namespace Drepanoid
         public class BounceSound
         {
             public float MinSpeed;
-            public AudioClip Clip;
+            public SoundEffect Effect;
         }
 
         private static int deathsSinceLastExplosionDeath;
@@ -33,7 +33,7 @@ namespace Drepanoid
         public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
         public int ExplosionDeathScaleTarget;
         public float DeathAnimationWaitTimeBeforeShrinking, VictoriousDespawnWaitTime;
-        public AudioClip DeathSound;
+        public SoundEffect DeathSound;
 
         public float BounceSpinMultiplier;
         [Range(0, 1)]
@@ -48,7 +48,7 @@ namespace Drepanoid
         public float KillFloorY;
 
         public List<BounceSound> RegularBounceSounds;
-        public AudioClip FeverBounceSound;
+        public SoundEffect FeverBounceSound;
 
         public VoidEvent BallDied;
         public SoundEffectPlayer SoundEffectPlayer;
@@ -138,7 +138,7 @@ namespace Drepanoid
             }
             else
             {
-                SoundEffectPlayer.Play(RegularBounceSounds.First(bs => speed >= bs.MinSpeed).Clip);
+                SoundEffectPlayer.Play(RegularBounceSounds.First(bs => speed >= bs.MinSpeed).Effect);
             }
 
             BounceParticles.Stop();

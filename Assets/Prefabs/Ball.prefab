@@ -87,7 +87,7 @@ MonoBehaviour:
   ExplosionDeathScaleTarget: 10
   DeathAnimationWaitTimeBeforeShrinking: 0.3
   VictoriousDespawnWaitTime: 0.4
-  DeathSound: {fileID: 8300000, guid: 0b054000648f63847b6e4d7fae2b50ce, type: 3}
+  DeathSound: {fileID: 11400000, guid: baface715330c544dac01922f04d3f51, type: 2}
   BounceSpinMultiplier: 75
   AngularDrag: 0.9
   BounceParticles: {fileID: 745532827337727209}
@@ -123,14 +123,14 @@ MonoBehaviour:
   KillFloorY: -150
   RegularBounceSounds:
   - MinSpeed: 21.5
-    Clip: {fileID: 8300000, guid: d7a088b0c2d72aa4398851d8ed264ede, type: 3}
+    Effect: {fileID: 11400000, guid: 51f1c9e987faabd41b9e8bb68ddfd874, type: 2}
   - MinSpeed: 20.5
-    Clip: {fileID: 8300000, guid: b9148bb3600e5ad4fa6bb9fafebd3314, type: 3}
+    Effect: {fileID: 11400000, guid: 91b1fc1bcb29a684aa92c6175609c91f, type: 2}
   - MinSpeed: 20
-    Clip: {fileID: 8300000, guid: 597b2f7686c36834fb6ec8197964c6db, type: 3}
+    Effect: {fileID: 11400000, guid: 332668c48795d12489ab094fbae69464, type: 2}
   - MinSpeed: 0
-    Clip: {fileID: 8300000, guid: 25fcc4e406e48ec4c8f03354a5c25c8d, type: 3}
-  FeverBounceSound: {fileID: 8300000, guid: 372166258bab5084e82078c0417f34dd, type: 3}
+    Effect: {fileID: 11400000, guid: 9d4621d454db41c428c275ec44e47a1d, type: 2}
+  FeverBounceSound: {fileID: 11400000, guid: 6f3113dfcf8c225429887d59ec0e0dc5, type: 2}
   BallDied: {fileID: 11400000, guid: 792082abccd53584cbda6112ade07390, type: 2}
   SoundEffectPlayer: {fileID: 11400000, guid: a91b0220cbe977748832d05a780d3503, type: 2}
   OnSprite: {fileID: 21300000, guid: c9919c1fdb5f86742af8de5ecce4ab36, type: 3}

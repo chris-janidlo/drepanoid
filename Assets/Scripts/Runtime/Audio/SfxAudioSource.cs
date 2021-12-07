@@ -15,16 +15,9 @@ namespace Drepanoid
             DontDestroyOnLoad(gameObject);
         }
 
-        public void Play (AudioClip clip, float? volume = null)
+        public void Play (SoundEffect soundEffect)
         {
-            if (volume.HasValue)
-            {
-                audioSource.PlayOneShot(clip, volume.Value);
-            }
-            else
-            {
-                audioSource.PlayOneShot(clip);
-            }
+            audioSource.PlayOneShot(soundEffect.Clip, soundEffect.Volume);
         }
     }
 }
