@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74088082880b89748aaa891c514f30f9, type: 3}
-  m_Name: level transition
+  m_Name: level leave
   m_EditorClassIdentifier: 
-  Clip: {fileID: 8300000, guid: 594d82d24e94ada448c578ec896cbd1f, type: 3}
-  Volume: 1
+  Clip: {fileID: 8300000, guid: c7773efd57f3cdd409070399bdee97b7, type: 3}
+  Volume: 0.75

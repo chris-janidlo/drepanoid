@@ -23,7 +23,7 @@ namespace Drepanoid
         public float BallSpawnDelay, ExitDisabledTimeAfterSpawning, BallSpawnInitialVelocity;
         public Ball BallPrefab;
 
-        public SoundEffect SoundEffect;
+        public SoundEffect LevelEnterEffect, LevelLeaveEffect;
 
         public Vector2Variable SceneChangeDirection, CameraTrackingPosition;
         public StringVariable SceneTransitionTargetTag;
@@ -41,6 +41,7 @@ namespace Drepanoid
         {
             if (SceneTransitionTargetTag.Value == Tag)
             {
+                SoundEffectPlayer.Play(LevelEnterEffect);
                 isSpawnPoint = true;
                 yield return new WaitForSeconds(SceneTransitionHelper.LevelLoadAnimationTime);
                 StartCoroutine(respawnRoutine());
@@ -60,7 +61,7 @@ namespace Drepanoid
             var ball = collision.GetComponent<Ball>();
             if (ball == null) return;
 
-            SoundEffectPlayer.Play(SoundEffect);
+            SoundEffectPlayer.Play(LevelLeaveEffect);
 
             Collider.enabled = false;
             float speedInDirectionOfAdjacentScene = Vector2.Dot(ball.Velocity, AdjacentSceneDirection); // from https://docs.unity3d.com/2019.3/Documentation/Manual/AmountVectorMagnitudeInAnotherDirection.html
