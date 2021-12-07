@@ -17,6 +17,7 @@ namespace Drepanoid
 
         public BoolVariable DeathGlitchEffectIsOn;
         public VoidEvent DeathReset;
+        public FloatVariable MusicTrackPosition;
 
         Glitch glitch;
 
@@ -38,7 +39,8 @@ namespace Drepanoid
             bool haveReset = false;
 
             DeathGlitchEffectIsOn.Value = true;
-            RetriggerFilter.Active = true; // TODO: when implementing music system, record the audio position at the start of the effect and restore back to that position at the end, so that the retrigger is more like a stall
+            RetriggerFilter.Active = true;
+            float originalTrackPosition = MusicTrackPosition.Value;
 
             while (timer < totalTime)
             {
@@ -55,6 +57,7 @@ namespace Drepanoid
             }
 
             resetEffect();
+            MusicTrackPosition.Value = originalTrackPosition;
         }
 
         void resetEffect ()
