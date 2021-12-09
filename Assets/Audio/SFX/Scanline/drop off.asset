@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: drop off
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 88e5d392bf23c704ebd631f3d72c31a7, type: 3}
-  Volume: 0.15
+  Volume: 0.25

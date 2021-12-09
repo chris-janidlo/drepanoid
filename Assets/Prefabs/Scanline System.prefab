@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cdb30d98feee834b9837c39b17cc7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WooWooVolume: 0.5
+  WooWooVolume: 0.15
   LoopFadeInTransition:
     value: 0
     Time: 0.05

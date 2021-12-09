@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: pick up
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: be8107539e0fd434c8c219cc728aef3f, type: 3}
-  Volume: 0.15
+  Volume: 0.25
