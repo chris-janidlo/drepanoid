@@ -15,6 +15,12 @@ namespace Drepanoid.Drivers
 
         public float TimeUntilIdle;
 
+        public float MoveSoundPitchVariance;
+        public Vector2 MoveSoundPitchRange;
+        public float MoveSoundVolume;
+        public TransitionableFloat MoveSoundStartUpTransition;
+
+        public BagRandomizer<SoundEffect> StartedMovingSounds;
         public SoundEffect StartedIdlingSound, HitEndOfTrackSound;
         public AudioSource MovementSoundSource;
 
@@ -24,6 +30,15 @@ namespace Drepanoid.Drivers
 
         float idleTimer;
         bool playedIdleSound;
+
+        float currentMoveSoundPitch;
+
+        void Start ()
+        {
+            currentMoveSoundPitch = RandomExtra.Range(MoveSoundPitchRange);
+
+            MoveSoundStartUpTransition.AttachMonoBehaviour(this);
+        }
 
         void FixedUpdate ()
         {
@@ -37,12 +52,12 @@ namespace Drepanoid.Drivers
                 if (Velocity != 0 && hitEndOfTrack) SoundEffectPlayer.Play(HitEndOfTrackSound);
 
                 Velocity = 0;
-                MovementSoundSource.Stop();
+                MovementSoundSource.volume = 0;
 
                 return;
             }
 
-            if (Velocity == 0) MovementSoundSource.Play();
+            if (Velocity == 0) startSoundUp();
 
             idleTimer = 0;
             playedIdleSound = false;
@@ -70,6 +85,36 @@ namespace Drepanoid.Drivers
         public void OnDeathReset ()
         {
             PositionOnLine = 0.5f;
+        }
+
+        void startSoundUp ()
+        {
+            IEnumerator routine ()
+            {
+                SoundEffectPlayer.Play(StartedMovingSounds.GetNext());
+                MovementSoundSource.volume = MoveSoundVolume;
+                MovementSoundSource.pitch = 0;
+
+                currentMoveSoundPitch = Mathf.Clamp
+                (
+                    currentMoveSoundPitch + Random.Range(-MoveSoundPitchVariance, MoveSoundPitchVariance),
+                    MoveSoundPitchRange.x,
+                    MoveSoundPitchRange.y
+                );
+
+                MoveSoundStartUpTransition.FlashFromTo(0, currentMoveSoundPitch);
+                
+                while (MoveSoundStartUpTransition.Transitioning)
+                {
+                    MovementSoundSource.pitch = MoveSoundStartUpTransition.Value;
+                    yield return null;
+                }
+
+                MovementSoundSource.pitch = currentMoveSoundPitch;
+            }
+
+            StopAllCoroutines();
+            StartCoroutine(routine());
         }
     }
 }

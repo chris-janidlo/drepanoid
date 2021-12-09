@@ -590,6 +590,23 @@ MonoBehaviour:
   MaxVelocity: 2
   AccelerationTime: 0.3
   TimeUntilIdle: 9
+  MoveSoundPitchVariance: 0.005
+  MoveSoundPitchRange: {x: 1, y: 1.01}
+  MoveSoundVolume: 0.25
+  MoveSoundStartUpTransition:
+    value: 0
+    Time: 0.3
+    Ease: 1
+  StartedMovingSounds:
+    Items:
+    - {fileID: 11400000, guid: f959442c21e2f684f8feab0e299eb1b3, type: 2}
+    - {fileID: 11400000, guid: be915ed3afe1cf447ae258758bfbee64, type: 2}
+    - {fileID: 11400000, guid: 6f3c6b1d60297164eb4d1e5e30ed7716, type: 2}
+    - {fileID: 11400000, guid: 0f9917d14f0594b468e26204b80f221c, type: 2}
+    - {fileID: 11400000, guid: 039cb3fa45fe9b249b4ba1b748f0edbc, type: 2}
+    AvoidRepeats: 0
+    Type: 0
+    LocalSeed: 0
   StartedIdlingSound: {fileID: 11400000, guid: 1491a5f8a08d469428344f271f81ba0d, type: 2}
   HitEndOfTrackSound: {fileID: 11400000, guid: 54c6dd449270e87418b7ed24ec369ef5, type: 2}
   MovementSoundSource: {fileID: 6694117299819258263}
@@ -607,11 +624,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 98ee946de98c23d43b3f918622b3dba2, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_audioClip: {fileID: 8300000, guid: d1e1cc63e8ba0f140bb5a1aa6e07be64, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -8,7 +8,7 @@ namespace Drepanoid
     public class SoundEffect : ScriptableObject
     {
         public AudioClip Clip;
-        [Range(0, 1)]
+        [Range(0, 2)]
         public float Volume = 1;
     }
 }
