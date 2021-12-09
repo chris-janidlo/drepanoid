@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: (_scythica[1])('_0')
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 9d78f9325aa50fa478408795eaa78e66, type: 3}
-  Volume: 0.5
+  Volume: 0.6
