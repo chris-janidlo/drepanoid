@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74088082880b89748aaa891c514f30f9, type: 3}
-  m_Name: hit end of track
+  m_Name: hit end 1
   m_EditorClassIdentifier: 
-  Clip: {fileID: 8300000, guid: 7afbdb9aae4326d428ec8a1513835e8c, type: 3}
+  Clip: {fileID: 8300000, guid: 05cfffd67ab6ca64d945d8a9a845085f, type: 3}
   Volume: 1

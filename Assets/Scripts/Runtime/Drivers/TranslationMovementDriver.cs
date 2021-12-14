@@ -20,8 +20,8 @@ namespace Drepanoid.Drivers
         public float MoveSoundVolume;
         public TransitionableFloat MoveSoundStartUpTransition;
 
-        public BagRandomizer<SoundEffect> StartedMovingSounds;
-        public SoundEffect StartedIdlingSound, HitEndOfTrackSound;
+        public BagRandomizer<SoundEffect> StartedMovingSounds, HitEndOfTrackSounds;
+        public SoundEffect StartedIdlingSound;
         public AudioSource MovementSoundSource;
 
         public FloatVariable MovementAxis;
@@ -49,7 +49,7 @@ namespace Drepanoid.Drivers
 
             if (movementStopped || hitEndOfTrack)
             {
-                if (Velocity != 0 && hitEndOfTrack) SoundEffectPlayer.Play(HitEndOfTrackSound);
+                if (Velocity != 0 && hitEndOfTrack) SoundEffectPlayer.Play(HitEndOfTrackSounds.GetNext());
 
                 Velocity = 0;
                 MovementSoundSource.volume = 0;

@@ -588,14 +588,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxVelocity: 2
-  AccelerationTime: 0.3
+  AccelerationTime: 0.375
   TimeUntilIdle: 9
   MoveSoundPitchVariance: 0.005
   MoveSoundPitchRange: {x: 1, y: 1.01}
   MoveSoundVolume: 0.25
   MoveSoundStartUpTransition:
     value: 0
-    Time: 0.3
+    Time: 0.375
     Ease: 1
   StartedMovingSounds:
     Items:
@@ -607,8 +607,16 @@ MonoBehaviour:
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
+  HitEndOfTrackSounds:
+    Items:
+    - {fileID: 11400000, guid: e0ad2a4840f501645ad15f2d67d1a47b, type: 2}
+    - {fileID: 11400000, guid: 599ce1ae1f5f06043a52469592d2c65f, type: 2}
+    - {fileID: 11400000, guid: 9c00866a007ee15409ac14700667364f, type: 2}
+    - {fileID: 11400000, guid: a0038f30b1f4af24d8fa063589939c97, type: 2}
+    AvoidRepeats: 0
+    Type: 0
+    LocalSeed: 0
   StartedIdlingSound: {fileID: 11400000, guid: 1491a5f8a08d469428344f271f81ba0d, type: 2}
-  HitEndOfTrackSound: {fileID: 11400000, guid: 54c6dd449270e87418b7ed24ec369ef5, type: 2}
   MovementSoundSource: {fileID: 6694117299819258263}
   MovementAxis: {fileID: 11400000, guid: 8616b1ecafd0f654387f173ba43b2f17, type: 2}
   DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
