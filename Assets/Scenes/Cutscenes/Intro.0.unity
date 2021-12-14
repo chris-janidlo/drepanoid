@@ -547,6 +547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4005375984604903075, guid: 41ded67201089cb4d877be7b94074953,
         type: 3}
+      propertyPath: ZoomAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005375984604903075, guid: 41ded67201089cb4d877be7b94074953,
+        type: 3}
       propertyPath: MobileZoomAmount
       value: 1
       objectReference: {fileID: 0}
