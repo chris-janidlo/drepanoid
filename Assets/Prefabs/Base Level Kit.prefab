@@ -1873,8 +1873,8 @@ MonoBehaviour:
     value: 0
     Time: 0.2
     Ease: 21
-  MobileZoomWaitTime: 1.15
-  MobileZoomTransition:
+  ZoomWaitTime: 1.15
+  ZoomTransition:
     value: 0
     Time: 1.15
     Ease: 2
@@ -1884,7 +1884,7 @@ MonoBehaviour:
     type: 2}
   AssetPixelsPerUnit: 8
   ReferenceResolution: {x: 512, y: 342}
-  MobileZoomAmount: 2
+  ZoomAmount: 2
 --- !u!114 &1408338180178490034
 MonoBehaviour:
   m_ObjectHideFlags: 0

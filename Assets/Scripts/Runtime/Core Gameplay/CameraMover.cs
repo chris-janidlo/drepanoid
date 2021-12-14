@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityAtoms.BaseAtoms;
 using crass;
 
@@ -29,8 +30,8 @@ namespace Drepanoid
         public float NormalFov, FlattenedFov;
         public TransitionableFloat SceneLoadFovTransition, SceneUnloadFovTransition;
 
-        public float MobileZoomWaitTime;
-        public TransitionableFloat MobileZoomTransition;
+        public float ZoomWaitTime;
+        public TransitionableFloat ZoomTransition;
 
         public Vector2Variable SceneChangeDirection;
         public SceneTransitionHelper SceneTransitionHelper;
@@ -38,7 +39,7 @@ namespace Drepanoid
         [Header("Pixel Perfection")]
         public int AssetPixelsPerUnit;
         public Vector2Int ReferenceResolution;
-        public float MobileZoomAmount;
+        public float ZoomAmount;
 
         Vector3 sceneTransitionOffset => SceneTransitionMovementOffset * SceneChangeDirection.Value;
 
@@ -66,23 +67,19 @@ namespace Drepanoid
             SceneUnloadFovTransition.AttachMonoBehaviour(this);
 
             zoom = 1;
-#if UNITY_ANDROID || UNITY_IOS
-            yield return new WaitForSeconds(MobileZoomWaitTime);
-            MobileZoomTransition.AttachMonoBehaviour(this);
-            MobileZoomTransition.FlashFromTo(zoom, MobileZoomAmount);
+            yield return new WaitForSeconds(ZoomWaitTime);
+            ZoomTransition.AttachMonoBehaviour(this);
+            ZoomTransition.FlashFromTo(zoom, ZoomAmount);
 
-            while (MobileZoomTransition.Transitioning)
+            while (ZoomTransition.Transitioning)
             {
-                zoom = MobileZoomTransition.Value;
+                zoom = ZoomTransition.Value;
                 zoomChanged = true;
                 yield return null;
             }
 
-            zoom = MobileZoomAmount;
+            zoom = ZoomAmount;
             zoomChanged = true;
-#else
-            yield return null;
-#endif
         }
 
         void Update ()
