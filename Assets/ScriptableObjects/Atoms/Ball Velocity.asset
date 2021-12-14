@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b46c0f62c93543f88d3eb693740d091, type: 3}
-  m_Name: Ball Speed
+  m_Script: {fileID: 11500000, guid: f76a04b727336433cb49bbba3dbe9175, type: 3}
+  m_Name: Ball Velocity
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: 0
+  _value: {x: 0, y: 0}
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}
-  _oldValue: 0
-  _initialValue: 0
+  _oldValue: {x: 0, y: 0}
+  _initialValue: {x: 0, y: 0}
   _preChangeTransformers: []

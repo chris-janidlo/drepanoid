@@ -20,6 +20,9 @@ namespace Drepanoid
         public Vector2Variable CameraTrackingPosition;
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
+        public float MinBallFallSpeedForFallCamera;
+
+        public Vector2Variable BallVelocity;
         public BoolVariable BallIsInScanline;
 
         [Header("Scene Transitions")]
@@ -170,7 +173,8 @@ namespace Drepanoid
             foreach (int axis in _getFollowTargetAxes)
             {
                 float extent = BallIsInScanline.Value ? ScanlineFollowBoxExtents[axis] : MinimumDistanceToFollowBoxExtents[axis];
-                if (!forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < extent) continue;
+                bool fallCamera = axis == 1 && BallVelocity.Value.y < -MinBallFallSpeedForFallCamera;
+                if (!fallCamera && !forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < extent) continue;
 
                 followTargetMemory[axis] = getEffectivePositionOnAxis(CameraTrackingPosition.Value[axis], axis);
             }

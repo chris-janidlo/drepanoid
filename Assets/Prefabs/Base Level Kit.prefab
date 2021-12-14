@@ -1858,6 +1858,8 @@ MonoBehaviour:
   CameraTrackingPosition: {fileID: 11400000, guid: 4dede1e995d27f3489a7910e4e65ac99,
     type: 2}
   CameraSnapTrackingDistanceThreshold: 1
+  MinBallFallSpeedForFallCamera: 20
+  BallVelocity: {fileID: 11400000, guid: 33d5842dee6379741ba2858ab1292abe, type: 2}
   BallIsInScanline: {fileID: 11400000, guid: 7c08dea6b7984459ea685fbc513c860a, type: 2}
   SceneTransitionMovementOffset: 17
   SceneLoadEase: 4

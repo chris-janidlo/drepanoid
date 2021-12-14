@@ -58,7 +58,7 @@ namespace Drepanoid
         public Collider2D Collider;
 
         public CharacterAnimation UnloadAnimation;
-        public FloatVariable BallSpeed;
+        public Vector2Variable BallVelocity;
 
         float angularVelocity; // positive = clockwise, negative = counter-clockwise
         bool spriteIsOn;
@@ -95,7 +95,7 @@ namespace Drepanoid
             spin();
 
             CameraTrackingPosition.Value = transform.position;
-            BallSpeed.Value = Velocity.magnitude;
+            BallVelocity.Value = Velocity;
 
             if (!feverTrail)
             {

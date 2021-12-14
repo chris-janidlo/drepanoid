@@ -9,7 +9,7 @@ namespace Drepanoid
     public class PaddleSpeedLogEffect : MonoBehaviour
     {
         public SetTextOptions TextOptions;
-        public FloatVariable BallSpeed;
+        public Vector2Variable BallVelocity;
 
         string baseText;
         float lastLoggedPaddleVelocity = -1;
@@ -22,7 +22,7 @@ namespace Drepanoid
             while (true)
             {
                 float currentPaddleVelocity = Mathf.Abs(Driver.Mover.Velocity);
-                float currentBallSpeed = BallSpeed.Value;
+                float currentBallSpeed = BallVelocity.Value.magnitude;
                 if (currentPaddleVelocity == lastLoggedPaddleVelocity && currentBallSpeed == lastLoggedBallSpeed)
                 {
                     yield return null;
