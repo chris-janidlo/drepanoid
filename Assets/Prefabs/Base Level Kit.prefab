@@ -587,15 +587,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559a3920aa0b914479661ba68eab3f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxVelocity: 2
-  AccelerationTime: 0.375
+  MaxVelocity: 1.5
+  AccelerationTime: 0.4
   TimeUntilIdle: 9
   MoveSoundPitchVariance: 0.005
   MoveSoundPitchRange: {x: 1, y: 1.01}
   MoveSoundVolume: 0.25
   MoveSoundStartUpTransition:
     value: 0
-    Time: 0.375
+    Time: 0.4
     Ease: 1
   StartedMovingSounds:
     Items:
