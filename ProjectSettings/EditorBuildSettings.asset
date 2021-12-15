@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Tutorial Escape/Router.unity
     guid: f20cca04731a74049a75b52efc8d1be2
   - enabled: 0
-    path: Assets/Scenes/Levels/Tutorial Escape/Tutorial Escape Two-Tunnel 1.unity
-    guid: 16f32cdef85aab34eb40f1eca2569ad1
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Levels/Tutorial Escape/Tutorial Escape One-Tunnel.unity
-    guid: d570820eb802b054fb56ffeb891a1eed
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/Tutorial Escape/Redirect.unity
     guid: 500fdba879d9a31498066a8a4a9a6155
@@ -38,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/Placeholder Outro.unity
     guid: fc99917e7731ee94cb82fa2fdf0b8f42
-  - enabled: 1
-    path: Assets/Scenes/Levels/Tutorial Escape/Ping Check.unity
-    guid: a09950a9299bbf14b98aad79fcf9244f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c589560e4bb85274286ca8f820ae021b,
       type: 2}
