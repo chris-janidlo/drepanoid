@@ -28,7 +28,7 @@ namespace Drepanoid
         public float ShowAnimationDelay;
         public CharacterAnimation Animation;
 
-        bool alreadyCollected;
+        bool alreadyCollected, dying;
         Vector3 initialPosition;
 
         IEnumerator Start ()
@@ -45,6 +45,8 @@ namespace Drepanoid
 
         void Update ()
         {
+            if (dying) return;
+
             var yOffset = Mathf.Sin(FloatSpeed * Time.time) / 8f;
             yOffset = Mathf.Round(yOffset * 8f) / 8f;
             transform.position = initialPosition + Vector3.up * yOffset;
@@ -65,7 +67,9 @@ namespace Drepanoid
 
         IEnumerator deathRoutine ()
         {
+            dying = true;
             Collider.enabled = false;
+            transform.position = initialPosition;
             Animator.SetTrigger(AnimatorDeathTrigger);
 
             if (!alreadyCollected) CollectedCookies.Add(Cookie);
