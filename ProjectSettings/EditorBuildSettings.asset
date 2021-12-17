@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Levels/Tutorial Escape/Ping Check.unity
+    guid: 5de3ff35ab3d5d141be25d495e6b656e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c589560e4bb85274286ca8f820ae021b,
       type: 2}
