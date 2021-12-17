@@ -519,6 +519,8 @@ MonoBehaviour:
     Time: 0.35
     Ease: 21
   Visual: {fileID: 6169930906684778033}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!61 &5006718296371208279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -623,6 +625,8 @@ MonoBehaviour:
     Time: 0
     Ease: 21
   Visual: {fileID: 6300202809046288339}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!60 &5006718296407592303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -731,6 +735,8 @@ MonoBehaviour:
     Time: 0.35
     Ease: 21
   Visual: {fileID: 7136475774545520138}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!61 &5006718296671113423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -835,6 +841,8 @@ MonoBehaviour:
     Time: 0
     Ease: 21
   Visual: {fileID: 4074524428632079029}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!60 &5006718297015235808
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -943,6 +951,8 @@ MonoBehaviour:
     Time: 0.4
     Ease: 21
   Visual: {fileID: 39404304067791657}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!60 &5006718297230172129
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1174,6 +1184,8 @@ MonoBehaviour:
     Time: 0.4
     Ease: 21
   Visual: {fileID: 6451194425400790099}
+  DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
+    type: 2}
 --- !u!60 &5006718297579847711
 PolygonCollider2D:
   m_ObjectHideFlags: 0

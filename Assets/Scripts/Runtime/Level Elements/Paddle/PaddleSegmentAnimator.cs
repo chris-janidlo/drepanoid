@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 using Drepanoid.Drivers;
 using crass;
 
@@ -18,6 +19,8 @@ namespace Drepanoid
         public TransitionableFloat MoveLagTransition;
 
         public SpriteRenderer Visual;
+
+        public BoolVariable DeathGlitchEffectIsOn;
 
         bool wandering;
         Vector3 wanderLocalPosition;
@@ -77,7 +80,7 @@ namespace Drepanoid
                     StopAllCoroutines();
                 }
             }
-            else
+            else if (!DeathGlitchEffectIsOn.Value)
             {
                 wanderWaitTimer -= Time.deltaTime;
 
