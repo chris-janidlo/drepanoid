@@ -1747,6 +1747,7 @@ GameObject:
   - component: {fileID: 8297977597983657521}
   - component: {fileID: 4005375984604903075}
   - component: {fileID: 1408338180178490034}
+  - component: {fileID: 4121255319392890663}
   - component: {fileID: 8297977597983657523}
   - component: {fileID: 8297977597983657527}
   - component: {fileID: 91531402848810810}
@@ -1962,6 +1963,21 @@ MonoBehaviour:
     type: 2}
   DeathReset: {fileID: 11400000, guid: 5a3f19ee8ffb8674e9b0c4a69539e67f, type: 2}
   MusicTrackPosition: {fileID: 11400000, guid: 5f896774888455940b426f9a81206821, type: 2}
+--- !u!114 &4121255319392890663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297977597983657526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dc89a1c2a7d4b9e85b1ba541bf6553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFps: 100
+  PostProcessStackFillRateMultiplier: 100
+  PostProcessLayer: {fileID: 8297977597983657523}
 --- !u!114 &8297977597983657523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2021,9 +2037,7 @@ MonoBehaviour:
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
-  m_AfterStackBundles:
-  - assemblyQualifiedName: Drepanoid.Glitch, Drepanoid.Runtime, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  m_AfterStackBundles: []
 --- !u!81 &8297977597983657527
 AudioListener:
   m_ObjectHideFlags: 0
