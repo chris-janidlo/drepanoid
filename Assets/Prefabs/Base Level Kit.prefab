@@ -1951,6 +1951,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Noisiness: 0.11
+  NoiseUpdateChancePerFrame: 0.05
+  TrashFrame1UpdateInterval: 31
+  TrashFrame2UpdateInterval: 73
+  Shader: {fileID: 4800000, guid: d59e99910889a434e8f146755cdbf5b6, type: 3}
   PostProcessProfile: {fileID: 11400000, guid: e84df0b85367bd8499f7ab3034e2bae8, type: 2}
   RetriggerFilter: {fileID: 91531402848810810}
   DeathGlitchEffectIsOn: {fileID: 11400000, guid: 3476fac474af0284aaf8a60a18dbc330,
