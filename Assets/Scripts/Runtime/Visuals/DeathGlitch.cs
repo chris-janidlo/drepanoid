@@ -45,6 +45,8 @@ namespace Drepanoid
 
         void Start ()
         {
+            var test = 10;
+
             resetEffect();
 
             material = new Material(Shader) { hideFlags = HideFlags.DontSave };
@@ -79,6 +81,7 @@ namespace Drepanoid
 
             if (!DeathGlitchEffectIsOn.Value)
             {
+                // potential optimization: render to a rendertexture that gets sent to the camera, like https://forum.unity.com/threads/post-process-mobile-performance-alternatives-to-graphics-blit-onrenderimage.414399/#post-2759255 and https://forum.unity.com/threads/onrenderimage-how-to-avoid-performance-hit-when-not-in-use.452875/#post-2937665
                 Graphics.Blit(source, destination);
                 return;
             }
