@@ -46,8 +46,8 @@ sysinfo.txt
 # Visual Studio project files
 *.leu
 
-# Visual Studio for Mac working files
-*.cs~
+# Visual Studio for Mac working files (like .cs~ and .shader~)
+*.*~
 
 # Compressed Files
 *.7z
