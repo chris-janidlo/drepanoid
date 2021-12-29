@@ -15,13 +15,17 @@ namespace Drepanoid
         [Tooltip("Refers to the distance the camera needs to travel, not the distance from the camera to the position it's tracking.")]
         public AnimationCurve TrackingFollowTimeByTravelDistance;
         public Vector2 MinimumDistanceToFollowBoxExtents, ScanlineFollowBoxExtents;
-        [Tooltip("Defines the region of the level that the camera stays inside")]
-        public Transform LowerLeftClampingPoint, UpperRightClampingPoint;
-        public Vector2Variable CameraTrackingPosition;
         [Tooltip("Camera's target position will instantly snap if the tracked position moves at least this much in a single frame")]
         public float CameraSnapTrackingDistanceThreshold;
-        public float MinBallFallSpeedForFallCamera;
 
+        [Tooltip("Defines the region of the level that the camera stays inside")]
+        public Transform LowerLeftClampingPoint, UpperRightClampingPoint;
+
+        public float MinBallFallSpeedForFallCamera;
+        [Tooltip("How far ahead the camera should track when in fall camera mode. For example, if the ball is falling at 20 u/s and this is set to .25, the camera will track 5 units below the ball.")]
+        public float FallCameraPreTrackTime;
+
+        public Vector2Variable CameraTrackingPosition;
         public Vector2Variable BallVelocity;
         public BoolVariable BallIsInScanline;
 
@@ -167,6 +171,8 @@ namespace Drepanoid
         static readonly int[] _getFollowTargetAxes = new int[] { 0, 1 }; // as in more than one axis
         Vector2 getFollowTarget ()
         {
+            Vector2 position = followTargetMemory;
+
             bool forceUpdate = ballBouncedOnPaddleThisFrame ||
                 Vector2.Distance(CameraTrackingPosition.Value, CameraTrackingPosition.OldValue) > CameraSnapTrackingDistanceThreshold; // ball snapped position
 
@@ -176,12 +182,17 @@ namespace Drepanoid
                 bool fallCamera = axis == 1 && BallVelocity.Value.y < -MinBallFallSpeedForFallCamera;
                 if (!fallCamera && !forceUpdate && Mathf.Abs(CameraTrackingPosition.Value[axis] - transform.position[axis]) < extent) continue;
 
-                followTargetMemory[axis] = getEffectivePositionOnAxis(CameraTrackingPosition.Value[axis], axis);
+                followTargetMemory[axis] = position[axis] = getEffectivePositionOnAxis(CameraTrackingPosition.Value[axis], axis);
+
+                if (fallCamera)
+                {
+                    position[axis] += FallCameraPreTrackTime * BallVelocity.Value.y;
+                }
             }
 
             ballBouncedOnPaddleThisFrame = false;
 
-            return followTargetMemory;
+            return position;
         }
 
         float getPixelPerfectZDistanceFromOrigin ()

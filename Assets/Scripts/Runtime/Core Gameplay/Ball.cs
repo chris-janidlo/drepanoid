@@ -29,7 +29,7 @@ namespace Drepanoid
 
         public TransitionableFloat SpawnScaleTransition, DeathScaleTransition;
         public int SpawnScaleTransitionRounding, NormalDeathScaleTarget;
-        
+
         public AnimationCurve ChanceForDeathToBeExplosionDeathByDeathsSinceLastExplosionDeath;
         public int ExplosionDeathScaleTarget;
         public float DeathAnimationWaitTimeBeforeShrinking, VictoriousDespawnWaitTime;
@@ -88,14 +88,14 @@ namespace Drepanoid
 
         void FixedUpdate ()
         {
+            CameraTrackingPosition.Value = transform.position;
+            BallVelocity.Value = frozen ? Vector2.zero : Velocity;
+
             if (frozen) return;
             else if (transform.position.y < KillFloorY) Kill();
 
             move();
             spin();
-
-            CameraTrackingPosition.Value = transform.position;
-            BallVelocity.Value = Velocity;
 
             if (!feverTrail)
             {
@@ -130,7 +130,7 @@ namespace Drepanoid
             {
                 feverTrail = speed >= MinBounceSpeedForFeverTrail;
             }
-            
+
             if (canChangeFeverState && feverTrail)
             {
                 setTrailEmissionRateOverDistance(FeverTrailRateOverDistance);

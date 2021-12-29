@@ -85,7 +85,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ExplosionDeathScaleTarget: 10
-  DeathAnimationWaitTimeBeforeShrinking: 0.3
+  DeathAnimationWaitTimeBeforeShrinking: 0.4
   VictoriousDespawnWaitTime: 0.4
   DeathSound: {fileID: 11400000, guid: baface715330c544dac01922f04d3f51, type: 2}
   BounceSpinMultiplier: 75
