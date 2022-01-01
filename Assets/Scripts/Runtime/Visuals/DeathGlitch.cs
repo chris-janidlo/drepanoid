@@ -45,8 +45,6 @@ namespace Drepanoid
 
         void Start ()
         {
-            var test = 10;
-
             resetEffect();
 
             material = new Material(Shader) { hideFlags = HideFlags.DontSave };
