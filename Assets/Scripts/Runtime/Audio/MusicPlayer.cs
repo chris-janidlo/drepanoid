@@ -8,8 +8,6 @@ namespace Drepanoid
 {
     public class MusicPlayer : MonoBehaviour
     {
-        private static MusicPlayer Instance;
-
         [Range(0, 1)]
         public float BaseVolume;
 
@@ -18,6 +16,9 @@ namespace Drepanoid
         public AudioSource Source;
 
         public FloatVariable MusicTrackPosition;
+
+#if !UNITY_WEBGL
+        private static MusicPlayer Instance;
 
         IEnumerator fadeOutEnum;
 
@@ -71,5 +72,6 @@ namespace Drepanoid
 
             Destroy(gameObject);
         }
+#endif // !UNITY_WEBGL
     }
 }

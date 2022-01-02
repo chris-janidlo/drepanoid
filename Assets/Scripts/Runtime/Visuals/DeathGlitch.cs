@@ -103,8 +103,10 @@ namespace Drepanoid
             bool haveReset = false;
 
             DeathGlitchEffectIsOn.Value = true;
+#if !UNITY_WEBGL
             RetriggerFilter.Active = true;
             float originalTrackPosition = MusicTrackPosition.Value;
+#endif // !UNITY_WEBGL
 
             while (timer < totalTime)
             {
@@ -121,7 +123,9 @@ namespace Drepanoid
             }
 
             resetEffect();
+#if !UNITY_WEBGL
             MusicTrackPosition.Value = originalTrackPosition;
+#endif // !UNITY_WEBGL
         }
 
         void resetEffect ()
