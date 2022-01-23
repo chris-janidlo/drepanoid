@@ -8,6 +8,7 @@ namespace Drepanoid
 {
     public class PaddleSpeedLogEffect : MonoBehaviour
     {
+        public SetTextArguments TextArguments;
         public SetTextOptions TextOptions;
         public Vector2Variable BallVelocity;
 
@@ -17,7 +18,7 @@ namespace Drepanoid
 
         IEnumerator Start ()
         {
-            baseText = TextOptions.Text;
+            baseText = TextArguments.Text;
 
             while (true)
             {
@@ -29,8 +30,8 @@ namespace Drepanoid
                     continue;
                 }
 
-                TextOptions.Text = string.Format(baseText, Mathf.RoundToInt(currentPaddleVelocity * 100), currentBallSpeed);
-                yield return Driver.Text.SetText(TextOptions);
+                TextArguments.Text = string.Format(baseText, Mathf.RoundToInt(currentPaddleVelocity * 100), currentBallSpeed);
+                yield return Driver.Text.SetText(TextArguments, TextOptions);
 
                 lastLoggedPaddleVelocity = currentPaddleVelocity;
                 lastLoggedBallSpeed = currentBallSpeed;

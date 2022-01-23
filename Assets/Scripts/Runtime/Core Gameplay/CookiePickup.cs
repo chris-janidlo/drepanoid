@@ -14,11 +14,10 @@ namespace Drepanoid
         public float FloatSpeed;
 
         public string AnimatorDeathTrigger;
-        [FormerlySerializedAs("PickupTextEffect")]
-        public SetTextOptions PopupSetTextOptions;
-        [FormerlySerializedAs("PickupTextEffectVisibilityTime")]
+        public SetTextArguments PopupText;
+        public SetTextOptions PopupTextOptions;
         public float PopupVisibilityTime;
-        public CharacterAnimation PopupDeleteAnimation;
+        public DeleteTextOptions PopupDeleteTextOptions;
 
         public CookieValueList CollectedCookies;
         public SpriteRenderer SpriteRenderer;
@@ -74,14 +73,9 @@ namespace Drepanoid
 
             if (!alreadyCollected) CollectedCookies.Add(Cookie);
 
-            yield return Driver.Text.SetText(PopupSetTextOptions);
+            yield return Driver.Text.SetText(PopupText, PopupTextOptions);
             yield return new WaitForSeconds(PopupVisibilityTime);
-            yield return Driver.Text.Delete(new DeleteTextOptions
-            {
-                RegionStartPosition = PopupSetTextOptions.StartingPosition,
-                RegionExtents = new Vector2Int(PopupSetTextOptions.Text.Length, 1),
-                Animation = PopupDeleteAnimation
-            });
+            yield return Driver.Text.Delete(PopupText.DeleteArguments(), PopupDeleteTextOptions);
 
             Destroy(gameObject);
         }

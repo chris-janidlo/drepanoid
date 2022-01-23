@@ -26,8 +26,8 @@ namespace Drepanoid
         public BagRandomizer<Popup> Popups;
 
         public TilesetFont Font;
-        public CharacterAnimation LoadAnimation, DeleteAnimation;
-        public SerializableNullable<int> SetCharactersPerSecond, DeleteCharactersPerSecond;
+        public SetTextOptions LoadOptions;
+        public DeleteTextOptions DeleteOptions;
 
         readonly List<Tuple<Vector2Int, Vector2Int>> regionsOccupiedByPopups = new List<Tuple<Vector2Int, Vector2Int>>();
 
@@ -66,24 +66,13 @@ namespace Drepanoid
             Tuple<Vector2Int, Vector2Int> popupRegion = new Tuple<Vector2Int, Vector2Int>(startingPosition, startingPosition + Vector2Int.right * popup.Text.Length);
             regionsOccupiedByPopups.Add(popupRegion);
 
-            yield return Driver.Text.SetText(new SetTextOptions
-            {
-                Text = popup.Text,
-                Font = Font,
-                StartingPosition = startingPosition,
-                LoadAnimation = LoadAnimation,
-                CharactersPerSecondScroll = SetCharactersPerSecond
-            });
+            var setTextArguments = new SetTextArguments(popup.Text, Font, startingPosition);
+            yield return Driver.Text.SetText(setTextArguments, LoadOptions);
 
             yield return new WaitForSeconds(RandomExtra.Range(popup.VisibilityTimeRange));
 
-            yield return Driver.Text.Delete(new DeleteTextOptions
-            {
-                RegionStartPosition = startingPosition,
-                RegionExtents = new Vector2Int(popup.Text.Length, 1),
-                Animation = DeleteAnimation,
-                CharactersPerSecondScroll = DeleteCharactersPerSecond
-            });
+            var deleteTextArguments = setTextArguments.DeleteArguments();
+            yield return Driver.Text.Delete(deleteTextArguments, DeleteOptions);
 
             regionsOccupiedByPopups.Remove(popupRegion);
         }

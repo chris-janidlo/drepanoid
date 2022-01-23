@@ -46,10 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LogTextLines: []
   StartingPosition: {x: 0, y: 0}
-  CharactersPerSecondScroll: 100
-  MaximumLinesOfHistoryToDisplay: 1
   Font: {fileID: 11400000, guid: 6f8864388a88cc54e9d6bb763eebb74b, type: 2}
-  LoadAnimation: {fileID: 0}
+  Options:
+    m_CharactersPerSecondScroll:
+      _value: 100
+      HasValue: 1
+    LoadAnimation: {fileID: 0}
+  MaximumLinesOfHistoryToDisplay: 1
 --- !u!114 &2253258115825743207
 MonoBehaviour:
   m_ObjectHideFlags: 0
