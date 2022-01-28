@@ -9,6 +9,7 @@ namespace Drepanoid
     [Serializable]
     public struct SetTextArguments
     {
+        [TextArea(1, 500)]
         public string Text;
         public Vector2Int StartingPosition;
         public TilesetFont Font;
