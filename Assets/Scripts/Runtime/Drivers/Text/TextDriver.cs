@@ -52,6 +52,8 @@ namespace Drepanoid.Drivers
             if (endingLevel) yield break;
 
             string cleanedText = args.Text.Replace("\r", "");
+            if (options?.Transformer != null) cleanedText = options?.Transformer.Transform(cleanedText);
+
             SetTextArguments cleanedArguments = new SetTextArguments
             {
                 Text = cleanedText,

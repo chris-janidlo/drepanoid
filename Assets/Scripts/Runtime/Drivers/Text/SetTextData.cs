@@ -39,11 +39,13 @@ namespace Drepanoid
         }
 
         public CharacterAnimation LoadAnimation;
+        public TextTransformer Transformer;
 
-        public SetTextOptions (int? charactersPerSecondScroll, CharacterAnimation loadAnimation)
+        public SetTextOptions (int? charactersPerSecondScroll, CharacterAnimation loadAnimation, TextTransformer transformer)
         {
             m_CharactersPerSecondScroll = new SerializableNullable<int>(charactersPerSecondScroll);
             LoadAnimation = loadAnimation;
+            Transformer = transformer;
         }
 
         void initScroll ()
