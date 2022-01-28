@@ -64,12 +64,7 @@ namespace Drepanoid
                     Font = Font
                 };
 
-                var historyTextOptions = new SetTextOptions
-                {   
-                    CharactersPerSecondScroll = null, // ensures that entire block of text displays immediately
-                    LoadAnimation = Options.LoadAnimation
-                };
-
+                var historyTextOptions = new SetTextOptions(null, Options.LoadAnimation, Options.Transformer); // ensure that entire block of text displays immediately
                 StartCoroutine(Driver.Text.SetText(historyTextArguments, historyTextOptions));
 
                 lineCursor++;
