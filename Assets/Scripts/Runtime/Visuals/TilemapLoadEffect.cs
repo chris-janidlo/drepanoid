@@ -15,7 +15,6 @@ namespace Drepanoid
         public TileBase EmptyTile;
 
         public Tilemap Tilemap;
-        public TilemapCollider2D TilemapCollider;
 
         void Start ()
         {
@@ -29,8 +28,6 @@ namespace Drepanoid
 
         IEnumerator playAnimation (bool loading)
         {
-            if (TilemapCollider != null) TilemapCollider.enabled = false;
-
             BoundsInt bounds = Tilemap.cellBounds;
             int maximumTileCount = (bounds.xMax - bounds.xMin) * (bounds.yMax - bounds.yMin);
 
@@ -47,8 +44,6 @@ namespace Drepanoid
             }
 
             yield return Driver.CharacterAnimations.AnimateTileset(loading ? LoadAnimation : UnloadAnimation, ShowDelay, Tilemap, tiles);
-
-            if (TilemapCollider != null && loading) TilemapCollider.enabled = true;
         }
     }
 }
