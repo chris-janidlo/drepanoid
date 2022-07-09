@@ -13,9 +13,11 @@ namespace Drepanoid.Drivers
 
         class SetTextAnimationTracker
         {
-            public string CleanedText;
+            public string CleanedText => CleanedArguments.Text;
+
+            public SetTextArguments CleanedArguments;
             public float Timer;
-            public SetTextOptions Options;
+            public SetTextOptions? Options;
             public Vector3Int PositionCursor;
             public int TextCursor;
             public TilePositionCollection TilePositionCollection;
@@ -45,24 +47,32 @@ namespace Drepanoid.Drivers
             endingLevel = true;
         }
 
-        public IEnumerator SetText (SetTextOptions options)
+        public IEnumerator SetText (SetTextArguments args, SetTextOptions? options = null)
         {
             if (endingLevel) yield break;
 
-            string cleanedText = options.Text.Replace("\r", "");
+            string cleanedText = args.Text.Replace("\r", "");
+            if (options?.Transformer != null) cleanedText = options?.Transformer.Transform(cleanedText);
 
-            if (cleanedText.Any(c => !options.Font.CanPrint(c)))
+            SetTextArguments cleanedArguments = new SetTextArguments
+            {
+                Text = cleanedText,
+                Font = args.Font,
+                StartingPosition = args.StartingPosition
+            };
+
+            if (cleanedText.Any(c => !args.Font.CanPrint(c)))
             {
                 throw new ArgumentException("text contains unprintable characters");
             }
 
             TilePositionCollection tilePositionCollection = new TilePositionCollection(cleanedText.Length);
-            Vector3Int startingPosition = new Vector3Int(options.StartingPosition.x, options.StartingPosition.y, 0);
-            if (options.CharactersPerSecondScroll.HasValue)
+            Vector3Int startingPosition = new Vector3Int(args.StartingPosition.x, args.StartingPosition.y, 0);
+            if (options?.CharactersPerSecondScroll != null)
             {
                 SetTextAnimationTracker tracker = new SetTextAnimationTracker
                 {
-                    CleanedText = cleanedText,
+                    CleanedArguments = cleanedArguments,
                     Timer = 0,
                     Options = options,
                     PositionCursor = startingPosition,
@@ -75,18 +85,20 @@ namespace Drepanoid.Drivers
             }
             else
             {
-                setTilesToText(cleanedText, tilePositionCollection, ref startingPosition, options);
+                setTilesToText(cleanedArguments, tilePositionCollection, ref startingPosition, options);
                 yield break;
             }
         }
 
-        public IEnumerator Delete (DeleteTextOptions options)
+        public IEnumerator SetText (string text, TilesetFont font, Vector2Int startingPosition, SetTextOptions? options = null) => SetText(new SetTextArguments(text, font, startingPosition), options);
+
+        public IEnumerator Delete (DeleteTextArguments arguments, DeleteTextOptions? options = null)
         {
             int
-                xWidth = Mathf.Abs(options.RegionExtents.x),
-                yWidth = Mathf.Abs(options.RegionExtents.y),
-                xDir = Math.Sign(options.RegionExtents.x),
-                yDir = Math.Sign(options.RegionExtents.y);
+                xWidth = Mathf.Abs(arguments.RegionExtents.x),
+                yWidth = Mathf.Abs(arguments.RegionExtents.y),
+                xDir = Math.Sign(arguments.RegionExtents.x),
+                yDir = Math.Sign(arguments.RegionExtents.y);
 
             TilePositionCollection tiles = new TilePositionCollection(xWidth * yWidth);
 
@@ -96,8 +108,8 @@ namespace Drepanoid.Drivers
                 {
                     Vector3Int position = new Vector3Int
                     (
-                        options.RegionStartPosition.x + xDir * i,
-                        options.RegionStartPosition.y + yDir * j,
+                        arguments.RegionStartPosition.x + xDir * i,
+                        arguments.RegionStartPosition.y + yDir * j,
                         0
                     );
                     tiles.Add(position, null);
@@ -106,9 +118,9 @@ namespace Drepanoid.Drivers
 
             Driver.CharacterAnimations.StopAnimations(MainTextTilemap, tiles.Positions.ToList());
 
-            if (options.Animation != null)
+            if (options?.Animation != null)
             {
-                yield return Driver.CharacterAnimations.AnimateTileset(options.Animation, 0, MainTextTilemap, tiles);
+                yield return Driver.CharacterAnimations.AnimateTileset(options?.Animation, 0, MainTextTilemap, tiles);
             }
             else
             {
@@ -118,41 +130,45 @@ namespace Drepanoid.Drivers
             // TODO: scrolling deletions
         }
 
+        public IEnumerator Delete (Vector2Int regionStartPosition, Vector2Int regionExtents, DeleteTextOptions? options = null) => Delete(new DeleteTextArguments(regionStartPosition, regionExtents), options);
+
         void animateFrame (SetTextAnimationTracker tracker)
         {
             if (endingLevel) return;
 
-            float charactersPerSecondScroll = tracker.Options.CharactersPerSecondScroll.Value;
+            int charactersPerSecondScroll = (int) tracker.Options?.CharactersPerSecondScroll; // there should always be a value for this at this point, so we want to immediately throw an exception if not
             int charactersPerFrame = Mathf.Max(Mathf.RoundToInt(charactersPerSecondScroll * Time.deltaTime), 1);
 
             string cleanedText = tracker.CleanedText;
             int textToSetLength = Mathf.Min(charactersPerFrame, cleanedText.Length - tracker.TextCursor);
-            string textToSet = cleanedText.Substring(tracker.TextCursor, textToSetLength);
 
-            setTilesToText(textToSet, tracker.TilePositionCollection, ref tracker.PositionCursor, tracker.Options);
+            SetTextArguments args = tracker.CleanedArguments;
+            args.Text = cleanedText.Substring(tracker.TextCursor, textToSetLength);
+
+            setTilesToText(args, tracker.TilePositionCollection, ref tracker.PositionCursor, tracker.Options);
             tracker.TextCursor += textToSetLength;
 
             tracker.Timer = 1f / charactersPerSecondScroll;
         }
 
-        void setTilesToText (string text, TilePositionCollection tilePositionCollection, ref Vector3Int tilemapCursor, SetTextOptions data)
+        void setTilesToText (SetTextArguments args, TilePositionCollection tilePositionCollection, ref Vector3Int tilemapCursor, SetTextOptions? options)
         {
             if (endingLevel) return;
 
             tilePositionCollection.Clear();
 
-            foreach (char c in text)
+            foreach (char c in args.Text)
             {
                 switch (c)
                 {
                     case '\t':
-                        tilemapCursor += Vector3Int.right * data.Font.SpacesPerTab;
+                        tilemapCursor += Vector3Int.right * args.Font.SpacesPerTab;
                         break;
                     case '\n':
-                        tilemapCursor = new Vector3Int(data.StartingPosition.x, tilemapCursor.y - 1, 0);
+                        tilemapCursor = new Vector3Int(args.StartingPosition.x, tilemapCursor.y - 1, 0);
                         break;
                     default:
-                        Tile tile = data.Font.GetPrintableAsciiCharacter(c);
+                        Tile tile = args.Font.GetPrintableAsciiCharacter(c);
                         tilePositionCollection.Add(tilemapCursor, tile);
                         tilemapCursor += Vector3Int.right;
                         break;
@@ -164,9 +180,9 @@ namespace Drepanoid.Drivers
                 // TODO: figure out which tilemap(s) to do
                 Tilemap tilemap = MainTextTilemap;
 
-                if (data.LoadAnimation != null)
+                if (options?.LoadAnimation != null)
                 {
-                    StartCoroutine(Driver.CharacterAnimations.AnimateTileset(data.LoadAnimation, 0, tilemap, tilePositionCollection));
+                    StartCoroutine(Driver.CharacterAnimations.AnimateTileset(options?.LoadAnimation, 0, tilemap, tilePositionCollection));
                 }
                 else
                 {

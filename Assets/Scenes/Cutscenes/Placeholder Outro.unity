@@ -881,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
         type: 3}
-      propertyPath: LoadAnimation
+      propertyPath: Options.LoadAnimation
       value: 
       objectReference: {fileID: 11400000, guid: 38b07ef848358d549a2e8e365990b749,
         type: 2}
@@ -902,7 +902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
         type: 3}
-      propertyPath: CharactersPerSecondScroll
+      propertyPath: Options.m_CharactersPerSecondScroll._value
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
         type: 3}
-      propertyPath: LoadAnimation
+      propertyPath: Options.LoadAnimation
       value: 
       objectReference: {fileID: 11400000, guid: bbf5b4b0bc413854fa54dd1f343cacbe,
         type: 2}
@@ -1142,7 +1142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
         type: 3}
-      propertyPath: CharactersPerSecondScroll
+      propertyPath: Options.m_CharactersPerSecondScroll._value
       value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 990870405696863894, guid: 0ba6499c2580ac24f9368f74d631bdf7,
