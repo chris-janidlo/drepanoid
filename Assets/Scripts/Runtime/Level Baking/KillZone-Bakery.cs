@@ -1,5 +1,5 @@
-#if UNITY_EDITOR
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEngine.Tilemaps;
 using UnityEditor;
 using Drepanoid.LevelBaking;
