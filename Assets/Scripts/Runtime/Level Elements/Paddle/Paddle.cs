@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Drepanoid
     public class Paddle : MonoBehaviour
     {
         public List<PaddleSegment> Segments;
-        public Transform LineLeftEdge, LineRightEdge;
+        public PaddleGuardRail GuardRail;
 
         public VoidEvent BallBouncedOnPaddle;
 
@@ -25,9 +26,9 @@ namespace Drepanoid
             }
         }
 
-        void FixedUpdate ()
+        void Update ()
         {
-            transform.position = Vector3.Lerp(LineLeftEdge.position, LineRightEdge.position, Driver.Mover.PositionOnLine);
+            transform.position = Vector3.Lerp(GuardRail.LeftEdge, GuardRail.RightEdge, Driver.Mover.PositionOnLine);
 
             if (lastBounceThisFrame != null)
             {
@@ -72,7 +73,7 @@ namespace Drepanoid
 
             PaddleSegmentBounceStats bounceStats = PaddleSegmentBounceStats.Average(statBlocks);
 
-            float inheritAngleDirection = MathfExtra.TernarySign(LineRightEdge.position.x - LineLeftEdge.position.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
+            float inheritAngleDirection = MathfExtra.TernarySign(GuardRail.RightEdge.x - GuardRail.LeftEdge.x); // flip the angle if the mover goes from right to left, or don't inherit any angle if the mover goes up and down
             float inheritSpeedAngle = Driver.Mover.Velocity * bounceStats.InheritSpeedAngleMultiplier * inheritAngleDirection;
             float exitAngleOffPaddle = Mathf.Clamp(bounceStats.BounceAngle + inheritSpeedAngle, -180, 180);
 
