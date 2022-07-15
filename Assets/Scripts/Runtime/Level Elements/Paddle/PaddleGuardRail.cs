@@ -7,6 +7,7 @@ namespace Drepanoid
 {
     public class PaddleGuardRail : MonoBehaviour
     {
+        [Min(0)]
         public int Extent;
 
         public float AnimationWaitTime;
@@ -20,8 +21,12 @@ namespace Drepanoid
         public Vector2 Center => (Vector2) transform.position;
 
         public Vector2 LeftEdge => Center + Vector2.left * Extent;
-        
         public Vector2 RightEdge => Center + Vector2.right * Extent;
+
+        // assume each segment is one tile(=1u) wide
+        private float paddleHalfWidth => Paddle.Segments.Count / 2f;
+        private Vector3 visualLeftEdge => transform.TransformPoint(Vector2.left * (Extent + paddleHalfWidth));
+        private Vector3 visualRighttEdge => transform.TransformPoint(Vector2.right * (Extent + paddleHalfWidth));
 
         void Start ()
         {
@@ -46,20 +51,12 @@ namespace Drepanoid
             {
                 yield return new WaitForSeconds(AnimationWaitTime);
 
-                // assume each segment is one tile(=1u) wide
-                float paddleHalfWidth = Paddle.Segments.Count / 2f;
-
-                // these have to be in local space because the line is in local space
-                Vector2
-                    lineLeftEdge = Vector2.left * (Extent + paddleHalfWidth),
-                    lineRightEdge = Vector2.right * (Extent + paddleHalfWidth);
-
                 float start = opening ? 0 : 1, end = opening ? 1 : 0;
 
                 void lerpLines (float lerp)
                 {
-                    Line.SetPosition(0, Vector2.Lerp(Vector2.zero, lineLeftEdge, lerp));
-                    Line.SetPosition(1, Vector2.Lerp(Vector2.zero, lineRightEdge, lerp));
+                    Line.SetPosition(0, Vector2.Lerp(Vector2.zero, visualLeftEdge, lerp));
+                    Line.SetPosition(1, Vector2.Lerp(Vector2.zero, visualRighttEdge, lerp));
                 }
 
                 AnimationTransition.FlashFromTo(start, end);
@@ -74,5 +71,13 @@ namespace Drepanoid
 
             StartCoroutine(animation());
         }
+
+#if UNITY_EDITOR
+        void OnDrawGizmos()
+        {
+            Gizmos.color = Color.gray;
+            Gizmos.DrawLine(visualLeftEdge, visualRighttEdge);
+        }
+#endif // UNITY_EDITOR
     }
 }
