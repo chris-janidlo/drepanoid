@@ -32,14 +32,14 @@ namespace Drepanoid.LevelBaking
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         }
 
-        [MenuItem("Tools/Baker/Bake or Rebake all Baked Goods _b")]
+        [MenuItem("Tools/Baker/Bake or Rebake all Baked Goods &b")]
         static void bakeCommand ()
         {
             BakeAll();
             SaveCurrentScene();
         }
 
-        [MenuItem("Tools/Baker/Unbake all Baked Goods #b")]
+        [MenuItem("Tools/Baker/Unbake all Baked Goods #&b")]
         static void unbakeCommand ()
         {
             UnbakeAll();
