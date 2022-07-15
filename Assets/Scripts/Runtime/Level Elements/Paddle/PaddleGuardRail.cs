@@ -11,7 +11,7 @@ namespace Drepanoid
         public int Extent;
 
         public float AnimationWaitTime;
-        public TransitionableFloat AnimationTransition;
+        public TransitionableFloat LoadInTransition, LoadOutTransition;
 
         public Paddle Paddle;
         public LineRenderer Line;
@@ -35,7 +35,8 @@ namespace Drepanoid
                 throw new System.InvalidOperationException("Line must have 2 positions");
             }
 
-            AnimationTransition.AttachMonoBehaviour(this);
+            LoadInTransition.AttachMonoBehaviour(this);
+            LoadOutTransition.AttachMonoBehaviour(this);
 
             animateLine(true);
         }
@@ -52,17 +53,22 @@ namespace Drepanoid
                 yield return new WaitForSeconds(AnimationWaitTime);
 
                 float start = opening ? 0 : 1, end = opening ? 1 : 0;
+                var transition = opening ? LoadInTransition : LoadOutTransition;
+
+                // randomize which edge looks like the anchor and which edge looks like is being generated in real time
+                int leftEdgeIndex = RandomExtra.Chance(.5f) ? 0 : 1;
+                int rightEdgeIndex = 1 - leftEdgeIndex;
 
                 void lerpLines (float lerp)
                 {
-                    Line.SetPosition(0, Vector3.Lerp(transform.position, visualLeftEdge, lerp));
-                    Line.SetPosition(1, Vector3.Lerp(transform.position, visualRighttEdge, lerp));
+                    Line.SetPosition(leftEdgeIndex, Vector3.Lerp(transform.position, visualLeftEdge, lerp));
+                    Line.SetPosition(rightEdgeIndex, Vector3.Lerp(transform.position, visualRighttEdge, lerp));
                 }
 
-                AnimationTransition.FlashFromTo(start, end);
-                while (AnimationTransition.Transitioning)
+                transition.FlashFromTo(start, end);
+                while (transition.Transitioning)
                 {
-                    lerpLines(AnimationTransition.Value);
+                    lerpLines(transition.Value);
                     yield return null;
                 }
 

@@ -46,10 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Extent: 0
   AnimationWaitTime: 0.15
-  AnimationTransition:
+  LoadInTransition:
+    value: 0
+    Time: 1.5
+    Ease: 4
+  LoadOutTransition:
     value: 0
     Time: 0.3
-    Ease: 21
+    Ease: 7
   Paddle: {fileID: 5982228226228017169}
   Line: {fileID: 898060583111676264}
 --- !u!120 &898060583111676264
