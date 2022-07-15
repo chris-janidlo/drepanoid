@@ -54493,6 +54493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6492746815315415485, guid: 9bf858ef0db61164e964e833864a93cd,
         type: 3}
+      propertyPath: PriorityEditorSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492746815315415485, guid: 9bf858ef0db61164e964e833864a93cd,
+        type: 3}
       propertyPath: AdjacentSceneDirection.y
       value: 1
       objectReference: {fileID: 0}
