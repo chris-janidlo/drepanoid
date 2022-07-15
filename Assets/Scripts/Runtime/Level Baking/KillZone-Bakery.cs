@@ -1,5 +1,7 @@
 using UnityEngine;
 #if UNITY_EDITOR
+using System.Linq;
+using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 using UnityEditor;
 using Drepanoid.LevelBaking;
@@ -10,7 +12,7 @@ namespace Drepanoid
     {
         public void Bake()
         {
-            if (_isABakedArtifact) return;
+            if (_isABakedArtifact || !needsBaking()) return;
 
             if (_bakedArtifact != null) Unbake();
 
@@ -42,6 +44,42 @@ namespace Drepanoid
             {
                 PrefabUtility.RevertRemovedComponent(gameObject, component.assetComponent, InteractionMode.AutomatedAction);
             }
+        }
+
+        // returns true if we haven't baked before, or if there are differences between the source tilemap and the current baked tilemap
+        bool needsBaking ()
+        {
+            if (_bakedArtifact == null) return true;
+
+            HashSet<(Vector3Int Position, Sprite Sprite, Color Color)> getTilesForComparison (KillZone killZone)
+            {
+                var tilemap = killZone.GetComponent<Tilemap>();
+                var allTileData = new HashSet<(Vector3Int Position, Sprite Sprite, Color Color)>();
+
+                foreach (var position in tilemap.cellBounds.allPositionsWithin)
+                {
+                    TileBase tileBase = tilemap.GetTile(position);
+                    if (tileBase is Tile tile)
+                    {
+                        allTileData.Add((
+                            Position: position,
+                            Sprite: tile.sprite,
+                            Color: tile.color
+                        ));
+                    }
+                    else if (tileBase != null)
+                    {
+                        throw new BakeException($"unexpected non-Tile {tileBase.name} at position {position} in {killZone.name}");
+                    }
+                }
+
+                return allTileData;
+            }
+
+            var sourceTiles = getTilesForComparison(this);
+            var bakedTiles = getTilesForComparison(_bakedArtifact);
+
+            return !sourceTiles.SetEquals(bakedTiles);
         }
     }
 }
