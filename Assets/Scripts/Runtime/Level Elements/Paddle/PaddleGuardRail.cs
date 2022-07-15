@@ -55,8 +55,8 @@ namespace Drepanoid
 
                 void lerpLines (float lerp)
                 {
-                    Line.SetPosition(0, Vector2.Lerp(Vector2.zero, visualLeftEdge, lerp));
-                    Line.SetPosition(1, Vector2.Lerp(Vector2.zero, visualRighttEdge, lerp));
+                    Line.SetPosition(0, Vector3.Lerp(transform.position, visualLeftEdge, lerp));
+                    Line.SetPosition(1, Vector3.Lerp(transform.position, visualRighttEdge, lerp));
                 }
 
                 AnimationTransition.FlashFromTo(start, end);
