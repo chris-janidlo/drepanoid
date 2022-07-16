@@ -1084,12 +1084,12 @@ PrefabInstance:
     - target: {fileID: -3997246366032090128, guid: 61e3027c91c60d1449070f5b891b0b1d,
         type: 3}
       propertyPath: NextScene._sceneName
-      value: Tutorial 0
+      value: tut.0
       objectReference: {fileID: 0}
     - target: {fileID: -3997246366032090128, guid: 61e3027c91c60d1449070f5b891b0b1d,
         type: 3}
       propertyPath: NextScene._scenePath
-      value: Assets/Scenes/Levels/Tutorial 0.unity
+      value: Assets/Scenes/Levels/Tutorial Escape/tut.0.unity
       objectReference: {fileID: 0}
     - target: {fileID: -3997246366032090128, guid: 61e3027c91c60d1449070f5b891b0b1d,
         type: 3}
