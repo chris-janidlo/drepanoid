@@ -10,6 +10,8 @@ namespace Drepanoid
     {
         public Vector2 SpawnDirection => -AdjacentSceneDirection;
 
+        [Tooltip("If this is true, and we're in the editor, the ball spawns here if SceneTransitionTargetTag is otherwise empty.")]
+        public bool PriorityEditorSpawn;
         [Tooltip("When moving to the next level, the SceneTransitionTargetTag is set to TargetTransitionZoneTag. When arriving in a level, the transition zone with the Tag value that matches SceneTransitionTargetTag will be used as the spawn transition zone.")]
         public string Tag;
 
@@ -39,7 +41,11 @@ namespace Drepanoid
 
         IEnumerator Start ()
         {
-            if (SceneTransitionTargetTag.Value == Tag)
+            bool shouldSpawn = SceneTransitionTargetTag.Value == Tag;
+#if UNITY_EDITOR
+            shouldSpawn = shouldSpawn || (string.IsNullOrWhiteSpace(SceneTransitionTargetTag.Value) && PriorityEditorSpawn);
+#endif
+            if (shouldSpawn)
             {
                 SoundEffectPlayer.Play(LevelEnterEffect);
                 isSpawnPoint = true;

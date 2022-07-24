@@ -69,7 +69,7 @@ jobs:
         targetPlatform:
           - WebGL
           - StandaloneWindows
-          - Android
+          # - Android
 
     steps:
       - name: Checkout code
@@ -122,8 +122,8 @@ jobs:
             itch-name: webgl
           - builder-name: StandaloneWindows
             itch-name: win
-          - builder-name: Android
-            itch-name: android
+          # - builder-name: Android
+          #   itch-name: android
 
     steps:
       - name: Download build artifact
