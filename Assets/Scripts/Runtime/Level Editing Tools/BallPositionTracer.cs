@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 #if UNITY_EDITOR
 using System.Linq;
 using UnityEditor;
-using UnityAtoms.BaseAtoms;
 #endif
 
 namespace Drepanoid
