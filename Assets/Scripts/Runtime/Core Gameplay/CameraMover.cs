@@ -89,7 +89,7 @@ namespace Drepanoid
             zoomChanged = true;
         }
 
-        void Update ()
+        void FixedUpdate ()
         {
             updateFov();
             updateZDistanceFromOrigin();
